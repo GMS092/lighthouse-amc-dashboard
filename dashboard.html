@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lighthouse AMC</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7f9;
+        --surface: #ffffff;
+        --surface-soft: #eef2f5;
+        --text: #15191d;
+        --muted: #707981;
+        --line: #dbe1e7;
+        --button-bg: #15191d;
+        --button-text: #ffffff;
+        --shadow: 0 20px 50px rgba(28, 39, 49, 0.08);
+      }
+
+      body.theme-dark {
+        color-scheme: dark;
+        --bg: #111417;
+        --surface: #181d21;
+        --surface-soft: #22282d;
+        --text: #f4f6f8;
+        --muted: #9aa4ad;
+        --line: #2d353c;
+        --button-bg: #f4f6f8;
+        --button-text: #111417;
+        --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        transition: background 180ms ease, color 180ms ease;
+      }
+
+      .dashboard {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 248px minmax(0, 1fr);
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        border-right: 1px solid var(--line);
+        background: var(--surface);
+        padding: 28px 22px 88px;
+        transition: background 180ms ease, border-color 180ms ease;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 40px;
+      }
+
+      .brand-logo,
+      .title-logo {
+        flex: 0 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 50% 47%;
+        box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(0, 0, 0, 0.16);
+        transition: box-shadow 180ms ease;
+      }
+
+      .brand-logo {
+        width: 36px;
+        height: 36px;
+      }
+
+      .title-logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      .title-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }
+
+      .brand-name {
+        font-size: 16px;
+        font-weight: 750;
+      }
+
+      .nav {
+        display: grid;
+        gap: 8px;
+      }
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 42px;
+        border-radius: 8px;
+        padding: 0 12px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .nav-item.active {
+        background: var(--surface-soft);
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .nav-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: currentColor;
+      }
+
+      .theme-toggle {
+        position: fixed;
+        left: 22px;
+        bottom: 22px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-width: 104px;
+        height: 42px;
+        border: 0;
+        border-radius: 8px;
+        background: var(--button-bg);
+        color: var(--button-text);
+        box-shadow: var(--shadow);
+        font: inherit;
+        font-size: 14px;
+        font-weight: 750;
+        cursor: pointer;
+        transition: background 180ms ease, color 180ms ease, transform 160ms ease;
+      }
+
+      .theme-toggle:hover { transform: translateY(-1px); }
+
+      .theme-toggle:focus-visible {
+        outline: 3px solid #4c9ffe;
+        outline-offset: 3px;
+      }
+
+      .main {
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 76px;
+        border-bottom: 1px solid var(--line);
+        background: var(--surface);
+        padding: 0 34px;
+        transition: background 180ms ease, border-color 180ms ease;
+      }
+
+      .page-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .status {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .workspace {
+        display: block;
+        flex: 1;
+        padding: 28px 34px 34px;
+      }
+
+
+      @media (max-width: 760px) {
+        .dashboard { grid-template-columns: 1fr; }
+        .sidebar { display: none; }
+        .topbar { min-height: 68px; padding: 0 20px; }
+        .workspace { padding: 20px; }
+        .section-heading { align-items: start; flex-direction: column; }
+        .table-shell { margin: 0 -2px; }
+        .market-table { min-width: 940px; }
+        .theme-toggle { left: 18px; bottom: 18px; }
+      }
+      /* Update notes table layout */
+      .notes-table {
+        display: grid;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .notes-table-head,
+      .note-toggle {
+        display: grid;
+        grid-template-columns: 112px minmax(150px, 0.85fr) minmax(240px, 1.5fr) 44px;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .notes-table-head {
+        min-height: 42px;
+        background: var(--surface-soft);
+        border-bottom: 1px solid var(--line);
+        padding: 0 14px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .notes-table .note-row {
+        border-bottom: 1px solid var(--line);
+        background: var(--surface);
+        overflow: hidden;
+      }
+
+      .notes-table .note-row:last-child {
+        border-bottom: 0;
+      }
+
+      .notes-table .note-toggle {
+        width: 100%;
+        min-height: 50px;
+        border: 0;
+        background: transparent;
+        color: var(--text);
+        cursor: pointer;
+        font: inherit;
+        padding: 0 14px;
+        text-align: left;
+      }
+
+      .notes-table .note-toggle:hover {
+        background: var(--surface-soft);
+      }
+
+      .notes-table .note-date,
+      .notes-table .note-title,
+      .notes-table .note-summary {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .notes-table .note-caret {
+        justify-self: center;
+      }
+
+      .notes-table .note-details {
+        padding-left: 140px;
+      }
+
+      @media (max-width: 760px) {
+        .notes-table-head {
+          display: none;
+        }
+
+        .notes-table {
+          border: 0;
+          gap: 8px;
+          overflow: visible;
+        }
+
+        .notes-table .note-row {
+          border: 1px solid var(--line);
+          border-radius: 8px;
+        }
+
+        .notes-table .note-toggle {
+          grid-template-columns: 1fr 24px;
+          gap: 6px 10px;
+          padding: 12px 14px;
+        }
+
+        .notes-table .note-date,
+        .notes-table .note-title,
+        .notes-table .note-summary {
+          grid-column: 1;
+        }
+
+        .notes-table .note-caret {
+          grid-column: 2;
+          grid-row: 1 / span 3;
+          align-self: center;
+        }
+
+        .notes-table .note-details {
+          padding: 14px 16px 16px;
+        }
+      }
+
+      /* Market widgets grid final layout */
+      .market-widgets-grid {
+        display: grid;
+        grid-template-columns: minmax(360px, 420px) minmax(420px, 1fr);
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .economic-calendar-shell,
+      .heatmap-shell {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      .economic-calendar-shell {
+        min-height: 550px;
+      }
+
+      .heatmap-shell {
+        min-height: 550px;
+        height: 550px;
+      }
+
+      .heatmap-shell .tradingview-widget-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .heatmap-shell .tradingview-widget-container__widget {
+        width: 100%;
+        height: calc(100% - 33px);
+        min-height: 517px;
+      }
+
+      .heatmap-shell iframe {
+        width: 100% !important;
+        height: 517px !important;
+      }
+
+      @media (max-width: 980px) {
+        .market-widgets-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .heatmap-shell {
+          height: 550px;
+        }
+      }
+
+      /* Update notes table scrolling */
+      .notes-content {
+        max-height: 430px;
+        overflow: auto;
+      }
+
+      .notes-table-head {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      /* Update notes table final sizing */
+      .notes-content {
+        overflow-x: auto;
+      }
+
+      .notes-table {
+        min-width: 760px;
+      }
+
+      .notes-table .note-toggle {
+        grid-template-columns: 112px minmax(150px, 0.85fr) minmax(240px, 1.5fr) 44px;
+      }
+
+      .notes-table-head {
+        display: grid;
+      }
+
+      /* Update notes accordion override */
+      .notes-content .note-details {
+        display: none;
+      }
+
+      .notes-content .note-row.is-open .note-details {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" aria-label="사이드바">
+        <div class="brand">
+          <img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" />
+          <div class="brand-name">Lighthouse AMC</div>
+        </div>
+
+        <nav class="nav" aria-label="대시보드 메뉴">
+          <div class="nav-item active"><span class="nav-dot" aria-hidden="true"></span><span>홈</span></div>
+          <div class="nav-item"><span class="nav-dot" aria-hidden="true"></span><span>리포트</span></div>
+          <div class="nav-item"><span class="nav-dot" aria-hidden="true"></span><span>설정</span></div>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="title-brand">
+            <img class="title-logo" src="assets/lighthouse-amc.jpg" alt="" />
+            <h1 class="page-title">Lighthouse AMC</h1>
+          </div>
+          <div class="status">시장 위젯</div>
+        </header>
+
+        <section class="workspace" aria-label="대시보드 본문">
+          <section class="widget-section" aria-label="시장 요약 위젯">
+            <div class="tradingview-shell">
+              <tv-market-summary direction="horizontal" item-size="compact"></tv-market-summary>
+            </div>
+          </section>
+
+          <section class="economic-calendar-section" aria-label="시장 위젯">
+            <div class="market-widgets-grid">
+              <div class="economic-calendar-shell" aria-label="경제 캘린더">
+                <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/economic-calendar/" rel="noopener nofollow" target="_blank"><span class="blue-text">Economic Calendar</span></a><span class="trademark"> by TradingView</span></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                  {
+                    "colorTheme": "dark",
+                    "isTransparent": false,
+                    "locale": "en",
+                    "countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu",
+                    "importanceFilter": "-1,0,1",
+                    "width": 400,
+                    "height": 550
+                  }
+                  </script>
+                </div>
+              </div>
+
+              <div class="heatmap-shell" aria-label="주식 히트맵">
+                <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/heatmap/stock/" rel="noopener nofollow" target="_blank"><span class="blue-text">Stock Heatmap</span></a><span class="trademark"> by TradingView</span></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                  {
+                    "dataSource": "SPX500",
+                    "blockSize": "market_cap_basic",
+                    "blockColor": "change",
+                    "grouping": "sector",
+                    "locale": "en",
+                    "symbolUrl": "",
+                    "colorTheme": "dark",
+                    "exchanges": [],
+                    "hasTopBar": false,
+                    "isDataSetEnabled": false,
+                    "isZoomEnabled": true,
+                    "hasSymbolTooltip": true,
+                    "isMonoSize": false,
+                    "width": "100%",
+                    "height": "100%"
+                  }
+                  </script>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="notes-section" aria-label="업데이트 노트">
+            <div class="notes-shell">
+              <div class="notes-header">
+                <h2>업데이트 노트</h2>
+                <div class="notes-meta" id="notes-meta">불러오는 중</div>
+              </div>
+              <div class="notes-content" id="notes-content">
+                <p class="note-empty">업데이트 노트를 불러오는 중입니다.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span class="theme-label">흑</span>
+    </button>
+
+    <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-market-summary.js"></script>
+
+
+    <script>
+      function noteEscapeHtml(value) {
+        return String(value).replace(/[&<>]/g, function (char) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[char];
+        });
+      }
+
+      function noteInlineMarkdown(value) {
+        return noteEscapeHtml(value);
+      }
+
+      function cleanMarker(value, marker) {
+        return String(value).slice(marker.length).trim();
+      }
+
+      function splitNoteSections(markdown) {
+        var lines = markdown.split(String.fromCharCode(10));
+        var sections = [];
+        var current = [];
+        lines.forEach(function (line) {
+          var trimmed = line.trim();
+          var isDateHeading = trimmed.indexOf("## 20") === 0 || trimmed.indexOf("## 19") === 0;
+          if (isDateHeading) {
+            if (current.length) sections.push(current.join(String.fromCharCode(10)));
+            current = [trimmed];
+          } else if (current.length) {
+            current.push(line);
+          }
+        });
+        if (current.length) sections.push(current.join(String.fromCharCode(10)));
+        return sections;
+      }
+
+      function parseNoteSections(markdown) {
+        return splitNoteSections(markdown).map(function (section) {
+          var lines = section.split(String.fromCharCode(10)).map(function (line) {
+            return line.trim();
+          }).filter(Boolean);
+          var date = cleanMarker(lines.shift(), "##");
+          var headings = lines.filter(function (line) {
+            return line.indexOf("### ") === 0;
+          }).map(function (line) {
+            return cleanMarker(line, "###");
+          });
+          var bullets = lines.filter(function (line) {
+            return line.indexOf("- ") === 0;
+          }).map(function (line) {
+            return cleanMarker(line, "-").replaceAll(String.fromCharCode(96), "");
+          });
+          return {
+            date: date,
+            title: headings[0] || "업데이트",
+            summary: bullets[0] || "변경 사항을 확인하세요.",
+            lines: lines
+          };
+        });
+      }
+
+      function renderNoteDetails(lines) {
+        var html = "";
+        var listOpen = false;
+        lines.forEach(function (line) {
+          if (line.indexOf("### ") === 0) {
+            if (listOpen) {
+              html += "</ul>";
+              listOpen = false;
+            }
+            html += "<h4>" + noteInlineMarkdown(cleanMarker(line, "###")) + "</h4>";
+          } else if (line.indexOf("- ") === 0) {
+            if (!listOpen) {
+              html += "<ul>";
+              listOpen = true;
+            }
+            html += "<li>" + noteInlineMarkdown(cleanMarker(line, "-")) + "</li>";
+          }
+        });
+        if (listOpen) html += "</ul>";
+        return html;
+      }
+
+      function renderUpdateNotes(markdown) {
+        var content = document.querySelector("#notes-content");
+        var meta = document.querySelector("#notes-meta");
+        if (!content || !meta) return;
+        var entries = parseNoteSections(markdown).slice(0, 10);
+        content.innerHTML = entries.length ? '<div class="notes-table"><div class="notes-table-head"><span>날짜</span><span>제목</span><span>내용 요약</span><span>상세</span></div>' + entries.map(function (entry, index) {
+          return '<article class="note-row">' +
+            '<button class="note-toggle" type="button" aria-expanded="false" data-note-index="' + index + '">' +
+              '<span class="note-date">' + noteInlineMarkdown(entry.date) + '</span>' +
+              '<span class="note-title">' + noteInlineMarkdown(entry.title) + '</span>' +
+              '<span class="note-summary">' + noteInlineMarkdown(entry.summary) + '</span>' +
+              '<span class="note-caret" aria-hidden="true">›</span>' +
+            '</button>' +
+            '<div class="note-details">' + renderNoteDetails(entry.lines) + '</div>' +
+          '</article>';
+        }).join("") + '</div>' : '<p class="note-empty">표시할 업데이트 노트가 없습니다.</p>';
+        meta.textContent = entries.length + "개 항목 표시";
+        content.querySelectorAll(".note-toggle").forEach(function (button) {
+          button.addEventListener("click", function () {
+            var row = button.closest(".note-row");
+            var isOpen = row.classList.toggle("is-open");
+            button.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          });
+        });
+      }
+
+      async function loadUpdateNotes() {
+        try {
+          var response = await fetch("docs/UPDATE_NOTES.md", { cache: "no-store" });
+          if (!response.ok) throw new Error("notes " + response.status);
+          renderUpdateNotes(await response.text());
+        } catch (error) {
+          var meta = document.querySelector("#notes-meta");
+          var content = document.querySelector("#notes-content");
+          if (meta) meta.textContent = "불러오기 실패";
+          if (content) content.innerHTML = '<p class="note-empty">업데이트 노트를 표시하지 못했습니다.</p>';
+        }
+      }
+
+      loadUpdateNotes();
+    </script>
+
+    <script>
+      const body = document.body;
+      const toggle = document.querySelector(".theme-toggle");
+      const label = document.querySelector(".theme-label");
+      const savedTheme = localStorage.getItem("dashboard-theme");
+
+      if (savedTheme === "dark") {
+        body.classList.add("theme-dark");
+        label.textContent = "백";
+      }
+
+      toggle.addEventListener("click", () => {
+        const isDark = body.classList.toggle("theme-dark");
+        label.textContent = isDark ? "백" : "흑";
+        localStorage.setItem("dashboard-theme", isDark ? "dark" : "light");
+      });
+    </script>
+  </body>
+</html>
