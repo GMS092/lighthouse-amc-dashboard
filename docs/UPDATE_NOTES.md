@@ -2,6 +2,14 @@
 
 이 파일은 Lighthouse AMC 대시보드의 기능 변경, 제거, 보류 사항을 기록합니다. 앞으로 대시보드 기능을 추가하거나 수정한 뒤에는 제가 이 노트를 함께 갱신합니다.
 
+## 2026-07-01
+
+### 부팅 자동 실행
+- Windows 로그인 시 GitHub의 최신 내용을 먼저 받은 뒤 로컬 서버를 실행하는 `scripts/start-dashboard.ps1`을 추가했습니다.
+- 작업 스케줄러에 자동 실행을 등록하는 `scripts/install-startup-task.ps1`과 해제용 `scripts/uninstall-startup-task.ps1`을 추가했습니다.
+- 간단히 수동 실행할 수 있는 `start-dashboard.bat`을 추가했습니다.
+- 자동 실행 로그를 `logs/startup.log`에 남기고, `logs/`는 GitHub에 올리지 않도록 설정했습니다.
+
 ## 2026-06-30
 
 ### 작업공간
