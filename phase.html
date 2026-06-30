@@ -217,7 +217,7 @@
         background: var(--surface);
       }
 
-      .table-scroll { overflow-x: auto; }
+      .table-scroll { overflow: auto; max-height: 60vh; min-height: 200px; }
 
       table { width: 100%; border-collapse: collapse; min-width: 720px; }
 
@@ -229,7 +229,7 @@
         font-size: 12px;
         font-weight: 800;
         text-align: right;
-        padding: 12px 16px;
+        padding: 9px 16px;
         white-space: nowrap;
         cursor: pointer;
         user-select: none;
@@ -240,9 +240,9 @@
       .sort-arrow { font-size: 0.85em; opacity: 0.5; }
 
       tbody td {
-        padding: 11px 16px;
+        padding: 7px 16px;
         text-align: right;
-        font-size: 13.5px;
+        font-size: 13px;
         border-bottom: 1px solid var(--line);
         white-space: nowrap;
       }
