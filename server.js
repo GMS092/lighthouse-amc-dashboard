@@ -18,11 +18,17 @@ const MIME_TYPES = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
   ".js": "application/javascript; charset=utf-8",
+  ".json": "application/json; charset=utf-8",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".png": "image/png",
   ".svg": "image/svg+xml",
 };
+
+// 헤게모니 국면 분류 스냅샷. 현재는 커밋된 정적 JSON을 그대로 서빙한다.
+// 추후 financial.db 가 온라인 DB로 이전되면, 이 한 군데만 해당 DB를 조회해
+// 동일한 형태의 payload 를 반환하도록 바꾸면 프런트엔드는 그대로 동작한다.
+const PHASE_DATA_FILE = path.join(__dirname, "data", "phase-classification.json");
 
 function loadEnv(filePath) {
   try {
@@ -161,6 +167,16 @@ async function serveStatic(pathname, res) {
 const server = http.createServer(async (req, res) => {
   try {
     const parsed = new URL(req.url, "http://" + HOST + ":" + PORT);
+    if (parsed.pathname === "/api/phase") {
+      const data = await fs.readFile(PHASE_DATA_FILE);
+      res.writeHead(200, {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store",
+      });
+      res.end(data);
+      return;
+    }
+
     if (parsed.pathname === "/api/index-data") {
       const payload = await getIndexPayload();
       res.writeHead(200, {

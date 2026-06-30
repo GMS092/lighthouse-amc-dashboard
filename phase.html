@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lighthouse AMC · 헤게모니 국면 분류</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7f9;
+        --surface: #ffffff;
+        --surface-soft: #eef2f5;
+        --text: #15191d;
+        --muted: #707981;
+        --line: #dbe1e7;
+        --button-bg: #15191d;
+        --button-text: #ffffff;
+        --shadow: 0 20px 50px rgba(28, 39, 49, 0.08);
+        --pos: #1b8a4b;
+        --neg: #d23b3b;
+        --neu: #707981;
+      }
+
+      body.theme-dark {
+        color-scheme: dark;
+        --bg: #111417;
+        --surface: #181d21;
+        --surface-soft: #22282d;
+        --text: #f4f6f8;
+        --muted: #9aa4ad;
+        --line: #2d353c;
+        --button-bg: #f4f6f8;
+        --button-text: #111417;
+        --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+        --pos: #4cc97f;
+        --neg: #ef7b7b;
+        --neu: #9aa4ad;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        transition: background 180ms ease, color 180ms ease;
+      }
+
+      .dashboard {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 248px minmax(0, 1fr);
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        border-right: 1px solid var(--line);
+        background: var(--surface);
+        padding: 28px 22px 88px;
+        transition: background 180ms ease, border-color 180ms ease;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 40px;
+      }
+
+      .brand-logo,
+      .title-logo {
+        flex: 0 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 50% 47%;
+        box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(0, 0, 0, 0.16);
+      }
+
+      .brand-logo { width: 36px; height: 36px; }
+      .title-logo { width: 40px; height: 40px; }
+
+      .title-brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+      .brand-name { font-size: 16px; font-weight: 750; }
+
+      .nav { display: grid; gap: 8px; }
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 42px;
+        border-radius: 8px;
+        padding: 0 12px;
+        color: var(--muted);
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      .nav-item:hover { background: var(--surface-soft); color: var(--text); }
+
+      .nav-item.active {
+        background: var(--surface-soft);
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+
+      .theme-toggle {
+        position: fixed;
+        left: 22px;
+        bottom: 22px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-width: 104px;
+        height: 42px;
+        border: 0;
+        border-radius: 8px;
+        background: var(--button-bg);
+        color: var(--button-text);
+        box-shadow: var(--shadow);
+        font: inherit;
+        font-size: 14px;
+        font-weight: 750;
+        cursor: pointer;
+        transition: background 180ms ease, color 180ms ease, transform 160ms ease;
+      }
+
+      .theme-toggle:hover { transform: translateY(-1px); }
+      .theme-toggle:focus-visible { outline: 3px solid #4c9ffe; outline-offset: 3px; }
+
+      .main { display: flex; min-width: 0; flex-direction: column; }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 76px;
+        border-bottom: 1px solid var(--line);
+        background: var(--surface);
+        padding: 0 34px;
+        transition: background 180ms ease, border-color 180ms ease;
+      }
+
+      .page-title { margin: 0; font-size: 20px; font-weight: 800; }
+      .status { color: var(--muted); font-size: 14px; }
+
+      .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
+
+      .intro { margin-bottom: 22px; }
+      .intro h2 { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
+      .intro p { margin: 0; color: var(--muted); font-size: 13px; }
+
+      /* 요약 카드 */
+      .phase-summary {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 14px;
+        margin-bottom: 22px;
+      }
+
+      .phase-card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface);
+        padding: 16px 16px 18px;
+        cursor: pointer;
+        transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+        border-top: 3px solid var(--accent, var(--line));
+      }
+
+      .phase-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+      .phase-card.active { border-color: var(--accent, var(--text)); box-shadow: 0 0 0 2px var(--accent, var(--text)) inset; }
+
+      .phase-card .emoji { font-size: 1.3em; }
+      .phase-card .ph-label { font-size: 0.95em; font-weight: 800; margin-top: 4px; }
+      .phase-card .ph-name { font-size: 0.76em; color: var(--muted); margin-bottom: 10px; min-height: 1.4em; }
+      .phase-card .ph-count { font-size: 1.7em; font-weight: 800; }
+      .phase-card .ph-unit { font-size: 0.72em; color: var(--muted); margin-left: 4px; }
+
+      .ph-all { --accent: #6b7785; }
+      .ph1 { --accent: #1565c0; }
+      .ph2 { --accent: #2e7d32; }
+      .ph3 { --accent: #e65100; }
+      .ph4 { --accent: #c62828; }
+
+      /* 툴바 */
+      .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+
+      .search-box {
+        flex: 1;
+        min-width: 220px;
+        height: 42px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        color: var(--text);
+        padding: 0 14px;
+        font: inherit;
+        font-size: 14px;
+      }
+      .search-box:focus-visible { outline: 2px solid #4c9ffe; outline-offset: 1px; }
+
+      .info-bar { color: var(--muted); font-size: 13px; white-space: nowrap; }
+
+      /* 테이블 */
+      .table-shell {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--surface);
+      }
+
+      .table-scroll { overflow-x: auto; }
+
+      table { width: 100%; border-collapse: collapse; min-width: 720px; }
+
+      thead th {
+        position: sticky;
+        top: 0;
+        background: var(--surface-soft);
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 800;
+        text-align: right;
+        padding: 12px 16px;
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+        border-bottom: 1px solid var(--line);
+      }
+      thead th:first-child { text-align: left; }
+      thead th.sorted { color: var(--text); }
+      .sort-arrow { font-size: 0.85em; opacity: 0.5; }
+
+      tbody td {
+        padding: 11px 16px;
+        text-align: right;
+        font-size: 13.5px;
+        border-bottom: 1px solid var(--line);
+        white-space: nowrap;
+      }
+      tbody td:first-child { text-align: left; }
+      tbody tr:last-child td { border-bottom: 0; }
+      tbody tr:hover td { background: var(--surface-soft); }
+
+      .name-cell { display: flex; flex-direction: column; gap: 1px; }
+      .name-main { font-weight: 700; }
+      .name-code { font-size: 11px; color: var(--muted); }
+
+      .phase-badge {
+        display: inline-block;
+        padding: 3px 9px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .badge-1 { color: #1565c0; background: #e3f2fd; }
+      .badge-2 { color: #2e7d32; background: #e8f5e9; }
+      .badge-3 { color: #e65100; background: #fff3e0; }
+      .badge-4 { color: #c62828; background: #fce4ec; }
+      .badge-x { color: var(--muted); background: var(--surface-soft); }
+      body.theme-dark .badge-1 { color: #90caf9; background: #14304a; }
+      body.theme-dark .badge-2 { color: #a5d6a7; background: #173a1f; }
+      body.theme-dark .badge-3 { color: #ffb74d; background: #3d2807; }
+      body.theme-dark .badge-4 { color: #ef9a9a; background: #3d1620; }
+
+      .pct { font-weight: 700; font-variant-numeric: tabular-nums; }
+      .pct.pos { color: var(--pos); }
+      .pct.neg { color: var(--neg); }
+      .pct.neu { color: var(--neu); }
+      .mono { font-variant-numeric: tabular-nums; }
+      .dash { color: var(--muted); }
+
+      .loading, .empty-msg { padding: 40px; text-align: center; color: var(--muted); font-size: 14px; }
+
+      .footnote {
+        margin-top: 16px;
+        color: var(--muted);
+        font-size: 11.5px;
+        line-height: 1.7;
+      }
+      .footnote strong { color: var(--text); }
+
+      @media (max-width: 900px) {
+        .phase-summary { grid-template-columns: repeat(3, 1fr); }
+      }
+      @media (max-width: 760px) {
+        .dashboard { grid-template-columns: 1fr; }
+        .sidebar { display: none; }
+        .topbar { min-height: 68px; padding: 0 20px; }
+        .workspace { padding: 20px; }
+        .phase-summary { grid-template-columns: repeat(2, 1fr); }
+        .theme-toggle { left: 18px; bottom: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" aria-label="사이드바">
+        <div class="brand">
+          <img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" />
+          <div class="brand-name">Lighthouse AMC</div>
+        </div>
+
+        <nav class="nav" aria-label="대시보드 메뉴">
+          <a class="nav-item" href="dashboard.html"><span class="nav-dot" aria-hidden="true"></span><span>홈</span></a>
+          <a class="nav-item active" href="phase.html"><span class="nav-dot" aria-hidden="true"></span><span>국면 분류</span></a>
+          <a class="nav-item" href="dashboard.html#notes"><span class="nav-dot" aria-hidden="true"></span><span>리포트</span></a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="title-brand">
+            <img class="title-logo" src="assets/lighthouse-amc.jpg" alt="" />
+            <h1 class="page-title">헤게모니 국면 분류</h1>
+          </div>
+          <div class="status" id="quarter-label">불러오는 중…</div>
+        </header>
+
+        <section class="workspace" aria-label="국면 분류 본문">
+          <div class="intro">
+            <h2>KOSPI · KOSDAQ 전 종목 4국면 분류</h2>
+            <p>동부증권 '투자의 정석 — 헤게모니에 투자하라' 기준. 전년 동기 대비(YoY) 매출액·영업이익 증가율로 분류합니다.</p>
+          </div>
+
+          <div class="phase-summary">
+            <div class="phase-card ph-all active" id="card-all" data-phase="all">
+              <div class="emoji">📊</div>
+              <div class="ph-label">전체</div>
+              <div class="ph-name">모든 국면</div>
+              <div><span class="ph-count" id="cnt-all">–</span><span class="ph-unit">개사</span></div>
+            </div>
+            <div class="phase-card ph1" id="card-1" data-phase="1">
+              <div class="emoji">🌱</div>
+              <div class="ph-label">1국면</div>
+              <div class="ph-name">턴어라운드</div>
+              <div><span class="ph-count" id="cnt-1">–</span><span class="ph-unit">개사</span></div>
+            </div>
+            <div class="phase-card ph2" id="card-2" data-phase="2">
+              <div class="emoji">💎</div>
+              <div class="ph-label">2국면</div>
+              <div class="ph-name">헤게모니</div>
+              <div><span class="ph-count" id="cnt-2">–</span><span class="ph-unit">개사</span></div>
+            </div>
+            <div class="phase-card ph3" id="card-3" data-phase="3">
+              <div class="emoji">⚠️</div>
+              <div class="ph-label">3국면</div>
+              <div class="ph-name">헤게모니 상실 감지</div>
+              <div><span class="ph-count" id="cnt-3">–</span><span class="ph-unit">개사</span></div>
+            </div>
+            <div class="phase-card ph4" id="card-4" data-phase="4">
+              <div class="emoji">🔴</div>
+              <div class="ph-label">4국면</div>
+              <div class="ph-name">실적 하락</div>
+              <div><span class="ph-count" id="cnt-4">–</span><span class="ph-unit">개사</span></div>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <input type="text" class="search-box" id="search-box" placeholder="🔍 종목명 또는 코드 검색…" />
+            <span class="info-bar" id="info-bar">불러오는 중…</span>
+          </div>
+
+          <div class="table-shell">
+            <div class="loading" id="loading">재무데이터를 불러오는 중입니다…</div>
+            <div class="table-scroll">
+              <table id="phase-table" style="display:none">
+                <thead>
+                  <tr>
+                    <th data-key="corp_name">종목명 <span class="sort-arrow">↕</span></th>
+                    <th data-key="phase">국면 <span class="sort-arrow">↕</span></th>
+                    <th data-key="market_cap">시가총액 <span class="sort-arrow">↕</span></th>
+                    <th data-key="rev_yoy">매출 YoY <span class="sort-arrow">↕</span></th>
+                    <th data-key="op_yoy">영업이익 YoY <span class="sort-arrow">↕</span></th>
+                    <th data-key="op_margin">영업이익률 <span class="sort-arrow">↕</span></th>
+                  </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+              </table>
+            </div>
+            <div class="empty-msg" id="empty-msg" style="display:none">조건에 맞는 종목이 없습니다.</div>
+          </div>
+
+          <div class="footnote">
+            <strong>분류 기준 (YoY, 전년 동기 대비)</strong> ·
+            💎 2국면: 영업이익 YoY &gt; 매출 YoY &gt; 0 (영업레버리지) ·
+            🌱 1국면: 매출 YoY &gt; 0, 이익성장 미진 ·
+            ⚠️ 3국면: 매출 YoY &gt; 0, 이익성장 &lt; 매출성장 ·
+            🔴 4국면: 매출 YoY &lt; -5%<br />
+            ⚠️ 단순 계량 분류로 일회성 비용(Q4 인센티브 등)은 반영되지 않습니다. 투자 참고용으로만 활용하세요.
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span class="theme-label">흑</span>
+    </button>
+
+    <script>
+      // ── 테마 (dashboard.html 과 동일 키 공유) ─────────────────
+      (function () {
+        var body = document.body;
+        var toggle = document.querySelector(".theme-toggle");
+        var label = document.querySelector(".theme-label");
+        if (localStorage.getItem("dashboard-theme") === "dark") {
+          body.classList.add("theme-dark");
+          label.textContent = "백";
+        }
+        toggle.addEventListener("click", function () {
+          var isDark = body.classList.toggle("theme-dark");
+          label.textContent = isDark ? "백" : "흑";
+          localStorage.setItem("dashboard-theme", isDark ? "dark" : "light");
+        });
+      })();
+
+      // ── 상태 ───────────────────────────────────────────────
+      var _all = [];
+      var _activePhase = null;
+      var _sortKey = "market_cap";
+      var _sortAsc = false; // 시가총액 큰 순
+
+      var PHASE_BADGE = {
+        1: '<span class="phase-badge badge-1">🌱 1국면</span>',
+        2: '<span class="phase-badge badge-2">💎 2국면</span>',
+        3: '<span class="phase-badge badge-3">⚠️ 3국면</span>',
+        4: '<span class="phase-badge badge-4">🔴 4국면</span>',
+      };
+
+      function marcapHtml(v) {
+        if (!v) return '<span class="dash">–</span>';
+        var s;
+        if (v >= 1e12) s = (v / 1e12).toFixed(1) + "조";
+        else if (v >= 1e8) s = Math.round(v / 1e8).toLocaleString() + "억";
+        else s = Math.round(v / 1e4).toLocaleString() + "만";
+        return '<span class="mono">' + s + "</span>";
+      }
+
+      function pctHtml(v) {
+        if (v === null || v === undefined) return '<span class="pct neu">–</span>';
+        var cls = v > 2 ? "pos" : v < -2 ? "neg" : "neu";
+        var sign = v > 0 ? "+" : "";
+        return '<span class="pct ' + cls + '">' + sign + v.toFixed(1) + "%</span>";
+      }
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>]/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c];
+        });
+      }
+
+      function renderTable(rows) {
+        var tbody = document.getElementById("table-body");
+        var table = document.getElementById("phase-table");
+        var empty = document.getElementById("empty-msg");
+        if (!rows.length) {
+          tbody.innerHTML = "";
+          table.style.display = "none";
+          empty.style.display = "block";
+          return;
+        }
+        empty.style.display = "none";
+        table.style.display = "table";
+        var html = "";
+        for (var i = 0; i < rows.length; i++) {
+          var r = rows[i];
+          html +=
+            "<tr>" +
+            '<td><div class="name-cell"><span class="name-main">' +
+            escapeHtml(r.corp_name || "-") +
+            '</span><span class="name-code">' +
+            escapeHtml(r.stock_code || "") +
+            "</span></div></td>" +
+            "<td>" + (PHASE_BADGE[r.phase] || '<span class="phase-badge badge-x">미분류</span>') + "</td>" +
+            "<td>" + marcapHtml(r.market_cap) + "</td>" +
+            "<td>" + pctHtml(r.rev_yoy) + "</td>" +
+            "<td>" + pctHtml(r.op_yoy) + "</td>" +
+            "<td>" + pctHtml(r.op_margin) + "</td>" +
+            "</tr>";
+        }
+        tbody.innerHTML = html;
+      }
+
+      function applyFilter() {
+        var q = document.getElementById("search-box").value.trim().toLowerCase();
+        var rows = _all;
+        if (_activePhase !== null) {
+          rows = rows.filter(function (r) { return r.phase === _activePhase; });
+        }
+        if (q) {
+          rows = rows.filter(function (r) {
+            return (r.corp_name || "").toLowerCase().indexOf(q) !== -1 ||
+                   (r.stock_code || "").toLowerCase().indexOf(q) !== -1;
+          });
+        }
+        rows = rows.slice().sort(function (a, b) {
+          var va = a[_sortKey], vb = b[_sortKey];
+          if (va === null || va === undefined) va = _sortAsc ? Infinity : -Infinity;
+          if (vb === null || vb === undefined) vb = _sortAsc ? Infinity : -Infinity;
+          if (typeof va === "string") return _sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+          return _sortAsc ? va - vb : vb - va;
+        });
+        renderTable(rows);
+        document.getElementById("info-bar").textContent = rows.length.toLocaleString() + "개사 표시";
+      }
+
+      function setSort(key) {
+        if (_sortKey === key) {
+          _sortAsc = !_sortAsc;
+        } else {
+          _sortKey = key;
+          _sortAsc = key === "corp_name" || key === "phase";
+        }
+        document.querySelectorAll("thead th").forEach(function (th) {
+          th.classList.toggle("sorted", th.getAttribute("data-key") === key);
+        });
+        applyFilter();
+      }
+
+      function setPhase(phase, cardEl) {
+        _activePhase = phase;
+        document.querySelectorAll(".phase-card").forEach(function (c) { c.classList.remove("active"); });
+        if (cardEl) cardEl.classList.add("active");
+        applyFilter();
+      }
+
+      // ── 이벤트 바인딩 ──────────────────────────────────────
+      document.getElementById("search-box").addEventListener("input", applyFilter);
+      document.querySelectorAll("thead th").forEach(function (th) {
+        th.addEventListener("click", function () { setSort(th.getAttribute("data-key")); });
+      });
+      document.querySelectorAll(".phase-card").forEach(function (card) {
+        card.addEventListener("click", function () {
+          var p = card.getAttribute("data-phase");
+          setPhase(p === "all" ? null : Number(p), card);
+        });
+      });
+
+      // ── 데이터 로드 ────────────────────────────────────────
+      (function load() {
+        fetch("/api/phase")
+          .then(function (res) { return res.json(); })
+          .then(function (data) {
+            if (data.error) {
+              document.getElementById("loading").textContent = "⚠️ 오류: " + data.error;
+              return;
+            }
+            _all = data.companies || [];
+
+            var ql = document.getElementById("quarter-label");
+            if (data.quarter) ql.textContent = data.quarter + " vs " + data.prev_quarter + " 기준";
+
+            var s = data.summary || {};
+            document.getElementById("cnt-all").textContent = _all.length.toLocaleString();
+            [1, 2, 3, 4].forEach(function (p) {
+              document.getElementById("cnt-" + p).textContent = (s[String(p)] || 0).toLocaleString();
+            });
+
+            document.getElementById("loading").style.display = "none";
+            applyFilter();
+          })
+          .catch(function (e) {
+            document.getElementById("loading").textContent = "⚠️ 데이터 로드 실패: " + e.message;
+          });
+      })();
+    </script>
+  </body>
+</html>
