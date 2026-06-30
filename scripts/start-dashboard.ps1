@@ -16,23 +16,27 @@ Set-Location $ProjectRoot
 Write-Log "Starting Lighthouse AMC dashboard startup flow."
 
 try {
+  # Native commands (git/npm) write normal progress to stderr. Under Windows
+  # PowerShell with $ErrorActionPreference = "Stop", capturing that stderr via
+  # PowerShell redirection is treated as a terminating error, so we route these
+  # calls through cmd.exe, which redirects both streams to the log itself.
   if (Get-Command git -ErrorAction SilentlyContinue) {
     Write-Log "Checking latest GitHub changes."
-    git pull --ff-only origin main *>> $LogPath
+    cmd /c "git pull --ff-only origin main >> `"$LogPath`" 2>&1"
   } else {
     Write-Log "Git was not found. Skipping GitHub update."
   }
 
   if (Test-Path (Join-Path $ProjectRoot "package-lock.json")) {
     Write-Log "Installing dependencies with npm ci."
-    npm ci *>> $LogPath
+    cmd /c "npm ci >> `"$LogPath`" 2>&1"
   } else {
     Write-Log "Installing dependencies with npm install."
-    npm install *>> $LogPath
+    cmd /c "npm install >> `"$LogPath`" 2>&1"
   }
 
   Write-Log "Launching local server."
-  npm start *>> $LogPath
+  cmd /c "npm start >> `"$LogPath`" 2>&1"
 } catch {
   Write-Log ("Startup failed: " + $_.Exception.Message)
   throw
