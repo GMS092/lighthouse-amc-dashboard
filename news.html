@@ -253,6 +253,22 @@
         });
       }
 
+      function isLocalServer() {
+        return location.hostname === "127.0.0.1" || location.hostname === "localhost";
+      }
+
+      function dataUrl(apiPath, staticPath) {
+        return isLocalServer() ? apiPath : staticPath;
+      }
+
+      function setupRefreshAvailability(button) {
+        if (!button || isLocalServer()) return;
+        button.disabled = true;
+        button.title = "GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신은 로컬 서버 또는 수집 작업에서 실행합니다.";
+        var txt = button.querySelector(".refresh-text");
+        if (txt) txt.textContent = "보기 전용";
+      }
+
       function fmtTime(iso) {
         if (!iso) return "";
         var m = String(iso).match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
@@ -320,7 +336,7 @@
       }
 
       function loadNews() {
-        return fetch("/api/news")
+        return fetch(dataUrl("/api/news", "data/news-flow.json"))
           .then(function (r) { return r.json(); })
           .then(function (data) {
             document.getElementById("loading").style.display = "none";
@@ -352,7 +368,9 @@
 
       // ── 새로고침 (서버가 RSS·크롤 재수집) ──────────────────
       var refreshBtn = document.getElementById("refresh-btn");
+      setupRefreshAvailability(refreshBtn);
       refreshBtn.addEventListener("click", function () {
+        if (!isLocalServer()) return;
         var txt = refreshBtn.querySelector(".refresh-text");
         var orig = txt.textContent;
         refreshBtn.disabled = true;

@@ -30,6 +30,14 @@ PORT=4174
 기능 변경 이력과 구현 메모는 `docs/UPDATE_NOTES.md`에 기록합니다.
 보관된 구현 코드는 `archive/` 폴더에 둡니다.
 
+## GitHub Pages
+
+보기 전용 대시보드는 GitHub Pages로 배포할 수 있습니다. Pages에서는 서버 API를 실행할 수 없으므로 `phase.html`, `news.html`, `weight.html`은 로컬 서버가 아닌 환경에서 `data/*.json` 스냅샷을 직접 읽습니다.
+
+GitHub 저장소 설정에서 `Settings > Pages > Build and deployment > Source`를 `GitHub Actions`로 지정하면, `main` 브랜치에 push될 때 `.github/workflows/pages.yml`이 정적 파일만 골라 배포합니다.
+
+배포 대상은 `index.html`, `dashboard.html`, `phase.html`, `news.html`, `weight.html`, `assets/`, `data/`, `docs/UPDATE_NOTES.md`입니다. 데이터 수집과 새로고침 기능은 로컬 서버 또는 별도 수집 작업에서 실행합니다.
+
 ## Windows 자동 실행
 
 PC 부팅 후 Windows에 로그인할 때 GitHub의 최신 내용을 먼저 받은 다음 로컬 서버를 실행하려면 아래 파일을 한 번 실행합니다.

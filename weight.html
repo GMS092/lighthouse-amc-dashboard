@@ -281,6 +281,14 @@
         });
       })();
 
+      function isLocalServer() {
+        return location.hostname === "127.0.0.1" || location.hostname === "localhost";
+      }
+
+      function dataUrl(apiPath, staticPath) {
+        return isLocalServer() ? apiPath : staticPath;
+      }
+
       function fmtMonth(m) {
         var p = m.split("-");
         return p[0] + "." + p[1];
@@ -354,7 +362,7 @@
         document.getElementById("table-body").innerHTML = html;
       }
 
-      fetch("/api/weight")
+      fetch(dataUrl("/api/weight", "data/weight-check.json"))
         .then(function (r) { return r.json(); })
         .then(render)
         .catch(function (e) {

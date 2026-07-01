@@ -4,6 +4,12 @@
 
 ## 2026-07-01
 
+### GitHub Pages 분리
+- 보기 전용 대시보드를 GitHub Pages로 배포할 수 있도록 `.github/workflows/pages.yml`을 추가했습니다.
+- Pages 기본 진입점인 `index.html`을 추가해 `dashboard.html`로 연결했습니다.
+- `phase.html`, `news.html`, `weight.html`은 로컬 서버에서는 기존 `/api/*`를 사용하고, GitHub Pages에서는 `data/*.json` 스냅샷을 직접 읽도록 변경했습니다.
+- GitHub Pages에서는 서버에서 Python을 실행할 수 없으므로 새로고침 버튼을 보기 전용 상태로 표시하도록 했습니다.
+
 ### 부팅 자동 실행
 - Windows 로그인 시 GitHub의 최신 내용을 먼저 받은 뒤 로컬 서버를 실행하는 `scripts/start-dashboard.ps1`을 추가했습니다.
 - 작업 스케줄러에 자동 실행을 등록하는 `scripts/install-startup-task.ps1`과 해제용 `scripts/uninstall-startup-task.ps1`을 추가했습니다.
