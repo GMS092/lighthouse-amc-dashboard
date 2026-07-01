@@ -10,6 +10,12 @@
 - `phase.html`, `news.html`, `weight.html`은 로컬 서버에서는 기존 `/api/*`를 사용하고, GitHub Pages에서는 `data/*.json` 스냅샷을 직접 읽도록 변경했습니다.
 - GitHub Pages에서는 서버에서 Python을 실행할 수 없으므로 새로고침 버튼을 보기 전용 상태로 표시하도록 했습니다.
 
+### 뉴스플로우 자동 수집
+- GitHub Actions에서 15분마다 뉴스플로우 수집기를 실행하는 `.github/workflows/news-flow.yml`을 추가했습니다.
+- 워크플로는 `modules/news-flow/collect.py`를 실행해 `data/news-flow.json`을 갱신하고, 변경 사항이 있으면 자동 커밋합니다.
+- 뉴스 스냅샷 커밋이 `main` 브랜치에 push되면 기존 GitHub Pages 배포 워크플로가 이어서 실행되어 온라인 대시보드에 반영됩니다.
+- `GMS092/telegram-news-bot` 저장소 접근이 필요한 경우를 위해 `NEWS_BOT_REPO_TOKEN` 액션 시크릿을 사용하도록 구성했습니다.
+
 ### 부팅 자동 실행
 - Windows 로그인 시 GitHub의 최신 내용을 먼저 받은 뒤 로컬 서버를 실행하는 `scripts/start-dashboard.ps1`을 추가했습니다.
 - 작업 스케줄러에 자동 실행을 등록하는 `scripts/install-startup-task.ps1`과 해제용 `scripts/uninstall-startup-task.ps1`을 추가했습니다.
