@@ -260,6 +260,25 @@
         );
       }
 
+      var MAX_ROWS = 20; // 뉴스원별 최대 노출 줄 수 (초과 시 카드 내부 스크롤)
+
+      // 각 뉴스원 리스트를 20줄까지만 보이게 하고, 초과분은 스크롤.
+      // 줄 높이가 제목 줄바꿈에 따라 다르므로 20번째 줄의 하단 위치로 높이를 잡는다.
+      function applyRowCap() {
+        document.querySelectorAll(".news-list").forEach(function (list) {
+          list.style.maxHeight = "";
+          list.style.overflowY = "";
+          list.style.overflowX = "";
+          var rows = list.querySelectorAll(".news-row");
+          if (rows.length <= MAX_ROWS) return;
+          var top = list.getBoundingClientRect().top;
+          var last = rows[MAX_ROWS - 1].getBoundingClientRect();
+          list.style.overflowX = "hidden"; // 가로 스크롤바가 세로 높이를 갉아먹지 않게
+          list.style.maxHeight = (Math.ceil(last.bottom - top) + 2) + "px";
+          list.style.overflowY = "auto";
+        });
+      }
+
       function renderSource(src) {
         var items = src.items || [];
         var body = items.length
@@ -296,10 +315,18 @@
             return;
           }
           document.getElementById("sources").innerHTML = sources.map(renderSource).join("");
+          applyRowCap();
         })
         .catch(function (e) {
           document.getElementById("loading").textContent = "⚠️ 데이터 로드 실패: " + e.message;
         });
+
+      // 창 크기가 바뀌면 줄바꿈이 달라질 수 있으므로 20줄 높이를 다시 계산.
+      var _capTimer;
+      window.addEventListener("resize", function () {
+        clearTimeout(_capTimer);
+        _capTimer = setTimeout(applyRowCap, 150);
+      });
     </script>
   </body>
 </html>
