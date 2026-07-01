@@ -52,8 +52,26 @@ function runPhaseGenerator() {
 // 전자·닉스 시가총액 비중 스냅샷 (modules/weight-check 가 생성). 정적 JSON 서빙.
 const WEIGHT_DATA_FILE = path.join(__dirname, "data", "weight-check.json");
 
-// 뉴스플로우 스냅샷. 현재는 예시 데이터. 추후 RSS·크롤링 수집기가 이 파일을 생성한다.
+// 뉴스플로우 스냅샷 (modules/news-flow 가 생성: RSS + 크롤).
 const NEWS_DATA_FILE = path.join(__dirname, "data", "news-flow.json");
+const NEWS_GENERATOR = path.join(__dirname, "modules", "news-flow", "collect.py");
+
+// 뉴스 스냅샷을 다시 수집한다(RSS + 크롤). 인터넷 + Python + 봇 소스 파일이 있는
+// PC에서만 성공한다. PYTHON 환경변수로 실행 파일을 지정할 수 있다.
+function runNewsCollector() {
+  return new Promise((resolve, reject) => {
+    const py = process.env.PYTHON || "python";
+    const child = spawn(py, [NEWS_GENERATOR], { cwd: __dirname });
+    let stderr = "";
+    child.stdout.on("data", () => {});
+    child.stderr.on("data", (chunk) => { stderr += chunk.toString(); });
+    child.on("error", (err) => reject(new Error("수집기 실행 실패: " + err.message)));
+    child.on("close", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error("수집기 종료 코드 " + code + (stderr ? "\n" + stderr.slice(-600) : "")));
+    });
+  });
+}
 
 function loadEnv(filePath) {
   try {
@@ -220,6 +238,22 @@ const server = http.createServer(async (req, res) => {
 
     if (parsed.pathname === "/api/weight") {
       const data = await fs.readFile(WEIGHT_DATA_FILE);
+      res.writeHead(200, {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store",
+      });
+      res.end(data);
+      return;
+    }
+
+    if (parsed.pathname === "/api/news/refresh") {
+      if (req.method !== "POST") {
+        res.writeHead(405, { "Content-Type": "text/plain; charset=utf-8" });
+        res.end("Method Not Allowed");
+        return;
+      }
+      await runNewsCollector();
+      const data = await fs.readFile(NEWS_DATA_FILE);
       res.writeHead(200, {
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-store",

@@ -95,7 +95,23 @@
       }
       .title-brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
       .page-title { margin: 0; font-size: 20px; font-weight: 800; }
-      .status { color: var(--muted); font-size: 14px; }
+      .status { color: var(--muted); font-size: 13px; }
+
+      .topbar-actions { display: flex; align-items: center; gap: 14px; }
+      .refresh-btn {
+        display: inline-flex; align-items: center; gap: 6px;
+        height: 38px; padding: 0 14px;
+        border: 1px solid var(--line); border-radius: 8px;
+        background: var(--surface); color: var(--text);
+        font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+        transition: background 160ms ease, opacity 160ms ease;
+      }
+      .refresh-btn:hover { background: var(--surface-soft); }
+      .refresh-btn:disabled { opacity: 0.6; cursor: default; }
+      .refresh-btn:focus-visible { outline: 2px solid #4c9ffe; outline-offset: 2px; }
+      .refresh-icon { display: inline-block; font-size: 15px; }
+      .refresh-btn.loading .refresh-icon { animation: refresh-spin 0.9s linear infinite; }
+      @keyframes refresh-spin { to { transform: rotate(360deg); } }
 
       .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
 
@@ -187,7 +203,13 @@
           <div class="title-brand">
             <h1 class="page-title">뉴스플로우</h1>
           </div>
-          <div class="status" id="update-label">불러오는 중…</div>
+          <div class="topbar-actions">
+            <span class="status" id="update-label">불러오는 중…</span>
+            <button class="refresh-btn" id="refresh-btn" type="button"
+                    title="RSS·크롤링으로 뉴스를 다시 수집합니다 (수십 초 소요)">
+              <span class="refresh-icon" aria-hidden="true">⟳</span><span class="refresh-text">새로고침</span>
+            </button>
+          </div>
         </header>
 
         <section class="workspace" aria-label="뉴스플로우 본문">
@@ -296,30 +318,62 @@
         );
       }
 
-      fetch("/api/news")
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          document.getElementById("loading").style.display = "none";
-          document.getElementById("update-label").textContent = fmtUpdate(data.generated_at) || "";
+      function loadNews() {
+        return fetch("/api/news")
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            document.getElementById("loading").style.display = "none";
+            var meta = data.article_count != null
+              ? data.source_count + "개 소스 · " + data.article_count.toLocaleString() + "건 · "
+              : "";
+            document.getElementById("update-label").textContent = meta + (fmtUpdate(data.generated_at) || "");
 
-          if (data.connected === false && data.note) {
             var n = document.getElementById("notice");
-            document.getElementById("notice-text").innerHTML =
-              "<strong>수집 미연결</strong> · " + escapeHtml(data.note);
-            n.style.display = "flex";
-          }
+            if (data.connected === false && data.note) {
+              document.getElementById("notice-text").innerHTML =
+                "<strong>수집 미연결</strong> · " + escapeHtml(data.note);
+              n.style.display = "flex";
+            } else {
+              n.style.display = "none";
+            }
 
-          var sources = data.sources || [];
-          if (!sources.length) {
-            document.getElementById("empty-msg").style.display = "block";
-            return;
-          }
-          document.getElementById("sources").innerHTML = sources.map(renderSource).join("");
-          applyRowCap();
-        })
-        .catch(function (e) {
-          document.getElementById("loading").textContent = "⚠️ 데이터 로드 실패: " + e.message;
-        });
+            var sources = data.sources || [];
+            if (!sources.length) {
+              document.getElementById("empty-msg").style.display = "block";
+              document.getElementById("sources").innerHTML = "";
+              return;
+            }
+            document.getElementById("empty-msg").style.display = "none";
+            document.getElementById("sources").innerHTML = sources.map(renderSource).join("");
+            applyRowCap();
+          });
+      }
+
+      // ── 새로고침 (서버가 RSS·크롤 재수집) ──────────────────
+      var refreshBtn = document.getElementById("refresh-btn");
+      refreshBtn.addEventListener("click", function () {
+        var txt = refreshBtn.querySelector(".refresh-text");
+        var orig = txt.textContent;
+        refreshBtn.disabled = true;
+        refreshBtn.classList.add("loading");
+        txt.textContent = "수집 중…";
+        fetch("/api/news/refresh", { method: "POST" })
+          .then(function (res) {
+            if (!res.ok) return res.text().then(function (t) { throw new Error(t || ("HTTP " + res.status)); });
+            return res.json();
+          })
+          .then(function () { return loadNews(); })
+          .catch(function (e) { alert("새로고침 실패: " + e.message); })
+          .finally(function () {
+            refreshBtn.disabled = false;
+            refreshBtn.classList.remove("loading");
+            txt.textContent = orig;
+          });
+      });
+
+      loadNews().catch(function (e) {
+        document.getElementById("loading").textContent = "⚠️ 데이터 로드 실패: " + e.message;
+      });
 
       // 창 크기가 바뀌면 줄바꿈이 달라질 수 있으므로 20줄 높이를 다시 계산.
       var _capTimer;
