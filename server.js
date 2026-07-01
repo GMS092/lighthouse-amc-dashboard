@@ -1,6 +1,7 @@
 const http = require("node:http");
 const fs = require("node:fs/promises");
 const path = require("node:path");
+const { spawn } = require("node:child_process");
 
 loadEnv(path.join(__dirname, ".env"));
 
@@ -29,6 +30,24 @@ const MIME_TYPES = {
 // 추후 financial.db 가 온라인 DB로 이전되면, 이 한 군데만 해당 DB를 조회해
 // 동일한 형태의 payload 를 반환하도록 바꾸면 프런트엔드는 그대로 동작한다.
 const PHASE_DATA_FILE = path.join(__dirname, "data", "phase-classification.json");
+const PHASE_GENERATOR = path.join(__dirname, "scripts", "generate-phase-data.py");
+
+// 국면 분류 스냅샷을 다시 생성한다(시가총액 등 최신 재계산). financial.db 와
+// Python 이 있는 PC에서만 성공한다. PYTHON 환경변수로 실행 파일을 지정할 수 있다.
+function runPhaseGenerator() {
+  return new Promise((resolve, reject) => {
+    const py = process.env.PYTHON || "python";
+    const child = spawn(py, [PHASE_GENERATOR], { cwd: __dirname });
+    let stderr = "";
+    child.stdout.on("data", () => {});
+    child.stderr.on("data", (chunk) => { stderr += chunk.toString(); });
+    child.on("error", (err) => reject(new Error("생성기 실행 실패: " + err.message)));
+    child.on("close", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error("생성기 종료 코드 " + code + (stderr ? "\n" + stderr.slice(-600) : "")));
+    });
+  });
+}
 
 // 전자·닉스 시가총액 비중 스냅샷 (modules/weight-check 가 생성). 정적 JSON 서빙.
 const WEIGHT_DATA_FILE = path.join(__dirname, "data", "weight-check.json");
@@ -170,6 +189,22 @@ async function serveStatic(pathname, res) {
 const server = http.createServer(async (req, res) => {
   try {
     const parsed = new URL(req.url, "http://" + HOST + ":" + PORT);
+    if (parsed.pathname === "/api/phase/refresh") {
+      if (req.method !== "POST") {
+        res.writeHead(405, { "Content-Type": "text/plain; charset=utf-8" });
+        res.end("Method Not Allowed");
+        return;
+      }
+      await runPhaseGenerator();
+      const data = await fs.readFile(PHASE_DATA_FILE);
+      res.writeHead(200, {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store",
+      });
+      res.end(data);
+      return;
+    }
+
     if (parsed.pathname === "/api/phase") {
       const data = await fs.readFile(PHASE_DATA_FILE);
       res.writeHead(200, {
