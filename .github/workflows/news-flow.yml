@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/news-flow.yml"
+      - "modules/news-flow/**"
 
 permissions:
   contents: write
@@ -48,12 +53,13 @@ jobs:
           token: ${{ secrets.NEWS_BOT_REPO_TOKEN }}
           path: telegram-news-bot
 
-      - name: Verify collector inputs
+      - name: Select collector inputs
         run: |
-          if [ ! -f "telegram-news-bot/dynamic_feeds.json" ]; then
-            echo "NEWS_BOT_REPO_TOKEN secret is required to read GMS092/telegram-news-bot."
-            echo "Add a repository secret named NEWS_BOT_REPO_TOKEN with read access to the news bot repository."
-            exit 1
+          if [ -f "telegram-news-bot/dynamic_feeds.json" ]; then
+            echo "Using telegram-news-bot feed list and crawler."
+          else
+            echo "NEWS_BOT_REPO_TOKEN is not configured or the bot repository is unavailable."
+            echo "Using modules/news-flow/feeds.json and skipping bot crawler."
           fi
 
       - name: Collect news snapshot
