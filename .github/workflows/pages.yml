@@ -1,0 +1,72 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Prepare static site
+        run: |
+          mkdir -p _site/assets _site/data _site/docs
+          cp dashboard.html phase.html news.html weight.html _site/
+          cp -R assets/. _site/assets/
+          cp -R data/. _site/data/
+          cp docs/UPDATE_NOTES.md _site/docs/UPDATE_NOTES.md
+          cat > _site/index.html <<'HTML'
+          <!doctype html>
+          <html lang="ko">
+            <head>
+              <meta charset="utf-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1" />
+              <title>Lighthouse AMC</title>
+              <meta http-equiv="refresh" content="0; url=dashboard.html" />
+              <link rel="canonical" href="dashboard.html" />
+            </head>
+            <body><p><a href="dashboard.html">Lighthouse AMC 대시보드로 이동</a></p></body>
+          </html>
+          HTML
+          node <<'NODE'
+          const fs = require('fs');
+          const disableRefresh = '<script>(function(){var b=document.getElementById("refresh-btn");if(!b)return;b.disabled=true;b.title="GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신은 로컬 서버 또는 수집 작업에서 실행합니다.";var t=b.querySelector(".refresh-text");if(t)t.textContent="보기 전용";})();</script>';
+          function patch(file, api, data, disable) {
+            let html = fs.readFileSync(file, 'utf8');
+            html = html.replaceAll('fetch("' + api + '")', 'fetch("' + data + '")');
+            html = html.replaceAll("fetch('" + api + "')", "fetch('" + data + "')");
+            html = html.replaceAll('fetch(dataUrl("' + api + '", "' + data + '"))', 'fetch("' + data + '")');
+            html = html.replaceAll("fetch(dataUrl('" + api + "', '" + data + "'))", "fetch('" + data + "')");
+            if (disable && !html.includes('GitHub Pages에서는 데이터 스냅샷')) {
+              html = html.replace('</body>', disableRefresh + '\n  </body>');
+            }
+            fs.writeFileSync(file, html);
+          }
+          patch('_site/phase.html', '/api/phase', 'data/phase-classification.json', true);
+          patch('_site/news.html', '/api/news', 'data/news-flow.json', true);
+          patch('_site/weight.html', '/api/weight', 'data/weight-check.json', false);
+          NODE
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
