@@ -1,14 +1,104 @@
 {
-  "generated_at": "2026-07-01T16:58:49+0900",
+  "generated_at": "2026-07-01T17:13:08+0900",
   "connected": true,
-  "source_count": 58,
-  "article_count": 1342,
+  "source_count": 59,
+  "article_count": 1372,
   "sources": [
     {
       "name": "DART 공시 RSS",
       "method": "rss",
       "home": "https://dart.fss.or.kr",
       "items": [
+        {
+          "title": "(코스닥)캠시스 - 주식병합결정",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900951",
+          "published": "2026-07-01T17:11:00+0900"
+        },
+        {
+          "title": "(코스닥)심텍홀딩스 - 교환청구권행사",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900900",
+          "published": "2026-07-01T17:10:00+0900"
+        },
+        {
+          "title": "(유가)삼성E&A - 최대주주등소유주식변동신고서",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701800943",
+          "published": "2026-07-01T17:07:00+0900"
+        },
+        {
+          "title": "(기타)스미세이케미칼 - 감사보고서 (2026.03)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000655",
+          "published": "2026-07-01T17:05:00+0900"
+        },
+        {
+          "title": "(코스닥)코맥스 - 기타시장안내 (개선계획 이행내역서 제출)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900871",
+          "published": "2026-07-01T17:05:00+0900"
+        },
+        {
+          "title": "(기타)회계법인청 - 회계법인사업보고서 (2026.03)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000653",
+          "published": "2026-07-01T17:04:00+0900"
+        },
+        {
+          "title": "(유가)키움증권 - 투자설명서(일괄신고)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000652",
+          "published": "2026-07-01T17:04:00+0900"
+        },
+        {
+          "title": "(코스닥)엑스페릭스 - [기재정정]단일판매ㆍ공급계약체결",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900866",
+          "published": "2026-07-01T17:04:00+0900"
+        },
+        {
+          "title": "(코스닥)피제이메탈 - 대표이사변경",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900863",
+          "published": "2026-07-01T17:03:00+0900"
+        },
+        {
+          "title": "(코스닥)에임드바이오 - 주주총회소집공고",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000647",
+          "published": "2026-07-01T17:03:00+0900"
+        },
+        {
+          "title": "(기타)웅진플레이도시 - 특수관계인으로부터자금차입",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000634",
+          "published": "2026-07-01T17:01:00+0900"
+        },
+        {
+          "title": "(코스닥)ES큐브 - [첨부추가]사업보고서 (2025.12)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260323001702",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "(유가)미스토홀딩스 - [기재정정]지속가능경영보고서등관련사항(자율공시)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701800877",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "(유가)GS건설 - [기재정정]분기보고서 (2026.03)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000631",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "(기타)호텔롯데 - 증권발행실적보고서",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000630",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "(코스닥)에이에프더블류 - 조회공시요구(현저한시황변동)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900869",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "(코스닥)바이브컴퍼니 - 조회공시요구(현저한시황변동)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900865",
+          "published": "2026-07-01T16:59:00+0900"
+        },
+        {
+          "title": "(코스닥)ES큐브 - [기재정정]사업보고서 (2025.12)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000629",
+          "published": "2026-07-01T16:58:00+0900"
+        },
         {
           "title": "(코스닥)남화산업 - 조회공시요구(현저한시황변동)",
           "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900857",
@@ -68,96 +158,6 @@
           "title": "(코스닥)한울소재과학 - [기재정정]주주총회소집결의",
           "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900824",
           "published": "2026-07-01T16:50:00+0900"
-        },
-        {
-          "title": "(유가)KB금융 - 투자설명서(일괄신고)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000618",
-          "published": "2026-07-01T16:49:00+0900"
-        },
-        {
-          "title": "(기타)디셈버앤컴퍼니 - 감사보고서 (2026.03)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000617",
-          "published": "2026-07-01T16:49:00+0900"
-        },
-        {
-          "title": "(코스닥)토비스 - 증권발행실적보고서(합병등)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000615",
-          "published": "2026-07-01T16:48:00+0900"
-        },
-        {
-          "title": "(기타)부산은행 - 투자설명서(일괄신고)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000614",
-          "published": "2026-07-01T16:47:00+0900"
-        },
-        {
-          "title": "(코스닥)씨엑스아이 - 주요사항보고서(유상증자결정)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000600",
-          "published": "2026-07-01T16:47:00+0900"
-        },
-        {
-          "title": "(코스닥)토비스 - 대표이사변경",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900800",
-          "published": "2026-07-01T16:46:00+0900"
-        },
-        {
-          "title": "(유가)KB금융 - 일괄신고추가서류",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000612",
-          "published": "2026-07-01T16:46:00+0900"
-        },
-        {
-          "title": "(유가)전방 - 임원ㆍ주요주주특정증권등거래계획보고서",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000610",
-          "published": "2026-07-01T16:46:00+0900"
-        },
-        {
-          "title": "(코스닥)코오롱티슈진 - [기재정정]소송등의제기ㆍ신청(일정금액이상의청구)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900738",
-          "published": "2026-07-01T16:46:00+0900"
-        },
-        {
-          "title": "(유가)신원 - [기재정정]자기주식취득결과보고서",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000608",
-          "published": "2026-07-01T16:45:00+0900"
-        },
-        {
-          "title": "(코스닥)PS일렉트로닉스 - [기재정정]사업보고서 (2025.12)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000606",
-          "published": "2026-07-01T16:45:00+0900"
-        },
-        {
-          "title": "(코스닥)미디어젠 - [기재정정]주식매수선택권부여에관한신고",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000605",
-          "published": "2026-07-01T16:44:00+0900"
-        },
-        {
-          "title": "(코스닥)미코 - 지주회사의자회사편입ㆍ탈퇴",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900785",
-          "published": "2026-07-01T16:44:00+0900"
-        },
-        {
-          "title": "(기타)하나증권 - 증권발행실적보고서",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701000604",
-          "published": "2026-07-01T16:43:00+0900"
-        },
-        {
-          "title": "(유가)코오롱 - [기재정정]단일판매ㆍ공급계약체결 (자회사의 주요경영사항)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701800793",
-          "published": "2026-07-01T16:42:00+0900"
-        },
-        {
-          "title": "(코스닥)아크릴 - 단일판매ㆍ공급계약체결(자율공시)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701900690",
-          "published": "2026-07-01T16:42:00+0900"
-        },
-        {
-          "title": "(유가)현대자동차 - 영업(잠정)실적(공정공시)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701800788",
-          "published": "2026-07-01T16:40:00+0900"
-        },
-        {
-          "title": "(유가)조일알미늄 - 주주명부폐쇄기간또는기준일설정",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260701800817",
-          "published": "2026-07-01T16:40:00+0900"
         }
       ]
     },
@@ -167,79 +167,79 @@
       "home": "https://kind.krx.co.kr",
       "items": [
         {
-          "title": "[코]남화산업 조회공시요구(현저한시황변동)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000857&docno=",
-          "published": "2026-07-01T16:58:00+0900"
+          "title": "[코]캠시스 주식병합결정",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000951&docno=",
+          "published": "2026-07-01T17:11:00+0900"
         },
         {
-          "title": "[코]애니플러스 합병등종료보고서",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000870&docno=",
-          "published": "2026-07-01T16:58:00+0900"
+          "title": "[코]심텍홀딩스 교환청구권행사",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000900&docno=",
+          "published": "2026-07-01T17:10:00+0900"
+        },
+        {
+          "title": "[유]디앤디플랫폼리츠 주식등의대량보유상황보고서(약식)",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000946&docno=",
+          "published": "2026-07-01T17:08:00+0900"
+        },
+        {
+          "title": "[유]삼성E&A 최대주주등소유주식변동신고서",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000943&docno=",
+          "published": "2026-07-01T17:06:00+0900"
+        },
+        {
+          "title": "[코]더코디 주식등의대량보유상황보고서(일반)",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000942&docno=",
+          "published": "2026-07-01T17:06:00+0900"
+        },
+        {
+          "title": "[코]코오롱티슈진 추가상장(국내사모 전환사채 전환)",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000905&docno=",
+          "published": "2026-07-01T17:06:00+0900"
+        },
+        {
+          "title": "[코]코맥스 기타시장안내(개선계획 이행내역서 제출)",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000871&docno=",
+          "published": "2026-07-01T17:05:00+0900"
         },
         {
           "title": "[코]리더스코스메틱 임원ㆍ주요주주특정증권등소유상황보고서",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000868&docno=",
-          "published": "2026-07-01T16:57:00+0900"
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000907&docno=",
+          "published": "2026-07-01T17:05:00+0900"
         },
         {
-          "title": "[코]에코프로비엠 특수관계인의유상증자참여",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000862&docno=",
-          "published": "2026-07-01T16:55:00+0900"
+          "title": "[유]키움증권 투자설명서[일괄신고-사채]",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000906&docno=",
+          "published": "2026-07-01T17:04:00+0900"
         },
         {
-          "title": "[코]피제이메탈 임시주주총회결과",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000829&docno=",
-          "published": "2026-07-01T16:55:00+0900"
+          "title": "[코]엑스페릭스 [정정]단일판매ㆍ공급계약체결",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000866&docno=",
+          "published": "2026-07-01T17:04:00+0900"
         },
         {
-          "title": "[유]GS건설 [정정][연결포함]사업보고서(일반법인)(2025.12)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000859&docno=",
-          "published": "2026-07-01T16:55:00+0900"
+          "title": "[코]솔브레인 주식등의대량보유상황보고서(약식)",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000903&docno=",
+          "published": "2026-07-01T17:03:00+0900"
         },
         {
-          "title": "[코]모아데이타 [정정]타인에대한채무보증결정",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000858&docno=",
-          "published": "2026-07-01T16:55:00+0900"
+          "title": "[유]코람코라이프인프라리츠 주식등의대량보유상황보고서(약식)",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000902&docno=",
+          "published": "2026-07-01T17:03:00+0900"
         },
         {
-          "title": "[코]인선이엔티 주식등의대량보유상황보고서(일반)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000855&docno=",
-          "published": "2026-07-01T16:54:00+0900"
+          "title": "[유]이지스밸류플러스리츠 주식등의대량보유상황보고서(약식)",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000901&docno=",
+          "published": "2026-07-01T17:03:00+0900"
         },
         {
-          "title": "[유]금호타이어 지속가능경영보고서 등 관련사항(자율공시)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000854&docno=",
-          "published": "2026-07-01T16:54:00+0900"
+          "title": "[코]피제이메탈 대표이사변경",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000863&docno=",
+          "published": "2026-07-01T17:03:00+0900"
         },
         {
-          "title": "[코]동양파일 조회공시요구(현저한시황변동)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000851&docno=",
-          "published": "2026-07-01T16:53:00+0900"
-        },
-        {
-          "title": "[유]에코프로머티 추가상장(주식매수선택권 행사)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000593&docno=",
-          "published": "2026-07-01T16:52:00+0900"
-        },
-        {
-          "title": "[유]오리온홀딩스 변경상장(주식소각)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000477&docno=",
-          "published": "2026-07-01T16:52:00+0900"
-        },
-        {
-          "title": "[코]엔젯 [정정]주식등의대량보유상황보고서(일반)",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000850&docno=",
-          "published": "2026-07-01T16:52:00+0900"
-        },
-        {
-          "title": "[코]푸른저축은행 계열금융회사의약관에의한금융거래-[예ㆍ적금]",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000848&docno=",
-          "published": "2026-07-01T16:51:00+0900"
-        },
-        {
-          "title": "[유]한화솔루션 신주인수권증서 신규상장",
-          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000167&docno=",
-          "published": "2026-07-01T16:50:00+0900"
+          "title": "[코]에임드바이오 주주총회소집공고",
+          "url": "http://kind.krx.co.kr:80/common/disclsviewer.do?method=searchInitInfo&acptNo=20260701000899&docno=",
+          "published": "2026-07-01T17:03:00+0900"
         }
       ]
     },
@@ -248,6 +248,11 @@
       "method": "rss",
       "home": "https://news.einfomax.co.kr",
       "items": [
+        {
+          "title": "&quot;日 기업 이익, 미국 관세 환급으로 최대 4조7천억 원 증가 예상&quot;",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4422904",
+          "published": "2026-07-02T02:04:32+0900"
+        },
         {
           "title": "엔클라우드24, 사명 변경…AI 기반 MSP 사업 확대",
           "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4422903",
@@ -392,11 +397,6 @@
           "title": "성주완 미래에셋證 부사장 &quot;코스닥, 패시브 매매 활성화 위한 지수개발 필요&quot;",
           "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4422875",
           "published": "2026-07-01T23:54:48+0900"
-        },
-        {
-          "title": "기후부, 전기차 공공 충전요금 체계 개편…완속 인하·초급속 인상",
-          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4422874",
-          "published": "2026-07-01T23:45:09+0900"
         }
       ]
     },
@@ -405,6 +405,121 @@
       "method": "rss",
       "home": "https://www.yna.co.kr",
       "items": [
+        {
+          "title": "홍대서 중국인 관광객 따라다니며 음란행위 한 남성 체포",
+          "url": "https://www.yna.co.kr/view/AKR20260701169900004",
+          "published": "2026-07-01T17:08:20+0900"
+        },
+        {
+          "title": "우크라 화력 더 키운다…EU에 12조원 군사 지원 요청",
+          "url": "https://www.yna.co.kr/view/AKR20260701165600109",
+          "published": "2026-07-01T17:07:46+0900"
+        },
+        {
+          "title": "최현덕 남양주시장 취임 첫 결재 '헌법친화도시 조례안'",
+          "url": "https://www.yna.co.kr/view/AKR20260701169200060",
+          "published": "2026-07-01T17:07:00+0900"
+        },
+        {
+          "title": "정명근 화성시장 취임…첫 방문지는 '제1호 햇빛소득마을'",
+          "url": "https://www.yna.co.kr/view/AKR20260701167600061",
+          "published": "2026-07-01T17:06:49+0900"
+        },
+        {
+          "title": "물놀이 안전 공백 '제로'…강원소방, 119시민수상구조대 운영",
+          "url": "https://www.yna.co.kr/view/AKR20260701168800062",
+          "published": "2026-07-01T17:04:22+0900"
+        },
+        {
+          "title": "폴더블폰 가격 더 뛴다…올해 평균 판매가 18% 상승 전망",
+          "url": "https://www.yna.co.kr/view/AKR20260701167400017",
+          "published": "2026-07-01T17:03:18+0900"
+        },
+        {
+          "title": "국회사무총장 \"의원 성과 내고자 할 때 국회 준비돼 있어야\"",
+          "url": "https://www.yna.co.kr/view/AKR20260701166600001",
+          "published": "2026-07-01T17:02:48+0900"
+        },
+        {
+          "title": "경주·포항 손잡고 아·태 AI센터 유치 추진",
+          "url": "https://www.yna.co.kr/view/AKR20260701167100053",
+          "published": "2026-07-01T17:01:38+0900"
+        },
+        {
+          "title": "'스타벅스' 조롱 응원 배재고 야구부, 전국대회 6개월 출전 정지",
+          "url": "https://www.yna.co.kr/view/AKR20260701167900007",
+          "published": "2026-07-01T17:01:07+0900"
+        },
+        {
+          "title": "한동훈, 한민구 전 국방장관 만나 사관학교 통합·전작권 논의",
+          "url": "https://www.yna.co.kr/view/AKR20260701162700001",
+          "published": "2026-07-01T17:00:57+0900"
+        },
+        {
+          "title": "창원 제조업 3분기 경기전망 '부정적'…환율·에너지가격 불안정",
+          "url": "https://www.yna.co.kr/view/AKR20260701167500052",
+          "published": "2026-07-01T17:00:26+0900"
+        },
+        {
+          "title": "'3연임' 도성훈 인천교육감 취임…\"학생 성공시대 완성\"",
+          "url": "https://www.yna.co.kr/view/AKR20260701138600065",
+          "published": "2026-07-01T17:00:02+0900"
+        },
+        {
+          "title": "'제5회 여성기업주간' 개막…김연선·남미경 산업훈장 수훈",
+          "url": "https://www.yna.co.kr/view/AKR20260701132000030",
+          "published": "2026-07-01T17:00:01+0900"
+        },
+        {
+          "title": "창원시, 민선 9기 인사 예고…전보 최소화·주요현안 직위 공모",
+          "url": "https://www.yna.co.kr/view/AKR20260701164400052",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "\"美·이란 협상단, 카타르 도하서 간접 회담 예정\"",
+          "url": "https://www.yna.co.kr/view/AKR20260701167200079",
+          "published": "2026-07-01T16:59:32+0900"
+        },
+        {
+          "title": "여야, 부실 선관위 한목소리 맹폭…사전투표·잠실 시위엔 이견(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20260701097351001",
+          "published": "2026-07-01T16:58:37+0900"
+        },
+        {
+          "title": "국토부 장관 \"자율주행 실증도시 기반 AI 혁신생태계 구축\"",
+          "url": "https://www.yna.co.kr/view/AKR20260701166800003",
+          "published": "2026-07-01T16:58:32+0900"
+        },
+        {
+          "title": "강원도, '반도체 첨단 세라믹 소재·부품·혁신 기술' 공모 선정",
+          "url": "https://www.yna.co.kr/view/AKR20260701167300062",
+          "published": "2026-07-01T16:57:14+0900"
+        },
+        {
+          "title": "'한국근대치의학사' 쓴 신재의 박사 별세",
+          "url": "https://www.yna.co.kr/view/AKR20260701166300704",
+          "published": "2026-07-01T16:55:47+0900"
+        },
+        {
+          "title": "여자 축구대표팀 공격수 강채림, WK리그 복귀…강진 스완스 입단",
+          "url": "https://www.yna.co.kr/view/AKR20260701166500007",
+          "published": "2026-07-01T16:55:40+0900"
+        },
+        {
+          "title": "사관학교 통합 속도전…이르면 현재 고2부터 생도 통합선발 검토(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20260630160651504",
+          "published": "2026-07-01T16:54:00+0900"
+        },
+        {
+          "title": "'10년 간병' 쌍둥이 형 살해 50대 \"혐의 인정…기억은 안 나\"",
+          "url": "https://www.yna.co.kr/view/AKR20260701163800061",
+          "published": "2026-07-01T16:53:39+0900"
+        },
+        {
+          "title": "日 호텔 객실 단가 6.5% 상승…도쿄는 12.8% 급등(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20260701081651009",
+          "published": "2026-07-01T16:53:33+0900"
+        },
         {
           "title": "'물집 우려' 키움 안우진, 5일 두산전 대신 7일 kt전 등판",
           "url": "https://www.yna.co.kr/view/AKR20260701166100007",
@@ -426,7 +541,7 @@
           "published": "2026-07-01T16:50:49+0900"
         },
         {
-          "title": "부산 기장군수, 1호 결제로 1인당 100만원 지급 공약 이행 시동",
+          "title": "부산 기장군수, 1호 결재로 1인당 100만원 지급 공약 이행 시동",
           "url": "https://www.yna.co.kr/view/AKR20260701164000051",
           "published": "2026-07-01T16:49:51+0900"
         },
@@ -439,121 +554,6 @@
           "title": "환율 급등에 국고채 일제히 상승…3년물 연 3.791%(종합)",
           "url": "https://www.yna.co.kr/view/AKR20260701164551008",
           "published": "2026-07-01T16:48:59+0900"
-        },
-        {
-          "title": "\"美하원, 미 제약사들 중국내 임상시험 안보조사\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701150600009",
-          "published": "2026-07-01T16:48:27+0900"
-        },
-        {
-          "title": "동해남부 먼바다에 풍랑주의보 발효",
-          "url": "https://www.yna.co.kr/view/AKR20260701165200527",
-          "published": "2026-07-01T16:48:18+0900"
-        },
-        {
-          "title": "국민연금 리밸런싱 재개 첫날…'충격 최소화' 속도조절 가능성(종합)",
-          "url": "https://www.yna.co.kr/view/AKR20260701080751008",
-          "published": "2026-07-01T16:47:53+0900"
-        },
-        {
-          "title": "이동권 울산 북구청장 취임…\"주민 일상속 행복 위해 최선\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701163900057",
-          "published": "2026-07-01T16:46:27+0900"
-        },
-        {
-          "title": "합천군, 2026년산 건마늘 초매식…동·남부권 분산 산지 경매",
-          "url": "https://www.yna.co.kr/view/AKR20260701164800052",
-          "published": "2026-07-01T16:45:37+0900"
-        },
-        {
-          "title": "정성주 김제시장 취임 \"그동안 성취 토대로 전북 4대 도시 웅비\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701165400055",
-          "published": "2026-07-01T16:44:46+0900"
-        },
-        {
-          "title": "전재수 부산시장·여소야대 시의회, 첫날부터 '삐거덕'",
-          "url": "https://www.yna.co.kr/view/AKR20260701163100051",
-          "published": "2026-07-01T16:44:43+0900"
-        },
-        {
-          "title": "6월 한 달간 개인 주식 1.1조원 반대매매…올들어 최대",
-          "url": "https://www.yna.co.kr/view/AKR20260701164100008",
-          "published": "2026-07-01T16:44:39+0900"
-        },
-        {
-          "title": "한국GM, 6월 4만8천134대 판매…작년 동월보다 6.6% 증가",
-          "url": "https://www.yna.co.kr/view/AKR20260701165300003",
-          "published": "2026-07-01T16:43:50+0900"
-        },
-        {
-          "title": "현대차, 6월 글로벌 판매 33만8천대…작년보다 5.9% 감소",
-          "url": "https://www.yna.co.kr/view/AKR20260701160200003",
-          "published": "2026-07-01T16:43:10+0900"
-        },
-        {
-          "title": "종합특검, '양평고속도로 노선변경 의혹' 원희룡 출석 통보",
-          "url": "https://www.yna.co.kr/view/AKR20260701164900004",
-          "published": "2026-07-01T16:42:38+0900"
-        },
-        {
-          "title": "5·18 표지판에 걸린 군화…오월단체, 경찰 수사 의뢰",
-          "url": "https://www.yna.co.kr/view/AKR20260701164200054",
-          "published": "2026-07-01T16:42:33+0900"
-        },
-        {
-          "title": "中서 '아이돌 외모' 반려 로봇 출시…\"속눈썹 한올씩 직접 심어\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701162900009",
-          "published": "2026-07-01T16:42:30+0900"
-        },
-        {
-          "title": "[인사] 아시아투데이",
-          "url": "https://www.yna.co.kr/view/AKR20260701165000505",
-          "published": "2026-07-01T16:41:54+0900"
-        },
-        {
-          "title": "국고채 금리 일제히 상승…3년물 연 3.791%",
-          "url": "https://www.yna.co.kr/view/AKR20260701164500008",
-          "published": "2026-07-01T16:41:33+0900"
-        },
-        {
-          "title": "김영길 울산 중구청장 취임 \"융성하는 중구 만들겠다\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701163300057",
-          "published": "2026-07-01T16:41:32+0900"
-        },
-        {
-          "title": "행안장관 \"심각한 참정권 침해에 국민께 진심으로 사과\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701163200530",
-          "published": "2026-07-01T16:40:45+0900"
-        },
-        {
-          "title": "경총 \"노란봉투법 현장혼란 현실화\"…정점식 \"개정안 당론 발의\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701160700001",
-          "published": "2026-07-01T16:40:01+0900"
-        },
-        {
-          "title": "[과학스냅] 과기사업화진흥원, 공공연구성과 활용·확산 데이",
-          "url": "https://www.yna.co.kr/view/AKR20260701163700017",
-          "published": "2026-07-01T16:39:03+0900"
-        },
-        {
-          "title": "靑, 은행권과 '금융분야 상생 성장전략 점검회의' 개최",
-          "url": "https://www.yna.co.kr/view/AKR20260701157600001",
-          "published": "2026-07-01T16:38:53+0900"
-        },
-        {
-          "title": "[쇼츠] 창밖 스쳐간 'UFO' 같은 물체…中 슬쩍 공개한 6세대 전투기?",
-          "url": "https://www.yna.co.kr/view/AKR20260701163500704",
-          "published": "2026-07-01T16:38:51+0900"
-        },
-        {
-          "title": "말다툼 도중 남편 흉기로 위협한 20대 아내 송치",
-          "url": "https://www.yna.co.kr/view/AKR20260701163000064",
-          "published": "2026-07-01T16:38:16+0900"
-        },
-        {
-          "title": "국조특위, '개표소 봉쇄' 대응 질타…서울청장 \"기존 집회와 달라\"",
-          "url": "https://www.yna.co.kr/view/AKR20260701162000004",
-          "published": "2026-07-01T16:38:15+0900"
         }
       ]
     },
@@ -563,7 +563,32 @@
       "home": "https://www.mk.co.kr",
       "items": [
         {
-          "title": "[속보] 스포츠공정위 “배재고 야구부 전국대회 출전 정지 6개월”",
+          "title": "“어이없는 일”…한국서 1년도 안 돼 잘린 클린스만, 독일 탈락하자 한 말",
+          "url": "https://www.mk.co.kr/news/world/12087872",
+          "published": "2026-07-01T17:09:35+0900"
+        },
+        {
+          "title": "“역사 모르는 아이들, 밈으로 소비”…허지웅, 배재고 ‘광주 조롱’ 직격",
+          "url": "https://www.mk.co.kr/news/society/12087870",
+          "published": "2026-07-01T17:07:50+0900"
+        },
+        {
+          "title": "\"운동화 추천해줘\" 하면 AI가 대신 쇼핑",
+          "url": "https://www.mk.co.kr/news/business/12087863",
+          "published": "2026-07-01T17:07:11+0900"
+        },
+        {
+          "title": "37년 저평가 탈출 코스피 … '상속세 개편'으로 장기랠리 길터줘야",
+          "url": "https://www.mk.co.kr/news/society/12087860",
+          "published": "2026-07-01T17:04:25+0900"
+        },
+        {
+          "title": "코리아디스카운트 왜 시작됐나",
+          "url": "https://www.mk.co.kr/news/society/12087859",
+          "published": "2026-07-01T17:04:24+0900"
+        },
+        {
+          "title": "[속보] “스벅 가야지” 배재고 야구부, 전국대회 6개월 출전 정지",
           "url": "https://www.mk.co.kr/news/society/12087851",
           "published": "2026-07-01T16:55:02+0900"
         },
@@ -686,31 +711,6 @@
           "title": "바커케미칼코리아, 김지영 신임 대표이사 취임",
           "url": "https://www.mk.co.kr/news/business/12087800",
           "published": "2026-07-01T16:09:48+0900"
-        },
-        {
-          "title": "한국후지필름BI, 코타케 시게타 신임 대표이사 사장 선임",
-          "url": "https://www.mk.co.kr/news/business/12087798",
-          "published": "2026-07-01T16:08:36+0900"
-        },
-        {
-          "title": "구자열 원주시장 취임… ‘시민주권 시정’ 공식화",
-          "url": "https://www.mk.co.kr/news/politics/12087797",
-          "published": "2026-07-01T16:07:23+0900"
-        },
-        {
-          "title": "“우리 동네는 왜 2000원?”…최고가격 인하에도 기름값 천차만별",
-          "url": "https://www.mk.co.kr/news/business/12087796",
-          "published": "2026-07-01T16:04:52+0900"
-        },
-        {
-          "title": "대검, 청소년 마약 예방 홍보대사로 걸그룹 ‘하츠투하츠’ 위촉",
-          "url": "https://www.mk.co.kr/news/society/12087793",
-          "published": "2026-07-01T16:04:04+0900"
-        },
-        {
-          "title": "한국머크 안산 사업장, 창립 40주년 행사 개최",
-          "url": "https://www.mk.co.kr/news/business/12087791",
-          "published": "2026-07-01T16:02:00+0900"
         }
       ]
     },
@@ -719,6 +719,96 @@
       "method": "rss",
       "home": "https://www.sedaily.com",
       "items": [
+        {
+          "title": "“1년에 한번…와코루 속옷이 이 가격에” 롯데백화점 광주점에 무슨일이",
+          "url": "https://www.sedaily.com/article/20062585",
+          "published": "2026-07-01T17:11:28+0900"
+        },
+        {
+          "title": "김경대 용산구청장 취임 첫 행보 ‘0시 상황실 점검’…안전·개발 동시 드라이브",
+          "url": "https://www.sedaily.com/article/20062584",
+          "published": "2026-07-01T17:11:16+0900"
+        },
+        {
+          "title": "최기찬 금천구청장, 1호 결재 ‘데이터센터 규제’…주민참여 검토체계 도입",
+          "url": "https://www.sedaily.com/article/20062583",
+          "published": "2026-07-01T17:11:04+0900"
+        },
+        {
+          "title": "현대차, 올 상반기 196만대 판매...전년 대비 4.9% 감소",
+          "url": "https://www.sedaily.com/article/20062581",
+          "published": "2026-07-01T17:09:40+0900"
+        },
+        {
+          "title": "조유진 영등포구청장, 1호 결재는 ‘헌법도시 선언’…“천하제일 영등포” 비전 선포",
+          "url": "https://www.sedaily.com/article/20062580",
+          "published": "2026-07-01T17:07:58+0900"
+        },
+        {
+          "title": "李대통령, 홍명보 언급 없이 대표팀 선수들 격려…“결과 떠나 선수들 정말 고생했다”",
+          "url": "https://www.sedaily.com/article/20062579",
+          "published": "2026-07-01T17:07:57+0900"
+        },
+        {
+          "title": "매일유업, 곽정우 사업총괄 대표 사임…2인 각자대표 체제로",
+          "url": "https://www.sedaily.com/article/20062578",
+          "published": "2026-07-01T17:06:35+0900"
+        },
+        {
+          "title": "“혹시 내 종목도 휴지조각?” 코스닥 상폐 88곳 전망…퇴출 기준 강화한 거래소",
+          "url": "https://www.sedaily.com/article/20062577",
+          "published": "2026-07-01T17:06:13+0900"
+        },
+        {
+          "title": "안중근 정준호의원실 보좌관, 민보협 회장 선출",
+          "url": "https://www.sedaily.com/article/20062576",
+          "published": "2026-07-01T17:04:56+0900"
+        },
+        {
+          "title": "김경호 광진구청장 취임…“살기 편한 행복광진” 비전 선포",
+          "url": "https://www.sedaily.com/article/20062575",
+          "published": "2026-07-01T17:04:44+0900"
+        },
+        {
+          "title": "추미애 경기지사, 첫번째 결재로 ‘반도체 초격차 위한 K-반도체 혁신 대책’",
+          "url": "https://www.sedaily.com/article/20062574",
+          "published": "2026-07-01T17:04:22+0900"
+        },
+        {
+          "title": "벤투, 한국 축구에 “원점서 재건해야…한두 사람 책임 아냐”",
+          "url": "https://www.sedaily.com/article/20062573",
+          "published": "2026-07-01T17:04:21+0900"
+        },
+        {
+          "title": "라파스, 호소카와미크론과 ‘나노 캡슐’ 차세대 약물전달기술 개발",
+          "url": "https://www.sedaily.com/article/20062572",
+          "published": "2026-07-01T17:04:05+0900"
+        },
+        {
+          "title": "TV홈쇼핑 노크하는 소상공인…중기부, 올해 400곳 지원",
+          "url": "https://www.sedaily.com/article/20062571",
+          "published": "2026-07-01T17:03:43+0900"
+        },
+        {
+          "title": "“트럼프, 가상화폐로만 2조 넘게 벌었다”…1년 새 어마어마하게 불어난 재산에 ‘깜짝’",
+          "url": "https://www.sedaily.com/article/20062570",
+          "published": "2026-07-01T17:03:41+0900"
+        },
+        {
+          "title": "업스테이지 업은 다음, ‘AI 요약’ 베타 시작",
+          "url": "https://www.sedaily.com/article/20062569",
+          "published": "2026-07-01T17:03:20+0900"
+        },
+        {
+          "title": "서준오 노원구청장, 취임 첫날 ‘재건축·재개발’ 시동…도시혁신 가속",
+          "url": "https://www.sedaily.com/article/20062568",
+          "published": "2026-07-01T17:02:58+0900"
+        },
+        {
+          "title": "우성머티리얼스, ‘신기루’ 자금 조달…시장 퇴출 위기 고조",
+          "url": "https://www.sedaily.com/article/20062505",
+          "published": "2026-07-01T17:00:05+0900"
+        },
         {
           "title": "CJ제일제당, 식품·바이오 체제 해체…수익성 중심 3대 사업 재편",
           "url": "https://www.sedaily.com/article/20062566",
@@ -740,7 +830,7 @@
           "published": "2026-07-01T16:54:21+0900"
         },
         {
-          "title": "일진전기, 10㎹급 해상풍력 변압기 납품",
+          "title": "일진전기, 10㎿급 해상풍력 변압기 납품",
           "url": "https://www.sedaily.com/article/20062562",
           "published": "2026-07-01T16:54:09+0900"
         },
@@ -778,96 +868,6 @@
           "title": "국수본부장 직무대리, 수사지휘부 회의 개최…“차질 없는 수사”",
           "url": "https://www.sedaily.com/article/20062552",
           "published": "2026-07-01T16:44:38+0900"
-        },
-        {
-          "title": "‘징검다리 4선’ 김성제 의왕시장 “2030년 전국 최고 명품도시 완성”",
-          "url": "https://www.sedaily.com/article/20062549",
-          "published": "2026-07-01T16:43:27+0900"
-        },
-        {
-          "title": "“너무 더워서 정말 살 수가 없다”…유럽 펄펄 끓자 중국산 선풍기 ‘불티’",
-          "url": "https://www.sedaily.com/article/20062548",
-          "published": "2026-07-01T16:42:53+0900"
-        },
-        {
-          "title": "[단독] 김민석, 공식 첫 외부 일정으로 청주 SK하이닉스 방문",
-          "url": "https://www.sedaily.com/article/20062547",
-          "published": "2026-07-01T16:42:21+0900"
-        },
-        {
-          "title": "일본 출국세 오늘부터 3배로 인상…세수 증가분, 과잉관광 대응에 사용",
-          "url": "https://www.sedaily.com/article/20062546",
-          "published": "2026-07-01T16:39:49+0900"
-        },
-        {
-          "title": "“힘 있는 3선 증명” 김철우 표 핵심공약 ‘농어촌 기본소득’…역사적 첫 날, 보성전역에 울려 퍼졌다",
-          "url": "https://www.sedaily.com/article/20062545",
-          "published": "2026-07-01T16:38:07+0900"
-        },
-        {
-          "title": "최원용 평택시장 취임…“민생이 답” 첫 행보는 환경미화원과 소통",
-          "url": "https://www.sedaily.com/article/20062544",
-          "published": "2026-07-01T16:37:25+0900"
-        },
-        {
-          "title": "AI 행원이 하루 80명 응대...신한銀, 디지털전환 통해 6500억 절감",
-          "url": "https://www.sedaily.com/article/20062543",
-          "published": "2026-07-01T16:36:42+0900"
-        },
-        {
-          "title": "나토 총장 “유럽 재무장에 美 일자리 19.5만개 유지...韓 방산 기반 환상적”",
-          "url": "https://www.sedaily.com/article/20062542",
-          "published": "2026-07-01T16:29:51+0900"
-        },
-        {
-          "title": "태평양, 글로벌 리걸 AI ‘하비’ 도입",
-          "url": "https://www.sedaily.com/article/20062541",
-          "published": "2026-07-01T16:29:29+0900"
-        },
-        {
-          "title": "박관열 경기 광주시장 민선9기 출범…“시민과 바로 통하는 광주 만들 것”",
-          "url": "https://www.sedaily.com/article/20062540",
-          "published": "2026-07-01T16:27:37+0900"
-        },
-        {
-          "title": "종합특검, ‘내란부화 수행’ 김종욱·안성식 구속영장 청구",
-          "url": "https://www.sedaily.com/article/20062539",
-          "published": "2026-07-01T16:25:25+0900"
-        },
-        {
-          "title": "공정위, 앱마켓서 ‘갑질’한 구글에 8500억 과징금 예고",
-          "url": "https://www.sedaily.com/article/20062538",
-          "published": "2026-07-01T16:25:13+0900"
-        },
-        {
-          "title": "기업 공시 [7월 1일]",
-          "url": "https://www.sedaily.com/article/20062537",
-          "published": "2026-07-01T16:24:52+0900"
-        },
-        {
-          "title": "삼성전기, 성과급 기준 ‘영업이익 10%’로 바꿔…내년 적용",
-          "url": "https://www.sedaily.com/article/20062536",
-          "published": "2026-07-01T16:23:17+0900"
-        },
-        {
-          "title": "금융위, 인뱅 기업대출 대면업무 일부 허용...“중기 자금공급 확대”",
-          "url": "https://www.sedaily.com/article/20062535",
-          "published": "2026-07-01T16:23:16+0900"
-        },
-        {
-          "title": "휴온스엔, 건기식 자회사 ‘바이오로제트’ 흡수합병 완료",
-          "url": "https://www.sedaily.com/article/20062534",
-          "published": "2026-07-01T16:22:24+0900"
-        },
-        {
-          "title": "역대급 수출에도 환율은 1560원 목전",
-          "url": "https://www.sedaily.com/article/20062533",
-          "published": "2026-07-01T16:21:22+0900"
-        },
-        {
-          "title": "고성능 AI에 무너지는 기업 보안…AWS “자동화 방어 체계로 대응해야”",
-          "url": "https://www.sedaily.com/article/20062531",
-          "published": "2026-07-01T16:18:59+0900"
         }
       ]
     },
@@ -876,6 +876,81 @@
       "method": "rss",
       "home": "https://www.chosun.com",
       "items": [
+        {
+          "title": "“불요불급한 사업 정리할 것”... 허태정 대전시장 취임",
+          "url": "https://www.chosun.com/national/regional/chungcheong/2026/07/01/N6IV4WQP65E2JL6LT7G4N43A5U/",
+          "published": "2026-07-01T17:03:52+0900"
+        },
+        {
+          "title": "아기 선크림, 반드시 체크해야 할 3가지 [육아똑똑똑]",
+          "url": "https://www.chosun.com/medical/2026/07/01/ETEXEQJQ2JATNM6SKNFVBJTF34/",
+          "published": "2026-07-01T17:02:54+0900"
+        },
+        {
+          "title": "이상일 용인시장, 첫 결재는 반도체… 산단 현장도 찾아",
+          "url": "https://www.chosun.com/national/national_general/2026/07/01/EZNNDEGELNB4NNO7S4QHGCTVQA/",
+          "published": "2026-07-01T17:02:19+0900"
+        },
+        {
+          "title": "[포토] 서울디자인고 박근서, 끝냈다",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/01/GMZTMZLGG4YTGNRRHA3TINRQGU/",
+          "published": "2026-07-01T17:02:17+0900"
+        },
+        {
+          "title": "[포토] 서울디자인고 박근서, 승리 향해",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/01/MYZWEMTEHA3GENBTGY4DEMJZMY/",
+          "published": "2026-07-01T17:02:15+0900"
+        },
+        {
+          "title": "‘0-5 완패’ 롯데 내야 왜 싹 바뀌었나, 박승욱 2루수-손호영 3루수 선발…로드리게스-박건우 배터리 [오!쎈 잠실]",
+          "url": "https://www.chosun.com/sports/baseball/2026/07/01/MU3GGNLCME2WEOJQG5RWIOBUGI/",
+          "published": "2026-07-01T17:01:00+0900"
+        },
+        {
+          "title": "“구청 찾아 멀리 가야 했던 불편 없어졌어요”… 1일 출범한 검단구·영종구 주민들 ‘웃음’",
+          "url": "https://www.chosun.com/national/regional/2026/07/01/7QZBOFRT4RCPTBQRIOCVNQ242Q/",
+          "published": "2026-07-01T17:00:58+0900"
+        },
+        {
+          "title": "광명전기 경영권 분쟁 마무리 수순… 회생 신청 철회 여부는 미지수",
+          "url": "https://www.chosun.com/economy/stock-finance/2026/07/01/GE4DMYJVHE2TQOBUHA4TKNJSGA/",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "'24타수 무안타' 오지환 빠졌다, 이영빈 유격수, 문보경 4번 복귀, LG 라인업 공개",
+          "url": "https://www.chosun.com/sports/baseball/2026/07/01/MY2GCYRTGZSTKN3EMRSTOOBUHA/",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "[오늘의 운세] 7월 2일 목요일 (음력 5월 18일 丁丑)",
+          "url": "https://www.chosun.com/national/national_general/2026/07/01/BALCEVF6BJGNDGXWJWARROFDPM/",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "[뉴스탐험대 중계 코너] 축구 용품, 두 발 악어, 화폐 그림",
+          "url": "https://www.chosun.com/kid/kid_reader/2026/07/01/OKLREHISXFFCNPBWLT7KHUBBYE/",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "아우라, 인도 음악 시장 들썩…시상식서 ‘Iconic Spiritual Song of the Year’ 수상",
+          "url": "https://www.chosun.com/entertainments/music/2026/07/01/MNTDQMJTGJTGMNDDGJRGMNTDMQ/",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "[알립니다] 2026년 여름방학 NIE 특강 수강생 모집",
+          "url": "https://www.chosun.com/kid/kid_reader/kid_notice/2026/07/01/KPBUXC57YNAUTLFIQ55K6OPV4I/",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "술 취해 탄 택시에서 욕설 등 소란… 현직 경찰관 입건",
+          "url": "https://www.chosun.com/national/incident/2026/07/01/FICURY7FPBCNZOBXPCR2XTOMIU/",
+          "published": "2026-07-01T16:59:35+0900"
+        },
+        {
+          "title": "[속보] 삼성 신인 장찬희, 오른쪽 팔꿈치 굴곡근 부종…1군 말소 후 후반기 준비",
+          "url": "https://www.chosun.com/sports/baseball/2026/07/01/GBSDEMLCMNTDKYJTMY4GKZBUMQ/",
+          "published": "2026-07-01T16:56:00+0900"
+        },
         {
           "title": "[포토] 연장 10회 서울디자인고 임우섭, 적시타",
           "url": "https://www.chosun.com/sports/sports_photo/2026/07/01/MZTGKZJVMI4TOMTBGZRDMYTDMQ/",
@@ -892,7 +967,7 @@
           "published": "2026-07-01T16:49:54+0900"
         },
         {
-          "title": "경찰, 정원오 “칸쿤 해변 안 갔다” 발언 공직선거법 위반 혐의로 수사",
+          "title": "정원오 “칸쿤 해변 안 갔다”... 경찰, 선거법 위반 혐의 수사",
           "url": "https://www.chosun.com/national/national_general/2026/07/01/DTJBYRM2XVCKZLXHZQMRQLLKMA/",
           "published": "2026-07-01T16:49:25+0900"
         },
@@ -912,29 +987,9 @@
           "published": "2026-07-01T16:44:00+0900"
         },
         {
-          "title": "[SC현장] \"맵고, 덥고, 짜다\"…'피의 게임X' '솔지3' 커플도 찢어 버린 지독한 서바이벌(종합)",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/01/GBTGMYRXMQYWMZJWHFQWCOJUME/",
-          "published": "2026-07-01T16:43:33+0900"
-        },
-        {
           "title": "유정열 전 코트라 사장, 대한상의 부회장 낙마",
           "url": "https://www.chosun.com/economy/industry-company/2026/07/01/MPQWUQN7VJCN5MN4UMZZQUAI4U/",
           "published": "2026-07-01T16:41:55+0900"
-        },
-        {
-          "title": "[오피셜]마이너 장타율이 무려 0.499 기대되네....NC 다이노스, 데이비슨 대체 외인 블레인 크림 영입",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/01/GMYWEZBTG5QTCOBWMI3TGMRSMI/",
-          "published": "2026-07-01T16:40:48+0900"
-        },
-        {
-          "title": "함소원, 주차 중 교통사고 당했다…골반 골절 진단받고 수술",
-          "url": "https://www.chosun.com/entertainments/enter_general/2026/07/01/GE4DEYTDHA4WKOBVGUZWKY3BMI/",
-          "published": "2026-07-01T16:40:17+0900"
-        },
-        {
-          "title": "신혜령-오의주 치어리더, 빛나는 챔필 비주얼[O! SPORTS 숏폼]",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/01/GEYDOMTCME3WGOJTGU2DEM3FME/",
-          "published": "2026-07-01T16:40:00+0900"
         },
         {
           "title": "‘홍명보 감독 선임 논란’ 대한축구협회 고발 사건, 서울경찰청이 수사",
@@ -942,74 +997,19 @@
           "published": "2026-07-01T16:37:12+0900"
         },
         {
-          "title": "국힘도 희망 상임위 의견 수렴…2일 의총이 ‘원 구성’ 분수령",
-          "url": "https://www.chosun.com/economy/economy_general/2026/07/01/MJQTQNZVMM4TEZRSHFRTSZBQGI/",
-          "published": "2026-07-01T16:36:17+0900"
-        },
-        {
           "title": "‘홍명보 감독과 참 다르네?’ 사퇴한 우루과이 감독 선수들과 불화 인정 “모든 책임은 내게 있다!",
           "url": "https://www.chosun.com/sports/world-football/2026/07/01/MY3DSYRSGE4WGYRXGY4WCNDDMQ/",
           "published": "2026-07-01T16:36:00+0900"
         },
         {
-          "title": "이소라, 유재석 만난다..'유퀴즈' 측 \"7년 만에 돌아온 레전드\"[공식]",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/01/GZSGIODFMYZDMMBXMZSTGOJVGQ/",
-          "published": "2026-07-01T16:36:00+0900"
-        },
-        {
-          "title": "롯데쇼핑 “롯데시네마·메가박스 합병 중단”",
-          "url": "https://www.chosun.com/economy/market_trend/2026/07/01/GJSTMZDCGYZDCZDEMJRDEN3GHE/",
-          "published": "2026-07-01T16:33:29+0900"
-        },
-        {
-          "title": "GS건설, 국토부 상호협력평가 4년 연속 ‘최우수’",
-          "url": "https://www.chosun.com/economy/real_estate/2026/07/01/HE4TGNDBHA4DGNZXHEYDMZJWGQ/",
-          "published": "2026-07-01T16:33:19+0900"
-        },
-        {
-          "title": "'방출' 홈런왕 노린 팀 또 있다? 1주일새 순위 바뀌면 어떻게 되나…막전막후 → 극한 눈치싸움 [고척비하인드]",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/01/GRQTCYTBMZSGIZJQGBRGINZQME/",
-          "published": "2026-07-01T16:31:28+0900"
-        },
-        {
-          "title": "[전문] 헤이즈, 싸이 품 떠난다…피네이션과 6년 동행 마침표",
-          "url": "https://www.chosun.com/entertainments/enter_general/2026/07/01/GUZGEYLGMVQTEZTDMIZDQMDCGA/",
-          "published": "2026-07-01T16:30:34+0900"
-        },
-        {
-          "title": "李대통령, 홍명보 언급 없이 “선수들 정말 고생하셨다”",
-          "url": "https://www.chosun.com/politics/politics_general/2026/07/01/KVHFONL5Q5BUDDV6OPNO7H3ZOU/",
-          "published": "2026-07-01T16:28:23+0900"
-        },
-        {
-          "title": "구글, 지난해 온실가스 배출량 역대 최대...AI 경쟁에 후퇴하는 ‘넷제로’",
-          "url": "https://www.chosun.com/economy/tech_it/2026/07/01/2QMDPHGRVFEW7HC5AFXWLVMSCY/",
-          "published": "2026-07-01T16:22:55+0900"
-        },
-        {
-          "title": "허정 검사장 “판사가 확인 한 번도 없이 소설 써..법치주의 흔드는 행위”",
+          "title": "허정 검사장 “판사가 확인 한 번도 없이 소설 써... 법치주의 흔드는 행위”",
           "url": "https://www.chosun.com/national/court_law/2026/07/01/E4T5K7SEJBG2VGDFSEWNZOAIZM/",
           "published": "2026-07-01T16:20:59+0900"
         },
         {
-          "title": "마스오토, 국내 첫 트레일러 자율주행…3분기 부산항 노선 투입",
-          "url": "https://www.chosun.com/economy/tech_it/2026/07/01/WGDFI4I7IREZRLL7AC3ZOMMB4E/",
-          "published": "2026-07-01T16:08:03+0900"
-        },
-        {
-          "title": "마이크론 “칩플레이션, 불황기 때 고객사가 가격 후려친 탓” 애플 저격",
-          "url": "https://www.chosun.com/economy/tech_it/2026/07/01/LRGHBON46VBJZEB6V3QXABKB7A/",
-          "published": "2026-07-01T15:44:43+0900"
-        },
-        {
-          "title": "靑 “李대통령-文, 진영 내 멸칭 도움안된다는 데 뜻 모아”",
-          "url": "https://www.chosun.com/politics/politics_general/2026/07/01/VZFGNZKKENCDNP4U5IDTKWG5HI/",
-          "published": "2026-07-01T14:42:40+0900"
-        },
-        {
-          "title": "SK, 해외 투자사에 신재생에너지 사업 절반 매각...재계 “정부 정책 호응 중”",
-          "url": "https://www.chosun.com/economy/industry-company/2026/07/01/R45LN6PMZRHCLA6VNKLPEJ5VAA/",
-          "published": "2026-07-01T14:15:10+0900"
+          "title": "권익위원장 “선관위 수의 계약 의혹, 현재로서는 할 수 있는 일이 없다”",
+          "url": "https://www.chosun.com/politics/goverment/2026/07/01/7BJ5CIVIORCSPMDEA54YRXS7SQ/",
+          "published": "2026-07-01T15:40:24+0900"
         },
         {
           "title": "78년 검찰의 마지막 홍보대사는 걸그룹 ‘하츠투하츠’",
@@ -1017,14 +1017,14 @@
           "published": "2026-07-01T14:01:09+0900"
         },
         {
-          "title": "마이클 버리 “한국 반도체 지출로 인한 랠리, 종말의 시작”…메모리 수퍼 사이클 언제까지?",
-          "url": "https://www.chosun.com/economy/money/2026/07/01/MWKA7QYSXVD7LIKU7GD3VIR4PA/",
-          "published": "2026-07-01T09:03:31+0900"
-        },
-        {
           "title": "한국이 개발한 ‘안구건조증’ 치료기, 25만대 판매 15개국 수출 대박",
           "url": "https://www.chosun.com/economy/startup_story/2026/07/01/M7JN6NZUWNHT7CJHCZXNEGT3EM/",
           "published": "2026-07-01T05:20:00+0900"
+        },
+        {
+          "title": "[채승우의 카메라 타임머신] 60년 전 한강은 수영장이었다",
+          "url": "https://www.chosun.com/opinion/2026/07/01/J4TCDKXECJEWJIX5QM5C7G2NYQ/",
+          "published": "2026-06-30T23:31:00+0900"
         }
       ]
     },
@@ -1034,14 +1034,64 @@
       "home": "http://rss.donga.com",
       "items": [
         {
-          "title": "李-文 첫 청와대 회동…文 “대통령 건강은 공공재”…李 “전 아직 젊다”",
+          "title": "루니, 브라질 8강 예상…“노르웨이가 이기면 강에서 노 젓겠다”",
+          "url": "https://www.donga.com/news/Sports/article/all/20260701/134217949/1",
+          "published": "2026-07-01T17:08:36+0900"
+        },
+        {
+          "title": "마스오토, 국내 첫 트레일러 자율주행 운송 시작 …부산항 노선 투입",
+          "url": "https://www.donga.com/news/Economy/article/all/20260701/134216496/1",
+          "published": "2026-07-01T17:08:00+0900"
+        },
+        {
+          "title": "월 수출 1000억 달러…반도체가 끌고 IT-자동차가 밀었다",
+          "url": "https://www.donga.com/news/Economy/article/all/20260701/134217523/1",
+          "published": "2026-07-01T17:07:00+0900"
+        },
+        {
+          "title": "행정구역 통합 개편에 지방세시스템 먹통…행정부 “지방세 납부 3일까지 연장”",
+          "url": "https://www.donga.com/news/Society/article/all/20260701/134216866/1",
+          "published": "2026-07-01T17:06:00+0900"
+        },
+        {
+          "title": "월드컵 티켓 거품 빠진다…토너먼트 돌입하자 리셀가 39％ 급락",
+          "url": "https://www.donga.com/news/Sports/article/all/20260701/134217877/1",
+          "published": "2026-07-01T17:01:51+0900"
+        },
+        {
+          "title": "“아파트 매매 문의 두 배”…반도체 클러스터 투자 계획에 광주 부동산 ‘꿈틀’",
+          "url": "https://www.donga.com/news/Society/article/all/20260701/134217243/1",
+          "published": "2026-07-01T17:01:00+0900"
+        },
+        {
+          "title": "그린팜스글로벌, ‘1군 온실 건설사’ 승급 및 공식 설계사 등록",
+          "url": "https://www.donga.com/news/Economy/article/all/20260701/134216989/1",
+          "published": "2026-07-01T17:01:00+0900"
+        },
+        {
+          "title": "‘재판 위증’ 윤석열 2심 첫 공판…‘尹정부 2인자’ 한덕수 증인 채택",
+          "url": "https://www.donga.com/news/Society/article/all/20260701/134217866/1",
+          "published": "2026-07-01T16:59:58+0900"
+        },
+        {
+          "title": "길어지는 여름에 벌레 생존율 높아져…해충 방역 산업도 빠르게 성장",
+          "url": "https://www.donga.com/news/Economy/article/all/20260701/134215519/1",
+          "published": "2026-07-01T16:59:00+0900"
+        },
+        {
+          "title": "[속보]“스벅 가야지” 배재고, 6개월 출전정지…“선수는 조사뒤 심의”",
+          "url": "https://www.donga.com/news/Society/article/all/20260701/134217858/1",
+          "published": "2026-07-01T16:59:00+0900"
+        },
+        {
+          "title": "文 “건강 좀 어떠시냐, 너무 열심히 하셔”…李 “전 아직 젊다”",
           "url": "https://www.donga.com/news/Politics/article/all/20260701/134217067/1",
           "published": "2026-07-01T16:57:00+0900"
         },
         {
           "title": "안규백 “각군 전문성 지켜져야 하지만 ‘칸막이’ 돼선 안돼”",
           "url": "https://www.donga.com/news/Politics/article/all/20260701/134216498/1",
-          "published": "2026-07-01T16:56:37+0900"
+          "published": "2026-07-01T16:56:00+0900"
         },
         {
           "title": "청량리8구역 이주비 대출 우려에… 조합 “이주 마무리 수순” 반박",
@@ -1061,7 +1111,7 @@
         {
           "title": "AI 데이터센터 경쟁 승부처 ‘땅’에서 ‘전력’으로 이동한다",
           "url": "https://www.donga.com/news/Economy/article/all/20260701/134216393/1",
-          "published": "2026-07-01T16:54:52+0900"
+          "published": "2026-07-01T16:54:00+0900"
         },
         {
           "title": "시흥 비닐하우스 화재 현장서 뒤늦게 시신 발견",
@@ -1132,56 +1182,6 @@
           "title": "美 CIA, 기술 조직으로 재편 시도…“첨단 AI모델은 디지털 핵무기”",
           "url": "https://www.donga.com/news/Inter/article/all/20260701/134216767/1",
           "published": "2026-07-01T16:40:00+0900"
-        },
-        {
-          "title": "어티슈, ‘사막의 카우보이 무드’ 담은 여름 헤드웨어 컬렉션 공개",
-          "url": "https://www.donga.com/news/Economy/article/all/20260701/134216686/1",
-          "published": "2026-07-01T16:39:00+0900"
-        },
-        {
-          "title": "정부, 2030년 ‘피지컬 AI 세계 1강’ 목표…데이터 확보 체계 마련",
-          "url": "https://www.donga.com/news/Economy/article/all/20260701/134216106/1",
-          "published": "2026-07-01T16:36:00+0900"
-        },
-        {
-          "title": "‘킹’ 르브론 제임스, 8시즌 함께한 레이커스와 동행 마침표 “함께해 영광이었다”",
-          "url": "https://www.donga.com/news/Sports/article/all/20260701/134216235/1",
-          "published": "2026-07-01T16:36:00+0900"
-        },
-        {
-          "title": "동아오츠카, 안양천 화창습지 생태계 보전 활동 전개",
-          "url": "https://www.donga.com/news/Economy/article/all/20260701/134217600/1",
-          "published": "2026-07-01T16:35:25+0900"
-        },
-        {
-          "title": "엘링 홀란 결승골로 노르웨이 16강 진출…바이킹 모자로 자축",
-          "url": "https://www.donga.com/news/Sports/article/all/20260701/134217569/2",
-          "published": "2026-07-01T16:33:00+0900"
-        },
-        {
-          "title": "차은우, 軍서 천주교 신자 됐다…세례명은 ‘사도 요한’",
-          "url": "https://www.donga.com/news/Entertainment/article/all/20260701/134217562/1",
-          "published": "2026-07-01T16:32:46+0900"
-        },
-        {
-          "title": "전원주, 보증금 10억 실버타운 보고 “계약서 가져와”",
-          "url": "https://www.donga.com/news/Culture/article/all/20260701/134217003/2",
-          "published": "2026-07-01T16:32:15+0900"
-        },
-        {
-          "title": "투병 쌍둥이 형 살해한 50대 동생, 첫 재판서 정신감정 신청",
-          "url": "https://www.donga.com/news/Society/article/all/20260701/134217551/1",
-          "published": "2026-07-01T16:31:28+0900"
-        },
-        {
-          "title": "‘비관세장벽’ 직면한 K푸드…“상시 대응체계 마련해야”",
-          "url": "https://www.donga.com/news/Economy/article/all/20260701/134217192/2",
-          "published": "2026-07-01T16:31:06+0900"
-        },
-        {
-          "title": "프랑스 디디에 데샹 감독, 음바페의 ‘포옹 세리머니’에 깊은 감사 전해",
-          "url": "https://www.donga.com/news/Sports/article/all/20260701/134217535/1",
-          "published": "2026-07-01T16:30:46+0900"
         }
       ]
     },
@@ -1190,6 +1190,21 @@
       "method": "rss",
       "home": "http://www.khan.co.kr",
       "items": [
+        {
+          "title": "통합 강조한 전·현직 대통령…문 전 대통령 “민주진영 더 큰 단합”, 이 대통령 “외연 확장”",
+          "url": "https://www.khan.co.kr/article/202607011705001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-01T17:05:00+0900"
+        },
+        {
+          "title": "오석진 대전교육감 취임 첫날 학교현장으로···“교육 출발점은 안전한 학교”",
+          "url": "https://www.khan.co.kr/article/202607011700011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-01T17:00:01+0900"
+        },
+        {
+          "title": "제5회 여성기업주간 개막···7일까지 행사 이어져",
+          "url": "https://www.khan.co.kr/article/202607011700001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-01T17:00:00+0900"
+        },
         {
           "title": "[단독]김종욱 전 해경청장, ‘계엄사 파견’ 반대에 “1명이라도 보내라” 압박",
           "url": "https://www.khan.co.kr/article/202607011657001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
@@ -1324,21 +1339,6 @@
           "title": "삼성SDI 최주선 “재도약 발판 마련, 올해 턴어라운드 가능”",
           "url": "https://www.khan.co.kr/article/202607011545001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
           "published": "2026-07-01T15:45:00+0900"
-        },
-        {
-          "title": "수출 사상 첫 1000억달러 돌파···올해 1조달러 달성하나",
-          "url": "https://www.khan.co.kr/article/202607011533011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-01T15:33:01+0900"
-        },
-        {
-          "title": "‘5선’ 오세훈 “삶의 질 특별시 완성”···변수도 곳곳에",
-          "url": "https://www.khan.co.kr/article/202607011533001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-01T15:33:00+0900"
-        },
-        {
-          "title": "추경호 “‘투쟁심’ 내려놓고 ‘지자체장’ 자세로 뛰겠다”···3일 ‘영남권 보고회’도 참석 의사",
-          "url": "https://www.khan.co.kr/article/202607011530011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-01T15:30:01+0900"
         }
       ]
     },
@@ -1348,17 +1348,72 @@
       "home": "https://www.hani.co.kr",
       "items": [
         {
-          "title": "이번엔 20대 민주사회주의자 ‘이변’…하원의원 경선서 15선 현역 꺾어",
+          "title": "[단독]종합특검, ‘통일교 도박 수사 무마’ 의혹 관련 윤영호 내일 소환",
+          "url": "https://www.hani.co.kr/arti/society/society_general/1266263.html",
+          "published": null
+        },
+        {
+          "title": "추미애 지사, ‘K-반도체 혁신 대책’ 1호 결재",
+          "url": "https://www.hani.co.kr/arti/area/capital/1266262.html",
+          "published": null
+        },
+        {
+          "title": "명지대, 세계 마약퇴치의 날 맞아 외국인 유학생 대상 마약류 예방 캠페인 실시",
+          "url": "https://www.hani.co.kr/arti/economy/biznews/1266261.html",
+          "published": null
+        },
+        {
+          "title": "‘양평고속도로 백지화’ 의혹 원희룡, 종합특검 연이은 소환에도 ‘무응답’",
+          "url": "https://www.hani.co.kr/arti/society/society_general/1266260.html",
+          "published": null
+        },
+        {
+          "title": "한국은 데이터센터 유치 혈안인데… 반대 운동 나선 ‘에린 브로코비치’",
+          "url": "https://www.hani.co.kr/arti/society/environment/1266259.html",
+          "published": null
+        },
+        {
+          "title": "취임식 하지 않고 현장 달려간 전재수 부산시장",
+          "url": "https://www.hani.co.kr/arti/area/yeongnam/1266258.html",
+          "published": null
+        },
+        {
+          "title": "[단독] ‘양민보호’ 베트남전 미화 전시에 포스트잇 붙인 활동가들…벌금형 약식기소",
+          "url": "https://www.hani.co.kr/arti/society/society_general/1266257.html",
+          "published": null
+        },
+        {
+          "title": "시진핑 “대만독립 세력 타격…조국통일 확고히 추진”",
+          "url": "https://www.hani.co.kr/arti/international/china/1266256.html",
+          "published": null
+        },
+        {
+          "title": "안규백 “‘전작권 회복’ 국방개혁에 기득권 필사 저항…장관 인신공격까지”",
+          "url": "https://www.hani.co.kr/arti/politics/defense/1266255.html",
+          "published": null
+        },
+        {
+          "title": "뒷걸음 치는 서른살 코스닥…“‘마이너리그’ 이미지 벗을 시장 분리 필요”",
+          "url": "https://www.hani.co.kr/arti/economy/finance/1266254.html",
+          "published": null
+        },
+        {
+          "title": "구미시장 취임식에 인간형 로봇 등장…“반도체 포기는 없다”",
+          "url": "https://www.hani.co.kr/arti/area/yeongnam/1266253.html",
+          "published": null
+        },
+        {
+          "title": "미 민주당 ‘민주사회주의’ 돌풍…20대 신예가 15선 현역 꺾었다",
           "url": "https://www.hani.co.kr/arti/international/international_general/1266252.html",
           "published": null
         },
         {
-          "title": "신복위 신속채무조정 중 연체채권은 ‘매각 제한’…“반복 재매각도 억제”",
+          "title": "신속채무조정 중인 개인 연체채권 ‘매각 제한’…성실 상환자 보호",
           "url": "https://www.hani.co.kr/arti/economy/finance/1266251.html",
           "published": null
         },
         {
-          "title": "세 차례 수색하고도 ‘인명 피해 없다’ 철수…뒤늦게 60대 주검 발견",
+          "title": "화재로 숨진 60대 뒤늦게 발견…3번 수색하고도 “인명피해 없다” 철수",
           "url": "https://www.hani.co.kr/arti/area/capital/1266250.html",
           "published": null
         },
@@ -1378,7 +1433,7 @@
           "published": null
         },
         {
-          "title": "광주제일고 찾은 김대중 교육감 “부적절 언행 놀라…교육적으로 풀어내자”",
+          "title": "광주일고 찾은 김대중 교육감 “부적절 언행 놀라…민주시민교육 강화를”",
           "url": "https://www.hani.co.kr/arti/area/honam/1266246.html",
           "published": null
         },
@@ -1418,7 +1473,7 @@
           "published": null
         },
         {
-          "title": "“지방소멸” “멸종위기” 아닌 ‘인구소멸’…제주학생들 ‘인구 골든벨’ 도전",
+          "title": "“인구소멸·멸종위기” X “지방소멸” O…제주학생들 ‘인구 골든벨’ 도전",
           "url": "https://www.hani.co.kr/arti/area/jeju/1266238.html",
           "published": null
         },
@@ -1441,61 +1496,6 @@
           "title": "문 전 대통령 “건강 챙기셔야” 이 대통령 “집안 어르신께 걱정 끼쳐 죄송”",
           "url": "https://www.hani.co.kr/arti/politics/bluehouse/1266234.html",
           "published": null
-        },
-        {
-          "title": "5대 은행 6월 가계대출 4.1조↑…11개월 만 최대폭",
-          "url": "https://www.hani.co.kr/arti/economy/finance/1266233.html",
-          "published": null
-        },
-        {
-          "title": "뉴스타파 ‘김병기 특종’ 과정서 드러난 갈등과 상처…“책임자 견제 필요”",
-          "url": "https://www.hani.co.kr/arti/society/media/1266232.html",
-          "published": null
-        },
-        {
-          "title": "트럼프, 앤트로픽 AI 수출통제 풀었지만 ‘사전 심사’는 강화한다",
-          "url": "https://www.hani.co.kr/arti/economy/it/1266231.html",
-          "published": null
-        },
-        {
-          "title": "베네수엘라 마차도, 귀국길 파나마서 막혀…미국도 ‘돌아가라’ 요구",
-          "url": "https://www.hani.co.kr/arti/international/america/1266230.html",
-          "published": null
-        },
-        {
-          "title": "조상호 세종시장 “행정수도 완성·자족도시 실현하겠다”",
-          "url": "https://www.hani.co.kr/arti/area/chungcheong/1266229.html",
-          "published": null
-        },
-        {
-          "title": "3기 출범 이철우 경북지사 “광주 800조 투자에 흔들릴 필요 없다”",
-          "url": "https://www.hani.co.kr/arti/area/yeongnam/1266228.html",
-          "published": null
-        },
-        {
-          "title": "원-달러 환율 1550원선도 넘어…32거래일째 1500원대",
-          "url": "https://www.hani.co.kr/arti/economy/economy_general/1266227.html",
-          "published": null
-        },
-        {
-          "title": "김상욱 울산시장 1호 결재 업무는…‘120 울산민원센터’",
-          "url": "https://www.hani.co.kr/arti/area/yeongnam/1266226.html",
-          "published": null
-        },
-        {
-          "title": "‘능력주의’ 꿈꿨지만, ‘상속주의’ 늪에 빠진 청년들 [안선희 칼럼]",
-          "url": "https://www.hani.co.kr/arti/opinion/column/1266225.html",
-          "published": null
-        },
-        {
-          "title": "충북 중부 4군 공유 장사시설 음성 입지 가닥…2곳 응모 올해 안 선정",
-          "url": "https://www.hani.co.kr/arti/area/chungcheong/1266224.html",
-          "published": null
-        },
-        {
-          "title": "영화 ‘접속’부터 ‘파묘’, 쇼트폼까지…서른 살 부천영화제의 파격 변신",
-          "url": "https://www.hani.co.kr/arti/culture/culture_general/1266223.html",
-          "published": null
         }
       ]
     },
@@ -1504,6 +1504,21 @@
       "method": "rss",
       "home": "https://rss.etnews.com",
       "items": [
+        {
+          "title": "“AI·펨테크까지”…여성기업, 기술혁신 전면에 섰다",
+          "url": "https://www.etnews.com/20260701000456",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "모두싸인 'API 연동형' 전자서명 수요 매년 30% 성장세",
+          "url": "https://www.etnews.com/20260701000432",
+          "published": "2026-07-01T17:00:00+0900"
+        },
+        {
+          "title": "화웨이 AI칩, 4분기 韓 상륙…엔비디아에 도전장",
+          "url": "https://www.etnews.com/20260701000492",
+          "published": "2026-07-01T16:59:00+0900"
+        },
         {
           "title": "“경쟁 덜하고 마진은 美 2배”…韓 이커머스, 中 셀러 '핵심 격전지' 부상",
           "url": "https://www.etnews.com/20260701000376",
@@ -1638,21 +1653,6 @@
           "title": "후반기 정무위 출범…디지털자산법·STO·인터넷은행 현안 산적",
           "url": "https://www.etnews.com/20260701000370",
           "published": "2026-07-01T13:45:30+0900"
-        },
-        {
-          "title": "보조금 끊긴 BYD “자체 지원” …보조금 받는 테슬라 “최대 700만원 인상”",
-          "url": "https://www.etnews.com/20260701000367",
-          "published": "2026-07-01T13:44:19+0900"
-        },
-        {
-          "title": "6월 수출 첫 1000억달러 돌파…독일·中·美에 이은 4번째 대기록",
-          "url": "https://www.etnews.com/20260701000322",
-          "published": "2026-07-01T12:54:37+0900"
-        },
-        {
-          "title": "[민선 9기 출범]대한민국 균형 발전 닻 올렸다...첨단 산업·메가시티 청사진",
-          "url": "https://www.etnews.com/20260701000304",
-          "published": "2026-07-01T12:42:41+0900"
         }
       ]
     },
@@ -1662,6 +1662,146 @@
       "home": "http://rss.edaily.co.kr",
       "items": [
         {
+          "title": "식약처, 희귀 소세포폐암 치료제 ‘서플루마주’ 허가",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05464486645510256",
+          "published": "2026-07-01T17:08:02+0900"
+        },
+        {
+          "title": "네이버, 신입 공채 멈췄다…AI 시대 '채용 공식' 다시 짠다[only이데일리]",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05451366645510256",
+          "published": "2026-07-01T17:07:55+0900"
+        },
+        {
+          "title": "헤이즈, 싸이 품 떠난다…피네이션과 전속계약 종료",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05457926645510256",
+          "published": "2026-07-01T17:07:48+0900"
+        },
+        {
+          "title": "충남·전북 닥터헬기 '중형'으로 교체…응급이송 반경 2배 확대",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05467766645510256",
+          "published": "2026-07-01T17:07:41+0900"
+        },
+        {
+          "title": "[포토] 취임사하는 박준희 관악구청장",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05461206645510256",
+          "published": "2026-07-01T17:07:14+0900"
+        },
+        {
+          "title": "매일유업, 3인 각자대표 체제 6개월 만에 2인 체제로",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05454646645510256",
+          "published": "2026-07-01T17:07:06+0900"
+        },
+        {
+          "title": "JB금융, '지속가능한 미래 금융' 담은 통합연차보고서 발간",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05441526645510256",
+          "published": "2026-07-01T17:06:42+0900"
+        },
+        {
+          "title": "[포토] 박준희 관악구청장, \"행복한 관악 만들겠다\"",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05448086645510256",
+          "published": "2026-07-01T17:06:41+0900"
+        },
+        {
+          "title": "내달 첫 '원청 상대' 총파업…‘노봉법發' 하청노조 하투 본격화",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05444806645510256",
+          "published": "2026-07-01T17:06:22+0900"
+        },
+        {
+          "title": "대규모 유상증자 에코프로그룹, 금감원 문턱 넘을수 있을까",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05434966645510256",
+          "published": "2026-07-01T17:05:05+0900"
+        },
+        {
+          "title": "'수젠텍 子' 베스펙스, 국내 첫 글로벌 펨테크 서밋 개최…美 공략 본격화",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05438246645510256",
+          "published": "2026-07-01T17:05:02+0900"
+        },
+        {
+          "title": "인성정보, 종속회사 아이넷뱅크에 36억원 채무보증 결정",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05428406645510256",
+          "published": "2026-07-01T17:04:48+0900"
+        },
+        {
+          "title": "지아이에스, 육·해군 부품 국산화 개발 착수…방산 MRO 사업 확대",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05425126645510256",
+          "published": "2026-07-01T17:02:44+0900"
+        },
+        {
+          "title": "상장 유지 문턱 높아진다…저시총·동전주 ‘퇴출 압박’ 본격화",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05418566645510256",
+          "published": "2026-07-01T17:02:20+0900"
+        },
+        {
+          "title": "'시멘트의 날' 기념행사 개최 \"친환경 전환에 주력\"",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05421846645510256",
+          "published": "2026-07-01T17:02:00+0900"
+        },
+        {
+          "title": "\"집값 떨어지면 기업이, 대외 충격에는 가계가 더 위험\"",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05415286645510256",
+          "published": "2026-07-01T17:01:48+0900"
+        },
+        {
+          "title": "아이비젼웍스, 5대 1 액면병합 결정",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05412006645510256",
+          "published": "2026-07-01T17:01:36+0900"
+        },
+        {
+          "title": "건협 “‘정부 '공공공사 낙찰제도 합리화 방안' 적극 환영”",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05408726645510256",
+          "published": "2026-07-01T17:01:27+0900"
+        },
+        {
+          "title": "복지부, 암 환자 '페이백' 의심 의료기관 6곳 수사의뢰",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05405446645510256",
+          "published": "2026-07-01T17:00:16+0900"
+        },
+        {
+          "title": "알로이스, 권찬혁 사외이사 자진사임",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05402166645510256",
+          "published": "2026-07-01T17:00:12+0900"
+        },
+        {
+          "title": "과기정통부·KCA, ‘2026 ICT넥스트 어워즈’ 개최…우수기업 14개사 표창",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05398886645510256",
+          "published": "2026-07-01T17:00:03+0900"
+        },
+        {
+          "title": "오늘의 부고 종합",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05395606645510256",
+          "published": "2026-07-01T16:58:59+0900"
+        },
+        {
+          "title": "매일유업, 곽정우 대표이사 사임…2인 각자대표 체제로 변경",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05392326645510256",
+          "published": "2026-07-01T16:58:59+0900"
+        },
+        {
+          "title": "오늘의 인사 종합",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05385766645510256",
+          "published": "2026-07-01T16:58:46+0900"
+        },
+        {
+          "title": "NC, 새 외국인타자 블레인 영입…5년 연속 20홈런 장타력 기대",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05389046645510256",
+          "published": "2026-07-01T16:57:54+0900"
+        },
+        {
+          "title": "파라텍, 롯데바이오로직스와 213억 규모 소방기계공사 계약",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05382486645510256",
+          "published": "2026-07-01T16:57:33+0900"
+        },
+        {
+          "title": "현대차, 6월 글로벌 판매 5.9% 감소…국내·해외 모두 6% 안팎 줄어",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05379206645510256",
+          "published": "2026-07-01T16:56:19+0900"
+        },
+        {
+          "title": "따박따박 적금 부은 군인, 빚내 코인 산 군인…軍테크 두 얼굴",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=05375926645510256",
+          "published": "2026-07-01T16:56:19+0900"
+        },
+        {
           "title": "손면석 위메이드맥스 대표 \"최대 주주 변경에도 개발 방향 흔들림 없다\"",
           "url": "https://www.edaily.co.kr/News/Read?newsId=05372646645510256",
           "published": "2026-07-01T16:53:00+0900"
@@ -1670,146 +1810,6 @@
           "title": "전공의 교육 잘한 병원 골라 지원…복지부, 56개 병원에 950억 투입",
           "url": "https://www.edaily.co.kr/News/Read?newsId=05369366645510256",
           "published": "2026-07-01T16:50:58+0900"
-        },
-        {
-          "title": "파마리서치, 美 화장품 제조사 인수…현지 공략 속도",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05366086645510256",
-          "published": "2026-07-01T16:50:03+0900"
-        },
-        {
-          "title": "한국후지필름BI, 코타케 시게타 신임 대표 선임…\"AX 솔루션 기업 전환 가속\"",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05359526645510256",
-          "published": "2026-07-01T16:48:01+0900"
-        },
-        {
-          "title": "증시 롤러코스터에 '빚투' 비명…지난달 반대매매 하루 평균 535억원",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05352966645510256",
-          "published": "2026-07-01T16:47:16+0900"
-        },
-        {
-          "title": "안규백 \"전작권 '전환' 아닌 '회복'\"…올해 FOC 검증 분수령",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05346406645510256",
-          "published": "2026-07-01T16:47:13+0900"
-        },
-        {
-          "title": "韓 성인 평균 자산 5년 새 55% 늘어…증가율 세계 1위",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05333286645510256",
-          "published": "2026-07-01T16:43:07+0900"
-        },
-        {
-          "title": "김윤덕 국토장관 “자율주행, AI 데이터가 핵심…혁신 생태계 구축”",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05330006645510256",
-          "published": "2026-07-01T16:41:57+0900"
-        },
-        {
-          "title": "삼성 로봇단장 “AI 시대, 제어·로봇 연구 중요성 커져”",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05323446645510256",
-          "published": "2026-07-01T16:39:02+0900"
-        },
-        {
-          "title": "금융위, 혁신금융 서비스 31건 지정…보험대리점 '25% 룰' 완화",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05320166645510256",
-          "published": "2026-07-01T16:36:28+0900"
-        },
-        {
-          "title": "사회보장정보원-지방자치학회, AI·데이터 기반 지역복지 혁신 맞손",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05307046645510256",
-          "published": "2026-07-01T16:33:35+0900"
-        },
-        {
-          "title": "경총 만난 정점식 \"'불법 행위 보호대상 제외' 노봉법 개정 준비\"",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05290646645510256",
-          "published": "2026-07-01T16:30:28+0900"
-        },
-        {
-          "title": "SH, 주거복지본부장에 이석중 홍보실장 선임",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05284086645510256",
-          "published": "2026-07-01T16:28:30+0900"
-        },
-        {
-          "title": "SH, 주거복지본부장에 이석중 홍보실장 선임",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05284086645510256",
-          "published": "2026-07-01T16:28:30+0900"
-        },
-        {
-          "title": "\"대본 보고 촉이 왔어요\" 남궁민, '결혼의 완성'으로 7년 만에 KBS 복귀",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05277526645510256",
-          "published": "2026-07-01T16:27:55+0900"
-        },
-        {
-          "title": "靑, 시중은행과 ‘상생금융지수’ 점검…“금융사, 중소기업 파트너 돼야”",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05274246645510256",
-          "published": "2026-07-01T16:26:01+0900"
-        },
-        {
-          "title": "'유퀴즈' 김무열, '참교육' 글로벌 1위에 ♥윤승아와 오열",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05267686645510256",
-          "published": "2026-07-01T16:23:34+0900"
-        },
-        {
-          "title": "반도체공학회 \"피지컬 AI 시대, AI반도체·SW 통합 경쟁력 확보해야\"",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05264406645510256",
-          "published": "2026-07-01T16:23:33+0900"
-        },
-        {
-          "title": "유승렬 국수본부장 직무대리 \"수사 기본 철저히 준수\"",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05254566645510256",
-          "published": "2026-07-01T16:22:53+0900"
-        },
-        {
-          "title": "고려아연 온산제련소, 협력사와 상생안전 협력 강화",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05257846645510256",
-          "published": "2026-07-01T16:22:45+0900"
-        },
-        {
-          "title": "반도체 성과급은 남일...인력 구조조정 무서운 건자재 업계",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05244726645510256",
-          "published": "2026-07-01T16:17:53+0900"
-        },
-        {
-          "title": "한국GM, 6월 내수 부진에도 수출 호조…상반기 27만대 판매",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05241446645510256",
-          "published": "2026-07-01T16:16:14+0900"
-        },
-        {
-          "title": "국가계약제도 손질해 분쟁 줄인다…SW 계약·지체상금 손질",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05234886645510256",
-          "published": "2026-07-01T16:13:21+0900"
-        },
-        {
-          "title": "롯데관광개발, 2분기 매출 640억…카지노 순매출 34%↑",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05231606645510256",
-          "published": "2026-07-01T16:12:53+0900"
-        },
-        {
-          "title": "AI로 사람 자르더니…\"다시 뽑자\"는 기업들",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05228326645510256",
-          "published": "2026-07-01T16:11:55+0900"
-        },
-        {
-          "title": "이성근 성신여대 총장 “답습보단 혁신의 빅스텝 밟을 것”",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05221766645510256",
-          "published": "2026-07-01T16:09:19+0900"
-        },
-        {
-          "title": "두산에너빌, 경제부총리 표창 수상…수출 증대 기여",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05218486645510256",
-          "published": "2026-07-01T16:08:21+0900"
-        },
-        {
-          "title": "재정 위기 정면돌파 택한 추미애, 1호 결재는 '반도체 초격차 대책'",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05211926645510256",
-          "published": "2026-07-01T16:07:31+0900"
-        },
-        {
-          "title": "“AI 시대 HR 핵심은 신뢰…설명·참여·책임감 갖춰야”[2026 HR after AI]",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05208646645510256",
-          "published": "2026-07-01T16:06:23+0900"
-        },
-        {
-          "title": "“용접하는 거미로봇, 32kg 드는 휴머노이드”…디든로보틱스, 조선소 공략",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05205366645510256",
-          "published": "2026-07-01T16:06:22+0900"
         }
       ]
     },
@@ -1818,6 +1818,76 @@
       "method": "rss",
       "home": "https://rss.etoday.co.kr",
       "items": [
+        {
+          "title": "올림픽훼밀리 설계사 선정 ‘삐걱’…송파구-추진위 절차 충돌",
+          "url": "https://www.etoday.co.kr/news/view/2599208",
+          "published": "2026-07-01T17:12:00+0900"
+        },
+        {
+          "title": "추미애, 제1호 결재 펜 끝은 반도체…\"5년 내 생산능력 2배, 속도전 시작\"",
+          "url": "https://www.etoday.co.kr/news/view/2599318",
+          "published": "2026-07-01T17:11:00+0900"
+        },
+        {
+          "title": "환율에 희비 엇갈린 아시아증시⋯하반기 첫 거래일 혼조",
+          "url": "https://www.etoday.co.kr/news/view/2599315",
+          "published": "2026-07-01T17:10:00+0900"
+        },
+        {
+          "title": "[급등락주 짚어보기] ‘호남권 반도체’ 훈풍에 건설ㆍ전력주 상한가⋯금호건설ㆍ대원전선↑",
+          "url": "https://www.etoday.co.kr/news/view/2599301",
+          "published": "2026-07-01T17:09:00+0900"
+        },
+        {
+          "title": "韓, EU 철강 쿼터 사실상 최혜국 대우…업계 “정상 외교 성과” [종합]",
+          "url": "https://www.etoday.co.kr/news/view/2599311",
+          "published": "2026-07-01T17:09:00+0900"
+        },
+        {
+          "title": "환율에 희비 엇갈린 아시아증시⋯하반기 첫 거래일 혼조",
+          "url": "https://www.etoday.co.kr/news/view/2599315",
+          "published": "2026-07-01T17:08:00+0900"
+        },
+        {
+          "title": "ESS가 효자…삼성SDI, 7분기 만의 흑전 눈앞",
+          "url": "https://www.etoday.co.kr/news/view/2599214",
+          "published": "2026-07-01T17:08:00+0900"
+        },
+        {
+          "title": "'2TV 생생정보' 가격파괴, 짜장면이 단돈 3000원? '복○○'",
+          "url": "https://www.etoday.co.kr/news/view/2599209",
+          "published": "2026-07-01T17:05:00+0900"
+        },
+        {
+          "title": "완성차 5사, 6월 판매 소폭 증가…기아, 역대 최대 상반기 실적",
+          "url": "https://www.etoday.co.kr/news/view/2599307",
+          "published": "2026-07-01T17:05:00+0900"
+        },
+        {
+          "title": "한총리 취임 첫 일정은 AI⋯\"AI 행정·피지컬AI·데이터 개방 속도전\"",
+          "url": "https://www.etoday.co.kr/news/view/2599295",
+          "published": "2026-07-01T17:05:00+0900"
+        },
+        {
+          "title": "제주 드림타워, 2분기 매출 1926억원으로 역대 최대 실적 경신",
+          "url": "https://www.etoday.co.kr/news/view/2599314",
+          "published": "2026-07-01T17:04:00+0900"
+        },
+        {
+          "title": "李 \"내부 단합·외연 확장 함께\"…文 \"민주당 단합이 국민통합 출발점\" [종합]",
+          "url": "https://www.etoday.co.kr/news/view/2599312",
+          "published": "2026-07-01T17:03:00+0900"
+        },
+        {
+          "title": "안민석, 첫 결재 펜 끝이 향한 곳…경기 130만 학생의 스마트폰이었다",
+          "url": "https://www.etoday.co.kr/news/view/2599313",
+          "published": "2026-07-01T17:03:00+0900"
+        },
+        {
+          "title": "트럼프, 작년에만 가상자산으로 2조원 벌어",
+          "url": "https://www.etoday.co.kr/news/view/2599298",
+          "published": "2026-07-01T17:01:00+0900"
+        },
         {
           "title": "이재준, 민선 9기 첫발은 청년의 꿈…수원이 달라진다",
           "url": "https://www.etoday.co.kr/news/view/2599309",
@@ -1897,76 +1967,6 @@
           "title": "“아날로그 백신 관리로는 사고 반복…디지털화 없이 못 막아”",
           "url": "https://www.etoday.co.kr/news/view/2599289",
           "published": "2026-07-01T16:31:00+0900"
-        },
-        {
-          "title": "새벽 쓰레기 줍고 돌아온 시장, 민선 9기 1호 결재 펜을 들었다…용인반도체 종합계획 서명",
-          "url": "https://www.etoday.co.kr/news/view/2599283",
-          "published": "2026-07-01T16:26:00+0900"
-        },
-        {
-          "title": "굽네치킨도 사이드 메뉴 가격 인상…외식업계 가격 조정 확산",
-          "url": "https://www.etoday.co.kr/news/view/2599291",
-          "published": "2026-07-01T16:22:00+0900"
-        },
-        {
-          "title": "수백억 ‘고래’ 코인 시세조종 적발……금융위, 혐의자 수사기관 고발",
-          "url": "https://www.etoday.co.kr/news/view/2599290",
-          "published": "2026-07-01T16:20:00+0900"
-        },
-        {
-          "title": "MBK, 일본 투자 2조원대 엑시트…홈플러스 추가 지원 논란은 계속",
-          "url": "https://www.etoday.co.kr/news/view/2599287",
-          "published": "2026-07-01T16:14:00+0900"
-        },
-        {
-          "title": "\"오늘은 내가 골라 먹을게요\"…수원 세류유치원, 경기도 자율선택급식 운영 유치원 선정",
-          "url": "https://www.etoday.co.kr/news/view/2599288",
-          "published": "2026-07-01T16:14:00+0900"
-        },
-        {
-          "title": "폴란드서 막힌 K-잠수함, 캐나다 60조 잠수함 사업서 벼랑 끝 승부수",
-          "url": "https://www.etoday.co.kr/news/view/2599239",
-          "published": "2026-07-01T16:13:00+0900"
-        },
-        {
-          "title": "정부, 피지컬 AI 1강 시동…“3년이 골든타임”",
-          "url": "https://www.etoday.co.kr/news/view/2599274",
-          "published": "2026-07-01T16:13:00+0900"
-        },
-        {
-          "title": "[오늘의 주요공시] 삼성E&IㆍHL D&IㆍHD한국조선해양 등",
-          "url": "https://www.etoday.co.kr/news/view/2599286",
-          "published": "2026-07-01T16:11:00+0900"
-        },
-        {
-          "title": "미국, 앤스로픽 최신 AI 다시 푼다…18일 만에 수출통제 해제",
-          "url": "https://www.etoday.co.kr/news/view/2599282",
-          "published": "2026-07-01T16:11:00+0900"
-        },
-        {
-          "title": "롯데웰푸드, 해외 매출 비중 32% 돌파… 미국 ‘팬시푸드쇼 2026’서 유통망 넓혔다",
-          "url": "https://www.etoday.co.kr/news/view/2599285",
-          "published": "2026-07-01T16:09:00+0900"
-        },
-        {
-          "title": "김기찬 ICSB 의장 \"4차 산업혁명에서 5차 혁명...기술에서 사람중심으로 나아가야\"",
-          "url": "https://www.etoday.co.kr/news/view/2599269",
-          "published": "2026-07-01T16:09:00+0900"
-        },
-        {
-          "title": "롯데시네마·메가박스 합병 ‘최종 결렬’…멀티플렉스 시장 재편 ‘삐그덕’",
-          "url": "https://www.etoday.co.kr/news/view/2599276",
-          "published": "2026-07-01T16:08:00+0900"
-        },
-        {
-          "title": "플랜트건설노조, 8월 총파업 예고…노란봉투법 시행 후 첫 하청노조 파업하나",
-          "url": "https://www.etoday.co.kr/news/view/2599268",
-          "published": "2026-07-01T16:07:00+0900"
-        },
-        {
-          "title": "새벽 쓰레기 줍고 돌아온 시장, 민선 9기 1호 결재 펜을 들었다…용인반도체 종합계획 서명",
-          "url": "https://www.etoday.co.kr/news/view/2599283",
-          "published": "2026-07-01T16:07:00+0900"
         }
       ]
     },
@@ -4463,11 +4463,6 @@
       "home": "https://finance.yahoo.com",
       "items": [
         {
-          "title": "Is Kontoor Brands, Inc. (KTB) A Good Stock To Buy Now?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/kontoor-brands-inc-ktb-good-204413876.html",
-          "published": "2026-06-30T05:44:13+0900"
-        },
-        {
           "title": "SanDisk Stock: Here’s Why Analysts Are Quietly Raising Price Targets",
           "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-stock-why-analysts-quietly-204338162.html",
           "published": "2026-06-30T05:43:38+0900"
@@ -4533,24 +4528,9 @@
           "published": "2026-06-30T05:36:48+0900"
         },
         {
-          "title": "Which Is the Better Short-Term Bond ETF for Income and Safety: iShares' ISTB or Schwab's SCHO?",
-          "url": "https://finance.yahoo.com/markets/options/articles/better-short-term-bond-etf-203510299.html",
-          "published": "2026-06-30T05:35:10+0900"
-        },
-        {
-          "title": "Why the Market’s Rally Can Continue",
-          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-062926/card/why-the-market-s-rally-can-continue-JzcfvmVr8T3Xo4npdTPY?siteid=yhoof2&yptr=yahoo",
-          "published": "2026-06-30T05:34:12+0900"
-        },
-        {
           "title": "Exclusive-NBCUniversal may enter video game business after Comcast split, sources say",
           "url": "https://finance.yahoo.com/media-advertising/articles/exclusive-nbcuniversal-may-enter-video-203348865.html",
           "published": "2026-06-30T05:33:48+0900"
-        },
-        {
-          "title": "Oracle stock suffers its worst weekly slump since 2001 dot-com bust",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-stock-suffers-worst-weekly-203300056.html",
-          "published": "2026-06-30T05:33:00+0900"
         },
         {
           "title": "Amazon Stock Climbs During Strong Day For Magnificent Seven",
@@ -4563,9 +4543,9 @@
           "published": "2026-06-30T05:31:05+0900"
         },
         {
-          "title": "I'm 63 and Planning to Retire at 67. How Do I Make Sure I Don't Run Out of Money?",
-          "url": "https://finance.yahoo.com/markets/articles/im-63-planning-retire-67-203105290.html",
-          "published": "2026-06-30T05:31:05+0900"
+          "title": "Analyst compares Saylor to crypto's 'biggest villain'",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/analyst-compares-saylor-cryptos-biggest-203000372.html",
+          "published": "2026-06-30T05:30:00+0900"
         },
         {
           "title": "OKX Courts Stranded Users as Bybit Starts EEA Trading Restrictions",
@@ -4573,9 +4553,24 @@
           "published": "2026-06-30T05:30:00+0900"
         },
         {
+          "title": "AeroVironment Reports Higher Fourth-Quarter Profit As Revenue More Than Doubles",
+          "url": "https://www.wsj.com/business/earnings/aerovironment-reports-higher-fourth-quarter-profit-as-revenue-more-than-doubles-2e4353a7?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-06-30T05:26:00+0900"
+        },
+        {
+          "title": "Intuitive Machines Stock Is Falling: What Investors Need to Understand",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/intuitive-machines-stock-falling-investors-202500585.html",
+          "published": "2026-06-30T05:25:00+0900"
+        },
+        {
           "title": "Casey’s General Stores (CASY) – Among the 10 Best July Dividend Stocks to Buy",
           "url": "https://finance.yahoo.com/markets/stocks/articles/casey-general-stores-casy-among-202400173.html",
           "published": "2026-06-30T05:24:00+0900"
+        },
+        {
+          "title": "Robert Kiyosaki flips his gold stance after weeks of waiting",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/robert-kiyosaki-flips-gold-stance-202300452.html",
+          "published": "2026-06-30T05:23:00+0900"
         },
         {
           "title": "Is AbbVie (ABBV) One of the 10 Best July Dividend Stocks to Buy?",
@@ -4611,6 +4606,11 @@
           "title": "Digital Realty to pay Blackstone $3.5 billion for stake in Virginia data centers",
           "url": "https://finance.yahoo.com/real-estate/articles/digital-realty-buy-blackstones-data-201427952.html",
           "published": "2026-06-30T05:14:27+0900"
+        },
+        {
+          "title": "Washington Trust Bancorp (WASH) Gets Higher Price Target from Piper Sandler Ahead of Q2 Results",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/washington-trust-bancorp-wash-gets-201223519.html",
+          "published": "2026-06-30T05:12:23+0900"
         }
       ]
     },
@@ -4620,14 +4620,19 @@
       "home": "https://search.cnbc.com",
       "items": [
         {
+          "title": "Dow futures hit reverse after strongest first half in five years: Live updates",
+          "url": "https://www.cnbc.com/2026/06/30/stock-market-today-live-updates.html",
+          "published": "2026-07-01T17:04:03+0900"
+        },
+        {
+          "title": "Iran says it is selling oil at 20% premium as end of U.S. blockade sees 40 million barrels exported",
+          "url": "https://www.cnbc.com/2026/07/01/iran-us-mou-negotiation-war-oil-exports-strait-of-hormuz-.html",
+          "published": "2026-07-01T17:03:28+0900"
+        },
+        {
           "title": "Europe’s defense boom faces a new test: Can it actually deliver weapons?",
           "url": "https://www.cnbc.com/2026/07/01/europe-defense-stocks-rearmament.html",
           "published": "2026-07-01T16:18:52+0900"
-        },
-        {
-          "title": "Dow futures hit reverse after strongest first half in five years: Live updates",
-          "url": "https://www.cnbc.com/2026/06/30/stock-market-today-live-updates.html",
-          "published": "2026-07-01T16:17:38+0900"
         },
         {
           "title": "Xi touts China Communist Party's global influence in speech marking 105th anniversary",
@@ -4668,11 +4673,6 @@
           "title": "U.S. military deploys over 900 personnel to Venezuela for earthquake response",
           "url": "https://www.cnbc.com/2026/07/01/us-military-deploys-over-900-personnel-to-venezuela-for-earthquake-response.html",
           "published": "2026-07-01T11:53:13+0900"
-        },
-        {
-          "title": "Iran says it is selling oil at 20% premium as end of U.S. blockade sees 40 million barrels exported",
-          "url": "https://www.cnbc.com/2026/07/01/iran-us-mou-negotiation-war-oil-exports-strait-of-hormuz-.html",
-          "published": "2026-07-01T11:51:58+0900"
         },
         {
           "title": "CNBC Daily Open: AI demand fuels investors' portfolios while oil posts biggest monthly decline",
@@ -4991,6 +4991,11 @@
       "home": "https://feeds.content.dowjones.io",
       "items": [
         {
+          "title": "Stock Market Today: Dow Futures Slip as Investors Pause After Bumper Quarter",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-07-01-2026?mod=rss_markets_main",
+          "published": "2026-07-01T16:59:24+0900"
+        },
+        {
           "title": "Eni, Mercuria to Establish Commodities Trading Joint Venture",
           "url": "https://www.wsj.com/business/energy-oil/eni-mercuria-to-establish-commodities-trading-joint-venture-b147968a?mod=rss_markets_main",
           "published": "2026-07-01T16:52:00+0900"
@@ -5074,11 +5079,6 @@
           "title": "Taiwan Steps Up Probe Into AI Hardware Smuggling",
           "url": "https://www.wsj.com/tech/taiwan-steps-up-probe-into-ai-hardware-smuggling-2baa6e40?mod=rss_markets_main",
           "published": "2026-06-30T17:50:00+0900"
-        },
-        {
-          "title": "Stock Market News, June 30, 2026: Nasdaq Advances, Climbs 21% for Quarter",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-30-2026?mod=rss_markets_main",
-          "published": "2026-06-30T16:56:12+0900"
         },
         {
           "title": "America Needs More Weapons. JPMorgan Wants to Add Its Firepower.",
@@ -5173,6 +5173,11 @@
           "published": null
         },
         {
+          "title": "국민께서 믿고 이용하실 수 있는 건전한 대부시장을 만들겠습니다.",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283675",
+          "published": null
+        },
+        {
           "title": "도수치료 관리급여 7월 1일 시행, 국민 의료비 부담 완화",
           "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283655",
           "published": null
@@ -5215,6 +5220,16 @@
         {
           "title": "청년 노동자의 과로·공짜 노동, 철저히 근절하겠습니다.",
           "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283665",
+          "published": null
+        },
+        {
+          "title": "금융감독원, 민생침해 금융범죄 대응역량 강화를 위한 은행권 준법감시인 간담회 개최",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283668",
+          "published": null
+        },
+        {
+          "title": "직장내 괴롭힘을 견디던 간호사의 극단적 선택 해당 병원에 대해 기획감독 착수, 병·의원 전반의 조직문화 개선도 함께 추진",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283674",
           "published": null
         },
         {
@@ -5278,23 +5293,8 @@
           "published": null
         },
         {
-          "title": "「2010-2015-2020년 접속산업연관표」 작성 결과",
-          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283583",
-          "published": null
-        },
-        {
-          "title": "보험업권의 과도한 판매수수료 경쟁을 방지하고, 수수료에 대한 소비자의 알권리를 제고하기 위한 보험 판매수수료 제도개선 사항이 7.1일부터 시행됩니다.",
-          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283496",
-          "published": null
-        },
-        {
-          "title": "2026년 5월 온라인쇼핑동향",
-          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283601",
-          "published": null
-        },
-        {
-          "title": "청년 의견 반영하면 ‘마일리지’ … 국토교통 정책에 청년 감수성 높인다",
-          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283603",
+          "title": "전공의 수련환경 혁신 지원 위해 56개 수련병원에 약 950억 원 투입",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=283676",
           "published": null
         }
       ]
@@ -6370,87 +6370,87 @@
         {
           "title": "TOP500 at ISC’26: We have a New Number 1",
           "url": "https://chipsandcheese.com/p/top500-at-isc26-we-have-a-new-number",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "An Interview with Intel's Kira Boyko: Xeon 6+'s Product Director",
           "url": "https://chipsandcheese.com/p/an-interview-with-intels-kira-boyko",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Evaluating SPEC CPU2026",
           "url": "https://chipsandcheese.com/p/evaluating-spec-cpu2026",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Evaluating Geekbench 6",
           "url": "https://chipsandcheese.com/p/evaluating-geekbench-6",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Investigating Split Locks on x86-64",
           "url": "https://chipsandcheese.com/p/investigating-split-locks-on-x86",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Embracing AI with Claude's C Compiler",
           "url": "https://chipsandcheese.com/p/embracing-ai-with-claudes-c-compiler",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Microbenchmarking Chipsets for Giggles",
           "url": "https://chipsandcheese.com/p/microbenchmarking-chipsets-for-giggles",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Analyzing Nvidia GB10's GPU",
           "url": "https://chipsandcheese.com/p/analyzing-nvidia-gb10s-gpu",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Arm's Cortex X925: Reaching Desktop Performance",
           "url": "https://chipsandcheese.com/p/arms-cortex-x925-reaching-desktop",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Arm’s Cortex A725 ft. Dell’s Pro Max with GB10",
           "url": "https://chipsandcheese.com/p/arms-cortex-a725-ft-dells-pro-max",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "CES 2026: Taking the Lids off AMD's Venice and MI400 SoCs",
           "url": "https://chipsandcheese.com/p/ces-2026-taking-the-lids-off-amds",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Diving into Qualcomm's Upcoming Adreno X2 GPU with Eric Demers",
           "url": "https://chipsandcheese.com/p/diving-into-qualcomms-upcoming-adreno",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Inside Nvidia GB10’s Memory Subsystem, from the CPU Side",
           "url": "https://chipsandcheese.com/p/inside-nvidia-gb10s-memory-subsystem",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "SC25: The Present and Future of HPC Networking with Cornelis Networks CEO Lisa Spelman",
           "url": "https://chipsandcheese.com/p/sc25-the-present-and-future-of-hpc",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Nvidia’s B200: Keeping the CUDA Juggernaut Rolling ft. Verda (formerly DataCrunch)",
           "url": "https://chipsandcheese.com/p/nvidias-b200-keeping-the-cuda-juggernaut",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "SC25: Estimating AMD’s Upcoming MI430X’s FP64 and the Discovery Supercomputer",
           "url": "https://chipsandcheese.com/p/sc25-estimating-amds-upcoming-mi430xs",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "Evaluating Uniform Memory Access Mode on AMD's Turin ft. Verda (formerly DataCrunch.io)",
           "url": "https://chipsandcheese.com/p/evaluating-uniform-memory-access",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         }
       ]
     },
@@ -6683,159 +6683,316 @@
       ]
     },
     {
+      "name": "한국금융신문",
+      "method": "crawl",
+      "home": "https://www.fntimes.com",
+      "items": [
+        {
+          "title": "인천농협·고향주부모임, 강화 포도농가 일손돕기…'이심점심' 중식도 지원",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011535318931dd55077bc2_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "MBK, 일본 투자회사 2조 엑시트…홈플러스 추가 지원 압박 커지나",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011620188235b5b890e35c_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "중구의회, 제10대 전반기 원구성 완료…의장 윤판오·부의장 양은미",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011611343059b372994c95_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "삼전 초기업노조 \"반도체 메가프로젝트, 노사정 협의체 구성하자\"",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070115594945057de3572ddd_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "동부건설, 2026년 신입사원 입사식 개최",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011535143961b372994c95_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "대한민국 한우 품질 경쟁력 높인다…신규 보증씨수소 16두 선발",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011529083908dd55077bc2_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "금호건설, 과천 공공하수처리시설 현대화사업 수주…2249억원 규모",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011531248962b372994c95_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "[인사] 신한은행",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070115245012891b5a221379_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "롯데마트, 하반기 첫 ‘통큰데이’ 진행…장어부터 아이스크림까지 최대 50% 할인",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011522103157b5b890e35c_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "운현궁 한옥에 스며드는 조각보의 빛",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070115135497459bdb80fab5_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "박셀바이오, 아이티아이즈와 MOU…AI 기반 차세대 세포·유전자치료제 개발",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011502031640892e2583cc_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "[현장] 피지컬AI, 금융당국·산업부 함께 키운다···은행권 역할도 '확대' [생산적 금융 대전환]",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070113121592555e6e69892f_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "[인사] NH투자증권[인사] NH투자증권◇ 신규 선임▲ WM사업부 대표 이재열 ▲ 부동산인프라사업부 대표 박유신▲ 고객자산운용사업부 대표 조현광◇ 전보▲ OCIO운용본부장 문혜경2026-07-01 수요일 | 방의진 기자",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070111360696220f4390e77d_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "이마트24, ‘가뿐한입’ 론칭…고단백·저당·제로슈거 먹거리 강화",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011423248637b5b890e35c_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "[인사] 신한카드<이동>◇Hub장▲수도권1Hub장 양재용 ▲중부Hub장 우상수 ▲영남Hub장 손호규<신규선임>◇부장▲플랫폼개발부장 김국성 ▲신기술인프라부장 변영진▲회계부장 유형관 ▲글로벌사업부장 신용민◇Post장▲충청오토금융Post장 정원기 ▲울산카드Post장 조인남◇파트장/팀장▲가맹점영업부 국제매입파트장 정미순 ▲...2026-07-01 수요일 | 강은영 기자",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070114212567999efc5ce4ae_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "진양곤 HLB그룹 의장, HLB이노베이션 대표이사 선임",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011407447564923defd0cc_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "“노란 장판은 옛말” PVC 바닥재가 뜬다…KCC글라스 ‘포레스톤’, 프리미엄시장 공략",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011356506555892e2583cc_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "\"이 와중에 영업익 135% 급증\" HMM 역발상 포트폴리오 '눈길'",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070110523756147fd637f543_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "호반그룹, 창립 37주년 맞아 AI·상생 경영 강조…건설 넘어 사업 다각화 지속",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011336523401048b718333_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "국회 정무위원장에 유동수·재경위원장에 조승래…금융·경제 입법 시동",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011324405202179ad43907_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "‘미래사업’ 넘어 ‘원롯데’까지…신유열, 후계 수업 2막 올랐다",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011131562792b5b890e35c_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "삼성물산, 日 인프로니아와 인프라 개발 협력…글로벌 PPP 사업 확대 추진",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011323395361048b718333_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "'써밋 더힐' 6일 무순위 청약…서울 무주택자 신청 가능 [이 시각 분양]",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011246008863048b718333_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "'트리븐 김해' 3일 견본주택 개관…398가구 공급 [이 시각 분양]",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011203417467048b718333_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "[인사] 시사오늘△ 편집국장 김재창2026-07-01 수요일 | 이창선 기자",
+          "url": "https://www.fntimes.com/html/view.php?ud=202607011139431333c1c16452b0_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "개인 순매수 100조 육박…“신규 자금보다 자산 재배분이 주도”",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026070111070585692a735e27af_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "HLB파나진, AOC 핵심 특허 출원·정부 지원사업 선정",
+          "url": "https://www.fntimes.com/html/view.php?ud=202606300811397044923defd0cc_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "“주가조작 보상 상한 없앤다…부당이득 30% ‘현금 인센티브’로 내부자 제보 총동원”",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026063011345581262a735e27af_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "[DCM] 미래에셋증권, 첫 공모CP 1.26조…회사채 대신 택한 배경은",
+          "url": "https://www.fntimes.com/html/view.php?ud=202606301420535011141825007d_18",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "NHN KCP, AI·스테이블코인으로 미래 결제 인프라 선점 [PG사 신사업 전략]",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026061816052630599efc5ce4ae_18",
+          "published": "2026-07-01T17:13:06+0900"
+        }
+      ]
+    },
+    {
       "name": "더벨 - IPO/발행사",
       "method": "crawl",
       "home": "https://www.thebell.co.kr",
       "items": [
         {
-          "title": "코스닥 수장 \"엔비디아 20년간 주가 횡보, 인큐베이팅 타임 줘야\"",
+          "title": "하나금융, 2년전 고환율 대응 '학습 효과'",
+          "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202607011509339840104576",
+          "published": "2026-07-01T17:13:06+0900"
+        },
+        {
+          "title": "황철주 회장 \"엔비디아 20년간 주가 횡보, 기업 인큐베이팅 타임 줘야\"",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202607011625200120104882",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "1.2조 확보 SK가스, SK어드밴스드 인수부담 줄였다",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202607011634561560106593",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "이마트, 작년 정보보호에 81억 투입…5년 새 133%↑",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202607011613569480108282",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "등급 스플릿·차입 부담…자본확충으로 돌파구",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202607011605215960104059",
-          "published": "2026-07-01T16:58:47+0900"
-        },
-        {
-          "title": "완만한 상승에 달러 강세까지…커버드콜 '진가 발휘'",
-          "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202607011538529800103084",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "높아진 주가 변동성, 늘어나는 대주주 주담대 부담",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606301156261560107256",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "성호전자, 알짜 메자닌으로 인티맥스 인수자금 확보",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606142329034960106511",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "꽃놀이패 쥔 성호전자, 메자닌 활용법 눈길",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606111033054000106111",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "성호전자, '코스닥 간판'이 되려면",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202605131630448360108663",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "대주주·경영진 갈등 공식화, 이사회 장악 경쟁",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606250053091910108779",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "주가 부진에 서룡전자 구주 인수 부담 확대",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606240039386410107971",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "보폭 넓히는 SK 3세들, 주목받는 ‘영근·성환·민근’ 지분",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606231043193880103945",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "경영 전면 속속 등장하는 SK그룹 3세들",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606190948196160109252",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "대주주 한컴위드 지배력 강화, 저평가 국면 활용",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606190505370660106779",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "오너 2세 김근하 대표 사임, 조사 리스크 선제 대응",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606181658300520103015",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "한솔홀딩스 조성민 부사장, '자사주 매입 러시' 입지 강화",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606181543127320108287",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "지주사 요건 마침내 충족…계열분리 시점 가까워졌나",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606121625541040107074",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "주총 전 극적 합의, 기존 핵심주주 지분 매각",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606082351109280102638",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "의무공개매수 나비효과…IB 영업 지형도 바뀔까",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606301432495040107026",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "유진증권, 방산·우주 애널 IPO 전면배치 전략 \"통했다\"",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606291506221440103572",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "삼수생 레메디 투자 결실 임박…KB증권 '흐뭇'",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606171341151120107632",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "'다작' 미래에셋 vs '실속' 중견사…엇갈린 IPO 판도",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606110747510080108732",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "영업 독려 효과 본 신한증권, 다시 DCM 4위 탈환",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606101834324520101582",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "롤러코스터 타는 마키나락스 주가…펀더멘털은 건재",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606150822542160108778",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "티에스인베, 주식병합으로 체질 개선 시동",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606041430036400102956",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "주인 바뀐 케이카, 주가 회복 기대감",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202605201611589840104378",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "저스템, HBM 투자 확대 수혜…최대 실적에 신고가 경신",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202605131506020600106141",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "'상한가 행진' 가온전선, 엔비디아 AIDC 투자 수혜 기대",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202605111451371320108041",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "공모주 전문 운용사, 자문사 손잡고 활로 찾는다",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202607011531302160105044",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "코스피 강세장에 외면받는 '공모주' 펀드",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606301310136080103146",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         }
       ]
     },
@@ -6847,67 +7004,67 @@
         {
           "title": "JYP, 선제적 사추위 신설 '지배구조 선진화' 고삐",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606301437495640105593",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "JYP엔터, '스키즈' 공백 메운 저연차·MD",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202605141804563680101787",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "JYP엔터, '미국·이닛'에 투자 화력 집중",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202604231235208200102043",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "JYP엔터, 성공적 고정비 통제 '영업이익률 발군'",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202604230150324210102753",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "10인에서 11인 체제로 확대",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606301400081960101450",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "이사회 과반 확보 CJ, 웨이브 합병 KT에 막힌 이유는",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606291531181480106978",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "LG 계열 3사, 보상위 도입 '보수체계 개선' 속도",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606291353574160107942",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "선임사외이사의 역할과 한계…\"제도 운영이 관건\"",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606241406122320107481",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "사외이사회, 어떻게 운영되고 있나",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606231637371560103314",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "사후 보고사항 '정보보호' 추가, 해킹 재발 방지 총력",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606241116032760107840",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "선임사외이사 도입 1년…오너 경영에 독립성 보완 묘수",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606181503196840108627",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "줄어든 사내이사, 모회사 입김 강화",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606231128004640105558",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
           "title": "카카오엔터 CIPO, 쇼노트 합류…IP 시너지 방점",
           "url": "https://www.thebell.co.kr/front/newsview.asp?code=1101&key=202606221310021000107845",
-          "published": "2026-07-01T16:58:47+0900"
+          "published": "2026-07-01T17:13:06+0900"
         }
       ]
     },
@@ -6917,154 +7074,154 @@
       "home": "https://wccftech.com",
       "items": [
         {
-          "title": "Qualcomm’s Shadow Still Casts On Apple, As iPhone 18 Pro To Feature Both Snapdragon & C2 5G Modems, Hinting At Latter’s Lack Of mmWave Support",
-          "url": "https://wccftech.com/iphone-18-pro-could-launch-in-both-snapdragon-and-c2-5g-modem-variants/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "NVIDIA GeForce RTX 5090D Becomes The First Blackwell GPU To Hit 4 GHz Overclock In A Spectacular Showcase By Team OGS Using GALAX HOC OC Lab Variant",
+          "url": "https://wccftech.com/nvidia-geforce-rtx-5090d-becomes-the-first-blackwell-gpu-to-hit-4-ghz-overclock/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "AI Helped A Verizon Customer Steer Clear From The Carrier’s Simplicity Plan, With Visible Offering A Better Deal For Most People",
-          "url": "https://wccftech.com/ai-helped-a-customer-stick-with-visible-plan-after-simplicity-offer/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Musk’s Terafab Scores 18 Year Intel Veteran As Foundry Manager For $55 Billion Chip Manufacturing Project",
+          "url": "https://wccftech.com/musks-terafab-scores-18-year-intel-veteran-as-foundry-manager-for-55-billion-chip-manufacturing-project/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Samsung Prepares To Kill Its Galaxy Z Flip Line The Way It Buried The Note, As A Rollable Phone Gears Up To Hog The Spotlight",
-          "url": "https://wccftech.com/samsung-prepares-to-kill-its-galaxy-z-flip-line-the-way-it-buried-the-note-as-a-rollable-phone-gears-up-to-hog-the-spotlight/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Intel Breaks Ground On New Manufacturing Facility In Santa Clara, As Foundry Business Brings Back Semiconductor Leadership Right In The Heart of Silicon Valley",
+          "url": "https://wccftech.com/intel-foundry-breaks-ground-on-new-manufacturing-facility-in-santa-clara-silicon-valley/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Arbitration Rules Give Affected T-Mobile Users A Real Path To Compensation After The Carrier Just Retired Every Legacy Plan, Hiking Bills By ~$4 Per Line",
-          "url": "https://wccftech.com/arbitration-rules-give-affected-t-mobile-users-a-real-path-to-compensation-after-the-carrier-just-retired-every-legacy-plan-hiking-bills-by-4-per-line/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Is Cloud Gaming Worth It In 2026? Pros, Cons, Trade-Offs & Why It Still Can’t Replace Gaming PCs",
+          "url": "https://wccftech.com/is-cloud-gaming-worth-it-in-2026-pros-cons-trade-offs-why-it-still-cant-replace-gaming-pcs/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "A Laptop Hunter Was Willing To Pay 50% More For Windows Notebooks To Avoid Apple’s Locked Ecosystem, Ended Up Getting An M5 MacBook Air Because Of Its Value",
-          "url": "https://wccftech.com/laptop-hunter-who-wanted-windows-laptop-got-m5-macbook-air-because-of-its-value/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "NVIDIA Slashes DeepSeek v4 Token Costs By Up To 5x Just One Month After Launch, Through Pure Blackwell Software Tuning",
+          "url": "https://wccftech.com/nvidia-slashes-deepseek-v4-token-costs-by-up-to-5x-one-month-after-launch/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "First Apple, Now Samsung; BOE Misses Another Opportunity As Plans To Use Chinese OLEDs In Galaxy S27 Have Been Halted",
-          "url": "https://wccftech.com/boe-oleds-will-not-be-used-in-galaxy-s27-as-deal-falls-apart/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Etched Pulls 400+ Engineers From NVIDIA, TSMC & More to Build a New Frontier Inference Cluster For AI Which Is Already Worth $1B in Demand",
+          "url": "https://wccftech.com/etched-pulls-400-engineers-nvidia-tsmc-build-new-frontier-inference-cluster-for-ai/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Samsung Could Aid Apple’s Rapid 1.4nm Transition, As Foundry Giant Reportedly Restarting Commercialization Of Next-Generation Lithography",
-          "url": "https://wccftech.com/samsung-beginning-commercialization-of-1-4nm-process-could-aid-apple/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "AOC Introduces GAMING 25G4ZR Gaming Monitor, Bringing 260 Hz To A 24.5-inch Fast IPS Panel",
+          "url": "https://wccftech.com/aoc-introduces-gaming-25g4zr-gaming-monitor-bringing-260-hz-to-a-24-5-inch-fast-ips-panel/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "iPhone 18 Pro Drop Test Video Surfaces, Revealing The Flagship In An Unchanged Design, But Thankfully A New Paint Job Is Expected This Year",
-          "url": "https://wccftech.com/iphone-18-pro-drop-video-leaks-showing-same-design-new-color/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "NVIDIA Reportedly Kills RTX 5050 9 GB Before Launch As Its Own RTX 3060 12 GB Makes It Pointless",
+          "url": "https://wccftech.com/nvidia-reportedly-kills-rtx-5050-9-gb-before-launch-as-its-own-rtx-3060-12-gb-makes-it-pointless/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple Is Moving The iPhone 18 Pro’s IR Flooder To The Side, As A CT Scan Exposes A Huge Vapor Chamber Stretching To The Top, And A Smaller Dynamic Island",
-          "url": "https://wccftech.com/apple-is-moving-the-iphone-18-pros-ir-flooder-to-the-side-as-a-ct-scan-exposes-a-huge-vapor-chamber-stretching-to-the-top-and-a-smaller-dynamic-island/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Samsung Ready To Tackle Intel & TSMC With Its 1.4nm Process Tech, Aiming Mass Production For 2029",
+          "url": "https://wccftech.com/samsung-ready-to-tackle-intel-tsmc-with-1-4nm-process-mass-production-2029/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "An Apple Watch Ultra Protected Its Owner’s Arm From “Road Burns Or A Dislocated Elbow” Because Of A Sidestepped Car, But Sustained Irreparable Damage In The Process",
-          "url": "https://wccftech.com/apple-watch-ultra-took-irreparable-damage-to-protect-owners-arm/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "AMD Zen 6 Gains a New Low-Power Core Beyond Zen 6 and Zen 6C, Surfacing in Linux Kernel Patches",
+          "url": "https://wccftech.com/amd-zen-6-new-low-power-core-beyond-zen-6-and-zen-6c/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple’s A20 Pro Borrows Samsung’s Side-by-Side DRAM Trick, And Places A Vapor Chamber On The Die, Echoing Exynos 2700’s Heat Path Block Strategy",
-          "url": "https://wccftech.com/apples-a20-pro-borrows-samsungs-side-by-side-dram-trick-and-places-a-vapor-chamber-on-the-die-echoing-exynos-2700s-heat-path-block-strategy/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "AMD Radeon GPUs Can Now Run NVIDIA PhysX Games With 3x Boost Thanks To ZLUDA, Without Requiring A Dedicated PhysX GPU",
+          "url": "https://wccftech.com/amd-radeon-gpus-can-now-run-nvidia-physx-games-with-zluda-3x-boost/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple’s Wasting No Time For Next Year’s Flagships, As Company Is Said To Begin Preparations For The iPhone 20 Pro And iPhone Fold 2",
-          "url": "https://wccftech.com/apple-preparing-the-iphone-20-pro-and-iphone-fold-2-for-2027/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "NVIDIA’s Blackwell Ultra GB300 Now Powers Anthropic’s Claude Models on Microsoft Azure, Targeting Autonomous Enterprise Agents",
+          "url": "https://wccftech.com/nvidia-blackwell-ultra-powers-anthropic-claude-models-in-microsoft-azure/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "T-Mobile Hikes Prices By Retiring Legacy Plans As Verizon And AT&T Race For Cuts, Leaving Loyal Customers Paying $4 More Per Line",
-          "url": "https://wccftech.com/t-mobile-hikes-prices-by-retiring-legacy-plans-as-verizon-and-att-race-for-cuts-leaving-loyal-customers-paying-4-more-per-line/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Apple’s Bid to Source Memory From China’s CXMT May Collapse as Beijing Prioritizes its Own Chip-Starved Firms",
+          "url": "https://wccftech.com/apples-bid-to-source-memory-from-chinas-cxmt-may-collapse-as-beijing-prioritizes-its-own-chip-starved-firms/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "CXMT Can Witness Explosive Growth By Becoming Apple’s DRAM Supplier For Several Years As Just A Single Deal Represents A Promising Future For The Chinese Firm",
-          "url": "https://wccftech.com/cxmt-inked-3-billion-deal-from-one-customer-has-potential-to-secure-apple-orders/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Gothic 1 Remake PC Performance Analysis & Tuning Guide – How To Get The Best Experience On PC",
+          "url": "https://wccftech.com/how-to/gothic-1-remake-pc-performance-analysis-tuning-guide-how-to-get-the-best-experience-on-pc/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Vancouver Police Just Swapped Their AI-Edited Drug Bust Photos For New Ones, But The Skepticism Refuses To Die",
-          "url": "https://wccftech.com/vancouver-police-just-swapped-their-ai-edited-drug-bust-photos-for-new-ones-but-the-skepticism-refuses-to-die/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Colorful Introduces Memory Tuning Mode For Intel 800 Series Motherboards, Improving Gaming Performance",
+          "url": "https://wccftech.com/colorful-introduces-memory-tuning-mode-for-intel-800-series-motherboards/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Microsoft Edge Just Called Itself The “Best Freakin’ Browser” To Run On An Apple Mac, And There Might Be Some Merit To This Braggadocio",
-          "url": "https://wccftech.com/microsoft-edge-just-called-itself-the-best-freakin-browser-to-run-on-an-apple-mac-and-there-might-be-some-merit-to-this-braggadocio/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Titan Army Reveals M27E6V-3D Glasses-Free 3D Monitor With Up To 2000 Nit XDR Peak Brightness",
+          "url": "https://wccftech.com/titan-army-reveals-m27e6v-3d-glasses-free-3d-monitor-with-up-to-2000-nit-xdr-peak-brightness/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "For Years, Apple Acquired DRAM And Flash Storage For Under $40 But Charged $99 For The Upgrade, Now It’s About To Pay ~$200 For The Combo And Crying Out For Aid",
-          "url": "https://wccftech.com/for-years-apple-acquired-dram-and-flash-storage-for-under-40-but-charged-99-for-the-upgrade-now-its-about-to-pay-200-for-the-combo-and-crying-out-for-aid/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "China’s CXMT Also Engages In Long-Term Memory Agreement With Tencent That’s Reportedly Worth Almost $3 Billion",
+          "url": "https://wccftech.com/china-cxmt-engages-in-long-term-memory-agreement-worth-3-billion/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Mac Studio Redesign Isn’t Expected Until The M7 Ultra Arrives In 2028, And That’ll Only Happen Because Of Increased Power Requirements",
-          "url": "https://wccftech.com/m7-ultra-mac-studio-redesign-expected-in-2028-due-to-high-power-requirements/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "GIGABYTE Silently Launches B850 AORUS Elite X3D Motherboard With X3D Turbo Mode 2.0 Support",
+          "url": "https://wccftech.com/gigabyte-silently-launches-b850-aorus-elite-x3d-motherboard-with-x3d-turbo-mode-2-0-support/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple Being Forced To Drop 2nm Process After Just Two Generations Because Of AI, As Race To Secure 1.4nm Supply Takes Paramount Importance",
-          "url": "https://wccftech.com/apple-to-move-to-1-4nm-process-soon-to-secure-adequate-chip-supply/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "AMD Driver Bug Silently Disables Smart Access Memory On Windows 10, Tanking Gaming Performance And Triggering Crashes",
+          "url": "https://wccftech.com/amd-driver-bug-silently-disables-smart-access-memory-on-windows-10-tanking-gaming-performance-and-triggering-crashes/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Samsung Is Paving The Way For Next-Generation Smartphone SoC Packaging, Squeezing Half The LPDDR5X Chip Size On Its Exynos 2600 With No Performance Loss",
-          "url": "https://wccftech.com/samsung-lpddr5x-half-chip-size-on-exynos-2600-with-no-performance-loss/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Memory Trio Samsung, SK Hynix & Micron Face Class Action Lawsuit As Prices Reach Historical High Due To Shortages",
+          "url": "https://wccftech.com/memory-trio-samsung-sk-hynix-micron-face-class-action-lawsuit/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "MacBook Pro Resellers Are Jacking Up Prices For Configurations Paid Before Apple Introduced Its Hikes, Despite This Practice Never Mentioned In Their T&C",
-          "url": "https://wccftech.com/macbook-pro-resellers-increasing-prices-for-configurations-paid-before-apple-hike/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Samsung, SK hynix, And Micron Now Face A US Federal Class-Action Lawsuit For Colluding To Bring About A “RAMpocalypse”",
+          "url": "https://wccftech.com/samsung-sk-hynix-and-micron-now-face-a-us-federal-class-action-lawsuit-for-colluding-to-bring-about-a-rampocalypse/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple Is Now Begging The Trump Administration For Access To Blacklisted DRAM From CXMT, As iPhone 18 Pro’s Memory Costs Threaten To Triple",
-          "url": "https://wccftech.com/apple-is-now-begging-the-trump-administration-for-access-to-blacklisted-dram-from-cxmt-as-iphone-18-pros-memory-costs-threaten-to-triple/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "AIDA64 Goes Big on AMD Zen 6 Support With The Addition of Mustang Peak, Olympic Ridge, Medusa & Venice Lineups, Also Brings ACE x86 Readiness",
+          "url": "https://wccftech.com/aida64-amd-zen-6-support-mustang-peak-olympic-ridge-medusa-venice-lineups/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "OpenAI’s Quest For An iPhone Killer Lures Apple’s Head Of Vision Pro, As Its MediaTek-Powered Smartphone Lurks In The Shadows",
-          "url": "https://wccftech.com/openais-quest-for-an-iphone-killer-lures-apples-head-of-vision-pro-as-its-mediatek-powered-smartphone-lurks-in-the-shadows/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Jim Keller Says Cerebras IPO Was Helpful As Tenstorrent Set To “Beat Them on Everything”, Confirms Meeting With Intel & Qualcomm CEOs “Hoping To Get A Big Deal”",
+          "url": "https://wccftech.com/jim-keller-cerebras-ipo-was-helpful-tenstorrent-to-beat-them-on-everything/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple’s Growing List Of Compromises: The Touch-Enabled ‘MacBook Ultra’ To Stick With M5 Pro And M5 Max Chips, The Base iPhone 18 To Sport A 9GB RAM",
-          "url": "https://wccftech.com/apples-growing-list-of-compromises-the-touch-enabled-macbook-ultra-to-stick-with-m5-pro-and-m5-max-chips-the-base-iphone-18-to-sport-a-9gb-ram/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Jefferies Warns Memory Prices Will Surge 50% in Q3 2026 and Another 40% in Q4, With No Relief Until 2028",
+          "url": "https://wccftech.com/jefferies-warns-memory-prices-surge-50-percent-q3-40-in-q4-2026-no-relief-until-2028/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple’s A20 Pro With Newer Packaging On iPhone 18 Pro Logic Board Allegedly Leaked, Showing Bigger NPU But No Change To Package Size Compared To A19 Pro",
-          "url": "https://wccftech.com/a20-pro-packaging-with-bigger-npu-shown-on-iphone-18-pro-motherboard-leak/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "RTX 5090 Arrives at Repair Shop With Its 16-Pin Connector Blown to Smithereens, Killing the GPU and VRAM",
+          "url": "https://wccftech.com/rtx-5090-arrives-at-repair-shop-with-16-pin-connector-blown-gpu-vram-dead/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Apple’s M7 To Bring New On-Device AI Performance Levels, With Its Unified Memory Bandwidth Reportedly 56% Higher Than M5, Launch Expected In H1 2027",
-          "url": "https://wccftech.com/apple-m7-to-bring-new-on-device-ai-performance-56-higher-bandwidth-than-m5/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Scalpers Are Already Flipping Steam Machine Reservations On eBay For $2,700–$2,900, Roughly Double Valve’s Price",
+          "url": "https://wccftech.com/scalpers-are-already-flipping-steam-machine-reservations-on-ebay-for-2700-2900-roughly-double-valves-price/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Trump Mobile Takes The T1 Phone Reservation Holders For A Ride, Opens Sales To The Public Without Clearing The Backlog",
-          "url": "https://wccftech.com/trump-mobile-takes-the-t1-phone-reservation-holders-for-a-ride-opens-sales-to-the-public-without-clearing-the-backlog/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "UPERFECT GR19BU 4K QLED Monitor Review: Sharp And Vibrant",
+          "url": "https://wccftech.com/review/uperfect-gr19bu-4k-qled-monitor-review/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "Snapdragon 8 Elite Gen 6 Pro Specification Differences Between Snapdragon 8 Elite Gen 6 Show Why It’ll Be Exclusive For Premium Flagships",
-          "url": "https://wccftech.com/snapdragon-8-elite-gen-6-pro-vs-snapdragon-8-elite-gen-6-differences-mentioned-in-rumor/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "GIGABYTE AORUS RTX 5080 INFINITY And INFINITY WOOD Are Now Available",
+          "url": "https://wccftech.com/gigabyte-aorus-rtx-5080-infinity-and-infinity-wood-are-now-available/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "SpaceX Might Have To Acquire T-Mobile For As Much As $320 Billion To Break The Carrier-Led Chokehold Over Terrestrial Spectrum",
-          "url": "https://wccftech.com/spacex-might-have-to-acquire-t-mobile-for-as-much-as-320-billion-to-break-the-carrier-led-chokehold-over-terrestrial-spectrum/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "NVIDIA Quietly Claims Top Spot In The Datacenter Ethernet Switching Market As The Segment Balloons to $15.4b in Q1 2026",
+          "url": "https://wccftech.com/nvidia-quietly-claims-top-spot-in-the-datacenter-ethernet-switch-market/",
+          "published": "2026-07-01T17:13:06+0900"
         },
         {
-          "title": "A M5 Max MacBook Pro Owner Saved Nearly $3,000 On The Maxed-Out Configuration By Biting The Upgrade Bullet A Week Before Apple Raised Prices",
-          "url": "https://wccftech.com/m5-max-macbook-pro-max-configuration-owner-saved-almost-3000-before-price-increase/",
-          "published": "2026-07-01T16:58:48+0900"
+          "title": "Elon Musk Calls IBM’s 0.7-nanometer Chip Naming Misleading, Says Atoms Should Decide Process Node Labels",
+          "url": "https://wccftech.com/elon-musk-calls-ibms-0-7-nanometer-chip-naming-misleading-says-atoms-should-decide-process-node-labels/",
+          "published": "2026-07-01T17:13:06+0900"
         }
       ]
     },
