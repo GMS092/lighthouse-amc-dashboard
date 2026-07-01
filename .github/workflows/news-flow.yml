@@ -1,0 +1,74 @@
+name: Update News Flow Snapshot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-flow-snapshot
+  cancel-in-progress: true
+
+jobs:
+  update-news-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dashboard
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install collector dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests urllib3 beautifulsoup4 lxml
+
+      - name: Check news bot token
+        id: bot-token
+        env:
+          NEWS_BOT_REPO_TOKEN: ${{ secrets.NEWS_BOT_REPO_TOKEN }}
+        run: |
+          if [ -n "$NEWS_BOT_REPO_TOKEN" ]; then
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout telegram news bot
+        if: steps.bot-token.outputs.has_token == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: GMS092/telegram-news-bot
+          token: ${{ secrets.NEWS_BOT_REPO_TOKEN }}
+          path: telegram-news-bot
+
+      - name: Verify collector inputs
+        run: |
+          if [ ! -f "telegram-news-bot/dynamic_feeds.json" ]; then
+            echo "NEWS_BOT_REPO_TOKEN secret is required to read GMS092/telegram-news-bot."
+            echo "Add a repository secret named NEWS_BOT_REPO_TOKEN with read access to the news bot repository."
+            exit 1
+          fi
+
+      - name: Collect news snapshot
+        env:
+          TELEGRAM_BOT_DIR: ${{ github.workspace }}/telegram-news-bot
+        run: python modules/news-flow/collect.py
+
+      - name: Commit updated snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news-flow.json
+          if git diff --cached --quiet; then
+            echo "No news snapshot changes."
+          else
+            git commit -m "chore: update news flow snapshot"
+            git push
+          fi
