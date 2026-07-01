@@ -127,8 +127,9 @@
       /* 뉴스원 그리드 */
       .sources {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-        gap: 18px;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 16px;
+        align-items: start;
       }
 
       .source-card {
@@ -151,7 +152,7 @@
 
       .news-list { list-style: none; margin: 0; padding: 0; }
       .news-row {
-        padding: 11px 16px; border-bottom: 1px solid var(--line);
+        padding: 9px 16px; border-bottom: 1px solid var(--line);
       }
       .news-row:last-child { border-bottom: 0; }
       .news-row:hover { background: var(--surface-soft); }
@@ -282,7 +283,7 @@
         );
       }
 
-      var MAX_ROWS = 20; // 뉴스원별 최대 노출 줄 수 (초과 시 카드 내부 스크롤)
+      var MAX_ROWS = 6; // 뉴스원별 최대 노출 줄 수 (초과 시 카드 내부 스크롤) — 컴팩트 카드
 
       // 각 뉴스원 리스트를 20줄까지만 보이게 하고, 초과분은 스크롤.
       // 줄 높이가 제목 줄바꿈에 따라 다르므로 20번째 줄의 하단 위치로 높이를 잡는다.
