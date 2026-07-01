@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-07-01T16:40:00+0900",
+  "connected": false,
+  "note": "뉴스 수집(RSS·크롤링)은 아직 연결되지 않았습니다. 아래는 표시 형식 예시입니다.",
+  "sources": [
+    {
+      "name": "연합뉴스",
+      "method": "rss",
+      "home": "https://www.yna.co.kr",
+      "items": [
+        {
+          "title": "(예시) 코스피, 외국인 순매수에 강세… 반도체 주도",
+          "url": "https://www.yna.co.kr",
+          "published": "2026-07-01T09:12:00+0900"
+        },
+        {
+          "title": "(예시) 한국은행, 기준금리 동결… 시장 영향은",
+          "url": "https://www.yna.co.kr",
+          "published": "2026-07-01T08:40:00+0900"
+        }
+      ]
+    },
+    {
+      "name": "매일경제",
+      "method": "rss",
+      "home": "https://www.mk.co.kr",
+      "items": [
+        {
+          "title": "(예시) SK하이닉스, HBM 증설 발표에 목표주가 상향",
+          "url": "https://www.mk.co.kr",
+          "published": "2026-07-01T09:05:00+0900"
+        }
+      ]
+    },
+    {
+      "name": "디일렉 (크롤링 예정)",
+      "method": "crawl",
+      "home": "https://www.thelec.kr",
+      "items": []
+    }
+  ]
+}

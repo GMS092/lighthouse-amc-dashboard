@@ -52,6 +52,9 @@ function runPhaseGenerator() {
 // 전자·닉스 시가총액 비중 스냅샷 (modules/weight-check 가 생성). 정적 JSON 서빙.
 const WEIGHT_DATA_FILE = path.join(__dirname, "data", "weight-check.json");
 
+// 뉴스플로우 스냅샷. 현재는 예시 데이터. 추후 RSS·크롤링 수집기가 이 파일을 생성한다.
+const NEWS_DATA_FILE = path.join(__dirname, "data", "news-flow.json");
+
 function loadEnv(filePath) {
   try {
     const text = require("node:fs").readFileSync(filePath, "utf8");
@@ -217,6 +220,16 @@ const server = http.createServer(async (req, res) => {
 
     if (parsed.pathname === "/api/weight") {
       const data = await fs.readFile(WEIGHT_DATA_FILE);
+      res.writeHead(200, {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store",
+      });
+      res.end(data);
+      return;
+    }
+
+    if (parsed.pathname === "/api/news") {
+      const data = await fs.readFile(NEWS_DATA_FILE);
       res.writeHead(200, {
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-store",

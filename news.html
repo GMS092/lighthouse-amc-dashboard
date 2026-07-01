@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lighthouse AMC · 뉴스플로우</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7f9;
+        --surface: #ffffff;
+        --surface-soft: #eef2f5;
+        --text: #15191d;
+        --muted: #707981;
+        --line: #dbe1e7;
+        --button-bg: #15191d;
+        --button-text: #ffffff;
+        --shadow: 0 20px 50px rgba(28, 39, 49, 0.08);
+        --link: #1565c0;
+        --rss: #e65100;
+        --rss-bg: #fff3e0;
+        --crawl: #2e7d32;
+        --crawl-bg: #e8f5e9;
+      }
+
+      body.theme-dark {
+        color-scheme: dark;
+        --bg: #111417;
+        --surface: #181d21;
+        --surface-soft: #22282d;
+        --text: #f4f6f8;
+        --muted: #9aa4ad;
+        --line: #2d353c;
+        --button-bg: #f4f6f8;
+        --button-text: #111417;
+        --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+        --link: #90caf9;
+        --rss: #ffb74d;
+        --rss-bg: #3d2807;
+        --crawl: #a5d6a7;
+        --crawl-bg: #173a1f;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        transition: background 180ms ease, color 180ms ease;
+      }
+
+      .dashboard { display: grid; min-height: 100vh; grid-template-columns: 248px minmax(0, 1fr); }
+
+      .sidebar {
+        display: flex; flex-direction: column; gap: 28px;
+        border-right: 1px solid var(--line); background: var(--surface);
+        padding: 28px 22px 88px; transition: background 180ms ease, border-color 180ms ease;
+      }
+      .brand { display: flex; align-items: center; gap: 12px; min-height: 40px; }
+      .brand-logo {
+        flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%;
+        object-fit: cover; object-position: 50% 47%;
+        box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(0, 0, 0, 0.16);
+      }
+      .brand-name { font-size: 16px; font-weight: 750; }
+      .nav { display: grid; gap: 8px; }
+      .nav-item {
+        display: flex; align-items: center; gap: 10px; min-height: 42px;
+        border-radius: 8px; padding: 0 12px; color: var(--muted);
+        font-size: 14px; text-decoration: none;
+      }
+      .nav-item:hover { background: var(--surface-soft); color: var(--text); }
+      .nav-item.active { background: var(--surface-soft); color: var(--text); font-weight: 700; }
+      .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+
+      .theme-toggle {
+        position: fixed; left: 22px; bottom: 22px;
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        min-width: 104px; height: 42px; border: 0; border-radius: 8px;
+        background: var(--button-bg); color: var(--button-text); box-shadow: var(--shadow);
+        font: inherit; font-size: 14px; font-weight: 750; cursor: pointer;
+        transition: background 180ms ease, color 180ms ease, transform 160ms ease;
+      }
+      .theme-toggle:hover { transform: translateY(-1px); }
+      .theme-toggle:focus-visible { outline: 3px solid #4c9ffe; outline-offset: 3px; }
+
+      .main { display: flex; min-width: 0; flex-direction: column; }
+      .topbar {
+        display: flex; align-items: center; justify-content: space-between;
+        min-height: 76px; border-bottom: 1px solid var(--line); background: var(--surface);
+        padding: 0 34px; transition: background 180ms ease, border-color 180ms ease;
+      }
+      .title-brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+      .page-title { margin: 0; font-size: 20px; font-weight: 800; }
+      .status { color: var(--muted); font-size: 14px; }
+
+      .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
+
+      /* 미연결 안내 배너 */
+      .notice {
+        display: flex; align-items: center; gap: 10px;
+        border: 1px dashed var(--line); border-radius: 10px;
+        background: var(--surface-soft); color: var(--muted);
+        padding: 12px 16px; font-size: 13px; margin-bottom: 20px;
+      }
+      .notice strong { color: var(--text); }
+
+      /* 뉴스원 그리드 */
+      .sources {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        gap: 18px;
+      }
+
+      .source-card {
+        border: 1px solid var(--line); border-radius: 12px;
+        background: var(--surface); overflow: hidden;
+        display: flex; flex-direction: column;
+      }
+      .source-head {
+        display: flex; align-items: center; gap: 10px;
+        padding: 13px 16px; border-bottom: 1px solid var(--line);
+        background: var(--surface-soft);
+      }
+      .source-name { font-weight: 800; font-size: 14px; }
+      .method-badge {
+        font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 999px;
+      }
+      .method-badge.rss { color: var(--rss); background: var(--rss-bg); }
+      .method-badge.crawl { color: var(--crawl); background: var(--crawl-bg); }
+      .source-count { margin-left: auto; color: var(--muted); font-size: 12px; }
+
+      .news-list { list-style: none; margin: 0; padding: 0; }
+      .news-row {
+        padding: 11px 16px; border-bottom: 1px solid var(--line);
+      }
+      .news-row:last-child { border-bottom: 0; }
+      .news-row:hover { background: var(--surface-soft); }
+
+      .news-top { display: flex; align-items: baseline; gap: 10px; }
+      .news-title {
+        color: var(--text); font-size: 13.5px; font-weight: 700; text-decoration: none;
+        line-height: 1.4; flex: 1; min-width: 0;
+      }
+      .news-title:hover { color: var(--link); text-decoration: underline; }
+      .news-time { color: var(--muted); font-size: 11.5px; white-space: nowrap; flex: 0 0 auto; }
+      .news-link {
+        display: block; margin-top: 3px; color: var(--link); font-size: 11.5px;
+        text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      }
+      .news-link:hover { text-decoration: underline; }
+
+      .source-empty { padding: 18px 16px; color: var(--muted); font-size: 12.5px; }
+
+      .loading, .empty-msg { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
+
+      @media (max-width: 760px) {
+        .dashboard { grid-template-columns: 1fr; }
+        .sidebar { display: none; }
+        .topbar { min-height: 68px; padding: 0 20px; }
+        .workspace { padding: 20px; }
+        .sources { grid-template-columns: 1fr; }
+        .theme-toggle { left: 18px; bottom: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" aria-label="사이드바">
+        <div class="brand">
+          <img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" />
+          <div class="brand-name">Lighthouse AMC</div>
+        </div>
+        <nav class="nav" aria-label="대시보드 메뉴">
+          <a class="nav-item" href="dashboard.html"><span class="nav-dot" aria-hidden="true"></span><span>홈</span></a>
+          <a class="nav-item" href="phase.html"><span class="nav-dot" aria-hidden="true"></span><span>투자의 정석 (동부)</span></a>
+          <a class="nav-item" href="weight.html"><span class="nav-dot" aria-hidden="true"></span><span>전자, 닉스 비중 체크</span></a>
+          <a class="nav-item active" href="news.html"><span class="nav-dot" aria-hidden="true"></span><span>뉴스플로우</span></a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="title-brand">
+            <h1 class="page-title">뉴스플로우</h1>
+          </div>
+          <div class="status" id="update-label">불러오는 중…</div>
+        </header>
+
+        <section class="workspace" aria-label="뉴스플로우 본문">
+          <div class="notice" id="notice" style="display:none">
+            <span aria-hidden="true">🛈</span>
+            <span id="notice-text"></span>
+          </div>
+
+          <div class="loading" id="loading">뉴스를 불러오는 중입니다…</div>
+          <div class="empty-msg" id="empty-msg" style="display:none">표시할 뉴스원이 없습니다.</div>
+          <div class="sources" id="sources"></div>
+        </section>
+      </main>
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span class="theme-label">흑</span>
+    </button>
+
+    <script>
+      (function () {
+        var body = document.body;
+        var toggle = document.querySelector(".theme-toggle");
+        var label = document.querySelector(".theme-label");
+        if (localStorage.getItem("dashboard-theme") === "dark") {
+          body.classList.add("theme-dark");
+          label.textContent = "백";
+        }
+        toggle.addEventListener("click", function () {
+          var isDark = body.classList.toggle("theme-dark");
+          label.textContent = isDark ? "백" : "흑";
+          localStorage.setItem("dashboard-theme", isDark ? "dark" : "light");
+        });
+      })();
+
+      function escapeHtml(s) {
+        return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+        });
+      }
+
+      function fmtTime(iso) {
+        if (!iso) return "";
+        var m = String(iso).match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+        return m ? m[2] + "-" + m[3] + " " + m[4] + ":" + m[5] : "";
+      }
+
+      function fmtUpdate(iso) {
+        var t = fmtTime(iso);
+        return t ? "업데이트 " + iso.slice(0, 4) + "-" + t : "";
+      }
+
+      function methodLabel(method) {
+        if (method === "crawl") return '<span class="method-badge crawl">크롤</span>';
+        return '<span class="method-badge rss">RSS</span>';
+      }
+
+      function renderRow(item) {
+        return (
+          '<li class="news-row">' +
+          '<div class="news-top">' +
+          '<a class="news-title" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer">' +
+          escapeHtml(item.title || "(제목 없음)") + "</a>" +
+          '<span class="news-time">' + fmtTime(item.published) + "</span>" +
+          "</div>" +
+          '<a class="news-link" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer">' +
+          escapeHtml(item.url || "") + "</a>" +
+          "</li>"
+        );
+      }
+
+      function renderSource(src) {
+        var items = src.items || [];
+        var body = items.length
+          ? '<ul class="news-list">' + items.map(renderRow).join("") + "</ul>"
+          : '<div class="source-empty">아직 수집된 기사가 없습니다.</div>';
+        return (
+          '<div class="source-card">' +
+          '<div class="source-head">' +
+          '<span class="source-name">' + escapeHtml(src.name) + "</span>" +
+          methodLabel(src.method) +
+          '<span class="source-count">' + items.length + "건</span>" +
+          "</div>" +
+          body +
+          "</div>"
+        );
+      }
+
+      fetch("/api/news")
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          document.getElementById("loading").style.display = "none";
+          document.getElementById("update-label").textContent = fmtUpdate(data.generated_at) || "";
+
+          if (data.connected === false && data.note) {
+            var n = document.getElementById("notice");
+            document.getElementById("notice-text").innerHTML =
+              "<strong>수집 미연결</strong> · " + escapeHtml(data.note);
+            n.style.display = "flex";
+          }
+
+          var sources = data.sources || [];
+          if (!sources.length) {
+            document.getElementById("empty-msg").style.display = "block";
+            return;
+          }
+          document.getElementById("sources").innerHTML = sources.map(renderSource).join("");
+        })
+        .catch(function (e) {
+          document.getElementById("loading").textContent = "⚠️ 데이터 로드 실패: " + e.message;
+        });
+    </script>
+  </body>
+</html>
