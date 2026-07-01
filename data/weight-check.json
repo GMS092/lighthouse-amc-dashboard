@@ -1,0 +1,225 @@
+{
+  "source": "KOFIA 금융투자협회 · 시가총액 비중안내 (데이터: 코스콤)",
+  "metric": "해당 월 매일의 최종시가총액 / 유가증권시장 전체 최종시가총액 비율의 1개월 평균(%)",
+  "months": 24,
+  "latest_month": "2026-06",
+  "rows": [
+    {
+      "month": "2026-06",
+      "post_date": "2026-07-01",
+      "seq": "2384",
+      "samsung_common": 28.24,
+      "samsung_pref": 2.48,
+      "samsung_total": 30.72,
+      "sk_hynix": 24.96
+    },
+    {
+      "month": "2026-05",
+      "post_date": "2026-06-01",
+      "seq": "2381",
+      "samsung_common": 26.24,
+      "samsung_pref": 2.37,
+      "samsung_total": 28.61,
+      "sk_hynix": 21.26
+    },
+    {
+      "month": "2026-04",
+      "post_date": "2026-05-04",
+      "seq": "2379",
+      "samsung_common": 24.72,
+      "samsung_pref": 2.33,
+      "samsung_total": 27.05,
+      "sk_hynix": 15.71
+    },
+    {
+      "month": "2026-03",
+      "post_date": "2026-04-01",
+      "seq": "2375",
+      "samsung_common": 24.29,
+      "samsung_pref": 2.35,
+      "samsung_total": 26.64,
+      "sk_hynix": 14.65
+    },
+    {
+      "month": "2026-02",
+      "post_date": "2026-03-03",
+      "seq": "2370",
+      "samsung_common": 23.2,
+      "samsung_pref": 2.24,
+      "samsung_total": 25.44,
+      "sk_hynix": 14.49
+    },
+    {
+      "month": "2026-01",
+      "post_date": "2026-02-02",
+      "seq": "2364",
+      "samsung_common": 21.82,
+      "samsung_pref": 2.21,
+      "samsung_total": 24.03,
+      "sk_hynix": 13.94
+    },
+    {
+      "month": "2025-12",
+      "post_date": "2026-01-02",
+      "seq": "2357",
+      "samsung_common": 19.07,
+      "samsung_pref": 1.99,
+      "samsung_total": 21.06,
+      "sk_hynix": 12.3
+    },
+    {
+      "month": "2025-11",
+      "post_date": "2025-12-01",
+      "seq": "2349",
+      "samsung_common": 18.05,
+      "samsung_pref": 1.89,
+      "samsung_total": 19.94,
+      "sk_hynix": 12.6
+    },
+    {
+      "month": "2025-10",
+      "post_date": "2025-11-03",
+      "seq": "2342",
+      "samsung_common": 18.33,
+      "samsung_pref": 1.98,
+      "samsung_total": 20.31,
+      "sk_hynix": 10.95
+    },
+    {
+      "month": "2025-09",
+      "post_date": "2025-10-01",
+      "seq": "2336",
+      "samsung_common": 16.5,
+      "samsung_pref": 1.83,
+      "samsung_total": 18.33,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-08",
+      "post_date": "2025-09-01",
+      "seq": "2326",
+      "samsung_common": 15.93,
+      "samsung_pref": 1.79,
+      "samsung_total": 17.72,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-07",
+      "post_date": "2025-08-01",
+      "seq": "2324",
+      "samsung_common": 14.83,
+      "samsung_pref": 1.69,
+      "samsung_total": 16.52,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-06",
+      "post_date": "2025-07-01",
+      "seq": "2321",
+      "samsung_common": 14.53,
+      "samsung_pref": 1.64,
+      "samsung_total": 16.17,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-05",
+      "post_date": "2025-06-02",
+      "seq": "2317",
+      "samsung_common": 15.34,
+      "samsung_pref": 1.74,
+      "samsung_total": 17.08,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-04",
+      "post_date": "2025-05-02",
+      "seq": "2308",
+      "samsung_common": 16.28,
+      "samsung_pref": 1.85,
+      "samsung_total": 18.13,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-03",
+      "post_date": "2025-04-01",
+      "seq": "2306",
+      "samsung_common": 16.01,
+      "samsung_pref": 1.82,
+      "samsung_total": 17.83,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-02",
+      "post_date": "2025-03-04",
+      "seq": "2300",
+      "samsung_common": 15.72,
+      "samsung_pref": 1.79,
+      "samsung_total": 17.51,
+      "sk_hynix": null
+    },
+    {
+      "month": "2025-01",
+      "post_date": "2025-02-03",
+      "seq": "2297",
+      "samsung_common": 15.85,
+      "samsung_pref": 1.79,
+      "samsung_total": 17.64,
+      "sk_hynix": null
+    },
+    {
+      "month": "2024-12",
+      "post_date": "2025-01-02",
+      "seq": "2292",
+      "samsung_common": 16.12,
+      "samsung_pref": 1.85,
+      "samsung_total": 17.97,
+      "sk_hynix": null
+    },
+    {
+      "month": "2024-11",
+      "post_date": "2024-12-02",
+      "seq": "2284",
+      "samsung_common": 16.27,
+      "samsung_pref": 1.89,
+      "samsung_total": 18.16,
+      "sk_hynix": null
+    },
+    {
+      "month": "2024-10",
+      "post_date": "2024-11-01",
+      "seq": "2276",
+      "samsung_common": 16.71,
+      "samsung_pref": 1.92,
+      "samsung_total": 18.63,
+      "sk_hynix": null
+    },
+    {
+      "month": "2024-09",
+      "post_date": "2024-10-02",
+      "seq": "2271",
+      "samsung_common": 18.61,
+      "samsung_pref": 2.11,
+      "samsung_total": 20.72,
+      "sk_hynix": null
+    },
+    {
+      "month": "2024-08",
+      "post_date": "2024-09-02",
+      "seq": "2268",
+      "samsung_common": 21.07,
+      "samsung_pref": 2.32,
+      "samsung_total": 23.39,
+      "sk_hynix": null
+    },
+    {
+      "month": "2024-07",
+      "post_date": "2024-08-01",
+      "seq": "2260",
+      "samsung_common": 21.96,
+      "samsung_pref": 2.37,
+      "samsung_total": 24.33,
+      "sk_hynix": null
+    }
+  ],
+  "generated_at": "2026-07-01T12:31:14+0900"
+}

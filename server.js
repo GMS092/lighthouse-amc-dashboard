@@ -30,6 +30,9 @@ const MIME_TYPES = {
 // 동일한 형태의 payload 를 반환하도록 바꾸면 프런트엔드는 그대로 동작한다.
 const PHASE_DATA_FILE = path.join(__dirname, "data", "phase-classification.json");
 
+// 전자·닉스 시가총액 비중 스냅샷 (modules/weight-check 가 생성). 정적 JSON 서빙.
+const WEIGHT_DATA_FILE = path.join(__dirname, "data", "weight-check.json");
+
 function loadEnv(filePath) {
   try {
     const text = require("node:fs").readFileSync(filePath, "utf8");
@@ -169,6 +172,16 @@ const server = http.createServer(async (req, res) => {
     const parsed = new URL(req.url, "http://" + HOST + ":" + PORT);
     if (parsed.pathname === "/api/phase") {
       const data = await fs.readFile(PHASE_DATA_FILE);
+      res.writeHead(200, {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store",
+      });
+      res.end(data);
+      return;
+    }
+
+    if (parsed.pathname === "/api/weight") {
+      const data = await fs.readFile(WEIGHT_DATA_FILE);
       res.writeHead(200, {
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-store",
