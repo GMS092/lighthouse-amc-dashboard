@@ -38,6 +38,14 @@ GitHub 저장소 설정에서 `Settings > Pages > Build and deployment > Source`
 
 배포 대상은 `index.html`, `dashboard.html`, `phase.html`, `news.html`, `weight.html`, `assets/`, `data/`, `docs/UPDATE_NOTES.md`입니다. 데이터 수집과 새로고침 기능은 로컬 서버 또는 별도 수집 작업에서 실행합니다.
 
+## 뉴스플로우 자동 수집
+
+`.github/workflows/news-flow.yml`은 15분마다 `modules/news-flow/collect.py`를 실행해 `data/news-flow.json`을 갱신합니다. 변경된 뉴스 스냅샷이 커밋되면 GitHub Pages 배포 워크플로가 이어서 실행되어 온라인 대시보드에 반영됩니다.
+
+뉴스 수집기는 `GMS092/telegram-news-bot` 저장소의 `dynamic_feeds.json`과 `scraper.py`를 재사용합니다. 해당 저장소가 비공개이거나 기본 `GITHUB_TOKEN`으로 접근할 수 없으면, 이 저장소의 `Settings > Secrets and variables > Actions`에 `NEWS_BOT_REPO_TOKEN` 시크릿을 추가해야 합니다. 이 토큰은 `GMS092/telegram-news-bot` 읽기 권한이 있으면 충분합니다.
+
+수동으로 즉시 수집하려면 GitHub의 `Actions > Update News Flow Snapshot > Run workflow`를 실행합니다.
+
 ## Windows 자동 실행
 
 PC 부팅 후 Windows에 로그인할 때 GitHub의 최신 내용을 먼저 받은 다음 로컬 서버를 실행하려면 아래 파일을 한 번 실행합니다.
