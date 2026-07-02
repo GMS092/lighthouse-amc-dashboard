@@ -39,45 +39,51 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser requests urllib3 beautifulsoup4 lxml
 
-      - name: Check news bot token
-        id: bot-token
+      - name: Check external news bot settings
+        id: bot-settings
         env:
+          NEWS_BOT_REPOSITORY: ${{ vars.NEWS_BOT_REPOSITORY }}
           NEWS_BOT_REPO_TOKEN: ${{ secrets.NEWS_BOT_REPO_TOKEN }}
         run: |
+          if [ -n "$NEWS_BOT_REPOSITORY" ]; then
+            echo "has_repo=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_repo=false" >> "$GITHUB_OUTPUT"
+          fi
           if [ -n "$NEWS_BOT_REPO_TOKEN" ]; then
             echo "has_token=true" >> "$GITHUB_OUTPUT"
           else
             echo "has_token=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Checkout telegram news bot with token
-        if: steps.bot-token.outputs.has_token == 'true'
+      - name: Checkout external news bot with token
+        if: steps.bot-settings.outputs.has_repo == 'true' && steps.bot-settings.outputs.has_token == 'true'
         uses: actions/checkout@v4
         with:
-          repository: GMS092/telegram-news-bot
+          repository: ${{ vars.NEWS_BOT_REPOSITORY }}
           token: ${{ secrets.NEWS_BOT_REPO_TOKEN }}
-          path: telegram-news-bot
+          path: external-news-bot
 
-      - name: Checkout public telegram news bot
-        if: steps.bot-token.outputs.has_token != 'true'
+      - name: Checkout public external news bot
+        if: steps.bot-settings.outputs.has_repo == 'true' && steps.bot-settings.outputs.has_token != 'true'
         continue-on-error: true
         uses: actions/checkout@v4
         with:
-          repository: GMS092/telegram-news-bot
-          path: telegram-news-bot
+          repository: ${{ vars.NEWS_BOT_REPOSITORY }}
+          path: external-news-bot
 
       - name: Select collector inputs
         run: |
-          if [ -f "telegram-news-bot/dynamic_feeds.json" ]; then
-            echo "Using telegram-news-bot feed list and crawler."
+          if [ -f "external-news-bot/dynamic_feeds.json" ]; then
+            echo "Using external news bot feed list and crawler."
           else
-            echo "NEWS_BOT_REPO_TOKEN is not configured and the bot repository is not publicly available."
-            echo "Using modules/news-flow/feeds.json and skipping bot crawler."
+            echo "External news bot repository is not configured or does not contain dynamic_feeds.json."
+            echo "Using modules/news-flow/feeds.json and skipping external crawler."
           fi
 
       - name: Collect news snapshot
         env:
-          TELEGRAM_BOT_DIR: ${{ github.workspace }}/telegram-news-bot
+          TELEGRAM_BOT_DIR: ${{ github.workspace }}/external-news-bot
         run: python modules/news-flow/collect.py
 
       - name: Commit updated snapshot
