@@ -16,49 +16,34 @@ import requests
 from bs4 import BeautifulSoup
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; Lighthouse AMC news crawler)"}
+REQUEST_TIMEOUT = 6
 
 CRAWL_SOURCES = [
     {
         "name": "Semiconductor Engineering",
         "home": "https://semiengineering.com",
-        "urls": [
-            "https://semiengineering.com/category/manufacturing/",
-            "https://semiengineering.com/category/design/",
-            "https://semiengineering.com/category/ai/",
-        ],
+        "urls": ["https://semiengineering.com/category/manufacturing/"],
         "include": ["semiengineering.com/"],
         "exclude": ["/author/", "/tag/", "/category/", "#", "mailto:"],
     },
     {
         "name": "TrendForce",
         "home": "https://www.trendforce.com",
-        "urls": [
-            "https://www.trendforce.com/news/",
-            "https://www.trendforce.com/news/category/Semiconductors",
-            "https://www.trendforce.com/news/category/AI",
-        ],
+        "urls": ["https://www.trendforce.com/news/"],
         "include": ["trendforce.com/news/"],
         "exclude": ["/presscenter/", "#", "mailto:"],
     },
     {
         "name": "WCCFetch",
         "home": "https://wccftech.com",
-        "urls": [
-            "https://wccftech.com/category/hardware/",
-            "https://wccftech.com/category/technology/",
-            "https://wccftech.com/",
-        ],
+        "urls": ["https://wccftech.com/category/hardware/"],
         "include": ["wccftech.com/"],
         "exclude": ["/category/", "/tag/", "/author/", "/page/", "#", "mailto:"],
     },
     {
         "name": "a16Z News",
         "home": "https://a16z.com",
-        "urls": [
-            "https://a16z.com/news/",
-            "https://a16z.com/category/ai/",
-            "https://a16z.com/category/enterprise/",
-        ],
+        "urls": ["https://a16z.com/news/"],
         "include": ["a16z.com/"],
         "exclude": ["/podcast/", "/author/", "/tag/", "/category/", "#", "mailto:"],
     },
@@ -133,7 +118,7 @@ def _title_from_anchor(anchor) -> str:
 
 def _extract_from_page(source: dict, page_url: str) -> list[dict]:
     try:
-        res = requests.get(page_url, timeout=18, headers=UA)
+        res = requests.get(page_url, timeout=REQUEST_TIMEOUT, headers=UA)
         res.raise_for_status()
     except Exception as exc:
         print(f"  [builtin-crawl:err] {source['name']} {page_url}: {exc}")
