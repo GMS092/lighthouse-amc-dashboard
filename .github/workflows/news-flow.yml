@@ -101,7 +101,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/assets _site/data _site/docs
-          cp dashboard.html phase.html news.html research.html weight.html _site/
+          cp dashboard.html phase.html news.html research.html weight.html semianalysis.html dramexchange.html _site/
           cp -R assets/. _site/assets/
           cp -R data/. _site/data/
           cp docs/UPDATE_NOTES.md _site/docs/UPDATE_NOTES.md
@@ -132,10 +132,24 @@ jobs:
             }
             fs.writeFileSync(file, html);
           }
+          const mediaNav = [
+            '<a class="nav-item" href="semianalysis.html"><span class="nav-dot" aria-hidden="true"></span><span>SemiAnalysis</span></a>',
+            '<a class="nav-item" href="dramexchange.html"><span class="nav-dot" aria-hidden="true"></span><span>DRAMeXchange</span></a>'
+          ].join('\n          ');
+          function addMediaNav(file) {
+            let html = fs.readFileSync(file, 'utf8');
+            if (!html.includes('href="semianalysis.html"')) {
+              html = html.replace(/(<a class="nav-item(?: active)?" href="news\.html"><span class="nav-dot" aria-hidden="true"><\/span><span>뉴스플로우<\/span><\/a>)/, '$1\n          ' + mediaNav);
+            }
+            fs.writeFileSync(file, html);
+          }
           patch('_site/phase.html', '/api/phase', 'data/phase-classification.json', true);
           patch('_site/news.html', '/api/news', 'data/news-flow.json', true);
           patch('_site/research.html', '/api/news', 'data/news-flow.json', false);
           patch('_site/weight.html', '/api/weight', 'data/weight-check.json', false);
+          patch('_site/semianalysis.html', '/api/news', 'data/news-flow.json', false);
+          patch('_site/dramexchange.html', '/api/news', 'data/news-flow.json', false);
+          ['_site/dashboard.html','_site/phase.html','_site/weight.html','_site/news.html','_site/research.html','_site/semianalysis.html','_site/dramexchange.html'].forEach(addMediaNav);
           NODE
 
       - name: Configure Pages
