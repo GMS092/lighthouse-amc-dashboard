@@ -40,6 +40,7 @@ FEEDS_PATH = Path(os.environ["NEWS_FEEDS"]) if os.environ.get("NEWS_FEEDS") else
 )
 
 PER_SOURCE = 30
+PER_SOURCE_OVERRIDES = {"SemiAnalysis": 100, "DRAMeXchange": 100}
 KST = ZoneInfo("Asia/Seoul")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; RSS reader)"}
 
@@ -61,6 +62,10 @@ KEYWORD_RULES = [
 ]
 LABEL_SCORES = {"high": 90, "medium": 55, "low": 20, "exclude": 0}
 LABEL_TEXT = {"high": "높음", "medium": "보통", "low": "낮음", "exclude": "제외"}
+
+
+def _per_source_limit(source_name: str) -> int:
+    return PER_SOURCE_OVERRIDES.get(source_name, PER_SOURCE)
 
 
 def _decode_feed(raw: bytes, http_ct: str) -> str:
@@ -194,6 +199,7 @@ def apply_importance(sources: list[dict], labels: dict) -> None:
 
 def fetch_rss_source(feed: dict) -> dict:
     name = feed["name"]
+    limit = _per_source_limit(name)
     feed_base = _home_of(feed["url"])
     default_tz = KST if feed.get("lang") == "ko" else timezone.utc
     items = []
@@ -206,7 +212,7 @@ def fetch_rss_source(feed: dict) -> dict:
             parsed = feedparser.parse(feed["url"])
         fp = urlparse(feed["url"])
         feed_base = f"{fp.scheme}://{fp.netloc}" if fp.netloc else feed_base
-        for entry in parsed.entries[:PER_SOURCE]:
+        for entry in parsed.entries[:limit]:
             title = (entry.get("title") or "").strip()
             url = (entry.get("link") or "").strip()
             if not title or not url:
@@ -218,7 +224,7 @@ def fetch_rss_source(feed: dict) -> dict:
     except Exception as e:
         print(f"  [rss:err] {name}: {e}")
     items.sort(key=lambda it: it["published"] or "", reverse=True)
-    return {"name": name, "method": "rss", "home": feed_base, "items": items[:PER_SOURCE]}
+    return {"name": name, "method": "rss", "home": feed_base, "items": items[:limit]}
 
 
 def collect_rss(feeds: list[dict]) -> list[dict]:
@@ -260,8 +266,9 @@ def collect_crawl() -> list[dict]:
         g = grouped.setdefault(name, {"name": name, "method": "crawl", "home": _home_of(url), "items": []})
         g["items"].append({"title": title, "url": url, "published": published})
     for g in grouped.values():
+        limit = _per_source_limit(g["name"])
         g["items"].sort(key=lambda x: x["published"] or "", reverse=True)
-        g["items"] = g["items"][:PER_SOURCE]
+        g["items"] = g["items"][:limit]
     print(f"  [crawl] {len(grouped)}개 소스, 기사 {sum(len(g['items']) for g in grouped.values())}건")
     return list(grouped.values())
 
