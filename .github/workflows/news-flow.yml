@@ -128,7 +128,6 @@ jobs:
             ['weight.html', '전자, 닉스 비중 체크'],
             ['relative.html', '상대수익률 추이'],
             ['news.html', '뉴스플로우'],
-            ['research.html', '리서치 플로우'],
             ['semianalysis.html', 'SemiAnalysis'],
             ['dramexchange.html', 'DRAMeXchange'],
             ['semiconductor-engineering.html', 'Semiconductor Engineering'],
