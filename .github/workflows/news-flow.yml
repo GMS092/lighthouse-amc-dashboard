@@ -50,7 +50,7 @@ jobs:
             echo "has_token=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Checkout telegram news bot
+      - name: Checkout telegram news bot with token
         if: steps.bot-token.outputs.has_token == 'true'
         uses: actions/checkout@v4
         with:
@@ -58,12 +58,20 @@ jobs:
           token: ${{ secrets.NEWS_BOT_REPO_TOKEN }}
           path: telegram-news-bot
 
+      - name: Checkout public telegram news bot
+        if: steps.bot-token.outputs.has_token != 'true'
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: GMS092/telegram-news-bot
+          path: telegram-news-bot
+
       - name: Select collector inputs
         run: |
           if [ -f "telegram-news-bot/dynamic_feeds.json" ]; then
             echo "Using telegram-news-bot feed list and crawler."
           else
-            echo "NEWS_BOT_REPO_TOKEN is not configured or the bot repository is unavailable."
+            echo "NEWS_BOT_REPO_TOKEN is not configured and the bot repository is not publicly available."
             echo "Using modules/news-flow/feeds.json and skipping bot crawler."
           fi
 
