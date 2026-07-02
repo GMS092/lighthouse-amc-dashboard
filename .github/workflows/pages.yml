@@ -46,6 +46,14 @@ jobs:
           node <<'NODE'
           const fs = require('fs');
           const disableRefresh = '<script>(function(){var b=document.getElementById("refresh-btn");if(!b)return;b.disabled=true;b.title="GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신은 로컬 서버 또는 수집 작업에서 실행합니다.";var t=b.querySelector(".refresh-text");if(t)t.textContent="보기 전용";})();</script>';
+          const researchNav = '<a class="nav-item" href="research.html"><span class="nav-dot" aria-hidden="true"></span><span>리서치 플로우</span></a>';
+          function addResearchNav(file) {
+            let html = fs.readFileSync(file, 'utf8');
+            if (!html.includes('href="research.html"')) {
+              html = html.replace(/(<a class="nav-item(?: active)?" href="news\.html"><span class="nav-dot" aria-hidden="true"><\/span><span>뉴스플로우<\/span><\/a>)/, '$1\n          ' + researchNav);
+            }
+            fs.writeFileSync(file, html);
+          }
           function patch(file, api, data, disable) {
             let html = fs.readFileSync(file, 'utf8');
             html = html.replaceAll('fetch("' + api + '")', 'fetch("' + data + '")');
@@ -57,6 +65,7 @@ jobs:
             }
             fs.writeFileSync(file, html);
           }
+          ['_site/dashboard.html', '_site/phase.html', '_site/weight.html', '_site/news.html'].forEach(addResearchNav);
           patch('_site/phase.html', '/api/phase', 'data/phase-classification.json', true);
           patch('_site/news.html', '/api/news', 'data/news-flow.json', true);
           patch('_site/research.html', '/api/news', 'data/news-flow.json', false);
