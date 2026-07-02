@@ -4,6 +4,11 @@
 
 ## 2026-07-02
 
+### 상대수익률 추이
+- '상대수익률 추이' 탭과 페이지(`relative.html`)를 추가했습니다. 각 KSE 업종의 KOSPI 대비 상대수익률(업종 − 코스피)을 가로축=1개월, 세로축=3개월로 그리는 SVG 산점/궤적 차트입니다.
+- 최근일 기준 6개월 전 → 3개월 전 → 1개월 전 → 1주 전 → 최근 순으로 각 업종의 위치를 선으로 잇고, 최근 시점을 화살표로 표시합니다. 반도체(빨강)·IT하드웨어(파랑)는 참고 이미지처럼 강조했습니다.
+- 데이터는 WISE 업종지수 엑셀(`상대수익률차트.xlsx`)을 읽는 독립 모듈 `modules/relative-return/collect.py`가 `data/relative-return.json` 스냅샷으로 생성합니다. `server.js`의 `/api/relative-return`으로 서빙하고, 페이지 새로고침 버튼은 `POST /api/relative-return/refresh`로 엑셀을 다시 읽어 재계산합니다.
+
 ### 리서치 플로우 탭
 - `research.html` 리서치 플로우 탭을 추가했습니다.
 - 뉴스플로우와 같은 `data/news-flow.json` 스냅샷을 사용하되, SemiAnalysis, FRB Speeches, DARPA, BOK 이슈노트, KDI 경제정책자료, DRAMeXchange, Dataroma, FRB Working Papers, 메르의 블로그, Statista, Visual Capitalist, KDI 국내연구자료, IT FIND만 별도로 필터링해 표시합니다.

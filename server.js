@@ -55,6 +55,26 @@ function runPhaseGenerator() {
 // 전자·닉스 시가총액 비중 스냅샷 (modules/weight-check 가 생성). 정적 JSON 서빙.
 const WEIGHT_DATA_FILE = path.join(__dirname, "data", "weight-check.json");
 
+// 상대수익률 추이 스냅샷 (modules/relative-return 가 엑셀에서 생성).
+const RELRET_DATA_FILE = path.join(__dirname, "data", "relative-return.json");
+const RELRET_GENERATOR = path.join(__dirname, "modules", "relative-return", "collect.py");
+
+// 상대수익률 스냅샷을 엑셀에서 다시 생성한다(Python + 엑셀 파일이 있는 PC에서만 성공).
+function runRelRetGenerator() {
+  return new Promise((resolve, reject) => {
+    const py = process.env.PYTHON || "python";
+    const child = spawn(py, [RELRET_GENERATOR], { cwd: __dirname });
+    let stderr = "";
+    child.stdout.on("data", () => {});
+    child.stderr.on("data", (chunk) => { stderr += chunk.toString(); });
+    child.on("error", (err) => reject(new Error("생성기 실행 실패: " + err.message)));
+    child.on("close", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error("생성기 종료 코드 " + code + (stderr ? "\n" + stderr.slice(-600) : "")));
+    });
+  });
+}
+
 // 뉴스플로우 스냅샷 (modules/news-flow 가 생성: RSS + 크롤).
 const NEWS_DATA_FILE = path.join(__dirname, "data", "news-flow.json");
 const NEWS_LABELS_FILE = path.join(__dirname, "data", "news-labels.json");
@@ -338,6 +358,26 @@ const server = http.createServer(async (req, res) => {
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-store",
       });
+      res.end(data);
+      return;
+    }
+
+    if (parsed.pathname === "/api/relative-return/refresh") {
+      if (req.method !== "POST") {
+        res.writeHead(405, { "Content-Type": "text/plain; charset=utf-8" });
+        res.end("Method Not Allowed");
+        return;
+      }
+      await runRelRetGenerator();
+      const data = await fs.readFile(RELRET_DATA_FILE);
+      res.writeHead(200, { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" });
+      res.end(data);
+      return;
+    }
+
+    if (parsed.pathname === "/api/relative-return") {
+      const data = await fs.readFile(RELRET_DATA_FILE);
+      res.writeHead(200, { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" });
       res.end(data);
       return;
     }

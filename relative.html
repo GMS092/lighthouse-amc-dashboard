@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lighthouse AMC · 상대수익률 추이</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7f9; --surface: #ffffff; --surface-soft: #eef2f5;
+        --text: #15191d; --muted: #707981; --line: #dbe1e7;
+        --button-bg: #15191d; --button-text: #ffffff;
+        --shadow: 0 20px 50px rgba(28, 39, 49, 0.08);
+        --grid: #e6ebef; --axis: #99a3ac; --axis-label: #d23b3b;
+      }
+      body.theme-dark {
+        color-scheme: dark;
+        --bg: #111417; --surface: #181d21; --surface-soft: #22282d;
+        --text: #f4f6f8; --muted: #9aa4ad; --line: #2d353c;
+        --button-bg: #f4f6f8; --button-text: #111417;
+        --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+        --grid: #262d33; --axis: #6b7680; --axis-label: #ef7b7b;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        transition: background 180ms ease, color 180ms ease;
+      }
+      .dashboard { display: grid; min-height: 100vh; grid-template-columns: 248px minmax(0, 1fr); }
+      .sidebar {
+        display: flex; flex-direction: column; gap: 28px;
+        border-right: 1px solid var(--line); background: var(--surface);
+        padding: 28px 22px 88px; transition: background 180ms ease, border-color 180ms ease;
+      }
+      .brand { display: flex; align-items: center; gap: 12px; min-height: 40px; }
+      .brand-logo {
+        flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%;
+        object-fit: cover; object-position: 50% 47%;
+        box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(0, 0, 0, 0.16);
+      }
+      .brand-name { font-size: 16px; font-weight: 750; }
+      .nav { display: grid; gap: 8px; }
+      .nav-item {
+        display: flex; align-items: center; gap: 10px; min-height: 42px;
+        border-radius: 8px; padding: 0 12px; color: var(--muted);
+        font-size: 14px; text-decoration: none;
+      }
+      .nav-item:hover { background: var(--surface-soft); color: var(--text); }
+      .nav-item.active { background: var(--surface-soft); color: var(--text); font-weight: 700; }
+      .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+      .theme-toggle {
+        position: fixed; left: 22px; bottom: 22px;
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        min-width: 104px; height: 42px; border: 0; border-radius: 8px;
+        background: var(--button-bg); color: var(--button-text); box-shadow: var(--shadow);
+        font: inherit; font-size: 14px; font-weight: 750; cursor: pointer;
+        transition: background 180ms ease, color 180ms ease, transform 160ms ease;
+      }
+      .theme-toggle:hover { transform: translateY(-1px); }
+      .theme-toggle:focus-visible { outline: 3px solid #4c9ffe; outline-offset: 3px; }
+      .main { display: flex; min-width: 0; flex-direction: column; }
+      .topbar {
+        display: flex; align-items: center; justify-content: space-between;
+        min-height: 76px; border-bottom: 1px solid var(--line); background: var(--surface);
+        padding: 0 34px; transition: background 180ms ease, border-color 180ms ease;
+      }
+      .page-title { margin: 0; font-size: 20px; font-weight: 800; }
+      .status { color: var(--muted); font-size: 13px; }
+      .topbar-actions { display: flex; align-items: center; gap: 14px; }
+      .refresh-btn {
+        display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 14px;
+        border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text);
+        font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+        transition: background 160ms ease, opacity 160ms ease;
+      }
+      .refresh-btn:hover { background: var(--surface-soft); }
+      .refresh-btn:disabled { opacity: 0.6; cursor: default; }
+      .refresh-icon { display: inline-block; font-size: 15px; }
+      .refresh-btn.loading .refresh-icon { animation: refresh-spin 0.9s linear infinite; }
+      @keyframes refresh-spin { to { transform: rotate(360deg); } }
+
+      .workspace { display: block; flex: 1; padding: 20px 24px 34px; }
+      .intro { margin-bottom: 12px; }
+      .intro p { margin: 0; color: var(--muted); font-size: 12.5px; line-height: 1.6; }
+      .legend { display: flex; gap: 18px; align-items: center; margin: 6px 0 12px; color: var(--muted); font-size: 12px; flex-wrap: wrap; }
+      .legend b { color: var(--text); }
+      .chart-wrap {
+        border: 1px solid var(--line); border-radius: 12px; background: var(--surface);
+        padding: 8px; overflow: auto;
+      }
+      #chart { width: 100%; height: auto; display: block; }
+      .loading { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
+
+      @media (max-width: 760px) {
+        .dashboard { grid-template-columns: 1fr; }
+        .sidebar { display: none; }
+        .topbar { min-height: 68px; padding: 0 20px; }
+        .workspace { padding: 16px; }
+        .theme-toggle { left: 18px; bottom: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" aria-label="사이드바">
+        <div class="brand">
+          <img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" />
+          <div class="brand-name">Lighthouse AMC</div>
+        </div>
+        <nav class="nav" aria-label="대시보드 메뉴">
+          <a class="nav-item" href="dashboard.html"><span class="nav-dot" aria-hidden="true"></span><span>홈</span></a>
+          <a class="nav-item" href="phase.html"><span class="nav-dot" aria-hidden="true"></span><span>투자의 정석 (동부)</span></a>
+          <a class="nav-item" href="weight.html"><span class="nav-dot" aria-hidden="true"></span><span>전자, 닉스 비중 체크</span></a>
+          <a class="nav-item active" href="relative.html"><span class="nav-dot" aria-hidden="true"></span><span>상대수익률 추이</span></a>
+          <a class="nav-item" href="news.html"><span class="nav-dot" aria-hidden="true"></span><span>뉴스플로우</span></a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="title-brand"><h1 class="page-title">상대수익률 추이</h1></div>
+          <div class="topbar-actions">
+            <span class="status" id="update-label">불러오는 중…</span>
+            <button class="refresh-btn" id="refresh-btn" type="button"
+                    title="엑셀을 다시 읽어 상대수익률을 재계산합니다">
+              <span class="refresh-icon" aria-hidden="true">⟳</span><span class="refresh-text">새로고침</span>
+            </button>
+          </div>
+        </header>
+
+        <section class="workspace" aria-label="상대수익률 본문">
+          <div class="intro">
+            <p>각 업종의 KOSPI 대비 상대수익률(업종 − 코스피)을 최근일 기준 6개월 전 → 3개월 전 → 1개월 전 → 1주 전 → 최근 순으로 선으로 잇고, 최근 시점을 화살표로 표시합니다.</p>
+          </div>
+          <div class="legend">
+            <span>가로: <b>KOSPI 대비 1개월 수익률</b></span>
+            <span>세로: <b>KOSPI 대비 3개월 수익률</b></span>
+            <span>선: 과거→최근 · <b>화살표=최근</b></span>
+          </div>
+          <div class="chart-wrap">
+            <div class="loading" id="loading">데이터를 불러오는 중입니다…</div>
+            <svg id="chart" style="display:none" xmlns="http://www.w3.org/2000/svg"></svg>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span class="theme-label">흑</span>
+    </button>
+
+    <script>
+      (function () {
+        var body = document.body;
+        var toggle = document.querySelector(".theme-toggle");
+        var label = document.querySelector(".theme-label");
+        if (localStorage.getItem("dashboard-theme") === "dark") { body.classList.add("theme-dark"); label.textContent = "백"; }
+        toggle.addEventListener("click", function () {
+          var isDark = body.classList.toggle("theme-dark");
+          label.textContent = isDark ? "백" : "흑";
+          localStorage.setItem("dashboard-theme", isDark ? "dark" : "light");
+          if (window._lastData) drawChart(window._lastData); // 테마 색 반영
+        });
+      })();
+
+      var SVGNS = "http://www.w3.org/2000/svg";
+      // 업종별 색상. 반도체=빨강, IT하드웨어=파랑(참고 이미지와 동일), 나머지는 팔레트 순환.
+      var FIXED = { "반도체": "#e03131", "IT하드웨어": "#1c7ed6" };
+      var PALETTE = ["#2f9e44", "#f08c00", "#7048e8", "#0ca678", "#e8590c", "#1098ad",
+        "#c2255c", "#5c940d", "#495057", "#9c36b5", "#3b5bdb", "#087f5b",
+        "#d9480f", "#5f3dc4", "#2b8a3e", "#a61e4d", "#364fc7", "#66a80f",
+        "#862e9c", "#0b7285", "#e67700", "#343a40", "#c92a2a", "#1864ab"];
+
+      function el(tag, attrs, text) {
+        var e = document.createElementNS(SVGNS, tag);
+        for (var k in attrs) e.setAttribute(k, attrs[k]);
+        if (text != null) e.textContent = text;
+        return e;
+      }
+      function niceStep(range, target) {
+        var raw = range / target;
+        var mag = Math.pow(10, Math.floor(Math.log10(raw)));
+        var norm = raw / mag;
+        var step = norm >= 5 ? 10 : norm >= 2 ? 5 : norm >= 1 ? 2 : 1;
+        return step * mag;
+      }
+
+      function drawChart(data) {
+        var svg = document.getElementById("chart");
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+        var cs = getComputedStyle(document.body);
+        var C = {
+          text: cs.getPropertyValue("--text").trim(),
+          muted: cs.getPropertyValue("--muted").trim(),
+          grid: cs.getPropertyValue("--grid").trim(),
+          axis: cs.getPropertyValue("--axis").trim(),
+          axisLabel: cs.getPropertyValue("--axis-label").trim(),
+        };
+
+        var W = 940, H = 780, m = { t: 54, r: 40, b: 64, l: 64 };
+        var pw = W - m.l - m.r, ph = H - m.t - m.b;
+        svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+
+        // 데이터 범위
+        var xs = [], ys = [];
+        data.sectors.forEach(function (s) {
+          s.traj.forEach(function (p) { if (p) { xs.push(p[0]); ys.push(p[1]); } });
+        });
+        if (!xs.length) return;
+        function bounds(arr) {
+          var mn = Math.min.apply(null, arr), mx = Math.max.apply(null, arr);
+          var pad = (mx - mn) * 0.08 || 5;
+          mn = Math.min(mn - pad, 0); mx = Math.max(mx + pad, 0);
+          var step = niceStep(mx - mn, 8);
+          return { min: Math.floor(mn / step) * step, max: Math.ceil(mx / step) * step, step: step };
+        }
+        var bx = bounds(xs), by = bounds(ys);
+        var sx = function (v) { return m.l + (v - bx.min) / (bx.max - bx.min) * pw; };
+        var sy = function (v) { return m.t + (by.max - v) / (by.max - by.min) * ph; };
+
+        // 제목
+        svg.appendChild(el("text", { x: W / 2, y: 30, "text-anchor": "middle",
+          "font-size": 20, "font-weight": 700, fill: C.muted }, "상대수익률 추이"));
+
+        // 그리드 + 눈금
+        var v;
+        for (v = bx.min; v <= bx.max + 1e-9; v += bx.step) {
+          var X = sx(v);
+          svg.appendChild(el("line", { x1: X, y1: m.t, x2: X, y2: m.t + ph, stroke: C.grid, "stroke-width": 1 }));
+          svg.appendChild(el("text", { x: X, y: m.t + ph + 20, "text-anchor": "middle",
+            "font-size": 12, fill: C.axisLabel }, Math.round(v)));
+        }
+        for (v = by.min; v <= by.max + 1e-9; v += by.step) {
+          var Y = sy(v);
+          svg.appendChild(el("line", { x1: m.l, y1: Y, x2: m.l + pw, y2: Y, stroke: C.grid, "stroke-width": 1 }));
+          svg.appendChild(el("text", { x: m.l - 10, y: Y + 4, "text-anchor": "end",
+            "font-size": 12, fill: C.axisLabel }, Math.round(v)));
+        }
+        // 0축 강조 (십자)
+        svg.appendChild(el("line", { x1: sx(0), y1: m.t, x2: sx(0), y2: m.t + ph, stroke: C.axis, "stroke-width": 1.6 }));
+        svg.appendChild(el("line", { x1: m.l, y1: sy(0), x2: m.l + pw, y2: sy(0), stroke: C.axis, "stroke-width": 1.6 }));
+
+        // 축 라벨
+        svg.appendChild(el("text", { x: m.l + pw, y: H - 20, "text-anchor": "end",
+          "font-size": 13, "font-weight": 700, fill: C.text }, data.x_label || "(KOSPI 대비 1개월 수익률)"));
+        var yl = el("text", { x: 18, y: m.t + ph / 2, "text-anchor": "middle",
+          "font-size": 13, "font-weight": 700, fill: C.text,
+          transform: "rotate(-90 18 " + (m.t + ph / 2) + ")" }, data.y_label || "(KOSPI 대비 3개월 수익률)");
+        svg.appendChild(yl);
+
+        // 업종별 궤적 + 화살표 + 라벨
+        var pi = 0;
+        data.sectors.forEach(function (s) {
+          var pts = s.traj.map(function (p) { return p ? [sx(p[0]), sy(p[1])] : null; }).filter(Boolean);
+          if (!pts.length) return;
+          var color = FIXED[s.name] || PALETTE[pi++ % PALETTE.length];
+          var strong = !!FIXED[s.name];
+          var w = strong ? 3 : 2;
+
+          if (pts.length >= 2) {
+            svg.appendChild(el("polyline", {
+              points: pts.map(function (p) { return p[0].toFixed(1) + "," + p[1].toFixed(1); }).join(" "),
+              fill: "none", stroke: color, "stroke-width": w,
+              "stroke-linejoin": "round", "stroke-linecap": "round", opacity: strong ? 0.95 : 0.8,
+            }));
+            // 화살표 머리 (마지막 세그먼트 방향)
+            var a = pts[pts.length - 2], b = pts[pts.length - 1];
+            var ang = Math.atan2(b[1] - a[1], b[0] - a[0]);
+            var L = strong ? 13 : 10, wd = strong ? 5 : 4;
+            var p1 = [b[0] - L * Math.cos(ang) + wd * Math.sin(ang), b[1] - L * Math.sin(ang) - wd * Math.cos(ang)];
+            var p2 = [b[0] - L * Math.cos(ang) - wd * Math.sin(ang), b[1] - L * Math.sin(ang) + wd * Math.cos(ang)];
+            svg.appendChild(el("polygon", {
+              points: b[0].toFixed(1) + "," + b[1].toFixed(1) + " " + p1[0].toFixed(1) + "," + p1[1].toFixed(1) + " " + p2[0].toFixed(1) + "," + p2[1].toFixed(1),
+              fill: color, opacity: strong ? 0.95 : 0.85,
+            }));
+          } else {
+            svg.appendChild(el("circle", { cx: pts[0][0], cy: pts[0][1], r: 3.5, fill: color }));
+          }
+          // 라벨 (최근점 옆)
+          var end = pts[pts.length - 1];
+          svg.appendChild(el("text", {
+            x: (end[0] + 6).toFixed(1), y: (end[1] - 5).toFixed(1),
+            "font-size": strong ? 13 : 11.5, "font-weight": strong ? 800 : 700,
+            fill: color,
+          }, s.name));
+        });
+
+        document.getElementById("loading").style.display = "none";
+        svg.style.display = "block";
+      }
+
+      function fmtUpdate(iso) {
+        if (!iso) return "";
+        var m = String(iso).match(/(\d{4})-(\d{2})-(\d{2})/);
+        return m ? m[1] + "-" + m[2] + "-" + m[3] : "";
+      }
+
+      function loadData() {
+        return fetch("/api/relative-return")
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            window._lastData = data;
+            var pts = (data.points || []).map(function (p) { return p.label + " " + p.date.slice(5); }).join(" · ");
+            document.getElementById("update-label").textContent =
+              "기준일 " + (data.base_date || "") + (pts ? "  ·  " + pts : "");
+            drawChart(data);
+          });
+      }
+
+      var refreshBtn = document.getElementById("refresh-btn");
+      refreshBtn.addEventListener("click", function () {
+        var txt = refreshBtn.querySelector(".refresh-text"), orig = txt.textContent;
+        refreshBtn.disabled = true; refreshBtn.classList.add("loading"); txt.textContent = "갱신 중…";
+        fetch("/api/relative-return/refresh", { method: "POST" })
+          .then(function (res) { if (!res.ok) return res.text().then(function (t) { throw new Error(t || ("HTTP " + res.status)); }); return res.json(); })
+          .then(function () { return loadData(); })
+          .catch(function (e) { alert("새로고침 실패: " + e.message); })
+          .finally(function () { refreshBtn.disabled = false; refreshBtn.classList.remove("loading"); txt.textContent = orig; });
+      });
+
+      loadData().catch(function (e) {
+        document.getElementById("loading").textContent = "⚠️ 데이터 로드 실패: " + e.message;
+      });
+    </script>
+  </body>
+</html>
