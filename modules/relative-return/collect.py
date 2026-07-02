@@ -33,10 +33,8 @@ KOSPI_CODE = "IKS900"
 KOSDAQ_CODE = "IKQ900"
 
 # 최근일 기준 되돌아볼 시점 (라벨, 개월수 or 일수)
+# 차트는 1주 전 → 최근 두 시점만 사용한다(6/3/1개월 제외).
 POINTS = [
-    ("6m", "6개월 전", {"months": 6}),
-    ("3m", "3개월 전", {"months": 3}),
-    ("1m", "1개월 전", {"months": 1}),
     ("1w", "1주 전", {"days": 7}),
     ("now", "최근", {"days": 0}),
 ]
@@ -160,7 +158,7 @@ def main() -> int:
     print(f"     기준일: {base_date}  시점: " + ", ".join(f"{p['label']}={p['date']}" for p in picked))
     for s in sectors:
         if s["name"] in ("반도체", "IT하드웨어", "소매(유통)", "에너지"):
-            print(f"     {s['name']}: 최근={s['traj'][-1]}  6개월전={s['traj'][0]}")
+            print(f"     {s['name']}: 최근={s['traj'][-1]}  1주전={s['traj'][0]}")
     return 0
 
 
