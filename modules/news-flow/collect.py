@@ -7,7 +7,7 @@ r"""
 수집 방식:
   - RSS 기본값: modules/news-flow/feeds.json 의 피드들을 feedparser 로 파싱
   - RSS 확장: TELEGRAM_BOT_DIR 또는 NEWS_FEEDS 로 지정한 dynamic_feeds.json 사용
-  - 크롤: telegram-news-bot/scraper.py 의 fetch_scraped_sources() 를 재사용
+  - 크롤: 외부 뉴스봇 scraper.py 의 fetch_scraped_sources() 를 재사용
           (봇 저장소가 있을 때만 실행, 없으면 RSS만 수집)
   ※ Playwright 기반 JS 렌더링 소스(fetch_js_sources)는 이번 단계에서 제외.
 
@@ -15,7 +15,7 @@ r"""
     python modules/news-flow/collect.py
     python modules/news-flow/collect.py --no-crawl   # RSS만
     NEWS_FEEDS=modules/news-flow/feeds.json python modules/news-flow/collect.py
-    TELEGRAM_BOT_DIR=D:\path\to\telegram-news-bot python modules/news-flow/collect.py
+    TELEGRAM_BOT_DIR=D:\path\to\external-news-bot python modules/news-flow/collect.py
 """
 import argparse
 import json
@@ -36,7 +36,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 MODULE_DIR = Path(__file__).resolve().parent
 OUTPUT_PATH = REPO_ROOT / "data" / "news-flow.json"
 
-BOT_DIR = Path(os.environ.get("TELEGRAM_BOT_DIR", str(REPO_ROOT.parent / "telegram-news-bot")))
+BOT_DIR = Path(os.environ.get("TELEGRAM_BOT_DIR", str(REPO_ROOT.parent / "external-news-bot")))
 LOCAL_FEEDS_PATH = MODULE_DIR / "feeds.json"
 BOT_FEEDS_PATH = BOT_DIR / "dynamic_feeds.json"
 FEEDS_PATH = Path(os.environ["NEWS_FEEDS"]) if os.environ.get("NEWS_FEEDS") else (
@@ -119,13 +119,13 @@ def collect_rss(feeds: list[dict]) -> list[dict]:
 
 
 def collect_crawl() -> list[dict]:
-    """봇의 scraper.fetch_scraped_sources() 재사용 -> 소스별 그룹화."""
+    """외부 뉴스봇의 scraper.fetch_scraped_sources() 재사용 -> 소스별 그룹화."""
     if not BOT_DIR.exists():
         print(f"  [crawl:skip] 봇 경로 없음: {BOT_DIR}")
         return []
     sys.path.insert(0, str(BOT_DIR))
     try:
-        import scraper  # telegram-news-bot/scraper.py
+        import scraper  # external-news-bot/scraper.py
     except Exception as e:
         print(f"  [crawl:skip] scraper import 실패: {e}")
         return []
@@ -180,7 +180,7 @@ def main() -> int:
         "connected": True,
         "source_count": len(sources),
         "article_count": total,
-        "feed_source": "telegram-news-bot" if using_bot_feeds else "dashboard-default",
+        "feed_source": "external-news-bot" if using_bot_feeds else "dashboard-default",
         "sources": sources,
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
