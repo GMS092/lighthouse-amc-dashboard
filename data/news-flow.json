@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-02T20:40:10+0900",
+  "generated_at": "2026-07-02T20:47:59+0900",
   "connected": true,
   "source_count": 49,
-  "article_count": 1025,
+  "article_count": 1055,
   "feed_source": "dashboard-default",
   "labels_count": 0,
   "sources": [
@@ -1447,6 +1447,24 @@
       "home": "https://www.yna.co.kr",
       "items": [
         {
+          "title": "정청래 전남행·김민석 충청행…與 당권 레이스 본격화(종합2보)",
+          "url": "https://www.yna.co.kr/view/AKR20260702084852001",
+          "published": "2026-07-02T20:31:30+0900",
+          "article_id": "b92dd9cb9d91122a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "삼성 육성선수 출신 김백산, 1군 데뷔전서 5⅔이닝 무실점",
           "url": "https://www.yna.co.kr/view/AKR20260702167700007",
           "published": "2026-07-02T20:29:48+0900",
@@ -1969,12 +1987,19 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
+        }
+      ]
+    },
+    {
+      "name": "매일경제",
+      "method": "rss",
+      "home": "https://www.mk.co.kr",
+      "items": [
         {
-          "title": "[인사] 국무조정실·국무총리비서실",
-          "url": "https://www.yna.co.kr/view/AKR20260702162400001",
-          "published": "2026-07-02T18:50:14+0900",
-          "article_id": "62e66da985b0aa05",
+          "title": "“생리대 지금 없는데 어쩌지”…도서관·주민센터로 일단 오세요",
+          "url": "https://www.mk.co.kr/news/society/12089318",
+          "published": "2026-07-02T20:43:39+0900",
+          "article_id": "c4e0feb0cd092967",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1987,14 +2012,7 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        }
-      ]
-    },
-    {
-      "name": "매일경제",
-      "method": "rss",
-      "home": "https://www.mk.co.kr",
-      "items": [
+        },
         {
           "title": "“모래사장에 사람 있다”…삼척 해수욕장서 40~50대 남성 숨진 채 발견",
           "url": "https://www.mk.co.kr/news/society/12089304",
@@ -2514,24 +2532,6 @@
           "importance_label_text": "보통",
           "importance_reasons": [
             "자본 변동"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "대학병원들이 환자 의뢰하는 대항병원... “벼랑 끝 환자도 살립니다” [전문병원 100% 활용법]",
-          "url": "https://www.mk.co.kr/news/it/12089141",
-          "published": "2026-07-02T17:53:37+0900",
-          "article_id": "8d3b14bdeb7be87a",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
           ],
           "importance_source": "auto"
         }
@@ -3092,10 +3092,10 @@
       "home": "https://www.chosun.com",
       "items": [
         {
-          "title": "오스틴 따라온다고? 괴력 발휘해 도망가면 된다… 강백호 2G 연속 홈런포! 다시 타점 1위 [대전 현장]",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/02/MVSWKNJZGA4TENJQG5RGEMBQGE/",
-          "published": "2026-07-02T20:31:25+0900",
-          "article_id": "c75cf0cef99cac9e",
+          "title": "[사진]나균안, 위기 넘기며 미소",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GBRGINZUHFRDKYJVGVTDCMRRGM/",
+          "published": "2026-07-02T20:43:00+0900",
+          "article_id": "bd626ba8bb356f28",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3110,10 +3110,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]박찬형, 안타",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GFQTEMJZGIYTIYZYGQYGIODGMI/",
-          "published": "2026-07-02T20:31:00+0900",
-          "article_id": "3cd234cf2e4ad9f2",
+          "title": "[사진]김민석, 오늘도 안타",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/HE4DKNZSGNRDCMZSG5TDCNZWMM/",
+          "published": "2026-07-02T20:41:00+0900",
+          "article_id": "fa3c4fbc27510e86",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3128,10 +3128,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "\"벌써 이렇게 늠름해졌네\"…'해병대 자진입대' 정동원, 휴가 중 포착",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/02/MY3WMMTFGIZDKZRYMIZTOYJYGI/",
-          "published": "2026-07-02T20:26:00+0900",
-          "article_id": "2b52a10db348f72d",
+          "title": "[사진]김민석, 3경기 연속 안타",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/HAZWMMZRMFQWCMLDGE3GGZJYMY/",
+          "published": "2026-07-02T20:41:00+0900",
+          "article_id": "481d4659572978ee",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3146,10 +3146,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]고승민, 끝까지 쫓았지만",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GUYWGNZQMQ3GKNDBGU3DKOLGMY/",
-          "published": "2026-07-02T20:21:00+0900",
-          "article_id": "c2ab73d515f36a6c",
+          "title": "[사진]타격감 좋은 김민석",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MZRDKYRXGY4WKNRRGUYGCOJYMU/",
+          "published": "2026-07-02T20:40:00+0900",
+          "article_id": "b62bf567c79b4efb",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3164,10 +3164,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "라커룸 가는 길도 헤맨 경산의 숨은 보석, 김백산 1군 데뷔전 149km-5⅔이닝 무실점 대박투 [오!쎈 창원]",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/02/GJQTCNBUMRRWIZJWMI2TAM3CMU/",
-          "published": "2026-07-02T20:21:00+0900",
-          "article_id": "082a5bf78feb9065",
+          "title": "[사진]박해민, 동점 막아내는 홈송구",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MEZDKMJTMY3TAOBUGJTDCMLCGI/",
+          "published": "2026-07-02T20:39:00+0900",
+          "article_id": "60f6826c81358b61",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3182,10 +3182,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]고승민, 잡을 수가 없어",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GQ2DCYJQGE2TEOLBGAYTKZBSHE/",
-          "published": "2026-07-02T20:21:00+0900",
-          "article_id": "e58e6b2b1697a1a2",
+          "title": "[사진]고예지 치어리더, 야구팬들 사로잡는 무대",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GAZDCNTBGZQTGMRRGE4TENRZMM/",
+          "published": "2026-07-02T20:39:00+0900",
+          "article_id": "64246438b0e7e426",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3200,10 +3200,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]양의지, 2루타",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GQYTQNBRMZTDAZLFMUYWIZBWGM/",
-          "published": "2026-07-02T20:21:00+0900",
-          "article_id": "21382e7df40ae26c",
+          "title": "[사진]고예지 치어리더, 신나는 치어리딩",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GJSDCNJRGJQTIZBTMZRGMYRQMI/",
+          "published": "2026-07-02T20:39:00+0900",
+          "article_id": "74af72f7d8290dd2",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3218,10 +3218,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]시게오카 다이키 '한국 반가워요'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/GFQTANBZGA2TEYRQGUZGGZLGME/",
-          "published": "2026-07-02T20:20:00+0900",
-          "article_id": "dc0baf72c9927a13",
+          "title": "[사진]고예지 치어리더, 상큼한 미소",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/HFSDMMJYGVRTIN3CGVTDMOJTMI/",
+          "published": "2026-07-02T20:38:00+0900",
+          "article_id": "4277757c1c0b3f07",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3236,10 +3236,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]시게오카 다이키 'BIFAN 반가워요'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/G5RDAZJQGVRGEZTEGNTDEZBQGA/",
-          "published": "2026-07-02T20:20:00+0900",
-          "article_id": "4c90d184fe40d6d9",
+          "title": "[사진]고예지 치어리더, 꽃미모",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MZRGMYJVMYYGCYJRMZQWIYJQMI/",
+          "published": "2026-07-02T20:38:00+0900",
+          "article_id": "18047551f8ad607b",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3254,10 +3254,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "'48세' 엄지원 “보정속옷, 라인 정리되지만 소화불량 유발”…솔직 토크 ('적과의 동거') [핫피플]",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/02/GA2WGNZVMIYTKYJRMYZDSNTDMM/",
-          "published": "2026-07-02T20:20:00+0900",
-          "article_id": "3787031c6874be47",
+          "title": "[사진]강승호, 번트 타구가 몸에 맞았어",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MI3TMYJRMU2GCMZSMIYDIZRQGE/",
+          "published": "2026-07-02T20:36:00+0900",
+          "article_id": "4b4bdb3d72d7e79c",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3272,10 +3272,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]레드카펫 밟는 시게오카 다이키",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/G5RDOMJRMYYTANRVMUZDMOBTMQ/",
-          "published": "2026-07-02T20:20:00+0900",
-          "article_id": "9e74482e43460809",
+          "title": "이지혜, ♥세무사 결혼 전 고민···백지영 \"무조건 결혼해\"('밉지않은 관종언니')[순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/02/GYYDAOJYMZTDMYRYMUZGGOBZMI/",
+          "published": "2026-07-02T20:35:00+0900",
+          "article_id": "0aa3219f09ebbfaa",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3290,10 +3290,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]시게오카 다이키 '팬들에게 미소'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/GE3DCM3EMFRGKYTCGNSWIZRQHE/",
-          "published": "2026-07-02T20:20:00+0900",
-          "article_id": "283f6359d4ea8a76",
+          "title": "엄지원, 뜻밖의 건강 적신호 고백...“장 건강 안 좋아, 2달 전부터 치료 시작” ('적과의 동거')",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/02/HE2GIN3BGU3WMMTCMM4DMZDFGM/",
+          "published": "2026-07-02T20:35:00+0900",
+          "article_id": "3691ab146ca780ad",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3308,10 +3308,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]시게오카 다이키 'BIFAN 레드카펫 참석'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/GA4TAMRTHAZTOMBZMZSDANBSGA/",
-          "published": "2026-07-02T20:20:00+0900",
-          "article_id": "6b714aa6246d2e2f",
+          "title": "[사진] 하이파이브하는 구자욱, 우중월 솔로 홈런",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GE3DOYRQME2TAYRSMU3WIYZXGY/",
+          "published": "2026-07-02T20:34:00+0900",
+          "article_id": "a969246727e9f1a5",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3326,10 +3326,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]스테이씨 윤 '영화제 시선 모으는 미모'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/GEYGMNTEGBRTONZTGBSWENLGGY/",
-          "published": "2026-07-02T20:19:00+0900",
-          "article_id": "16516ec015e5f75f",
+          "title": "[사진] 구자욱, 신나는 우중월 솔로 홈런",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GQYTGZBZMMZWEMZUMQZDEYLFMQ/",
+          "published": "2026-07-02T20:34:00+0900",
+          "article_id": "536a4b0c7dc3ed3e",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3344,10 +3344,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]스테이씨 윤 '밤하는 별처럼 반짝'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/GBSDCZBTMIZDMNZZGQZWCNJVGY/",
-          "published": "2026-07-02T20:19:00+0900",
-          "article_id": "6533f77b918bd73b",
+          "title": "[사진] 구자욱, 배트 들고 달리는 솔로 홈런",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/HA4TSZLCMU2TEMTBMQ2TGYTCHE/",
+          "published": "2026-07-02T20:34:00+0900",
+          "article_id": "5ee45d36512b964a",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3362,10 +3362,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]스테이씨 윤 '사뿐사뿐'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/MM3WIMZXGUYTSNLBMEZTIMZZMM/",
-          "published": "2026-07-02T20:19:00+0900",
-          "article_id": "df160cd5cd7c5ace",
+          "title": "[사진] 놀라는 손주환, 1루 송구 실책",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/HE3TQYTFGIZDCMBRGM3DAOJXGE/",
+          "published": "2026-07-02T20:33:00+0900",
+          "article_id": "abc0df7b53795cd1",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3380,10 +3380,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]진예 '성숙해진 분위기'",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/G43WKMLBMRTDSZJVMY2TKYTDGI/",
-          "published": "2026-07-02T20:18:00+0900",
-          "article_id": "b7492c62fd15ee96",
+          "title": "[사진] 손주환, 뼈아픈 1루 송구 실책",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MZQTMY3EMY2TCOLGHFQTEZDCGA/",
+          "published": "2026-07-02T20:33:00+0900",
+          "article_id": "498c677aac2bc072",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3398,10 +3398,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]선두타자 2루타 박동원, 다시 득점 시동 겁니다",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MUYDMOJYMUZTQNLDGBRDIZBXGQ/",
-          "published": "2026-07-02T20:18:00+0900",
-          "article_id": "d6b2232318f05110",
+          "title": "[사진]키움 두번째 투수 조영건",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/ME3TCNTGG43TKMBZMQZTONJWGI/",
+          "published": "2026-07-02T20:33:00+0900",
+          "article_id": "fc45f72916666640",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3416,10 +3416,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진] 팬들 박수 속 교체되는 김백산",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GUYGMNRWMYZWGM3GMMYTKZLCGI/",
-          "published": "2026-07-02T20:18:00+0900",
-          "article_id": "501f1ae089d98629",
+          "title": "[사진] 우중월 솔로 홈런 치는 구자욱",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MZTDEYLDGNTDMZRZGQ2TSNJZGA/",
+          "published": "2026-07-02T20:33:00+0900",
+          "article_id": "0140ef32a392b309",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3434,10 +3434,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]이영빈, 다시 앞서가는 1타점 적시 2루타",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MQ3TONZZG5QTSZDEHBTGKMRUHE/",
-          "published": "2026-07-02T20:18:00+0900",
-          "article_id": "8314fac1a0be48f2",
+          "title": "[사진] 구자욱, 솔로 홈런 넘어간다",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GBSGMOJTHE2WMZRSMQ3TAODBGI/",
+          "published": "2026-07-02T20:33:00+0900",
+          "article_id": "abc128dbdd611921",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3452,10 +3452,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]1타점 적시 2루타 이영빈, 다시 앞서갑니다",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GJSWEN3CMM3TKM3BGU3TIYJTMM/",
-          "published": "2026-07-02T20:18:00+0900",
-          "article_id": "ac5297fcc25606ca",
+          "title": "[사진] 구자욱, 우중월 솔로 홈런",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/HE4DKZTBGYZTCZJUMQ4DQNBVGE/",
+          "published": "2026-07-02T20:33:00+0900",
+          "article_id": "03f0229922417b94",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3470,10 +3470,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]배우로 레드카펫 밟는 스테이씨 윤",
-          "url": "https://www.chosun.com/entertainments/entertain_photo/2026/07/02/G42WGNDDGVRDANTGGU2DOY3DHA/",
-          "published": "2026-07-02T20:18:00+0900",
-          "article_id": "f2db3a5a8b20a20b",
+          "title": "[사진] 김성윤, 폭투에 득점 성공",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MY3DQNZUGQ4DIM3CGBSTCYZYGU/",
+          "published": "2026-07-02T20:33:00+0900",
+          "article_id": "216e4031fcc9d38d",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3488,10 +3488,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]LG 선두타자 박동원 안타 후 교체되는 배동현",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MVTGGZDCMQZGKOLDGAZTANLBME/",
-          "published": "2026-07-02T20:18:00+0900",
-          "article_id": "8d7c4bca8cb95737",
+          "title": "[2026 C포럼] 영화 ‘배치’로 스타트업 생태계 조명…전화성 대표 “창업가의 꿈 키우는 액셀러레이터, 혁신의 출발점”",
+          "url": "https://www.chosun.com/economy/smb-venture/2026/07/02/MUZTQY3FGNSTCOBXMYYWCYRZGE/",
+          "published": "2026-07-02T20:32:41+0900",
+          "article_id": "cbfaa82fcf82453d",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3506,10 +3506,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]나승엽, 반등이 필요해",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GE4WGM3FHE4DAYJXGZRDIZRYG4/",
-          "published": "2026-07-02T20:17:00+0900",
-          "article_id": "208092300891f283",
+          "title": "[사진]곽빈, 위기는 없다",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/ME3TMN3BHAZGCZDCMU4TKZJWGQ/",
+          "published": "2026-07-02T20:32:00+0900",
+          "article_id": "d490640192a0cb99",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3524,10 +3524,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]손성빈, 시작이다",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/GZSTAMRWGE2GCYZSHA3WIZRXGY/",
-          "published": "2026-07-02T20:17:00+0900",
-          "article_id": "2a405fbab265de0f",
+          "title": "쿨 유리, 성형 때문에 자녀들 헷갈려 해···'♥6살 연하' \"늘 귀여워\"('밉지않은 관종언니')",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/02/MIZDEYLGGJSDIZLFMMYDSNBWMU/",
+          "published": "2026-07-02T20:32:00+0900",
+          "article_id": "46219af6a1f45058",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3542,10 +3542,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]나균안, 위닝시리즈 향해",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MEYTSZBWG5RDKN3BGQ2TSMJTMU/",
-          "published": "2026-07-02T20:17:00+0900",
-          "article_id": "edb67bf2a998d198",
+          "title": "한혜진, 인생 첫 파리지엔 메이크업 완료..\"과거 외국에서 활동할 때 기분 안 좋았어\" [순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/02/MU4WGYRVMJRDKNDGGBQTSNRRHA/",
+          "published": "2026-07-02T20:32:00+0900",
+          "article_id": "b5593b124076744b",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3560,10 +3560,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]나균안, 역투",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/02/MY3TONBSGRSWKZJRMQYGMMJRMU/",
-          "published": "2026-07-02T20:17:00+0900",
-          "article_id": "e3099f5d66d30179",
+          "title": "경주마에 금지약물 투약…몽골인 조련사 2명 적발",
+          "url": "https://www.chosun.com/national/incident/2026/07/02/2FRXUU6J7FFK7CIIEII6WGO6YI/",
+          "published": "2026-07-02T20:09:56+0900",
+          "article_id": "469f58c99a5d868d",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3578,10 +3578,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "전반기 30홈런 누가 먼저 치려나...오스틴 27호 날리자 김도영, 130m짜리 26호 솔로포 폭발 [오!쎈 광주]",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/02/HA2TOZTFGNRGIZBXGQ3TCMJTMQ/",
-          "published": "2026-07-02T20:16:00+0900",
-          "article_id": "e83061bde8b3e18b",
+          "title": "한화오션 하청 노조 파업권 확보...노란봉투법 시행 뒤 첫 사례",
+          "url": "https://www.chosun.com/national/labor/2026/07/02/NKEZHV7MG5HDXH5RHS3N7XXO3I/",
+          "published": "2026-07-02T20:01:09+0900",
+          "article_id": "1e31e920f3adb9f9",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3596,10 +3596,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "2G 쉬었으니 됐다! 노시환다운 기록 달성…시즌 4호&역대 126번째 동시에 나왔다 [대전 현장]",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/02/GEZWKMZUGUYWIYLGMEYDGZTGMI/",
-          "published": "2026-07-02T20:14:01+0900",
-          "article_id": "6f2f2ee7d948bbc3",
+          "title": "\"돈뱉고 나가!\" 대한민국 대표팀 참담한 귀국. 일본은 축제 그 자체였다. 700명 환영인파+역대급 취재진. 日 축구팬들 \"감사합니다\" 연호",
+          "url": "https://www.chosun.com/sports/football/2026/07/02/MIYGKM3FMFSDSYZZMQ3DSN3CGY/",
+          "published": "2026-07-02T17:50:31+0900",
+          "article_id": "a35b5665d4ab9ff4",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -3638,6 +3638,42 @@
       "method": "rss",
       "home": "http://rss.donga.com",
       "items": [
+        {
+          "title": "잉글랜드 구해낸 ‘해결사’ 해리 케인, 펠레도 넘었다…“오늘은 내가 영웅”",
+          "url": "https://www.donga.com/news/Inter/article/all/20260702/134226906/1",
+          "published": "2026-07-02T20:44:57+0900",
+          "article_id": "e60ccde4572f5c7e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "맘다니發 ‘민주사회주의’ 돌풍…20대 이민자, 15선 현역 꺾었다",
+          "url": "https://www.donga.com/news/Inter/article/all/20260702/134224107/1",
+          "published": "2026-07-02T20:39:19+0900",
+          "article_id": "984b23f41840c053",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "잠실 개표소 경찰 폭행 혐의 20대 2명 구속영장 기각",
           "url": "https://www.donga.com/news/Society/article/all/20260702/134228009/2",
@@ -4141,42 +4177,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "그라운드 밖으로 나온 축구팬심… 일동후디스, FC서울 협업 한정판 공개",
-          "url": "https://www.donga.com/news/Economy/article/all/20260702/134226913/1",
-          "published": "2026-07-02T18:04:17+0900",
-          "article_id": "4a49c36931b9b721",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "“갤럭시 따라잡나…애플, 아이폰 5종 출시·폴더블 생산 확대”",
-          "url": "https://www.donga.com/news/Inter/article/all/20260702/134226887/1",
-          "published": "2026-07-02T17:59:00+0900",
-          "article_id": "604555b2c9f57fce",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -4185,6 +4185,42 @@
       "method": "rss",
       "home": "http://www.khan.co.kr",
       "items": [
+        {
+          "title": "흔치 않은 ‘입체’ 제석천·조선 태종 관직 임명장…문화유산 4건 ‘보물’ 된다",
+          "url": "https://www.khan.co.kr/article/202607022041005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-02T20:41:00+0900",
+          "article_id": "447730af788e7df5",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "나 혼자 선다. 수십명 대신",
+          "url": "https://www.khan.co.kr/article/202607022036005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-02T20:36:00+0900",
+          "article_id": "4b7741e68ffdf4c9",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "“공급 90%가 아파트…중간형 주택 필요”",
           "url": "https://www.khan.co.kr/article/202607022030045/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
@@ -4692,42 +4728,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "[김경식의 이세계 ESG]반도체 산단 논쟁, 핵심은 전력시장이다",
-          "url": "https://www.khan.co.kr/article/202607021958005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-02T19:58:00+0900",
-          "article_id": "f300acf369aa6600",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "70년대 ‘YMCA’로 인기 누린 ‘디스코의 전설’…‘빌리지 피플’ 빅터 윌리스 별세",
-          "url": "https://www.khan.co.kr/article/202607021952005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-02T19:52:00+0900",
-          "article_id": "645d401ce9e1b157",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -4899,7 +4899,7 @@
           "importance_source": "auto"
         },
         {
-          "title": "경찰청, 여고생 살해범 아들 위해 증거인멸한 경찰관 아버지 감찰",
+          "title": "경찰청, 여고생 살해범 아들 위해 증거인멸 경찰관 아버지 감찰",
           "url": "https://www.hani.co.kr/arti/area/honam/1266492.html",
           "published": null,
           "article_id": "50fced7fb3203005",
@@ -6384,6 +6384,24 @@
       "home": "https://rss.etoday.co.kr",
       "items": [
         {
+          "title": "'잠실 개표소 봉쇄 시위’ 경찰 폭행 20대 2명 구속영장 기각",
+          "url": "https://www.etoday.co.kr/news/view/2599811",
+          "published": "2026-07-02T20:42:00+0900",
+          "article_id": "69ca0e49f8e9942a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "특검, ‘내란 가담 의혹’ 김명수 전 합참의장 불구속기소",
           "url": "https://www.etoday.co.kr/news/view/2599810",
           "published": "2026-07-02T20:34:00+0900",
@@ -6904,24 +6922,6 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "‘국평 28억’도 통했다…노량진뉴타운, 고분양가·규제 뚫고 흥행 가도",
-          "url": "https://www.etoday.co.kr/news/view/2599671",
-          "published": "2026-07-02T17:33:00+0900",
-          "article_id": "4cda0adb7c47cb1c",
-          "auto_importance_score": 36,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책"
-          ],
-          "importance_score": 36,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책"
           ],
           "importance_source": "auto"
         }
@@ -13244,6 +13244,24 @@
           "importance_source": "auto"
         },
         {
+          "title": "Inside the Egg Price-Fixing Scandal That Spiked American Grocery Bills",
+          "url": "https://www.wsj.com/business/retail/inside-the-egg-price-fixing-scandal-that-spiked-american-grocery-bills-4a919c51?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-07-01T09:00:00+0900",
+          "article_id": "6622aa861907fdb5",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "Recce Pharmaceuticals bolsters cash position with A$3.67 million tax refund ahead of Phase 3 milestones",
           "url": "https://finance.yahoo.com/healthcare/articles/recce-pharmaceuticals-bolsters-cash-position-235900346.html",
           "published": "2026-07-01T08:59:00+0900",
@@ -13284,24 +13302,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/ameresco-director-sold-10-000-234901281.html",
           "published": "2026-07-01T08:49:01+0900",
           "article_id": "77f810cfc2f12afc",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "This Quantum Computing Stock Recently Went Public, and It Could Be the Buy of the Year",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/quantum-computing-stock-recently-went-233500195.html",
-          "published": "2026-07-01T08:35:00+0900",
-          "article_id": "77895352d9f968f8",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13410,6 +13410,24 @@
           "url": "https://finance.yahoo.com/personal-finance/credit-cards/article/best-credit-card-for-groceries-175714926.html",
           "published": "2025-12-02T04:29:00+0900",
           "article_id": "526a83451343ff7c",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Best credit cards for shopping on Amazon (July 2026)",
+          "url": "https://finance.yahoo.com/personal-finance/credit-cards/article/best-credit-cards-shopping-on-amazon-212142241.html",
+          "published": "2025-11-20T06:21:42+0900",
+          "article_id": "a59d4670b840676e",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13554,24 +13572,6 @@
           "url": "https://finance.yahoo.com/personal-finance/banking/article/how-to-merge-finances-after-marriage-133843790.html",
           "published": "2024-07-24T22:38:43+0900",
           "article_id": "053ab00fd3ecaace",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "APY vs. interest rate: What's the difference, and why does it matter?",
-          "url": "https://finance.yahoo.com/personal-finance/banking/comparison/apy-vs-interest-rate-174532707.html",
-          "published": "2024-07-20T02:45:32+0900",
-          "article_id": "593e8ecfbe2806e0",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -14343,13 +14343,572 @@
       "name": "Mining.com",
       "method": "rss",
       "home": "https://www.mining.com",
-      "items": []
+      "items": [
+        {
+          "title": "GreenMet plans $150M rare earth processing hub in West Virginia",
+          "url": "https://www.mining.com/greenmet-plans-150m-rare-earth-processing-hub-in-west-virginia/",
+          "published": "2026-07-02T01:36:44+0900",
+          "article_id": "dd0a9cad2ea4bec6",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Cameco shuts Cigar Lake mine on Orano mill disruption",
+          "url": "https://www.mining.com/cameco-shuts-cigar-lake-mine-on-orano-mill-disruption/",
+          "published": "2026-07-02T00:46:43+0900",
+          "article_id": "05c6cef25274b0a8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Energy Transition Minerals receives regional approvals for Penouta mine restart in Spain",
+          "url": "https://www.mining.com/energy-transition-minerals-receives-regional-approvals-for-penouta-mine-restart-in-spain/",
+          "published": "2026-07-01T21:51:45+0900",
+          "article_id": "ad613e906fd2a952",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Seeing the whole picture: Closing notes from Kazakhstan",
+          "url": "https://www.mining.com/seeing-the-whole-picture-closing-notes-from-kazakhstan/",
+          "published": "2026-07-01T08:26:02+0900",
+          "article_id": "d90be127e4f2f007",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "South32 sells nearly all its aluminum business to Alcoa for $5.6B",
+          "url": "https://www.mining.com/south32-sells-nearly-all-its-aluminum-business-to-alcoa-for-5-6b/",
+          "published": "2026-07-01T07:45:18+0900",
+          "article_id": "4dc960a0f6ac32cf",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Guardian may skip feasibility on $660M Nevada tungsten mine",
+          "url": "https://www.mining.com/guardian-may-skip-feasibility-on-660m-nevada-tungsten-mine/",
+          "published": "2026-07-01T05:16:43+0900",
+          "article_id": "4bfc99a56a014fe2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Gold price set for worst quarter in 13 years",
+          "url": "https://www.mining.com/gold-price-set-for-worst-quarter-in-13-years/",
+          "published": "2026-07-01T02:31:34+0900",
+          "article_id": "027b0c6e87693f25",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Koryx Copper wins analyst support after Namibia assays",
+          "url": "https://www.mining.com/koryx-copper-wins-analyst-support-after-namibia-assays/",
+          "published": "2026-07-01T01:31:59+0900",
+          "article_id": "3d91c7ca50315c17",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "PH7 secures C$5M federal funding for copper extraction technology",
+          "url": "https://www.mining.com/ph7-secures-c5m-from-natural-resources-canada-for-copper-extraction-technology/",
+          "published": "2026-07-01T01:09:58+0900",
+          "article_id": "19150fbeafa99e7e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Atlantic Strategic confirms viability, 12-month pathway for monazite processing plant",
+          "url": "https://www.mining.com/atlantic-strategic-confirms-viability-12-month-pathway-for-monazite-processing-plant/",
+          "published": "2026-07-01T00:37:04+0900",
+          "article_id": "be2169febf3c312c",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Fortuna lifts West Africa growth with $1B Senegal gold project",
+          "url": "https://www.mining.com/fortuna-lifts-west-africa-growth-with-1b-senegal-gold-project/",
+          "published": "2026-06-30T23:57:33+0900",
+          "article_id": "fd9abeaca89e9d4a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "BHP Invent, MIT spinout trial copper and gold recovery technology from waste streams",
+          "url": "https://www.mining.com/bhp-invent-mit-spinout-trial-copper-and-gold-recovery-technology-from-waste-streams/",
+          "published": "2026-06-30T21:55:41+0900",
+          "article_id": "64c6a89b84ea1dc2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Rosh Pinah commissions new SAG mill as mine expansion nears completion",
+          "url": "https://www.mining.com/rosh-pinah-commissions-new-sag-mill-as-mine-expansion-nears-completion/",
+          "published": "2026-06-30T07:41:47+0900",
+          "article_id": "43833722b3df38ce",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Gold price falls nearly 2% as rebound proves short-lived",
+          "url": "https://www.mining.com/gold-price-falls-back-to-4000-on-renewed-mideast-tensions/",
+          "published": "2026-06-30T02:15:26+0900",
+          "article_id": "cce735c1609a60c7",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Greenland Resources gets $5M Canadian funding for Malmbjerg molybdenum mine",
+          "url": "https://www.mining.com/greenland-resources-gets-5m-funding-from-canada-for-malmbjerg-molybdenum-mine/",
+          "published": "2026-06-30T00:30:09+0900",
+          "article_id": "d83ec7c633ab7a6f",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Sweden grants 25-year concession to heavy rare earth deposit",
+          "url": "https://www.mining.com/sweden-grants-25-year-concession-to-heavy-rare-earth-deposit/",
+          "published": "2026-06-30T00:26:49+0900",
+          "article_id": "5c75ecbe484797c8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Bunker Hill rebuild ships first Idaho ore, eyes silver",
+          "url": "https://www.mining.com/bunker-hill-rebuild-ships-first-idaho-ore-eyes-silver/",
+          "published": "2026-06-30T00:17:04+0900",
+          "article_id": "b09e32e35a3ce530",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Tactical Resources eyes Nasdaq debut as Texas rare earths project advances",
+          "url": "https://www.mining.com/tactical-resources-eyes-nasdaq-debut-as-texas-rare-earths-project-advances/",
+          "published": "2026-06-29T23:58:53+0900",
+          "article_id": "1a4f6ccb19d8cbeb",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Freeman Gold triples Lemhi project value, builds 1Moz reserve",
+          "url": "https://www.mining.com/freeman-gold-triples-lemhi-project-value-builds-1moz-reserve/",
+          "published": "2026-06-29T23:53:32+0900",
+          "article_id": "28201c78293a9835",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Op-Ed: The decoy effect — how Beijing steers western mining capital",
+          "url": "https://www.mining.com/op-ed-the-decoy-effect-how-beijing-steers-western-mining-capital/",
+          "published": "2026-06-29T20:25:57+0900",
+          "article_id": "5497d0cf52194042",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Nigeria identifies major new critical minerals district, large lithium discovery",
+          "url": "https://www.mining.com/nigeria-identifies-major-new-critical-minerals-district-large-lithium-discovery/",
+          "published": "2026-06-29T01:46:46+0900",
+          "article_id": "e7e18a32331d79cf",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Trump administration issues emergency order to keep Colorado coal plant operating",
+          "url": "https://www.mining.com/trump-administration-issues-emergency-order-to-keep-colorado-coal-plant-operating/",
+          "published": "2026-06-27T07:39:09+0900",
+          "article_id": "da54f44486d91a3e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Integra grows reserve by 74% at Florida Canyon gold mine",
+          "url": "https://www.mining.com/integra-grows-reserve-74-at-florida-canyon-gold-mine/",
+          "published": "2026-06-27T07:08:00+0900",
+          "article_id": "f4e9d92dfae389df",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Op-Ed: DRC is setting the terms of global competition for critical minerals",
+          "url": "https://www.mining.com/op-ed-drc-is-setting-the-terms-of-global-competition-for-critical-minerals/",
+          "published": "2026-06-27T05:56:19+0900",
+          "article_id": "c4eb8ef01a082c55",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Ground view Kazakhstan: Brezhnev’s needles",
+          "url": "https://www.mining.com/ground-view-kazakhstan-brezhnevs-needles/",
+          "published": "2026-06-27T04:38:00+0900",
+          "article_id": "7e91ba50e10588b2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Site visit: Blue Lagoon leverages cash into Dome’s 1M oz resource bid",
+          "url": "https://www.mining.com/site-visit-blue-lagoon-leverages-cash-into-domes-1m-oz-resource-bid/",
+          "published": "2026-06-27T03:55:00+0900",
+          "article_id": "739266c69400a485",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Fortune Minerals gets $35M for Nico road",
+          "url": "https://www.mining.com/fortune-gets-35m-for-nico-road/",
+          "published": "2026-06-27T02:16:57+0900",
+          "article_id": "4eb2c752367c759b",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "i-80 Gold terminates Vox Royalty offtake with $4.8M payment",
+          "url": "https://www.mining.com/i-80-gold-terminates-vox-royalty-offtake-with-4-8m-payment/",
+          "published": "2026-06-27T01:30:38+0900",
+          "article_id": "337c1dce64b3dbf4",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "First Majestic wins permits for Santa Elena expansion in Mexico",
+          "url": "https://www.mining.com/first-majestic-wins-permits-for-santa-elena-expansion/",
+          "published": "2026-06-26T23:58:08+0900",
+          "article_id": "d0a6a1e136f969e9",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Op-Ed: Acid is becoming copper’s new price signal",
+          "url": "https://www.mining.com/op-ed-acid-is-becoming-coppers-new-price-signal/",
+          "published": "2026-06-26T22:50:21+0900",
+          "article_id": "3dceb1a3fb358750",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        }
+      ]
     },
     {
       "name": "WSJ Markets",
       "method": "rss",
       "home": "https://feeds.content.dowjones.io",
       "items": [
+        {
+          "title": "Auto & Transport Roundup: Market Talk",
+          "url": "https://www.wsj.com/finance/stocks/auto-transport-roundup-market-talk-6073dcc9?mod=rss_markets_main",
+          "published": "2026-07-02T20:36:00+0900",
+          "article_id": "6f09d54f6cca756e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "Global Tech Stocks Struggle Ahead of Jobs Report",
           "url": "https://www.wsj.com/economy/central-banking/global-ai-selloff-extends-as-traders-ready-for-jobs-day-40ae7d78?mod=rss_markets_main",
@@ -14607,24 +15166,6 @@
           "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-88a73629?mod=rss_markets_main",
           "published": "2026-07-02T05:55:00+0900",
           "article_id": "a2accf41bb936e94",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Tech, Media & Telecom Roundup: Market Talk",
-          "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-f0fbb82c?mod=rss_markets_main",
-          "published": "2026-07-02T05:53:00+0900",
-          "article_id": "83ee4ddf6ded3255",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
