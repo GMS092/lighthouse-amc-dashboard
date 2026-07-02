@@ -101,7 +101,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/assets _site/data _site/docs
-          cp dashboard.html phase.html news.html weight.html _site/
+          cp dashboard.html phase.html news.html research.html weight.html _site/
           cp -R assets/. _site/assets/
           cp -R data/. _site/data/
           cp docs/UPDATE_NOTES.md _site/docs/UPDATE_NOTES.md
@@ -134,6 +134,7 @@ jobs:
           }
           patch('_site/phase.html', '/api/phase', 'data/phase-classification.json', true);
           patch('_site/news.html', '/api/news', 'data/news-flow.json', true);
+          patch('_site/research.html', '/api/news', 'data/news-flow.json', false);
           patch('_site/weight.html', '/api/weight', 'data/weight-check.json', false);
           NODE
 
