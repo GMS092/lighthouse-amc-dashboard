@@ -7,8 +7,7 @@ r"""
 수집 방식:
   - RSS 기본값: modules/news-flow/feeds.json 의 피드들을 feedparser 로 파싱
   - RSS 확장: TELEGRAM_BOT_DIR 또는 NEWS_FEEDS 로 지정한 dynamic_feeds.json 사용
-  - 크롤: 외부 뉴스봇 scraper.py 의 fetch_scraped_sources() 를 재사용
-          (봇 저장소가 있을 때만 실행, 없으면 RSS만 수집)
+  - 크롤: 대시보드 내장 크롤러를 실행하고, 외부 뉴스봇 scraper.py 가 있으면 추가 병합
   - 중요도: 제목/출처 기반 자동 점수 + data/news-labels.json 수동 라벨 병합
 """
 import argparse
@@ -40,7 +39,16 @@ FEEDS_PATH = Path(os.environ["NEWS_FEEDS"]) if os.environ.get("NEWS_FEEDS") else
 )
 
 PER_SOURCE = 30
-PER_SOURCE_OVERRIDES = {"SemiAnalysis": 100, "DRAMeXchange": 100}
+PER_SOURCE_OVERRIDES = {
+    "SemiAnalysis": 100,
+    "DRAMeXchange": 100,
+    "Semiconductor Engineering": 100,
+    "TrendForce": 100,
+    "WCCFetch": 100,
+    "WCCFTech": 100,
+    "a16Z News": 100,
+    "a16z News": 100,
+}
 KST = ZoneInfo("Asia/Seoul")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; RSS reader)"}
 
@@ -239,20 +247,20 @@ def collect_rss(feeds: list[dict]) -> list[dict]:
     return ok
 
 
-def collect_crawl() -> list[dict]:
+def collect_external_crawl() -> list[dict]:
     if not BOT_DIR.exists():
-        print(f"  [crawl:skip] 봇 경로 없음: {BOT_DIR}")
+        print(f"  [external-crawl:skip] 봇 경로 없음: {BOT_DIR}")
         return []
     sys.path.insert(0, str(BOT_DIR))
     try:
         import scraper
     except Exception as e:
-        print(f"  [crawl:skip] scraper import 실패: {e}")
+        print(f"  [external-crawl:skip] scraper import 실패: {e}")
         return []
     try:
         raw = scraper.fetch_scraped_sources()
     except Exception as e:
-        print(f"  [crawl:err] {e}")
+        print(f"  [external-crawl:err] {e}")
         return []
     grouped: dict[str, dict] = {}
     for it in raw:
@@ -269,8 +277,25 @@ def collect_crawl() -> list[dict]:
         limit = _per_source_limit(g["name"])
         g["items"].sort(key=lambda x: x["published"] or "", reverse=True)
         g["items"] = g["items"][:limit]
-    print(f"  [crawl] {len(grouped)}개 소스, 기사 {sum(len(g['items']) for g in grouped.values())}건")
+    print(f"  [external-crawl] {len(grouped)}개 소스, 기사 {sum(len(g['items']) for g in grouped.values())}건")
     return list(grouped.values())
+
+
+def collect_builtin_crawl() -> list[dict]:
+    try:
+        from builtin_crawl import fetch_builtin_crawl_sources
+    except Exception as e:
+        print(f"  [builtin-crawl:skip] import 실패: {e}")
+        return []
+    try:
+        return fetch_builtin_crawl_sources(_per_source_limit)
+    except Exception as e:
+        print(f"  [builtin-crawl:err] {e}")
+        return []
+
+
+def collect_crawl() -> list[dict]:
+    return collect_builtin_crawl() + collect_external_crawl()
 
 
 def main() -> int:
