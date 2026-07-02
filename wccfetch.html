@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lighthouse AMC · WCCFetch</title>
+    <link rel="stylesheet" href="assets/source-tab.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" aria-label="사이드바">
+        <div class="brand"><img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" /><div class="brand-name">Lighthouse AMC</div></div>
+        <nav class="nav" aria-label="대시보드 메뉴">
+          <a class="nav-item" href="dashboard.html"><span class="nav-dot" aria-hidden="true"></span><span>홈</span></a>
+          <a class="nav-item" href="phase.html"><span class="nav-dot" aria-hidden="true"></span><span>투자의 정석 (동부)</span></a>
+          <a class="nav-item" href="weight.html"><span class="nav-dot" aria-hidden="true"></span><span>전자, 닉스 비중 체크</span></a>
+          <a class="nav-item" href="news.html"><span class="nav-dot" aria-hidden="true"></span><span>뉴스플로우</span></a>
+          <a class="nav-item" href="semianalysis.html"><span class="nav-dot" aria-hidden="true"></span><span>SemiAnalysis</span></a>
+          <a class="nav-item" href="dramexchange.html"><span class="nav-dot" aria-hidden="true"></span><span>DRAMeXchange</span></a>
+          <a class="nav-item" href="semiconductor-engineering.html"><span class="nav-dot" aria-hidden="true"></span><span>Semiconductor Engineering</span></a>
+          <a class="nav-item" href="trendforce.html"><span class="nav-dot" aria-hidden="true"></span><span>TrendForce</span></a>
+          <a class="nav-item active" href="wccfetch.html"><span class="nav-dot" aria-hidden="true"></span><span>WCCFetch</span></a>
+          <a class="nav-item" href="a16z-news.html"><span class="nav-dot" aria-hidden="true"></span><span>a16Z News</span></a>
+        </nav>
+      </aside>
+      <main class="main">
+        <header class="topbar"><h1 class="page-title">WCCFetch</h1><span class="status" id="update-label">불러오는 중...</span></header>
+        <section class="workspace" aria-label="WCCFetch 뉴스"><div class="notice" id="notice"><span id="notice-text"></span></div><div class="panel-meta"><span class="panel-title" id="source-name">WCCFetch</span><span id="row-count">0건</span></div><div class="table-shell"><div class="loading" id="loading">뉴스를 불러오는 중입니다...</div><div class="empty-msg" id="empty-msg" style="display:none">표시할 뉴스가 없습니다.</div><div class="table-scroll" id="table-scroll" style="display:none"><table class="news-table"><thead><tr><th class="col-time">시간</th><th class="col-importance">중요도</th><th class="col-title">제목</th></tr></thead><tbody id="news-table-body"></tbody></table></div></div></section>
+      </main>
+    </div>
+    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환"><span aria-hidden="true">◐</span><span class="theme-label">흑</span></button>
+    <script>window.SOURCE_NAME='WCCFetch';window.SOURCE_ALIASES=['WCCFetch','WCC Fetch','Wccftech','WCCFTech'];</script>
+    <script src="assets/source-tab.js"></script>
+  </body>
+</html>
