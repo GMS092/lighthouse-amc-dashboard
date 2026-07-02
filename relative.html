@@ -135,9 +135,10 @@
             <p>각 업종의 KOSPI 대비 상대수익률(업종 − 코스피)을 최근일 기준 6개월 전 → 3개월 전 → 1개월 전 → 1주 전 → 최근 순으로 선으로 잇고, 최근 시점을 화살표로 표시합니다.</p>
           </div>
           <div class="legend">
-            <span>가로: <b>KOSPI 대비 1개월 수익률</b></span>
-            <span>세로: <b>KOSPI 대비 3개월 수익률</b></span>
+            <span>중심 = <b>KOSPI</b> (상대수익률 0)</span>
+            <span>가로=1개월 · 세로=3개월 · 바깥일수록 상대강도 큼</span>
             <span>선: 과거→최근 · <b>화살표=최근</b></span>
+            <span>라벨은 겹치지 않게 <b>원 밖으로 리더선</b>으로 뺐습니다</span>
           </div>
           <div class="chart-wrap">
             <div class="loading" id="loading">데이터를 불러오는 중입니다…</div>
@@ -200,93 +201,117 @@
           axisLabel: cs.getPropertyValue("--axis-label").trim(),
         };
 
-        var W = 940, H = 780, m = { t: 54, r: 40, b: 64, l: 64 };
-        var pw = W - m.l - m.r, ph = H - m.t - m.b;
+        var W = 1060, H = 860;
         svg.setAttribute("viewBox", "0 0 " + W + " " + H);
 
-        // 데이터 범위
-        var xs = [], ys = [];
+        // 각 축의 절반 범위(정규화용)
+        var axhalf = 1, ayhalf = 1;
         data.sectors.forEach(function (s) {
-          s.traj.forEach(function (p) { if (p) { xs.push(p[0]); ys.push(p[1]); } });
+          s.traj.forEach(function (p) {
+            if (!p) return;
+            axhalf = Math.max(axhalf, Math.abs(p[0]));
+            ayhalf = Math.max(ayhalf, Math.abs(p[1]));
+          });
         });
-        if (!xs.length) return;
-        function bounds(arr) {
-          var mn = Math.min.apply(null, arr), mx = Math.max.apply(null, arr);
-          var pad = (mx - mn) * 0.08 || 5;
-          mn = Math.min(mn - pad, 0); mx = Math.max(mx + pad, 0);
-          var step = niceStep(mx - mn, 8);
-          return { min: Math.floor(mn / step) * step, max: Math.ceil(mx / step) * step, step: step };
-        }
-        var bx = bounds(xs), by = bounds(ys);
-        var sx = function (v) { return m.l + (v - bx.min) / (bx.max - bx.min) * pw; };
-        var sy = function (v) { return m.t + (by.max - v) / (by.max - by.min) * ph; };
+
+        var cx = W / 2, cy = 480, R = 330;   // 원 중심 / 반지름
+        // 정규화(각 축 [-1,1]) 후, 최대 반경이 원 안(0.8R)에 들어오도록 균일 스케일
+        var maxDist = 0.0001;
+        data.sectors.forEach(function (s) {
+          s.traj.forEach(function (p) {
+            if (!p) return;
+            var d = Math.sqrt(Math.pow(p[0] / axhalf, 2) + Math.pow(p[1] / ayhalf, 2));
+            if (d > maxDist) maxDist = d;
+          });
+        });
+        var scale = (R * 0.8) / maxDist;
+        function proj(p) { return [cx + (p[0] / axhalf) * scale, cy - (p[1] / ayhalf) * scale]; }
 
         // 제목
-        svg.appendChild(el("text", { x: W / 2, y: 30, "text-anchor": "middle",
+        svg.appendChild(el("text", { x: W / 2, y: 34, "text-anchor": "middle",
           "font-size": 20, "font-weight": 700, fill: C.muted }, "상대수익률 추이"));
 
-        // 그리드 + 눈금
-        var v;
-        for (v = bx.min; v <= bx.max + 1e-9; v += bx.step) {
-          var X = sx(v);
-          svg.appendChild(el("line", { x1: X, y1: m.t, x2: X, y2: m.t + ph, stroke: C.grid, "stroke-width": 1 }));
-          svg.appendChild(el("text", { x: X, y: m.t + ph + 20, "text-anchor": "middle",
-            "font-size": 12, fill: C.axisLabel }, Math.round(v)));
-        }
-        for (v = by.min; v <= by.max + 1e-9; v += by.step) {
-          var Y = sy(v);
-          svg.appendChild(el("line", { x1: m.l, y1: Y, x2: m.l + pw, y2: Y, stroke: C.grid, "stroke-width": 1 }));
-          svg.appendChild(el("text", { x: m.l - 10, y: Y + 4, "text-anchor": "end",
-            "font-size": 12, fill: C.axisLabel }, Math.round(v)));
-        }
-        // 0축 강조 (십자)
-        svg.appendChild(el("line", { x1: sx(0), y1: m.t, x2: sx(0), y2: m.t + ph, stroke: C.axis, "stroke-width": 1.6 }));
-        svg.appendChild(el("line", { x1: m.l, y1: sy(0), x2: m.l + pw, y2: sy(0), stroke: C.axis, "stroke-width": 1.6 }));
+        // 동심원(그리드) + 바깥 원
+        [0.5, 1].forEach(function (f) {
+          svg.appendChild(el("circle", { cx: cx, cy: cy, r: (R * f).toFixed(1), fill: "none",
+            stroke: C.grid, "stroke-width": f === 1 ? 1.4 : 1,
+            "stroke-dasharray": f === 1 ? "" : "3 5" }));
+        });
+        // 십자축
+        svg.appendChild(el("line", { x1: cx - R, y1: cy, x2: cx + R, y2: cy, stroke: C.axis, "stroke-width": 1.2 }));
+        svg.appendChild(el("line", { x1: cx, y1: cy - R, x2: cx, y2: cy + R, stroke: C.axis, "stroke-width": 1.2 }));
+        // 중심 = KOSPI
+        svg.appendChild(el("circle", { cx: cx, cy: cy, r: 3, fill: C.axis }));
+        svg.appendChild(el("text", { x: cx + 7, y: cy - 7, "font-size": 11, "font-weight": 700, fill: C.muted }, "KOSPI"));
 
-        // 축 라벨
-        svg.appendChild(el("text", { x: m.l + pw, y: H - 20, "text-anchor": "end",
-          "font-size": 13, "font-weight": 700, fill: C.text }, data.x_label || "(KOSPI 대비 1개월 수익률)"));
-        var yl = el("text", { x: 18, y: m.t + ph / 2, "text-anchor": "middle",
-          "font-size": 13, "font-weight": 700, fill: C.text,
-          transform: "rotate(-90 18 " + (m.t + ph / 2) + ")" }, data.y_label || "(KOSPI 대비 3개월 수익률)");
-        svg.appendChild(yl);
+        // 축 방향 라벨 (사분면 의미)
+        function axisText(x, y, t, anchor) {
+          svg.appendChild(el("text", { x: x, y: y, "text-anchor": anchor, "font-size": 12,
+            "font-weight": 700, fill: C.muted }, t));
+        }
+        axisText(cx + R, cy + 20, "1개월 초과 →", "end");
+        axisText(cx - R, cy + 20, "← 1개월 미달", "start");
+        axisText(cx + 8, cy - R + 2, "▲ 3개월 초과", "start");
+        axisText(cx + 8, cy + R - 4, "▼ 3개월 미달", "start");
 
-        // 업종별 궤적 + 화살표 + 라벨
-        var pi = 0;
+        // 업종별 궤적 + 화살표 (원 안)
+        var pi = 0, ends = [];
         data.sectors.forEach(function (s) {
-          var pts = s.traj.map(function (p) { return p ? [sx(p[0]), sy(p[1])] : null; }).filter(Boolean);
+          var pts = s.traj.map(function (p) { return p ? proj(p) : null; }).filter(Boolean);
           if (!pts.length) return;
           var color = FIXED[s.name] || PALETTE[pi++ % PALETTE.length];
           var strong = !!FIXED[s.name];
-          var w = strong ? 3 : 2;
 
           if (pts.length >= 2) {
             svg.appendChild(el("polyline", {
               points: pts.map(function (p) { return p[0].toFixed(1) + "," + p[1].toFixed(1); }).join(" "),
-              fill: "none", stroke: color, "stroke-width": w,
-              "stroke-linejoin": "round", "stroke-linecap": "round", opacity: strong ? 0.95 : 0.8,
+              fill: "none", stroke: color, "stroke-width": strong ? 3 : 1.8,
+              "stroke-linejoin": "round", "stroke-linecap": "round", opacity: strong ? 0.95 : 0.7,
             }));
-            // 화살표 머리 (마지막 세그먼트 방향)
             var a = pts[pts.length - 2], b = pts[pts.length - 1];
             var ang = Math.atan2(b[1] - a[1], b[0] - a[0]);
             var L = strong ? 13 : 10, wd = strong ? 5 : 4;
-            var p1 = [b[0] - L * Math.cos(ang) + wd * Math.sin(ang), b[1] - L * Math.sin(ang) - wd * Math.cos(ang)];
-            var p2 = [b[0] - L * Math.cos(ang) - wd * Math.sin(ang), b[1] - L * Math.sin(ang) + wd * Math.cos(ang)];
             svg.appendChild(el("polygon", {
-              points: b[0].toFixed(1) + "," + b[1].toFixed(1) + " " + p1[0].toFixed(1) + "," + p1[1].toFixed(1) + " " + p2[0].toFixed(1) + "," + p2[1].toFixed(1),
-              fill: color, opacity: strong ? 0.95 : 0.85,
+              points: b[0].toFixed(1) + "," + b[1].toFixed(1) + " " +
+                (b[0] - L * Math.cos(ang) + wd * Math.sin(ang)).toFixed(1) + "," + (b[1] - L * Math.sin(ang) - wd * Math.cos(ang)).toFixed(1) + " " +
+                (b[0] - L * Math.cos(ang) - wd * Math.sin(ang)).toFixed(1) + "," + (b[1] - L * Math.sin(ang) + wd * Math.cos(ang)).toFixed(1),
+              fill: color, opacity: strong ? 0.95 : 0.8,
             }));
-          } else {
-            svg.appendChild(el("circle", { cx: pts[0][0], cy: pts[0][1], r: 3.5, fill: color }));
           }
-          // 라벨 (최근점 옆)
           var end = pts[pts.length - 1];
-          svg.appendChild(el("text", {
-            x: (end[0] + 6).toFixed(1), y: (end[1] - 5).toFixed(1),
-            "font-size": strong ? 13 : 11.5, "font-weight": strong ? 800 : 700,
-            fill: color,
-          }, s.name));
+          svg.appendChild(el("circle", { cx: end[0].toFixed(1), cy: end[1].toFixed(1), r: strong ? 3.4 : 2.5, fill: color }));
+          ends.push({ name: s.name, x: end[0], y: end[1], color: color, strong: strong });
         });
+
+        // 라벨: 점 위치 기준 좌/우로 나눠 원 밖에 세로 정렬 + 리더선 (겹침 방지)
+        var GAP = 17, top = cy - R + 6, bot = cy + R - 6;
+        function layout(side) {
+          var lx = side === "R" ? cx + R + 30 : cx - R - 30;
+          var arr = ends.filter(function (e) { return side === "R" ? e.x >= cx : e.x < cx; });
+          arr.sort(function (a, b) { return a.y - b.y; });
+          arr.forEach(function (e) { e.ly = Math.max(top, Math.min(bot, e.y)); });
+          for (var i = 1; i < arr.length; i++)
+            if (arr[i].ly < arr[i - 1].ly + GAP) arr[i].ly = arr[i - 1].ly + GAP;
+          for (var j = arr.length - 2; j >= 0; j--)
+            if (arr[j].ly > arr[j + 1].ly - GAP) arr[j].ly = arr[j + 1].ly - GAP;
+          arr.forEach(function (e) {
+            var elbowX = side === "R" ? lx - 14 : lx + 14;
+            svg.appendChild(el("polyline", {
+              points: e.x.toFixed(1) + "," + e.y.toFixed(1) + " " +
+                      elbowX.toFixed(1) + "," + e.ly.toFixed(1) + " " +
+                      lx.toFixed(1) + "," + e.ly.toFixed(1),
+              fill: "none", stroke: e.color, "stroke-width": 1, opacity: 0.55,
+            }));
+            svg.appendChild(el("circle", { cx: lx.toFixed(1), cy: e.ly.toFixed(1), r: 1.7, fill: e.color }));
+            svg.appendChild(el("text", {
+              x: (side === "R" ? lx + 5 : lx - 5).toFixed(1), y: (e.ly + 3.5).toFixed(1),
+              "text-anchor": side === "R" ? "start" : "end",
+              "font-size": e.strong ? 12.5 : 11, "font-weight": e.strong ? 800 : 600, fill: e.color,
+            }, e.name));
+          });
+        }
+        layout("R");
+        layout("L");
 
         document.getElementById("loading").style.display = "none";
         svg.style.display = "block";
