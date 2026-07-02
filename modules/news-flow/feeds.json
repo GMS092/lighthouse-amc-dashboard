@@ -1,6 +1,274 @@
 [
   {
     "name": "DART 공시 RSS",
-    "url": "https://dart.fss.or.kr/api/todayRSS.xml"
+    "url": "https://dart.fss.or.kr/api/todayRSS.xml",
+    "lang": "ko",
+    "disclosure": true,
+    "no_summary": true
+  },
+  {
+    "name": "KRX KIND 공시 RSS",
+    "url": "https://kind.krx.co.kr/disclosure/rsstodaydistribute.do?method=searchRssTodayDistribute&repIsuSrtCd=&mktTpCd=0&searchCorpName=&currentPageSize=15",
+    "lang": "ko",
+    "disclosure": true,
+    "no_summary": true
+  },
+  {
+    "name": "연합인포맥스",
+    "url": "https://news.einfomax.co.kr/rss/allArticle.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "연합뉴스",
+    "url": "https://www.yna.co.kr/rss/news.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "매일경제",
+    "url": "https://www.mk.co.kr/rss/40300001/",
+    "lang": "ko"
+  },
+  {
+    "name": "서울경제",
+    "url": "https://www.sedaily.com/rss/newsall",
+    "lang": "ko"
+  },
+  {
+    "name": "조선일보",
+    "url": "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+    "lang": "ko"
+  },
+  {
+    "name": "동아일보",
+    "url": "http://rss.donga.com/total.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "경향신문",
+    "url": "http://www.khan.co.kr/rss/rssdata/total_news.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "한겨레",
+    "url": "https://www.hani.co.kr/rss/",
+    "lang": "ko"
+  },
+  {
+    "name": "전자신문",
+    "url": "https://rss.etnews.com/Section901.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "이데일리",
+    "url": "http://rss.edaily.co.kr/edaily_news.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "이투데이",
+    "url": "https://rss.etoday.co.kr/eto/etoday_news_all.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "디일렉",
+    "url": "https://www.thelec.kr/rss/allArticle.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "메르의 블로그",
+    "url": "https://rss.blog.naver.com/ranto28.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "피우스의 책도둑 & 매거진",
+    "url": "https://rss.blog.naver.com/jeunkim.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "이공계 박사가 말아주는 반도체 이야기",
+    "url": "https://rss.blog.naver.com/pnp_diary.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "이것 또한 지나가리라",
+    "url": "https://rss.blog.naver.com/tosoha1.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "비즈카페",
+    "url": "https://rss.blog.naver.com/bizucafe.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "BOK 이슈노트",
+    "url": "https://www.bok.or.kr/portal/bbs/P0002353/news.rss?menuNo=200433",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "국회 일정",
+    "url": "https://www.assembly.go.kr/portal/rss/rss/meopenRss.do?brd_sctn=C1",
+    "lang": "ko"
+  },
+  {
+    "name": "국회 보도자료",
+    "url": "https://www.assembly.go.kr/portal/rss/rss/meopenRss.do?brd_sctn=C2",
+    "lang": "ko"
+  },
+  {
+    "name": "국회 행사알림",
+    "url": "https://www.assembly.go.kr/portal/rss/rss/meopenRss.do?brd_sctn=C3",
+    "lang": "ko"
+  },
+  {
+    "name": "IT FIND",
+    "url": "https://www.itfind.or.kr/ccenter/rss.do?codeAlias=all&rssType=02",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "KOSIS (100대 지표)",
+    "url": "https://kosis.kr/rss/kosis100Rss.do",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "정책브리핑 (정책뉴스)",
+    "url": "https://www.korea.kr/rss/policy.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "정책브리핑 (보도자료)",
+    "url": "https://www.korea.kr/rss/pressrelease.xml",
+    "lang": "ko"
+  },
+  {
+    "name": "KOTRA (해외시장뉴스)",
+    "url": "https://dream.kotra.or.kr/kotra/rssList.do?pBbsGroup=1",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "Dataroma",
+    "url": "https://feeds.feedburner.com/dataroma",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "DARPA",
+    "url": "https://www.darpa.mil/rss.xml",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "FRB Working Papers",
+    "url": "https://www.federalreserve.gov/feeds/working_papers.xml",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "FRB Speeches",
+    "url": "https://www.federalreserve.gov/feeds/speeches.xml",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "Visual Capitalist",
+    "url": "https://feeds.feedburner.com/visualcapitalist",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "Statista",
+    "url": "https://www.statista.com/rss/infographics",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/news/rssindex",
+    "lang": "en"
+  },
+  {
+    "name": "CNBC Top News",
+    "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114",
+    "lang": "en"
+  },
+  {
+    "name": "MarketWatch",
+    "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+    "lang": "en"
+  },
+  {
+    "name": "Mining.com",
+    "url": "https://www.mining.com/feed",
+    "lang": "en"
+  },
+  {
+    "name": "WSJ Markets",
+    "url": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+    "lang": "en"
+  },
+  {
+    "name": "KDI 경제정책자료",
+    "url": "https://eiec.kdi.re.kr/policy/rss.do?rss_type=material",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "KDI 국내연구자료",
+    "url": "https://eiec.kdi.re.kr/policy/rss.do?rss_type=domestic",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "SemiAnalysis",
+    "url": "https://newsletter.semianalysis.com/feed",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "Oilprice.com",
+    "url": "https://oilprice.com/rss/main",
+    "lang": "en"
+  },
+  {
+    "name": "SMIC",
+    "url": "http://snusmic.com/feed/",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "마음 편한 투자",
+    "url": "https://rss.blog.naver.com/quantamental.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "배당사냥꾼 정태성의 경제 주식 이야기",
+    "url": "https://rss.blog.naver.com/zero_family.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "DRAMeXchange",
+    "url": "https://www.dramexchange.com/rss.xml",
+    "lang": "en",
+    "curator": true
+  },
+  {
+    "name": "이그전",
+    "url": "https://rss.blog.naver.com/egzion.xml",
+    "lang": "ko",
+    "curator": true
+  },
+  {
+    "name": "한국경제",
+    "url": "https://www.hankyung.com/feed/all-news",
+    "lang": "ko"
   }
 ]
