@@ -58,16 +58,7 @@
       }
 
       * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background: var(--bg);
-        color: var(--text);
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        transition: background 180ms ease, color 180ms ease;
-      }
-
+      body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; transition: background 180ms ease, color 180ms ease; }
       .dashboard { display: grid; min-height: 100vh; grid-template-columns: 248px minmax(0, 1fr); }
       .sidebar { display: flex; flex-direction: column; gap: 28px; border-right: 1px solid var(--line); background: var(--surface); padding: 28px 22px 88px; transition: background 180ms ease, border-color 180ms ease; }
       .brand { display: flex; align-items: center; gap: 12px; min-height: 40px; }
@@ -78,11 +69,9 @@
       .nav-item:hover { background: var(--surface-soft); color: var(--text); }
       .nav-item.active { background: var(--surface-soft); color: var(--text); font-weight: 700; }
       .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
-
       .theme-toggle { position: fixed; left: 22px; bottom: 22px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 104px; height: 42px; border: 0; border-radius: 8px; background: var(--button-bg); color: var(--button-text); box-shadow: var(--shadow); font: inherit; font-size: 14px; font-weight: 750; cursor: pointer; transition: background 180ms ease, color 180ms ease, transform 160ms ease; }
       .theme-toggle:hover { transform: translateY(-1px); }
       .theme-toggle:focus-visible { outline: 3px solid #4c9ffe; outline-offset: 3px; }
-
       .main { display: flex; min-width: 0; flex-direction: column; }
       .topbar { display: flex; align-items: center; justify-content: space-between; min-height: 76px; border-bottom: 1px solid var(--line); background: var(--surface); padding: 0 34px; transition: background 180ms ease, border-color 180ms ease; }
       .title-brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
@@ -96,12 +85,10 @@
       .refresh-icon { display: inline-block; font-size: 15px; }
       .refresh-btn.loading .refresh-icon { animation: refresh-spin 0.9s linear infinite; }
       @keyframes refresh-spin { to { transform: rotate(360deg); } }
-
       .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
       .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 18px; }
       .notice strong { color: var(--text); }
       .flow-layout { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 16px; align-items: stretch; }
-
       .source-list-shell { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
       .source-list-head { display: flex; align-items: center; justify-content: space-between; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); padding: 0 12px; color: var(--muted); font-size: 12px; font-weight: 850; }
       .source-list { max-height: calc(100vh - 220px); min-height: 420px; overflow: auto; padding: 6px; }
@@ -111,31 +98,26 @@
       .source-item-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12.5px; font-weight: 800; }
       .source-count { display: inline-flex; align-items: center; justify-content: center; min-width: 25px; height: 21px; border-radius: 999px; background: var(--surface-soft); color: var(--muted); padding: 0 7px; font-size: 11px; font-weight: 850; }
       .source-item.active .source-count { background: rgba(255,255,255,0.18); color: currentColor; }
-
       .content-panel { min-width: 0; display: flex; flex-direction: column; }
       .source-panel-meta { display: flex; align-items: center; justify-content: space-between; min-height: 42px; border: 1px solid var(--line); border-radius: 8px 8px 0 0; background: var(--surface); padding: 0 14px; color: var(--muted); font-size: 12px; }
       .source-panel-title { color: var(--text); font-weight: 850; }
       .news-table-shell { flex: 1; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
       .news-table-scroll { max-height: calc(100vh - 260px); min-height: 420px; overflow: auto; }
-      .news-table { width: 100%; min-width: 1180px; border-collapse: collapse; }
-      .news-table th { position: sticky; top: 0; z-index: 1; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 800; text-align: left; white-space: nowrap; }
+      .news-table { width: 100%; min-width: 940px; border-collapse: collapse; }
+      .news-table th { position: sticky; top: 0; z-index: 3; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 800; text-align: left; white-space: nowrap; }
       .news-table th, .news-table td { padding: 0 12px; }
       .news-table td { height: 48px; border-bottom: 1px solid var(--line); color: var(--text); font-size: 13px; vertical-align: middle; }
       .news-table tbody tr:last-child td { border-bottom: 0; }
       .news-table tbody tr:hover td { background: var(--surface-soft); }
-
       .col-time { width: 110px; }
       .col-importance { width: 112px; }
       .col-method { width: 76px; }
       .col-source { width: 180px; }
       .col-title { min-width: 360px; }
-      .col-label { width: 236px; }
-
       .news-time { color: var(--muted); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
       .row-source-name { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px; }
       .news-title { display: block; color: var(--text); font-size: 13.5px; font-weight: 700; line-height: 1.35; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
       .news-title:hover { color: var(--link); text-decoration: underline; }
-
       .method-badge, .importance-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 22px; font-size: 11px; font-weight: 800; padding: 0 8px; border-radius: 999px; white-space: nowrap; }
       .method-badge.rss { color: var(--rss); background: var(--rss-bg); }
       .method-badge.crawl { color: var(--crawl); background: var(--crawl-bg); }
@@ -143,21 +125,18 @@
       .importance-badge.medium { color: var(--medium); background: var(--medium-bg); }
       .importance-badge.low { color: var(--low); background: var(--low-bg); }
       .importance-badge.exclude { color: var(--exclude); background: var(--exclude-bg); }
-      .importance-wrap { display: inline-flex; align-items: center; gap: 6px; }
-      .manual-mark { color: var(--muted); font-size: 11px; font-weight: 800; }
-
-      .label-actions { display: inline-flex; align-items: center; gap: 4px; }
-      .label-btn { height: 24px; min-width: 32px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--muted); font: inherit; font-size: 11px; font-weight: 800; cursor: pointer; }
-      .label-btn:hover { background: var(--surface-soft); color: var(--text); }
-      .label-btn.active { color: var(--text); border-color: currentColor; }
-      .label-btn:disabled { opacity: 0.45; cursor: default; }
-      .label-btn.high { color: var(--high); }
-      .label-btn.medium { color: var(--medium); }
-      .label-btn.low { color: var(--low); }
-      .label-btn.exclude { color: var(--exclude); }
-
+      .importance-cell { position: relative; }
+      .importance-trigger { border: 0; background: transparent; padding: 0; font: inherit; cursor: pointer; }
+      .importance-trigger:disabled { cursor: default; }
+      .importance-trigger:focus-visible { outline: 2px solid #4c9ffe; outline-offset: 3px; border-radius: 999px; }
+      .importance-trigger.manual .importance-badge { box-shadow: inset 0 0 0 1px currentColor; }
+      .importance-menu { position: absolute; left: 10px; top: 38px; z-index: 10; display: grid; gap: 4px; width: 112px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); padding: 6px; }
+      .importance-option { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 30px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); padding: 0 8px; font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; }
+      .importance-option:hover { background: var(--surface-soft); color: var(--text); }
+      .importance-option.active { color: var(--text); background: var(--surface-soft); }
+      .importance-option:disabled { cursor: default; opacity: 0.5; }
+      .importance-option.clear { border-top: 1px solid var(--line); border-radius: 0 0 6px 6px; margin-top: 2px; }
       .loading, .empty-msg { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
-
       @media (max-width: 1020px) {
         .flow-layout { grid-template-columns: 1fr; }
         .source-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); max-height: 240px; min-height: 0; }
@@ -226,7 +205,6 @@
                         <th class="col-method">방식</th>
                         <th class="col-source">출처</th>
                         <th class="col-title">제목</th>
-                        <th class="col-label">라벨</th>
                       </tr>
                     </thead>
                     <tbody id="news-table-body"></tbody>
@@ -265,6 +243,7 @@
       var sourceGroups = [];
       var sourceRows = {};
       var lastUpdateText = "";
+      var openImportanceId = "";
 
       function escapeHtml(s) {
         return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
@@ -295,23 +274,6 @@
       }
       function importanceText(label) {
         return { high: "높음", medium: "보통", low: "낮음", exclude: "제외" }[label] || "낮음";
-      }
-      function importanceLabel(row) {
-        var label = row.importance_label || "low";
-        var title = (row.importance_reasons || []).join(", ");
-        var manual = row.importance_source === "manual" ? '<span class="manual-mark">수동</span>' : "";
-        return '<span class="importance-wrap" title="' + escapeHtml(title) + '"><span class="importance-badge ' + escapeHtml(label) + '">' + escapeHtml(importanceText(label)) + "</span>" + manual + "</span>";
-      }
-      function labelButtons(row) {
-        var disabled = isLocalServer() ? "" : " disabled";
-        var labels = [
-          ["high", "높음"], ["medium", "보통"], ["low", "낮음"], ["exclude", "제외"], ["clear", "초기화"]
-        ];
-        return '<div class="label-actions">' + labels.map(function (pair) {
-          var active = row.importance_source === "manual" && row.importance_label === pair[0] ? " active" : "";
-          var cls = pair[0] === "clear" ? "" : " " + pair[0];
-          return '<button class="label-btn' + cls + active + '" type="button" data-id="' + escapeHtml(row.article_id || "") + '" data-label="' + pair[0] + '"' + disabled + '>' + pair[1] + '</button>';
-        }).join("") + "</div>";
       }
       function compareRowsByTime(a, b) {
         var byPublished = String(b.published || "").localeCompare(String(a.published || ""));
@@ -368,14 +330,31 @@
         }).join("");
         document.getElementById("source-list").innerHTML = allButton + sourceButtons;
       }
+      function importanceControl(row) {
+        var label = row.importance_label || "low";
+        var id = row.article_id || "";
+        var title = (row.importance_reasons || []).join(", ") || "중요도 변경";
+        var triggerTitle = isLocalServer() ? title : title + " · 로컬 서버에서 변경 가능";
+        var manualClass = row.importance_source === "manual" ? " manual" : "";
+        var menu = "";
+        if (openImportanceId === id) {
+          var options = [["high", "높음"], ["medium", "보통"], ["low", "낮음"], ["exclude", "제외"], ["clear", "초기화"]];
+          menu = '<div class="importance-menu" role="menu">' + options.map(function (pair) {
+            var active = row.importance_source === "manual" && row.importance_label === pair[0] ? " active" : "";
+            var cls = pair[0] === "clear" ? " clear" : "";
+            var disabled = isLocalServer() ? "" : " disabled";
+            return '<button class="importance-option' + cls + active + '" type="button" role="menuitem" data-id="' + escapeHtml(id) + '" data-label="' + pair[0] + '"' + disabled + '>' + pair[1] + '</button>';
+          }).join("") + '</div>';
+        }
+        return '<div class="importance-cell-inner"><button class="importance-trigger' + manualClass + '" type="button" data-id="' + escapeHtml(id) + '" title="' + escapeHtml(triggerTitle) + '"><span class="importance-badge ' + escapeHtml(label) + '">' + escapeHtml(importanceText(label)) + '</span></button>' + menu + '</div>';
+      }
       function renderRow(row) {
         return "<tr>" +
           '<td><span class="news-time">' + escapeHtml(fmtTime(row.published) || "-") + "</span></td>" +
-          "<td>" + importanceLabel(row) + "</td>" +
+          '<td class="importance-cell">' + importanceControl(row) + "</td>" +
           "<td>" + methodLabel(row.method) + "</td>" +
           '<td><div class="row-source-name" title="' + escapeHtml(row.source) + '">' + escapeHtml(row.source) + "</div></td>" +
           '<td><a class="news-title" href="' + escapeHtml(row.url) + '" target="_blank" rel="noopener noreferrer" title="' + escapeHtml(row.title) + '">' + escapeHtml(row.title) + "</a></td>" +
-          "<td>" + labelButtons(row) + "</td>" +
           "</tr>";
       }
       function renderRows() {
@@ -394,9 +373,7 @@
         document.getElementById("news-table-body").innerHTML = rows.map(renderRow).join("");
       }
       function renderFlow() {
-        if (activeSource !== ALL_SOURCES && !Object.prototype.hasOwnProperty.call(sourceRows, activeSource)) {
-          activeSource = ALL_SOURCES;
-        }
+        if (activeSource !== ALL_SOURCES && !Object.prototype.hasOwnProperty.call(sourceRows, activeSource)) activeSource = ALL_SOURCES;
         renderSourceList();
         renderRows();
       }
@@ -409,7 +386,7 @@
             lastUpdateText = fmtUpdate(data.generated_at) || "";
             var n = document.getElementById("notice");
             if (!isLocalServer()) {
-              document.getElementById("notice-text").innerHTML = "<strong>보기 전용</strong> · 중요도 라벨 저장은 로컬 서버에서 사용할 수 있습니다.";
+              document.getElementById("notice-text").innerHTML = "<strong>보기 전용</strong> · 중요도 변경과 저장은 로컬 서버에서 사용할 수 있습니다.";
               n.style.display = "flex";
             } else if (data.connected === false && data.note) {
               document.getElementById("notice-text").innerHTML = "<strong>수집 미연결</strong> · " + escapeHtml(data.note);
@@ -426,18 +403,12 @@
         return fetch("/api/news/labels", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            article_id: articleId,
-            label: label,
-            title: row.title,
-            url: row.url,
-            source: row.source,
-            reason: label === "clear" ? "" : "사용자 라벨"
-          })
+          body: JSON.stringify({ article_id: articleId, label: label, title: row.title, url: row.url, source: row.source, reason: label === "clear" ? "" : "사용자 라벨" })
         }).then(function (res) {
           if (!res.ok) return res.text().then(function (t) { throw new Error(t || ("HTTP " + res.status)); });
           return res.json();
         }).then(function () {
+          openImportanceId = "";
           return loadNews();
         });
       }
@@ -468,16 +439,35 @@
         var btn = event.target.closest(".source-item");
         if (!btn) return;
         activeSource = btn.dataset.source;
+        openImportanceId = "";
         renderFlow();
       });
       document.getElementById("news-table-body").addEventListener("click", function (event) {
-        var btn = event.target.closest(".label-btn");
-        if (!btn || btn.disabled) return;
-        btn.disabled = true;
-        saveLabel(btn.dataset.id, btn.dataset.label).catch(function (e) {
-          alert("라벨 저장 실패: " + e.message);
-          btn.disabled = false;
-        });
+        var option = event.target.closest(".importance-option");
+        if (option) {
+          if (option.disabled) return;
+          option.disabled = true;
+          saveLabel(option.dataset.id, option.dataset.label).catch(function (e) {
+            alert("라벨 저장 실패: " + e.message);
+            option.disabled = false;
+          });
+          return;
+        }
+        var trigger = event.target.closest(".importance-trigger");
+        if (trigger) {
+          openImportanceId = openImportanceId === trigger.dataset.id ? "" : trigger.dataset.id;
+          renderRows();
+        }
+      });
+      document.addEventListener("click", function (event) {
+        if (!openImportanceId || event.target.closest(".importance-cell")) return;
+        openImportanceId = "";
+        renderRows();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key !== "Escape" || !openImportanceId) return;
+        openImportanceId = "";
+        renderRows();
       });
       loadNews().catch(function (e) {
         document.getElementById("loading").textContent = "데이터 로드 실패: " + e.message;
