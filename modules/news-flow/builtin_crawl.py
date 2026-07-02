@@ -22,7 +22,7 @@ CRAWL_SOURCES = [
     {
         "name": "Semiconductor Engineering",
         "home": "https://semiengineering.com",
-        "urls": ["https://semiengineering.com/category/manufacturing/"],
+        "urls": ["https://semiengineering.com/"],
         "include": ["semiengineering.com/"],
         "exclude": ["/author/", "/tag/", "/category/", "#", "mailto:"],
     },
@@ -43,7 +43,7 @@ CRAWL_SOURCES = [
     {
         "name": "a16Z News",
         "home": "https://a16z.com",
-        "urls": ["https://a16z.com/news/"],
+        "urls": ["https://a16z.com/category/ai/"],
         "include": ["a16z.com/"],
         "exclude": ["/podcast/", "/author/", "/tag/", "/category/", "#", "mailto:"],
     },
@@ -51,7 +51,8 @@ CRAWL_SOURCES = [
 
 BAD_TITLE_BITS = (
     "privacy", "terms", "subscribe", "newsletter", "advertise", "contact",
-    "cookie", "login", "sign in", "about", "events", "webinar"
+    "cookie", "login", "sign in", "about", "events", "webinar", "all hardware",
+    "view all", "latest stories", "more news", "more top stories"
 )
 
 
@@ -73,7 +74,9 @@ def _is_article_like(url: str, title: str, source: dict) -> bool:
         return False
     parsed = urlparse(url)
     path = parsed.path.strip("/")
-    if not path or path.count("/") < 1:
+    if not path:
+        return False
+    if "semiengineering.com" not in lower_url and path.count("/") < 1:
         return False
     return True
 
