@@ -19,6 +19,7 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
@@ -76,6 +77,36 @@ def _to_kst_iso(dt: datetime) -> str:
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=KST)
     return dt.astimezone(KST).strftime("%Y-%m-%dT%H:%M:%S%z")
+
+
+def _parse_entry_datetime(raw: str, default_tz) -> datetime | None:
+    value = (raw or "").strip()
+    if not value:
+        return None
+    try:
+        dt = parsedate_to_datetime(value)
+        if dt:
+            return dt if dt.tzinfo else dt.replace(tzinfo=default_tz)
+    except Exception:
+        pass
+    normalized = value.replace("Z", "+00:00")
+    normalized = re.sub(r"([+-]\d{2})(\d{2})$", r"\1:\2", normalized)
+    for fmt in (None, "%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y.%m.%d %H:%M:%S", "%Y.%m.%d %H:%M"):
+        try:
+            dt = datetime.fromisoformat(normalized) if fmt is None else datetime.strptime(value, fmt)
+            return dt if dt.tzinfo else dt.replace(tzinfo=default_tz)
+        except Exception:
+            continue
+    return None
+
+
+def _entry_published_iso(entry, default_tz) -> str | None:
+    raw = entry.get("published") or entry.get("updated") or entry.get("created")
+    dt = _parse_entry_datetime(raw, default_tz)
+    if dt:
+        return _to_kst_iso(dt)
+    pub = entry.get("published_parsed") or entry.get("updated_parsed")
+    return _to_kst_iso(datetime(*pub[:6], tzinfo=timezone.utc)) if pub else None
 
 
 def _home_of(url: str) -> str:
@@ -164,6 +195,7 @@ def apply_importance(sources: list[dict], labels: dict) -> None:
 def fetch_rss_source(feed: dict) -> dict:
     name = feed["name"]
     feed_base = _home_of(feed["url"])
+    default_tz = KST if feed.get("lang") == "ko" else timezone.utc
     items = []
     try:
         try:
@@ -181,8 +213,7 @@ def fetch_rss_source(feed: dict) -> dict:
                 continue
             if url and not url.startswith("http"):
                 url = feed_base + ("" if url.startswith("/") else "/") + url
-            pub = entry.get("published_parsed") or entry.get("updated_parsed")
-            published = _to_kst_iso(datetime(*pub[:6], tzinfo=timezone.utc)) if pub else None
+            published = _entry_published_iso(entry, default_tz)
             items.append({"title": title, "url": url, "published": published})
     except Exception as e:
         print(f"  [rss:err] {name}: {e}")
