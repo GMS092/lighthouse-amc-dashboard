@@ -98,11 +98,25 @@
       @keyframes refresh-spin { to { transform: rotate(360deg); } }
 
       .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
-      .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 20px; }
+      .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 18px; }
       .notice strong { color: var(--text); }
+      .flow-layout { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 16px; align-items: stretch; }
 
-      .news-table-shell { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
-      .news-table-scroll { max-height: calc(100vh - 180px); min-height: 360px; overflow: auto; }
+      .source-list-shell { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+      .source-list-head { display: flex; align-items: center; justify-content: space-between; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); padding: 0 12px; color: var(--muted); font-size: 12px; font-weight: 850; }
+      .source-list { max-height: calc(100vh - 220px); min-height: 420px; overflow: auto; padding: 6px; }
+      .source-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px; width: 100%; min-height: 38px; border: 0; border-radius: 7px; background: transparent; color: var(--muted); padding: 0 9px; font: inherit; cursor: pointer; text-align: left; }
+      .source-item:hover { background: var(--surface-soft); color: var(--text); }
+      .source-item.active { background: var(--button-bg); color: var(--button-text); }
+      .source-item-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12.5px; font-weight: 800; }
+      .source-count { display: inline-flex; align-items: center; justify-content: center; min-width: 25px; height: 21px; border-radius: 999px; background: var(--surface-soft); color: var(--muted); padding: 0 7px; font-size: 11px; font-weight: 850; }
+      .source-item.active .source-count { background: rgba(255,255,255,0.18); color: currentColor; }
+
+      .content-panel { min-width: 0; display: flex; flex-direction: column; }
+      .source-panel-meta { display: flex; align-items: center; justify-content: space-between; min-height: 42px; border: 1px solid var(--line); border-radius: 8px 8px 0 0; background: var(--surface); padding: 0 14px; color: var(--muted); font-size: 12px; }
+      .source-panel-title { color: var(--text); font-weight: 850; }
+      .news-table-shell { flex: 1; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+      .news-table-scroll { max-height: calc(100vh - 260px); min-height: 420px; overflow: auto; }
       .news-table { width: 100%; min-width: 1180px; border-collapse: collapse; }
       .news-table th { position: sticky; top: 0; z-index: 1; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 800; text-align: left; white-space: nowrap; }
       .news-table th, .news-table td { padding: 0 12px; }
@@ -118,7 +132,7 @@
       .col-label { width: 236px; }
 
       .news-time { color: var(--muted); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-      .source-name { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px; }
+      .row-source-name { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px; }
       .news-title { display: block; color: var(--text); font-size: 13.5px; font-weight: 700; line-height: 1.35; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
       .news-title:hover { color: var(--link); text-decoration: underline; }
 
@@ -144,6 +158,12 @@
 
       .loading, .empty-msg { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
 
+      @media (max-width: 1020px) {
+        .flow-layout { grid-template-columns: 1fr; }
+        .source-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); max-height: 240px; min-height: 0; }
+        .source-list-shell { box-shadow: none; }
+        .news-table-scroll { max-height: calc(100vh - 340px); }
+      }
       @media (max-width: 760px) {
         .dashboard { grid-template-columns: 1fr; }
         .sidebar { display: none; }
@@ -152,7 +172,7 @@
         .topbar-actions { gap: 10px; }
         .status { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .theme-toggle { left: 18px; bottom: 18px; }
-        .news-table-scroll { max-height: calc(100vh - 160px); }
+        .source-panel-meta { align-items: flex-start; flex-direction: column; gap: 3px; padding: 9px 14px; }
       }
     </style>
   </head>
@@ -184,24 +204,36 @@
 
         <section class="workspace" aria-label="뉴스플로우 본문">
           <div class="notice" id="notice" style="display:none"><span aria-hidden="true">🛈</span><span id="notice-text"></span></div>
-          <div class="news-table-shell">
-            <div class="loading" id="loading">뉴스를 불러오는 중입니다…</div>
-            <div class="empty-msg" id="empty-msg" style="display:none">표시할 뉴스가 없습니다.</div>
-            <div class="news-table-scroll" id="news-table-scroll" style="display:none">
-              <table class="news-table">
-                <thead>
-                  <tr>
-                    <th class="col-time">시간</th>
-                    <th class="col-importance">중요도</th>
-                    <th class="col-method">방식</th>
-                    <th class="col-source">출처</th>
-                    <th class="col-title">제목</th>
-                    <th class="col-label">라벨</th>
-                  </tr>
-                </thead>
-                <tbody id="news-table-body"></tbody>
-              </table>
-            </div>
+          <div class="flow-layout">
+            <aside class="source-list-shell" aria-label="뉴스 출처 목록">
+              <div class="source-list-head"><span>출처</span><span id="source-total-count">0건</span></div>
+              <div class="source-list" id="source-list"></div>
+            </aside>
+            <section class="content-panel" aria-label="선택한 뉴스 목록">
+              <div class="source-panel-meta" id="source-panel-meta" role="status">
+                <span class="source-panel-title" id="source-panel-title">전체</span>
+                <span id="source-panel-count">0건</span>
+              </div>
+              <div class="news-table-shell">
+                <div class="loading" id="loading">뉴스를 불러오는 중입니다…</div>
+                <div class="empty-msg" id="empty-msg" style="display:none">표시할 뉴스가 없습니다.</div>
+                <div class="news-table-scroll" id="news-table-scroll" style="display:none">
+                  <table class="news-table">
+                    <thead>
+                      <tr>
+                        <th class="col-time">시간</th>
+                        <th class="col-importance">중요도</th>
+                        <th class="col-method">방식</th>
+                        <th class="col-source">출처</th>
+                        <th class="col-title">제목</th>
+                        <th class="col-label">라벨</th>
+                      </tr>
+                    </thead>
+                    <tbody id="news-table-body"></tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
       </main>
@@ -227,7 +259,12 @@
         });
       })();
 
+      var ALL_SOURCES = "__all__";
+      var activeSource = ALL_SOURCES;
       var currentRows = [];
+      var sourceGroups = [];
+      var sourceRows = {};
+      var lastUpdateText = "";
 
       function escapeHtml(s) {
         return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
@@ -276,13 +313,22 @@
           return '<button class="label-btn' + cls + active + '" type="button" data-id="' + escapeHtml(row.article_id || "") + '" data-label="' + pair[0] + '"' + disabled + '>' + pair[1] + '</button>';
         }).join("") + "</div>";
       }
+      function compareRowsByTime(a, b) {
+        var byPublished = String(b.published || "").localeCompare(String(a.published || ""));
+        if (byPublished) return byPublished;
+        return (b.importance_score || 0) - (a.importance_score || 0);
+      }
       function flattenSources(sources) {
         var rows = [];
+        sourceRows = {};
+        sourceGroups = [];
         (sources || []).forEach(function (src) {
+          var name = src.name || "-";
+          var groupRows = [];
           (src.items || []).forEach(function (item) {
-            rows.push({
+            var row = {
               article_id: item.article_id || "",
-              source: src.name || "-",
+              source: name,
               method: src.method || "rss",
               title: item.title || "(제목 없음)",
               url: item.url || "#",
@@ -291,28 +337,68 @@
               importance_label: item.importance_label || "low",
               importance_source: item.importance_source || "auto",
               importance_reasons: item.importance_reasons || []
-            });
+            };
+            rows.push(row);
+            groupRows.push(row);
           });
+          groupRows.sort(compareRowsByTime);
+          sourceRows[name] = groupRows;
+          sourceGroups.push({ name: name, method: src.method || "rss", count: groupRows.length });
         });
-        rows.sort(function (a, b) {
-          var byImportance = (b.importance_score || 0) - (a.importance_score || 0);
-          if (byImportance) return byImportance;
-          return String(b.published || "").localeCompare(String(a.published || ""));
+        rows.sort(compareRowsByTime);
+        sourceGroups.sort(function (a, b) {
+          if (b.count !== a.count) return b.count - a.count;
+          return a.name.localeCompare(b.name, "ko");
         });
         return rows;
+      }
+      function rowsForActiveSource() {
+        if (activeSource === ALL_SOURCES) return currentRows;
+        return sourceRows[activeSource] || [];
+      }
+      function renderSourceList() {
+        var total = currentRows.length;
+        document.getElementById("source-total-count").textContent = total.toLocaleString() + "건";
+        var allButton = '<button type="button" class="source-item' + (activeSource === ALL_SOURCES ? " active" : "") + '" data-source="' + ALL_SOURCES + '">' +
+          '<span class="source-item-name">전체</span><span class="source-count">' + total.toLocaleString() + '</span></button>';
+        var sourceButtons = sourceGroups.map(function (source) {
+          var active = activeSource === source.name;
+          return '<button type="button" class="source-item' + (active ? " active" : "") + '" data-source="' + escapeHtml(source.name) + '">' +
+            '<span class="source-item-name" title="' + escapeHtml(source.name) + '">' + escapeHtml(source.name) + '</span><span class="source-count">' + source.count.toLocaleString() + '</span></button>';
+        }).join("");
+        document.getElementById("source-list").innerHTML = allButton + sourceButtons;
       }
       function renderRow(row) {
         return "<tr>" +
           '<td><span class="news-time">' + escapeHtml(fmtTime(row.published) || "-") + "</span></td>" +
           "<td>" + importanceLabel(row) + "</td>" +
           "<td>" + methodLabel(row.method) + "</td>" +
-          '<td><div class="source-name" title="' + escapeHtml(row.source) + '">' + escapeHtml(row.source) + "</div></td>" +
+          '<td><div class="row-source-name" title="' + escapeHtml(row.source) + '">' + escapeHtml(row.source) + "</div></td>" +
           '<td><a class="news-title" href="' + escapeHtml(row.url) + '" target="_blank" rel="noopener noreferrer" title="' + escapeHtml(row.title) + '">' + escapeHtml(row.title) + "</a></td>" +
           "<td>" + labelButtons(row) + "</td>" +
           "</tr>";
       }
-      function renderRows(rows) {
+      function renderRows() {
+        var rows = rowsForActiveSource();
+        document.getElementById("source-panel-title").textContent = activeSource === ALL_SOURCES ? "전체" : activeSource;
+        document.getElementById("source-panel-count").textContent = rows.length.toLocaleString() + "건";
+        document.getElementById("update-label").textContent = rows.length.toLocaleString() + "건" + (lastUpdateText ? " · " + lastUpdateText : "");
+        if (!rows.length) {
+          document.getElementById("empty-msg").style.display = "block";
+          document.getElementById("news-table-scroll").style.display = "none";
+          document.getElementById("news-table-body").innerHTML = "";
+          return;
+        }
+        document.getElementById("empty-msg").style.display = "none";
+        document.getElementById("news-table-scroll").style.display = "block";
         document.getElementById("news-table-body").innerHTML = rows.map(renderRow).join("");
+      }
+      function renderFlow() {
+        if (activeSource !== ALL_SOURCES && !Object.prototype.hasOwnProperty.call(sourceRows, activeSource)) {
+          activeSource = ALL_SOURCES;
+        }
+        renderSourceList();
+        renderRows();
       }
       function loadNews() {
         return fetch(dataUrl("/api/news", "data/news-flow.json"))
@@ -320,8 +406,7 @@
           .then(function (data) {
             document.getElementById("loading").style.display = "none";
             currentRows = flattenSources(data.sources || []);
-            var meta = data.article_count != null ? data.source_count + "개 소스 · " + currentRows.length.toLocaleString() + "건 · " : "";
-            document.getElementById("update-label").textContent = meta + (fmtUpdate(data.generated_at) || "");
+            lastUpdateText = fmtUpdate(data.generated_at) || "";
             var n = document.getElementById("notice");
             if (!isLocalServer()) {
               document.getElementById("notice-text").innerHTML = "<strong>보기 전용</strong> · 중요도 라벨 저장은 로컬 서버에서 사용할 수 있습니다.";
@@ -332,15 +417,7 @@
             } else {
               n.style.display = "none";
             }
-            if (!currentRows.length) {
-              document.getElementById("empty-msg").style.display = "block";
-              document.getElementById("news-table-scroll").style.display = "none";
-              document.getElementById("news-table-body").innerHTML = "";
-              return;
-            }
-            document.getElementById("empty-msg").style.display = "none";
-            document.getElementById("news-table-scroll").style.display = "block";
-            renderRows(currentRows);
+            renderFlow();
           });
       }
       function saveLabel(articleId, label) {
@@ -386,6 +463,12 @@
             refreshBtn.classList.remove("loading");
             txt.textContent = orig;
           });
+      });
+      document.getElementById("source-list").addEventListener("click", function (event) {
+        var btn = event.target.closest(".source-item");
+        if (!btn) return;
+        activeSource = btn.dataset.source;
+        renderFlow();
       });
       document.getElementById("news-table-body").addEventListener("click", function (event) {
         var btn = event.target.closest(".label-btn");
