@@ -26,6 +26,9 @@ const MIME_TYPES = {
   ".svg": "image/svg+xml",
 };
 
+const VALID_NEWS_LABELS = new Set(["high", "medium", "low", "exclude"]);
+const NEWS_LABEL_TEXT = { high: "높음", medium: "보통", low: "낮음", exclude: "제외" };
+
 // 헤게모니 국면 분류 스냅샷. 현재는 커밋된 정적 JSON을 그대로 서빙한다.
 // 추후 financial.db 가 온라인 DB로 이전되면, 이 한 군데만 해당 DB를 조회해
 // 동일한 형태의 payload 를 반환하도록 바꾸면 프런트엔드는 그대로 동작한다.
@@ -54,6 +57,7 @@ const WEIGHT_DATA_FILE = path.join(__dirname, "data", "weight-check.json");
 
 // 뉴스플로우 스냅샷 (modules/news-flow 가 생성: RSS + 크롤).
 const NEWS_DATA_FILE = path.join(__dirname, "data", "news-flow.json");
+const NEWS_LABELS_FILE = path.join(__dirname, "data", "news-labels.json");
 const NEWS_GENERATOR = path.join(__dirname, "modules", "news-flow", "collect.py");
 
 // 뉴스 스냅샷을 다시 수집한다(RSS + 크롤). 인터넷 + Python + 봇 소스 파일이 있는
@@ -129,6 +133,66 @@ function toNumber(value) {
   return Number(String(value || "").replaceAll(",", ""));
 }
 
+function sendJson(res, status, payload) {
+  res.writeHead(status, {
+    "Content-Type": "application/json; charset=utf-8",
+    "Cache-Control": "no-store",
+  });
+  res.end(JSON.stringify(payload));
+}
+
+function nowKstIso() {
+  const parts = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  }).formatToParts(new Date());
+  const map = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return map.year + "-" + map.month + "-" + map.day + "T" + map.hour + ":" + map.minute + ":" + map.second + "+0900";
+}
+
+async function readJsonObject(filePath) {
+  try {
+    const text = await fs.readFile(filePath, "utf8");
+    const data = JSON.parse(text);
+    return data && typeof data === "object" && !Array.isArray(data) ? data : {};
+  } catch (error) {
+    if (error.code === "ENOENT") return {};
+    throw error;
+  }
+}
+
+async function writeJsonObject(filePath, data) {
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
+  await fs.writeFile(filePath, JSON.stringify(data, null, 2) + "\n", "utf8");
+}
+
+function readRequestJson(req) {
+  return new Promise((resolve, reject) => {
+    let body = "";
+    req.on("data", (chunk) => {
+      body += chunk.toString();
+      if (body.length > 64 * 1024) {
+        reject(new Error("요청 본문이 너무 큽니다."));
+        req.destroy();
+      }
+    });
+    req.on("end", () => {
+      try {
+        resolve(body ? JSON.parse(body) : {});
+      } catch {
+        reject(new Error("JSON 형식이 올바르지 않습니다."));
+      }
+    });
+    req.on("error", reject);
+  });
+}
+
 async function fetchIndexRow(kind, basDd) {
   if (!KRX_AUTH_KEY) throw new Error("KRX_AUTH_KEY is missing. Create .env from .env.example.");
 
@@ -188,6 +252,38 @@ async function getIndexPayload() {
     generatedAt: new Date().toISOString(),
     items: [await buildIndex("kospi"), await buildIndex("kosdaq")],
   };
+}
+
+async function saveNewsLabel(req, res) {
+  const input = await readRequestJson(req);
+  const articleId = String(input.article_id || "").trim();
+  const label = String(input.label || "").trim();
+  if (!/^[a-f0-9]{16}$/i.test(articleId)) {
+    sendJson(res, 400, { error: "article_id가 올바르지 않습니다." });
+    return;
+  }
+
+  const labels = await readJsonObject(NEWS_LABELS_FILE);
+  if (label === "clear") {
+    delete labels[articleId];
+  } else {
+    if (!VALID_NEWS_LABELS.has(label)) {
+      sendJson(res, 400, { error: "label은 high, medium, low, exclude, clear 중 하나여야 합니다." });
+      return;
+    }
+    labels[articleId] = {
+      label,
+      label_text: NEWS_LABEL_TEXT[label],
+      reason: String(input.reason || "사용자 라벨").slice(0, 200),
+      title: String(input.title || "").slice(0, 300),
+      url: String(input.url || "").slice(0, 1000),
+      source: String(input.source || "").slice(0, 120),
+      updated_at: nowKstIso(),
+    };
+  }
+
+  await writeJsonObject(NEWS_LABELS_FILE, labels);
+  sendJson(res, 200, { ok: true, labels_count: Object.keys(labels).length, labels });
 }
 
 async function serveStatic(pathname, res) {
@@ -259,6 +355,21 @@ const server = http.createServer(async (req, res) => {
         "Cache-Control": "no-store",
       });
       res.end(data);
+      return;
+    }
+
+    if (parsed.pathname === "/api/news/labels") {
+      if (req.method === "GET") {
+        const labels = await readJsonObject(NEWS_LABELS_FILE);
+        sendJson(res, 200, { labels_count: Object.keys(labels).length, labels });
+        return;
+      }
+      if (req.method === "POST") {
+        await saveNewsLabel(req, res);
+        return;
+      }
+      res.writeHead(405, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end("Method Not Allowed");
       return;
     }
 
