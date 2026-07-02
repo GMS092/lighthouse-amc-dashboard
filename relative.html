@@ -134,10 +134,10 @@
             <p>각 업종의 KOSPI 대비 상대수익률(업종 − 코스피)을 최근일 기준 6개월 전 → 3개월 전 → 1개월 전 → 1주 전 → 최근 순으로 선으로 잇고, 최근 시점을 화살표로 표시합니다.</p>
           </div>
           <div class="legend">
-            <span>중심 = <b>KOSPI</b> (상대수익률 0)</span>
-            <span>가로=1개월 · 세로=3개월 · 바깥일수록 상대강도 큼</span>
+            <span>가로: <b>KOSPI 대비 1개월</b> · 세로: <b>3개월</b> 상대수익률(%)</span>
+            <span>우상단=<b>동반 강세</b> · 좌하단=<b>동반 약세</b></span>
             <span>선: 과거→최근 · <b>화살표=최근</b></span>
-            <span>라벨은 겹치지 않게 <b>원 밖으로 리더선</b>으로 뺐습니다</span>
+            <span>라벨은 좌/우 리더선으로 분리(겹침 방지)</span>
           </div>
           <div class="chart-wrap">
             <div class="loading" id="loading">데이터를 불러오는 중입니다…</div>
@@ -200,63 +200,76 @@
           axisLabel: cs.getPropertyValue("--axis-label").trim(),
         };
 
-        var W = 1060, H = 860;
+        var W = 1120, H = 760;
         svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+        var pL = 210, pR = W - 180, pT = 56, pB = H - 58;   // 플롯 박스
+        var pw = pR - pL, ph = pB - pT, midX = (pL + pR) / 2;
 
-        // 각 축의 절반 범위(정규화용)
-        var axhalf = 1, ayhalf = 1;
+        // 데이터 범위 → 눈금(스케일)
+        var xs = [], ys = [];
         data.sectors.forEach(function (s) {
-          s.traj.forEach(function (p) {
-            if (!p) return;
-            axhalf = Math.max(axhalf, Math.abs(p[0]));
-            ayhalf = Math.max(ayhalf, Math.abs(p[1]));
-          });
+          s.traj.forEach(function (p) { if (p) { xs.push(p[0]); ys.push(p[1]); } });
         });
-
-        var cx = W / 2, cy = 480, R = 330;   // 원 중심 / 반지름
-        // 정규화(각 축 [-1,1]) 후, 최대 반경이 원 안(0.8R)에 들어오도록 균일 스케일
-        var maxDist = 0.0001;
-        data.sectors.forEach(function (s) {
-          s.traj.forEach(function (p) {
-            if (!p) return;
-            var d = Math.sqrt(Math.pow(p[0] / axhalf, 2) + Math.pow(p[1] / ayhalf, 2));
-            if (d > maxDist) maxDist = d;
-          });
-        });
-        var scale = (R * 0.8) / maxDist;
-        function proj(p) { return [cx + (p[0] / axhalf) * scale, cy - (p[1] / ayhalf) * scale]; }
+        if (!xs.length) return;
+        function bounds(arr) {
+          var mn = Math.min.apply(null, arr), mx = Math.max.apply(null, arr);
+          var pad = (mx - mn) * 0.08 || 5;
+          mn = Math.min(mn - pad, 0); mx = Math.max(mx + pad, 0);
+          var step = niceStep(mx - mn, 8);
+          return { min: Math.floor(mn / step) * step, max: Math.ceil(mx / step) * step, step: step };
+        }
+        var bx = bounds(xs), by = bounds(ys);
+        var sx = function (v) { return pL + (v - bx.min) / (bx.max - bx.min) * pw; };
+        var sy = function (v) { return pT + (by.max - v) / (by.max - by.min) * ph; };
+        var zx = sx(0), zy = sy(0);
 
         // 제목
-        svg.appendChild(el("text", { x: W / 2, y: 34, "text-anchor": "middle",
+        svg.appendChild(el("text", { x: W / 2, y: 32, "text-anchor": "middle",
           "font-size": 20, "font-weight": 700, fill: C.muted }, "상대수익률 추이"));
 
-        // 동심원(그리드) + 바깥 원
-        [0.5, 1].forEach(function (f) {
-          svg.appendChild(el("circle", { cx: cx, cy: cy, r: (R * f).toFixed(1), fill: "none",
-            stroke: C.grid, "stroke-width": f === 1 ? 1.4 : 1,
-            "stroke-dasharray": f === 1 ? "" : "3 5" }));
-        });
-        // 십자축
-        svg.appendChild(el("line", { x1: cx - R, y1: cy, x2: cx + R, y2: cy, stroke: C.axis, "stroke-width": 1.2 }));
-        svg.appendChild(el("line", { x1: cx, y1: cy - R, x2: cx, y2: cy + R, stroke: C.axis, "stroke-width": 1.2 }));
-        // 중심 = KOSPI
-        svg.appendChild(el("circle", { cx: cx, cy: cy, r: 3, fill: C.axis }));
-        svg.appendChild(el("text", { x: cx + 7, y: cy - 7, "font-size": 11, "font-weight": 700, fill: C.muted }, "KOSPI"));
+        // 사분면 음영 (우상단=동반 강세, 좌하단=동반 약세)
+        svg.appendChild(el("rect", { x: zx.toFixed(1), y: pT, width: (pR - zx).toFixed(1), height: (zy - pT).toFixed(1), fill: "#2f9e44", opacity: 0.06 }));
+        svg.appendChild(el("rect", { x: pL, y: zy.toFixed(1), width: (zx - pL).toFixed(1), height: (pB - zy).toFixed(1), fill: "#e03131", opacity: 0.06 }));
 
-        // 축 방향 라벨 (사분면 의미)
-        function axisText(x, y, t, anchor) {
-          svg.appendChild(el("text", { x: x, y: y, "text-anchor": anchor, "font-size": 12,
-            "font-weight": 700, fill: C.muted }, t));
+        // 그리드 + 눈금(스케일)
+        var v, X, Y;
+        for (v = bx.min; v <= bx.max + 1e-9; v += bx.step) {
+          X = sx(v);
+          svg.appendChild(el("line", { x1: X.toFixed(1), y1: pT, x2: X.toFixed(1), y2: pB, stroke: C.grid, "stroke-width": 1 }));
+          svg.appendChild(el("text", { x: X.toFixed(1), y: pB + 20, "text-anchor": "middle", "font-size": 11.5, fill: C.axisLabel }, Math.round(v)));
         }
-        axisText(cx + R, cy + 20, "1개월 초과 →", "end");
-        axisText(cx - R, cy + 20, "← 1개월 미달", "start");
-        axisText(cx + 8, cy - R + 2, "▲ 3개월 초과", "start");
-        axisText(cx + 8, cy + R - 4, "▼ 3개월 미달", "start");
+        for (v = by.min; v <= by.max + 1e-9; v += by.step) {
+          Y = sy(v);
+          svg.appendChild(el("line", { x1: pL, y1: Y.toFixed(1), x2: pR, y2: Y.toFixed(1), stroke: C.grid, "stroke-width": 1 }));
+          svg.appendChild(el("text", { x: pL - 8, y: (Y + 4).toFixed(1), "text-anchor": "end", "font-size": 11.5, fill: C.axisLabel }, Math.round(v)));
+        }
+        svg.appendChild(el("rect", { x: pL, y: pT, width: pw, height: ph, fill: "none", stroke: C.grid, "stroke-width": 1 }));
+        // 0축 십자 강조
+        svg.appendChild(el("line", { x1: zx.toFixed(1), y1: pT, x2: zx.toFixed(1), y2: pB, stroke: C.axis, "stroke-width": 1.6 }));
+        svg.appendChild(el("line", { x1: pL, y1: zy.toFixed(1), x2: pR, y2: zy.toFixed(1), stroke: C.axis, "stroke-width": 1.6 }));
+        svg.appendChild(el("circle", { cx: zx.toFixed(1), cy: zy.toFixed(1), r: 3, fill: C.axis }));
+        svg.appendChild(el("text", { x: (zx + 6).toFixed(1), y: (zy - 6).toFixed(1), "font-size": 10.5, "font-weight": 700, fill: C.muted }, "KOSPI"));
 
-        // 업종별 궤적 + 화살표 (원 안)
+        // 사분면 코너 힌트
+        function corner(x, y, t, anchor) {
+          svg.appendChild(el("text", { x: x, y: y, "text-anchor": anchor, "font-size": 11, "font-weight": 700, fill: C.muted, opacity: 0.8 }, t));
+        }
+        corner(pR - 8, pT + 16, "동반 강세 ↗", "end");
+        corner(pL + 8, pB - 10, "동반 약세 ↙", "start");
+        corner(pL + 8, pT + 16, "3개월↑ · 1개월↓", "start");
+        corner(pR - 8, pB - 10, "1개월↑ · 3개월↓", "end");
+
+        // 축 제목
+        svg.appendChild(el("text", { x: (pL + pR) / 2, y: H - 12, "text-anchor": "middle",
+          "font-size": 12.5, "font-weight": 700, fill: C.text }, "KOSPI 대비 1개월 수익률 (%)"));
+        svg.appendChild(el("text", { x: 22, y: (pT + pB) / 2, "text-anchor": "middle",
+          "font-size": 12.5, "font-weight": 700, fill: C.text,
+          transform: "rotate(-90 22 " + ((pT + pB) / 2).toFixed(1) + ")" }, "KOSPI 대비 3개월 수익률 (%)"));
+
+        // 업종별 궤적 + 화살표
         var pi = 0, ends = [];
         data.sectors.forEach(function (s) {
-          var pts = s.traj.map(function (p) { return p ? proj(p) : null; }).filter(Boolean);
+          var pts = s.traj.map(function (p) { return p ? [sx(p[0]), sy(p[1])] : null; }).filter(Boolean);
           if (!pts.length) return;
           var color = FIXED[s.name] || PALETTE[pi++ % PALETTE.length];
           var strong = !!FIXED[s.name];
@@ -265,7 +278,7 @@
             svg.appendChild(el("polyline", {
               points: pts.map(function (p) { return p[0].toFixed(1) + "," + p[1].toFixed(1); }).join(" "),
               fill: "none", stroke: color, "stroke-width": strong ? 3 : 1.8,
-              "stroke-linejoin": "round", "stroke-linecap": "round", opacity: strong ? 0.95 : 0.7,
+              "stroke-linejoin": "round", "stroke-linecap": "round", opacity: strong ? 0.95 : 0.68,
             }));
             var a = pts[pts.length - 2], b = pts[pts.length - 1];
             var ang = Math.atan2(b[1] - a[1], b[0] - a[0]);
@@ -278,15 +291,17 @@
             }));
           }
           var end = pts[pts.length - 1];
-          svg.appendChild(el("circle", { cx: end[0].toFixed(1), cy: end[1].toFixed(1), r: strong ? 3.4 : 2.5, fill: color }));
+          svg.appendChild(el("circle", { cx: end[0].toFixed(1), cy: end[1].toFixed(1), r: strong ? 3.6 : 2.6, fill: color }));
           ends.push({ name: s.name, x: end[0], y: end[1], color: color, strong: strong });
         });
 
-        // 라벨: 점 위치 기준 좌/우로 나눠 원 밖에 세로 정렬 + 리더선 (겹침 방지)
-        var GAP = 17, top = cy - R + 6, bot = cy + R - 6;
+        // 라벨: 좌/우 여백에 세로 정렬 + 리더선 (겹침 방지)
+        var GAP = 16, top = pT + 4, bot = pB - 4;
+        var exs = ends.map(function (e) { return e.x; }).sort(function (a, b) { return a - b; });
+        var medX = exs.length ? exs[Math.floor(exs.length / 2)] : midX;
         function layout(side) {
-          var lx = side === "R" ? cx + R + 30 : cx - R - 30;
-          var arr = ends.filter(function (e) { return side === "R" ? e.x >= cx : e.x < cx; });
+          var lx = side === "R" ? pR + 16 : pL - 52;
+          var arr = ends.filter(function (e) { return side === "R" ? e.x >= medX : e.x < medX; });
           arr.sort(function (a, b) { return a.y - b.y; });
           arr.forEach(function (e) { e.ly = Math.max(top, Math.min(bot, e.y)); });
           for (var i = 1; i < arr.length; i++)
