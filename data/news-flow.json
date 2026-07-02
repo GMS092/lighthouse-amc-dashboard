@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T04:32:38+0000",
+  "generated_at": "2026-07-02T04:51:15+0000",
   "connected": true,
   "source_count": 1,
   "article_count": 30,
@@ -10,6 +10,66 @@
       "method": "rss",
       "home": "https://dart.fss.or.kr",
       "items": [
+        {
+          "title": "(기타)타임폴리오자산운용 - 연결감사보고서 (2026.03)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000239",
+          "published": "2026-07-02T13:50:00+0900"
+        },
+        {
+          "title": "(기타)광주일보사 - 최대주주등의주식보유변동",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000238",
+          "published": "2026-07-02T13:49:00+0900"
+        },
+        {
+          "title": "(기타)에이치에스효성토요타 - [기재정정]비유동자산취득결정",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000235",
+          "published": "2026-07-02T13:43:00+0900"
+        },
+        {
+          "title": "(기타)타임폴리오자산운용 - 감사보고서 (2026.03)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000234",
+          "published": "2026-07-02T13:43:00+0900"
+        },
+        {
+          "title": "(유가)키움증권 - 일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000232",
+          "published": "2026-07-02T13:41:00+0900"
+        },
+        {
+          "title": "(코스닥)씨엑스아이 - 주주명부폐쇄기간또는기준일설정",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900339",
+          "published": "2026-07-02T13:40:00+0900"
+        },
+        {
+          "title": "(기타)한국투자증권 - 일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000231",
+          "published": "2026-07-02T13:40:00+0900"
+        },
+        {
+          "title": "(코스닥)씨엑스아이 - 주주총회소집결의 (임시주주총회)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900338",
+          "published": "2026-07-02T13:40:00+0900"
+        },
+        {
+          "title": "(기타)오케이씨 - 감사보고서 (2026.03)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000230",
+          "published": "2026-07-02T13:37:00+0900"
+        },
+        {
+          "title": "(유가)현대차증권 - 일괄신고추가서류(기타파생결합사채)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000229",
+          "published": "2026-07-02T13:36:00+0900"
+        },
+        {
+          "title": "(유가)키움증권 - 투자설명서(일괄신고)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000227",
+          "published": "2026-07-02T13:34:00+0900"
+        },
+        {
+          "title": "(코스닥)그린플러스 - [기재정정]사업보고서 (2025.12)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000226",
+          "published": "2026-07-02T13:33:00+0900"
+        },
         {
           "title": "(코스닥)AP위성 - [기재정정]단일판매ㆍ공급계약체결",
           "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900317",
@@ -99,66 +159,6 @@
           "title": "(기타)신한투자증권 - 투자설명서(일괄신고)",
           "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000199",
           "published": "2026-07-02T12:52:00+0900"
-        },
-        {
-          "title": "(유가)금호전기 - 임시주주총회결과",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800305",
-          "published": "2026-07-02T12:51:00+0900"
-        },
-        {
-          "title": "(유가)한미반도체 - 임원ㆍ주요주주특정증권등거래계획보고서",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000197",
-          "published": "2026-07-02T12:49:00+0900"
-        },
-        {
-          "title": "(코스닥)에이비엘바이오 - 기업설명회(IR)개최",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900299",
-          "published": "2026-07-02T12:28:00+0900"
-        },
-        {
-          "title": "(코스닥)에이비엘바이오 - 기업설명회(IR)개최",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900298",
-          "published": "2026-07-02T12:27:00+0900"
-        },
-        {
-          "title": "(코스닥)에이비엘바이오 - 기업설명회(IR)개최",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900297",
-          "published": "2026-07-02T12:26:00+0900"
-        },
-        {
-          "title": "(기타)지앤에스종합건설 - [기재정정]감사보고서 (2025.12)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000186",
-          "published": "2026-07-02T12:12:00+0900"
-        },
-        {
-          "title": "(코스닥)오성첨단소재 - 주요사항보고서(자기주식취득신탁계약체결결정)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000181",
-          "published": "2026-07-02T12:07:00+0900"
-        },
-        {
-          "title": "(기타)삼양화성 - 동일인등출자계열회사와의상품ㆍ용역거래",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000179",
-          "published": "2026-07-02T11:53:00+0900"
-        },
-        {
-          "title": "(유가)에이프로젠 - 타법인주식및출자증권취득결정 (자회사의 주요경영사항)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800285",
-          "published": "2026-07-02T11:49:00+0900"
-        },
-        {
-          "title": "(유가)삼성SDI - 장래사업ㆍ경영계획(공정공시)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800279",
-          "published": "2026-07-02T11:47:00+0900"
-        },
-        {
-          "title": "(코스닥)남화산업 - 조회공시요구(현저한시황변동)에대한답변(중요정보없음)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900271",
-          "published": "2026-07-02T11:46:00+0900"
-        },
-        {
-          "title": "(유가)카카오뱅크 - 기업설명회(IR)개최(안내공시)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800276",
-          "published": "2026-07-02T11:44:00+0900"
         }
       ]
     }
