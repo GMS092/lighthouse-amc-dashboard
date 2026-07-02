@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-03T05:20:06+0900",
+  "generated_at": "2026-07-03T05:59:52+0900",
   "connected": true,
   "source_count": 53,
-  "article_count": 1071,
+  "article_count": 1010,
   "feed_source": "dashboard-default",
   "labels_count": 0,
   "sources": [
@@ -23,6 +23,26 @@
       "method": "rss",
       "home": "https://news.einfomax.co.kr",
       "items": [
+        {
+          "title": "[뉴욕증시] 어디까지 내려가나 반도체주…혼조 마감",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423171",
+          "published": "2026-07-03T05:54:29+0900",
+          "article_id": "feeea0faa161133f",
+          "auto_importance_score": 49,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "시장 전문 출처",
+            "핵심 산업"
+          ],
+          "importance_score": 49,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "시장 전문 출처",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "[뉴욕증시-1보] 어디까지 내려가나 반도체주…혼조 마감",
           "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423170",
@@ -592,24 +612,6 @@
             "시장 전문 출처"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "삼성증권, 회사채 수요예측에 1.9조 몰리며 흥행…3년물엔 1조",
-          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423138",
-          "published": "2026-07-02T17:57:46+0900",
-          "article_id": "97d8a8b629cd4ba8",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "시장 전문 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "시장 전문 출처"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -618,6 +620,60 @@
       "method": "rss",
       "home": "https://www.yna.co.kr",
       "items": [
+        {
+          "title": "뉴욕증시, 반도체 추락속 혼조 마감…다우 최고치·나스닥 1%↓(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20260703004951072",
+          "published": "2026-07-03T05:49:43+0900",
+          "article_id": "af70bf590aa9de27",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "전국 흐리고 내륙 곳곳 강한 소나기…낮 기온 26∼31도",
+          "url": "https://www.yna.co.kr/view/AKR20260703005100034",
+          "published": "2026-07-03T05:22:32+0900",
+          "article_id": "27b780af60d8754b",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "\"스타링크 딱 기다려\"…아마존, 위성인터넷 '레오' 연내 서비스",
+          "url": "https://www.yna.co.kr/view/AKR20260703005200091",
+          "published": "2026-07-03T05:15:47+0900",
+          "article_id": "adee0cdeebe277cb",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "뉴욕증시, 반도체 추락속 혼조 마감…다우 최고치·나스닥 1%↓",
           "url": "https://www.yna.co.kr/view/AKR20260703004900072",
@@ -1103,60 +1159,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "곽빈 6이닝 무실점·김민석 3안타…두산, 3연속 위닝시리즈(종합)",
-          "url": "https://www.yna.co.kr/view/AKR20260702172051007",
-          "published": "2026-07-02T23:22:09+0900",
-          "article_id": "a38a02051c76bf5a",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "시리아 수도서 테러 추정 폭발…최소 5명 사망",
-          "url": "https://www.yna.co.kr/view/AKR20260702172200079",
-          "published": "2026-07-02T23:16:24+0900",
-          "article_id": "4f52192d6817786c",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "KIA, 끝내기 실책 틈타 짜릿한 뒤집기…SSG 통한의 6연패(종합2보)",
-          "url": "https://www.yna.co.kr/view/AKR20260702171151007",
-          "published": "2026-07-02T23:10:23+0900",
-          "article_id": "c5f23427023b5ce4",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -1165,6 +1167,28 @@
       "method": "rss",
       "home": "https://www.mk.co.kr",
       "items": [
+        {
+          "title": "‘셀 반도체’에 나스닥 약세...고용악화에 다우는 사상 최고[월가월부]",
+          "url": "https://www.mk.co.kr/news/economy/12089489",
+          "published": "2026-07-03T05:43:20+0900",
+          "article_id": "d1d55170e8a4559e",
+          "auto_importance_score": 86,
+          "auto_importance_label": "high",
+          "auto_importance_reasons": [
+            "매크로",
+            "핵심 산업",
+            "시장 가격"
+          ],
+          "importance_score": 86,
+          "importance_label": "high",
+          "importance_label_text": "높음",
+          "importance_reasons": [
+            "매크로",
+            "핵심 산업",
+            "시장 가격"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "세계 최고 맛집 별점, 왜 타이어 회사가? … ‘미슐랭’의 반전 마케팅",
           "url": "https://www.mk.co.kr/news/business/12088937",
@@ -1184,10 +1208,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "'명예의전당' 서비스산업 최고의 영광",
-          "url": "https://www.mk.co.kr/news/special-edition/12088910",
+          "title": "\"우리 사회에 희망을\" 소외계층 맞춤형 나눔경영",
+          "url": "https://www.mk.co.kr/news/special-edition/12088892",
           "published": "2026-07-03T00:00:00+0900",
-          "article_id": "bc7bf5d2a9ffcf27",
+          "article_id": "dc7835bd78659f88",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1314,6 +1338,24 @@
           "url": "https://www.mk.co.kr/news/special-edition/12088911",
           "published": "2026-07-03T00:00:00+0900",
           "article_id": "9e53d476d7735eb1",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'명예의전당' 서비스산업 최고의 영광",
+          "url": "https://www.mk.co.kr/news/special-edition/12088910",
+          "published": "2026-07-03T00:00:00+0900",
+          "article_id": "bc7bf5d2a9ffcf27",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1508,24 +1550,6 @@
           "importance_source": "auto"
         },
         {
-          "title": "\"우리 사회에 희망을\" 소외계층 맞춤형 나눔경영",
-          "url": "https://www.mk.co.kr/news/special-edition/12088892",
-          "published": "2026-07-03T00:00:00+0900",
-          "article_id": "dc7835bd78659f88",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "한국서비스대상, AX 흐름 속 고객 경험의 가치를 높이다",
           "url": "https://www.mk.co.kr/news/special-edition/12088891",
           "published": "2026-07-03T00:00:00+0900",
@@ -1686,24 +1710,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "[속보] 미 6월 고용증가 ‘예상 하회’ 5만7천명…실업률 4.2%",
-          "url": "https://www.mk.co.kr/news/world/12089360",
-          "published": "2026-07-02T21:36:56+0900",
-          "article_id": "5d78478bbe2d7fc1",
-          "auto_importance_score": 38,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "매크로"
-          ],
-          "importance_score": 38,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "매크로"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -1712,6 +1718,132 @@
       "method": "rss",
       "home": "https://www.sedaily.com",
       "items": [
+        {
+          "title": "‘준비위부터 24년 vs 사업시행인가 7개월’ 강남권 패스트트랙 모델 만든 이곳 [집슐랭]",
+          "url": "https://www.sedaily.com/article/20063204",
+          "published": "2026-07-03T05:51:05+0900",
+          "article_id": "b3fb67b217e4ce2c",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“항생제 내성에 2050년까지 3900만명 사망...AI 연구 속도내야”[김창영의 실리콘밸리Look]",
+          "url": "https://www.sedaily.com/article/20063294",
+          "published": "2026-07-03T05:39:05+0900",
+          "article_id": "73c5f1369661278c",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "충청권 392조 투자 약속에…정부 “100일 내 파격 지원책 만든다” [Pick코노미]",
+          "url": "https://www.sedaily.com/article/20063225",
+          "published": "2026-07-03T05:30:05+0900",
+          "article_id": "c35195d4ea516a47",
+          "auto_importance_score": 36,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "정책"
+          ],
+          "importance_score": 36,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "정책"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "흐린 금요일...중부지방 곳곳 소나기 [오늘의 날씨]",
+          "url": "https://www.sedaily.com/article/20063257",
+          "published": "2026-07-03T05:30:05+0900",
+          "article_id": "e050ffa4b98ba401",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘DCM 왕좌’ 지킨 KB證…NH·한투證, 3강 체제 공고히 [시그널]",
+          "url": "https://www.sedaily.com/article/20063147",
+          "published": "2026-07-03T05:30:00+0900",
+          "article_id": "fcc24c327cafee15",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "빅딜 부재 속 IPO 한파…NH證 1위 굳히기 [시그널]",
+          "url": "https://www.sedaily.com/article/20063148",
+          "published": "2026-07-03T05:30:00+0900",
+          "article_id": "f203fd0b5461a51f",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "상반기 M&A 65% 늘어 47兆 완성 …삼일·김앤장 1위 석권 [시그널]",
+          "url": "https://www.sedaily.com/article/20063188",
+          "published": "2026-07-03T05:30:00+0900",
+          "article_id": "8e42b0d16c1aa2b6",
+          "auto_importance_score": 46,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "M&A"
+          ],
+          "importance_score": 46,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "M&A"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "[시론] AI 시대, 선제 대응하는 반도체 투자",
           "url": "https://www.sedaily.com/article/20063022",
@@ -2125,132 +2257,6 @@
             "매크로"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "[속보] 美 6월 고용증가 5만 7000명 ‘예상 하회’…실업률 4.2%",
-          "url": "https://www.sedaily.com/article/20063269",
-          "published": "2026-07-02T21:35:48+0900",
-          "article_id": "36d0d54df76d9c51",
-          "auto_importance_score": 38,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "매크로"
-          ],
-          "importance_score": 38,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "매크로"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "국정원 “美하원 ‘쿠팡 보고서’ 사실 왜곡…사고조사 지시한 적 없어”",
-          "url": "https://www.sedaily.com/article/20063268",
-          "published": "2026-07-02T21:33:26+0900",
-          "article_id": "361d1e709c786c77",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "배재고, ‘스타벅스 구호’ 학생 2명 징계 착수",
-          "url": "https://www.sedaily.com/article/20063266",
-          "published": "2026-07-02T21:31:33+0900",
-          "article_id": "97c357327f4cb516",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "‘손흥민 벤치 논란’에 입 연 홍명보…“결과론일 뿐, 전술 성공여부 처음부터 단정 못 해”",
-          "url": "https://www.sedaily.com/article/20063265",
-          "published": "2026-07-02T21:20:10+0900",
-          "article_id": "cbc7ebd58dd89451",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "“새벽 3시에 꼭 눈 떠지고 다시 못 자는 사람, 혹시 이것 먹고 잤나요?” [헬시타임]",
-          "url": "https://www.sedaily.com/article/20063263",
-          "published": "2026-07-02T20:52:56+0900",
-          "article_id": "9f95e311171fadff",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "“부장님, 회사 그만두겠습니다”…35세 김대리도 호주로 ‘워홀’ 간다",
-          "url": "https://www.sedaily.com/article/20063261",
-          "published": "2026-07-02T20:32:41+0900",
-          "article_id": "4cb328905aaf6702",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "中 “베이징 시틱타워 충돌 조종사 개인 원인”",
-          "url": "https://www.sedaily.com/article/20063260",
-          "published": "2026-07-02T20:26:39+0900",
-          "article_id": "1e3ca1d747aa1997",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -2259,6 +2265,276 @@
       "method": "rss",
       "home": "https://www.chosun.com",
       "items": [
+        {
+          "title": "임라라, '십자인대 파열' 수술로 고통받는 손민수♥ 극진 간호…“내 팔자야” ('엔조이커플') [순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/GRRTQNZQMEZWKODDGNTDEOJRMY/",
+          "published": "2026-07-03T05:41:00+0900",
+          "article_id": "0e5ac5c0ef7e1bcc",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "이강인, PSG 떠나 아틀레티코행 문턱... 이적료 협상만 남았다",
+          "url": "https://www.chosun.com/sports/world-football/2026/07/03/HA3TGMRUGFTDGNRUMY3GMYRVGM/",
+          "published": "2026-07-03T05:39:00+0900",
+          "article_id": "13200dbab2a285c8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "사유리, 조기 교육 공개 \"아들 젠, 언어에 관심 많아→9개 국어 구사가 꿈\" [순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/HFRWENJTMVRTMZTFMRSTENJXGU/",
+          "published": "2026-07-03T05:34:00+0900",
+          "article_id": "bd78c59050684380",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'요리X손' 남궁민에 \"엉망진창\"..요리는 '♥진아름' 몫이었네! ('편스토랑')",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/GE3TSYRWGVRGCZBYMFSTENZSMY/",
+          "published": "2026-07-03T05:31:00+0900",
+          "article_id": "d91c40e9f3ca08dc",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "47만개 팔린 산뜻한 올인원 화장품 3병+향수 1병, 2만2000원 단독 특가",
+          "url": "https://www.chosun.com/economy/startup_story/2026/07/03/3QJXL66ZDRB75K5OLQURSFAFVY/",
+          "published": "2026-07-03T05:30:00+0900",
+          "article_id": "83c30a7fb1d6b565",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "임우일, 닭다리 몰래 먹고 배 두드리며 \"요기 있지\"…이수근·미주 '분통' ('수근스쿨')",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/MMYTMNRVHE3DCYLGMY3TMNJWGY/",
+          "published": "2026-07-03T05:27:00+0900",
+          "article_id": "f445a528dafd42e1",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "롯데 기세 장난 아니었는데, 5연속 위닝 어떻게 막았나…한화→KIA→롯데마저 제압 “18아웃 책임진 곽빈 완벽투 덕분”",
+          "url": "https://www.chosun.com/sports/baseball/2026/07/03/GBSTCOBQMIZDEYZYMQYTQNBYMU/",
+          "published": "2026-07-03T05:26:00+0900",
+          "article_id": "82dd480723bd2fc3",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "폭염 폭우 상관 없이 집에서 시원하게 황톳길 걷는 법, 7만원대 초특가",
+          "url": "https://www.chosun.com/economy/startup_story/2026/07/03/JHYQQWPLKNE2NBXOJVTN5X2N3E/",
+          "published": "2026-07-03T05:25:00+0900",
+          "article_id": "f1a6c00ed338f724",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "한혜진, 벌칙 같은 파리지엔 메이크업에 과거 회상 \"외국에서 활동할 때 기분 안 좋았는데\"",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/HA2TAY3DMVTDOOLCHFRGMNZZGU/",
+          "published": "2026-07-03T05:21:00+0900",
+          "article_id": "b27c48be73b35fb0",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "미끄러운 빗길도 거침없어, 일상화로 손색없는 ‘소가죽 트레킹화’ 4만2000원 초특가",
+          "url": "https://www.chosun.com/economy/startup_story/2026/05/19/25PJ7XDGANFMRDGQEQOLIRXLVM/",
+          "published": "2026-07-03T05:20:00+0900",
+          "article_id": "0f8b54046081422b",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "130만 유튜버 “부잣집에선 볼 수 없는 돈 못으는 집 가구의 공통점”",
+          "url": "https://www.chosun.com/economy/money/2026/07/03/F4TYZ3ODPFGV3IJCTKENUB6CFI/",
+          "published": "2026-07-03T05:20:00+0900",
+          "article_id": "55b1be91d47273f8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘코인으로 2조 번 트럼프’...美언론 “중간선거 최대 악재 될 수도”",
+          "url": "https://www.chosun.com/international/international_general/2026/07/03/MZCZK27ZPJADBPIXZIRS35CQ4U/",
+          "published": "2026-07-03T05:19:13+0900",
+          "article_id": "22065904f0e61a4f",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "정준하, 결혼 16주년 만에 설움 토로 \"일본인 아내 식사량 적어‥살고 싶어 요리학원 다녔다\" ('정준하하하') [순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/HFSGGMBSGNSWCNZVG42WGMJWMM/",
+          "published": "2026-07-03T05:16:00+0900",
+          "article_id": "7048db32dd06dc02",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "토트넘, 토날리 2000억 협상 보도... 데 제르비 한마디에 클럽레코드 갈아엎나",
+          "url": "https://www.chosun.com/sports/world-football/2026/07/03/MI4WKYRTGBQTOMRWGI3DMMLEGU/",
+          "published": "2026-07-03T05:12:00+0900",
+          "article_id": "9b0e084a09fcbaa0",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "정선희, 홍진경 의리에 감동 \"한참 힘들 때, 대상포진 걸린 채 찾아와\" ('집 나간') [순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/HE4TKNJTMUYTGMZXMQ3TQNZQG4/",
+          "published": "2026-07-03T05:11:00+0900",
+          "article_id": "581e7743c1222c3f",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "美 고용 지표에 엇갈린 뉴욕 증시, 다우 1.1%↑ 나스닥 0.8%↓",
           "url": "https://www.chosun.com/international/international_general/2026/07/03/YUACFYWKJRAL5L55RR5A6L4H3Y/",
@@ -2278,10 +2554,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "\"드레스 입을 땐 필수지만…\" 엄지원, 보정속옷 입고 '소화불량' 호소한 이유 ('적과의 동거') [순간포착]",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/MVSDOMDEGRRDAY3DHE3TQYRYGE/",
+          "title": "탈북민 출신 흑백요리사 이순실, 평양냉면 1인분 2400원 만두는 1알 300원",
+          "url": "https://www.chosun.com/economy/startup_story/2026/07/03/3NM6BRVCZZDVRPIIBHBZEG3GZU/",
           "published": "2026-07-03T05:10:00+0900",
-          "article_id": "fc4ace37c9cbb620",
+          "article_id": "23d11151048e63f1",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2296,10 +2572,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "탈북민 출신 흑백요리사 이순실, 평양냉면 1인분 2400원 만두는 1알 300원",
-          "url": "https://www.chosun.com/economy/startup_story/2026/07/03/3NM6BRVCZZDVRPIIBHBZEG3GZU/",
+          "title": "\"드레스 입을 땐 필수지만…\" 엄지원, 보정속옷 입고 '소화불량' 호소한 이유 ('적과의 동거') [순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/03/MVSDOMDEGRRDAY3DHE3TQYRYGE/",
           "published": "2026-07-03T05:10:00+0900",
-          "article_id": "23d11151048e63f1",
+          "article_id": "fc4ace37c9cbb620",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2368,28 +2644,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "이 6가지 견과류를 매일 아침 먹기 시작한 후 몸에 온 변화",
-          "url": "https://www.chosun.com/economy/startup_story/2026/05/08/Z576YEG4DZF3ZDGNPCKMBL2NPY/",
+          "title": "[단독] 與 ‘비명횡사’ 모임 초일회 “간판 내렸습니다”",
+          "url": "https://www.chosun.com/politics/assembly/2026/07/03/PXWULN4TOZCH5DOOORJ4GCUD64/",
           "published": "2026-07-03T05:00:00+0900",
-          "article_id": "bea5753a444110d6",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[단독] 총장 후보보다 눈에 띄는 서울대 총장 추천위원",
-          "url": "https://www.chosun.com/national/national_general/2026/07/03/2RHHQDQCFNEE5KINUKLGCM3NFU/",
-          "published": "2026-07-03T05:00:00+0900",
-          "article_id": "bd418dbcb1e5f789",
+          "article_id": "b9610b65b0e59b76",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2422,10 +2680,28 @@
           "importance_source": "auto"
         },
         {
-          "title": "[단독] 與 ‘비명횡사’ 모임 초일회 “간판 내렸습니다”",
-          "url": "https://www.chosun.com/politics/assembly/2026/07/03/PXWULN4TOZCH5DOOORJ4GCUD64/",
+          "title": "이 6가지 견과류를 매일 아침 먹기 시작한 후 몸에 온 변화",
+          "url": "https://www.chosun.com/economy/startup_story/2026/05/08/Z576YEG4DZF3ZDGNPCKMBL2NPY/",
           "published": "2026-07-03T05:00:00+0900",
-          "article_id": "b9610b65b0e59b76",
+          "article_id": "bea5753a444110d6",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "[단독] 총장 후보보다 눈에 띄는 서울대 총장 추천위원",
+          "url": "https://www.chosun.com/national/national_general/2026/07/03/2RHHQDQCFNEE5KINUKLGCM3NFU/",
+          "published": "2026-07-03T05:00:00+0900",
+          "article_id": "bd418dbcb1e5f789",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2494,60 +2770,6 @@
           "importance_source": "auto"
         },
         {
-          "title": "폭염이 더 셀까, 트럼프가 더 셀까… 美 250번째 생일, 흥행 노력이 눈물겹다",
-          "url": "https://www.chosun.com/international/us/2026/07/03/BDIDM22I7BCSRKA6MIG4SSUQG4/",
-          "published": "2026-07-03T04:29:25+0900",
-          "article_id": "bb6240cf972e7fbc",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "'필승조 지킨 철벽+만루포 해결사'…울산 웨일즈 6월 MVP, 김준우·알렉스 홀 선정",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/03/MNRGKYRUGM4TOMZXHE4WCOBYGI/",
-          "published": "2026-07-03T04:05:00+0900",
-          "article_id": "674b6b180ef93a27",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "빅터 차 “韓이 우크라 지원 안 하면 러가 北지원 중단할 수도”",
-          "url": "https://www.chosun.com/international/us/2026/07/03/QM4KHFGODRFETCZROMIE2HLRWA/",
-          "published": "2026-07-03T03:46:54+0900",
-          "article_id": "9bba2f6e68aa4623",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "백악관 “이재명 정부, 쿠팡 표적 삼아… 불공정 관행 용납하지 않을 것”",
           "url": "https://www.chosun.com/international/us/2026/07/03/GGAA4CADWZEYHNHNGZ47YIMKLM/",
           "published": "2026-07-03T03:37:49+0900",
@@ -2566,10 +2788,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "'파울 타구 맞고 1군 말소' 모두가 기다렸던 2년 연속 20홈런 타자, 첫 실전 소화...무안타보다 반가운 복귀 신호 [오!쎈 퓨처스]",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/03/GRSTOYRXHFQTQYRVMNSTIOJTGQ/",
-          "published": "2026-07-03T03:35:00+0900",
-          "article_id": "51bbd347559a190c",
+          "title": "신안 앞바다에서 잡은 큼직한 참돔, 1만5000원에 2마리 단독 특가 공동구매",
+          "url": "https://www.chosun.com/economy/startup_story/2026/06/25/ML7RNDT3WREUDF763JNMXUMPCA/",
+          "published": "2026-06-25T05:10:00+0900",
+          "article_id": "60220ee02fe2cafc",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2580,222 +2802,6 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[35화] 사람 중에는 여포가 으뜸, 말 중에는 적토가 최고라더니!",
-          "url": "https://www.chosun.com/culture-life/book/2026/07/03/ADQWOSLUZ5DT5I3OXGQRMYSJBE/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "d74cdafa2e45b648",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "여섯 살 흑인 소녀의 기도가 바꾼 백인 의사의 운명",
-          "url": "https://www.chosun.com/economy/science/2026/07/03/N6CDOUCE7ZGLRCIBPODRWW277A/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "d5444d11422c0416",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "비만 치료제 열풍이 불러온 ‘단백질 전쟁’… 글로벌 식품 시장 흔들어",
-          "url": "https://www.chosun.com/economy/weeklybiz/2026/07/03/P5SGS6Y2YRFNHCF5JKDNDYAG6A/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "68ca14da79963e05",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[굿모닝 멤버십] 시대를 읽지 못한 명선수의 추락",
-          "url": "https://www.chosun.com/national/2026/07/03/5LM6EY6GTFDVNIKAXTHV7XURLA/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "e731b890c353fb5c",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "군인 정신으로 지어 불길에도 건재한 화강암 성당… 포천 성당",
-          "url": "https://www.chosun.com/culture-life/2026/07/03/OXPEYQRI3FD2RHAKA6SN22UKGQ/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "97caaf8958888183",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "미국 캘리포니아州서 AI 일자리 타격 정도 직접 측정할 수 있는 ‘AI-실업 추적기’ 등장",
-          "url": "https://www.chosun.com/economy/weeklybiz/2026/07/03/5SWLX7BAMZB4BPWRLQBYS5S5NY/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "a24ebbaf60eb5b84",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "야간 열차 침대 바꾸고 싶을 땐 ‘bed’ 말고 ‘berth’",
-          "url": "https://www.chosun.com/national/education/2026/07/03/VYA2EBHYPFBH3F3BVD7SAAPA5Y/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "50bfd52d2cfad85c",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "홍명보 사주가 문제일까… 낙관시변 못했기 때문",
-          "url": "https://www.chosun.com/culture-life/relion-academia/2026/07/03/2IX3W3BKK5CGDBLLXQKBVJ2SKI/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "eb2c518468ade497",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "청와대 경호실 출신 72세… 이젠 하늘을 나는 ‘세계 최고령 윙슈터’",
-          "url": "https://www.chosun.com/sports/2026/07/03/MWMWJWRI4RGRVG2Z6CBAPKICT4/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "ee8cf7839235a903",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "한국이 HBM에 취해 있을 때, 대만은 ‘AI 몸통’을 장악했다",
-          "url": "https://www.chosun.com/economy/weeklybiz/2026/07/03/4PRYOEDK3FALXHZRHZQNBGMVPI/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "75367774f429c9c9",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "직원 태도가 달라진다… “메뉴(メニュー)주세요”의 다른 말",
-          "url": "https://www.chosun.com/culture-life/travel/2026/07/03/O2V2OOJLPJCGNHKIG4P72IMXQ4/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "6cd10492b125b07e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "AI 강사를 따라하세요… 림프절 뚫리는 매트 운동",
-          "url": "https://www.chosun.com/sports/sports_general/2026/07/03/FT5KFGIRWNHEHEQFGZQONMI3JQ/",
-          "published": "2026-07-03T03:00:00+0900",
-          "article_id": "29d84d76fbfdb70d",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
           ],
           "importance_source": "auto"
         }
@@ -5001,6 +5007,60 @@
       "home": "http://rss.edaily.co.kr",
       "items": [
         {
+          "title": "홍명보, 귀국 이틀만 돌연 미국행…\"할 이야기 있다, 언젠가는…\"",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02079526645510912",
+          "published": "2026-07-03T05:51:21+0900",
+          "article_id": "45ec80243e95306b",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "[마켓인]\"1호로 멈춘 BDC”…세제혜택 공백에 운용사 관망",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=01869606645510912",
+          "published": "2026-07-03T05:27:03+0900",
+          "article_id": "d0b57d74a7b15023",
+          "auto_importance_score": 36,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "정책"
+          ],
+          "importance_score": 36,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "정책"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "[마켓인]키움증권, 회사채로 최대 4000억 조달…증권업 호황에 투심 기대",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=01849926645510912",
+          "published": "2026-07-03T05:25:04+0900",
+          "article_id": "0123fdf12a46044e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "[속보]뉴욕증시 혼조…반도체株 하락에 나스닥 0.8%↓",
           "url": "https://www.edaily.co.kr/News/Read?newsId=01731846645510912",
           "published": "2026-07-03T05:12:09+0900",
@@ -5491,60 +5551,6 @@
             "시장 가격"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "'메이저 퀸' 유해란 \"인내하는 사람이 결국 승리…건강하게 오래 골프하고 싶죠\"",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=01079126645510912",
-          "published": "2026-07-03T00:00:03+0900",
-          "article_id": "cab7dd9516f6d5df",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "대한체육회 \"봉쇄 27일째, 업무 마비…선관위 법적 책임 검토할 것\"",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=07655526645510584",
-          "published": "2026-07-02T23:57:13+0900",
-          "article_id": "d0b1e0dcd80a0a51",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[美특징주]스트래티지 등 암호화폐주, 비트코인 가격 회복에 상승",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=07642406645510584",
-          "published": "2026-07-02T23:54:47+0900",
-          "article_id": "1d8898099b26ca77",
-          "auto_importance_score": 30,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "시장 가격"
-          ],
-          "importance_score": 30,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "시장 가격"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -5776,24 +5782,6 @@
           "url": "https://www.etoday.co.kr/news/view/2599819",
           "published": "2026-07-02T23:59:00+0900",
           "article_id": "a185801b35ff09d6",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "조민아, 서인영 유튜브 출연 후 쏟아진 응원⋯'양갱' 사과에 돌아온 민심",
-          "url": "https://www.etoday.co.kr/news/view/2599818",
-          "published": "2026-07-02T23:23:00+0900",
-          "article_id": "3ba0ac2a84b20362",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -9111,576 +9099,7 @@
       "name": "BOK 이슈노트",
       "method": "rss",
       "home": "https://www.bok.or.kr",
-      "items": [
-        {
-          "title": "[제2026-15호] 해외투자와 투자소득이 환율에 미치는 영향",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10098543&menuNo=200433",
-          "published": "2026-06-18T12:00:00+0900",
-          "article_id": "33ba399f154129ea",
-          "auto_importance_score": 53,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "매크로"
-          ],
-          "importance_score": 53,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "매크로"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-14호] 우리 경제 가계 양극화의 실태와 파급영향",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10098430&menuNo=200433",
-          "published": "2026-06-11T12:00:00+0900",
-          "article_id": "3e4e825f71025843",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-13호] 민생회복 소비쿠폰의 경제적 효과 평가",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10098410&menuNo=200433",
-          "published": "2026-06-10T12:00:00+0900",
-          "article_id": "82a2bc6ef67dfe8e",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-12호] AI 도입은 생산성을 높이는가? 초기 3년의 효과 분석",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10098322&menuNo=200433",
-          "published": "2026-06-07T12:00:00+0900",
-          "article_id": "d6ff24f88f13bafd",
-          "auto_importance_score": 49,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "핵심 산업"
-          ],
-          "importance_score": 49,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-11호] 국내외 자산 토큰화 현황 및 향후 정책 과제",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10097981&menuNo=200433",
-          "published": "2026-05-14T12:00:00+0900",
-          "article_id": "08803e06943e62e0",
-          "auto_importance_score": 51,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_score": 51,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-10호｣ 우리나라 주식 자산효과에 대한 평가",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10097868&menuNo=200433",
-          "published": "2026-05-07T12:00:00+0900",
-          "article_id": "b93e54f06ec1897a",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-9호] 우리나라 대외부문의 구조적 변화가 환율에 미치는 영향",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10097561&menuNo=200433",
-          "published": "2026-04-17T06:00:00+0900",
-          "article_id": "cf50c15d2db06019",
-          "auto_importance_score": 53,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "매크로"
-          ],
-          "importance_score": 53,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "매크로"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-8호] 남성 청년층 경제활동참가율의 하락 추세 평가",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10097512&menuNo=200433",
-          "published": "2026-04-14T12:00:00+0900",
-          "article_id": "98247d3217ad8075",
-          "auto_importance_score": 45,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "시장 가격"
-          ],
-          "importance_score": 45,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "시장 가격"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-7호] 주택가격 상승이 연령별 소비 및 후생에 미치는 영향",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10096466&menuNo=200433",
-          "published": "2026-02-12T12:00:00+0900",
-          "article_id": "ceceaa23484fc8b8",
-          "auto_importance_score": 45,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "시장 가격"
-          ],
-          "importance_score": 45,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "시장 가격"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-6호] 지역간 인구이동과 세대간 경제력 대물림",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10096442&menuNo=200433",
-          "published": "2026-02-11T12:00:00+0900",
-          "article_id": "1bcc9775a83432df",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-5호] 초고령화사회, 생애말기 필수산업의 활성화",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10096413&menuNo=200433",
-          "published": "2026-02-10T14:00:00+0900",
-          "article_id": "cbd1a723bd1d3f10",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-4호] 첨단 바이오헬스 산업 육성방안: 바이오 데이터 활용 기반 구축을 중심으로",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10096398&menuNo=200433",
-          "published": "2026-02-09T12:00:00+0900",
-          "article_id": "a069d4f58526d710",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-3호] '쉬었음' 청년층의 특징 및 평가: 미취업 유형별 비교 분석",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10095939&menuNo=200433",
-          "published": "2026-01-20T12:00:00+0900",
-          "article_id": "e75fd61193335697",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-2호] 청년세대 노동시장 진입 지연과 주거비 부담의 생애영향 평가",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10095691&menuNo=200433",
-          "published": "2026-01-19T12:00:00+0900",
-          "article_id": "5d1f285ee6d4349f",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2026-1호] 민간고용 추정을 통한 최근 고용상황 평가",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10095561&menuNo=200433",
-          "published": "2026-01-07T12:00:00+0900",
-          "article_id": "bad9a93b29bf2636",
-          "auto_importance_score": 53,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "매크로"
-          ],
-          "importance_score": 53,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "매크로"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-38호] 연명의료, 누구의 선택인가: 환자선호와 의료현실의 괴리, 그리고 보완방안",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10095052&menuNo=200433",
-          "published": "2025-12-11T14:00:00+0900",
-          "article_id": "023ecb9a2d6e2665",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-37호] 생산 부문으로의 자금 흐름 전환과 성장 활력",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094996&menuNo=200433",
-          "published": "2025-12-09T14:00:00+0900",
-          "article_id": "659df19ed0770c39",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-36호] AI 전문인력 현황과 수급 불균형: 규모, 임금, 이동성 분석",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094926&menuNo=200433",
-          "published": "2025-12-05T14:00:00+0900",
-          "article_id": "65f4c910f5a00702",
-          "auto_importance_score": 49,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "핵심 산업"
-          ],
-          "importance_score": 49,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-35호] 전력 수급자원을 활용한 제주 재생에너지 출력제한 완화 방안 연구",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094617&menuNo=200433",
-          "published": "2025-11-18T12:00:00+0900",
-          "article_id": "3d8d6789f00b1dec",
-          "auto_importance_score": 49,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "핵심 산업"
-          ],
-          "importance_score": 49,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-34호] 지속가능한 주민참여형 재생에너지 사업 발전 방안",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094616&menuNo=200433",
-          "published": "2025-11-18T12:00:00+0900",
-          "article_id": "eb2df59f96d4bb78",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-33호] 경제위기 이후 우리 성장은 왜 구조적으로 낮아졌는가: 기업 투자경로를 중심으로",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094490&menuNo=200433",
-          "published": "2025-11-12T12:00:00+0900",
-          "article_id": "c1974e4b18fa01ac",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-32호] 순대외자산 안정화 가능성 평가 및 시사점",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094411&menuNo=200433",
-          "published": "2025-11-05T12:00:00+0900",
-          "article_id": "00b1dce4df5bc6ce",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-31호] 이공계 인력의 해외유출 결정요인과 정책적 대응방향",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094375&menuNo=200433",
-          "published": "2025-11-03T12:00:00+0900",
-          "article_id": "2078c3aa6915936b",
-          "auto_importance_score": 51,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_score": 51,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-30호] AI 확산과 청년고용 위축: 연공편향(seniority-biased) 기술변화를 중심으로",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10094258&menuNo=200433",
-          "published": "2025-10-30T12:00:00+0900",
-          "article_id": "2057531d46733be3",
-          "auto_importance_score": 79,
-          "auto_importance_label": "high",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "매크로",
-            "핵심 산업"
-          ],
-          "importance_score": 79,
-          "importance_label": "high",
-          "importance_label_text": "높음",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "매크로",
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-29호] 고빈도 데이터를 통해 본, 날씨 및 요일의 소비 영향",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10093753&menuNo=200433",
-          "published": "2025-09-29T12:00:00+0900",
-          "article_id": "cb8808297967cad8",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-28호] 주식시장을 통한 녹색전환 촉진방안: 한국형 기후 벤치마크지수 도입 타당성 검토",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10093792&menuNo=200433",
-          "published": "2025-09-29T11:59:00+0900",
-          "article_id": "3c7a3ff1a5fba717",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-27호] 금융&middot;외환시장 심도를 고려한 정책대응 분석",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10093630&menuNo=200433",
-          "published": "2025-09-22T12:00:00+0900",
-          "article_id": "7c1b81da209a4d48",
-          "auto_importance_score": 51,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_score": 51,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-26호] 거시건전성정책의 파급영향 분석 및 통화정책과의 효과적인 조합",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10093611&menuNo=200433",
-          "published": "2025-09-21T12:00:00+0900",
-          "article_id": "50d8f6d2cfeaed63",
-          "auto_importance_score": 51,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_score": 51,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책·매크로 출처",
-            "정책"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-25호] 극한기상 현상이 인플레이션에 미치는 영향: 지속성 평가와 비선형성 여부 판단",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10093450&menuNo=200433",
-          "published": "2025-09-08T13:02:52+0900",
-          "article_id": "edfc0f5e24bb469a",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[제2025-24호] 자율주행시대 한국 택시서비스의 위기와 혁신방안",
-          "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10093353&menuNo=200433",
-          "published": "2025-09-02T13:27:08+0900",
-          "article_id": "e69f86c0760130cf",
-          "auto_importance_score": 23,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_score": 23,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "정책·매크로 출처"
-          ],
-          "importance_source": "auto"
-        }
-      ]
+      "items": []
     },
     {
       "name": "국회 일정",
@@ -12200,10 +11619,426 @@
           "importance_source": "auto"
         },
         {
+          "title": "DoorDash (DASH) Targets Margin Gains from Investments",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/doordash-dash-targets-margin-gains-124837100.html",
+          "published": "2026-07-01T21:48:37+0900",
+          "article_id": "fe20d7ac6521ee58",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "What to Expect From Newmont's Next Quarterly Earnings Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/expect-newmonts-next-quarterly-earnings-124427106.html",
+          "published": "2026-07-01T21:44:27+0900",
+          "article_id": "b4a820ba9b93f13a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "What to Expect From Lennox International's Q2 2026 Earnings Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/expect-lennox-internationals-q2-2026-124145122.html",
+          "published": "2026-07-01T21:41:45+0900",
+          "article_id": "b3218bdbe9379201",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "CBRE Group (CBRE) Dropped Amid Concerns on Potential AI Disintermediation",
+          "url": "https://finance.yahoo.com/real-estate/articles/cbre-group-cbre-dropped-amid-124045255.html",
+          "published": "2026-07-01T21:40:45+0900",
+          "article_id": "5c193bdffc7f1c51",
+          "auto_importance_score": 74,
+          "auto_importance_label": "high",
+          "auto_importance_reasons": [
+            "자본 변동",
+            "핵심 산업"
+          ],
+          "importance_score": 74,
+          "importance_label": "high",
+          "importance_label_text": "높음",
+          "importance_reasons": [
+            "자본 변동",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "Bitcoin and ethereum prices today, Wednesday, July 1: Bitcoin's worst month since June '22",
           "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-july-1-bitcoins-worst-month-since-june-22-123840769.html",
           "published": "2026-07-01T21:38:40+0900",
           "article_id": "7a623de90983ffee",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Casey’s General Stores (CASY) Gained 32% in Q1",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/casey-general-stores-casy-gained-123733349.html",
+          "published": "2026-07-01T21:37:33+0900",
+          "article_id": "0c00000102adbfac",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Advertising Pullbacks Pressured Pinterest (PINS) in Q1",
+          "url": "https://finance.yahoo.com/media-advertising/articles/advertising-pullbacks-pressured-pinterest-pins-123525409.html",
+          "published": "2026-07-01T21:35:25+0900",
+          "article_id": "f6e5c2f6c4fb7a71",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Hasbro's Quarterly Earnings Preview: What You Need to Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/hasbros-quarterly-earnings-preview-know-123504112.html",
+          "published": "2026-07-01T21:35:04+0900",
+          "article_id": "239a54e4bc0b248a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "An Investment Perspective on Take-Two Interactive Software (TTWO) Amid Market Speculation",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/investment-perspective-two-interactive-software-123245277.html",
+          "published": "2026-07-01T21:32:45+0900",
+          "article_id": "7d06ae49a2495ca7",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Wonder partners Zipline to launch drone meal deliveries in Texas",
+          "url": "https://finance.yahoo.com/media-advertising/articles/wonder-partners-zipline-launch-drone-123139528.html",
+          "published": "2026-07-01T21:31:39+0900",
+          "article_id": "bb9b71a2b77713e4",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Could China’s Cheap AI Models ‘Crash’ The US Stock Market In 2026? CEO Issues Stark Warning For OpenAI And Anthropic: ‘The Bubble Is…. About To Pop’",
+          "url": "https://finance.yahoo.com/technology/ai/articles/could-china-cheap-ai-models-123109935.html",
+          "published": "2026-07-01T21:31:09+0900",
+          "article_id": "2931de17c08fc0e9",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Soybeans Posting Double Digit Gains on Wednesday Morning",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/soybeans-posting-double-digit-gains-123039082.html",
+          "published": "2026-07-01T21:30:39+0900",
+          "article_id": "f489ad21a4bc0b80",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Corn Gains Extending to Wednesday Morning",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/corn-gains-extending-wednesday-morning-123039983.html",
+          "published": "2026-07-01T21:30:39+0900",
+          "article_id": "dbcf5fae3d791260",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Dimon says bull market is like a 'little tsunami' that even he finds surprising, but he says 'it will stop.' Here's why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dimon-says-bull-market-little-123000359.html",
+          "published": "2026-07-01T21:30:00+0900",
+          "article_id": "410a670f12dcc2c4",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "National Grid to Invest $1.75 Billion in Joulent in U.S. Energy Push",
+          "url": "https://www.wsj.com/business/energy-oil/national-grid-to-invest-1-75-billion-in-joulent-in-u-s-energy-push-9d84d5b8?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-07-01T21:29:00+0900",
+          "article_id": "729d54f141569cd6",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Goldman Sachs Thinks Travel & Leisure (TNL) Is A Top Travel Stocks To Buy Amid Iran Peace Deal, Here’s Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-thinks-travel-leisure-122754598.html",
+          "published": "2026-07-01T21:27:54+0900",
+          "article_id": "9145d0911e9b8f68",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Royal Caribbean Cruises (RCL) Could be Travel’s Best Long Term Stock As Iran Conflict Calms Down",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/royal-caribbean-cruises-rcl-could-122753048.html",
+          "published": "2026-07-01T21:27:53+0900",
+          "article_id": "54cfbf23b9d7a8d2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Norwegian Cruise Line Holdings (NCLH) Is The Best Travel Stock To Buy As Citi Raises Price Target",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/norwegian-cruise-line-holdings-nclh-122751910.html",
+          "published": "2026-07-01T21:27:51+0900",
+          "article_id": "e7f276704ff01497",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Iran Peace Deal Sends Oil Lower: Viking Holdings (VIK) Is A Top Travel Stock To Buy",
+          "url": "https://finance.yahoo.com/energy/articles/iran-peace-deal-sends-oil-122749243.html",
+          "published": "2026-07-01T21:27:49+0900",
+          "article_id": "262432fb01db5301",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Carnival Corporation (CCL) Gets A Price Target Increase At Wells Fargo",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/carnival-corporation-ccl-gets-price-122748635.html",
+          "published": "2026-07-01T21:27:48+0900",
+          "article_id": "42fb4992f7e44338",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Expedia (EXPE) Stock To Continue Its Momentum After Latest Acquisition",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/expedia-expe-stock-continue-momentum-122746672.html",
+          "published": "2026-07-01T21:27:46+0900",
+          "article_id": "4841f3ef60961856",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Airbnb’s AI Efforts Could Turn It Into An AI Stock, Here’s How",
+          "url": "https://finance.yahoo.com/technology/ai/articles/airbnb-ai-efforts-could-turn-122744178.html",
+          "published": "2026-07-01T21:27:44+0900",
+          "article_id": "eef7c84ab1802602",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Booking Holdings (BKN) Has Significant Upside According To Analysts As Oil Prices Decline",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/booking-holdings-bkn-significant-upside-122742731.html",
+          "published": "2026-07-01T21:27:42+0900",
+          "article_id": "76da7eea327cc53a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "📈 Earnings Snippet: General Mills",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-07-01-2026/card/-earnings-snippet-general-mills-WlJytD2W45eoF6It6qXr?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-07-01T21:27:26+0900",
+          "article_id": "466cd61254f7326f",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -12272,420 +12107,6 @@
           "importance_source": "auto"
         },
         {
-          "title": "Gold prices today, Wednesday, July 1: Prices remain below $4,100, but could have plenty of room to rise",
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-wednesday-july-1-prices-remain-below-4100-but-could-have-plenty-of-room-to-rise-120518468.html",
-          "published": "2026-07-01T21:05:18+0900",
-          "article_id": "ba87b26780a65c10",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Nike's latest weak quarter explained in 4 charts",
-          "url": "https://finance.yahoo.com/markets/stocks/article/nikes-latest-weak-quarter-explained-in-4-charts-120451301.html",
-          "published": "2026-07-01T21:04:51+0900",
-          "article_id": "896024aa3f5c19b7",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Big Tech's first half was a story of hardware versus software",
-          "url": "https://finance.yahoo.com/technology/article/big-techs-first-half-was-a-story-of-hardware-versus-software-120311290.html",
-          "published": "2026-07-01T21:03:11+0900",
-          "article_id": "b5099788c5e76dca",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Investors Plow Billions Into Leveraged ETFs — For This Good Reason",
-          "url": "https://www.investors.com/etfs-and-funds/etfs/leveraged-etfs-investors-plow-billions-into-for-this-good-reason/?src=A00220&yptr=yahoo",
-          "published": "2026-07-01T21:00:58+0900",
-          "article_id": "f404207017e437c5",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "A $250,000 'forgivable' employer loan breaks down to just $25,000 a year — and can come with a hefty tax bill",
-          "url": "https://finance.yahoo.com/small-business/articles/250-000-forgivable-employer-loan-120000602.html",
-          "published": "2026-07-01T21:00:00+0900",
-          "article_id": "a5ed7e1c3f933f00",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Corient to buy French multi-family office Letus",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/corient-buy-french-multi-family-115100161.html",
-          "published": "2026-07-01T20:51:00+0900",
-          "article_id": "8a38c0bb5e1ce14e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Data Shows Why This Software ETF is Poised to Rally",
-          "url": "https://finance.yahoo.com/markets/options/articles/data-shows-why-software-etf-115006784.html",
-          "published": "2026-07-01T20:50:06+0900",
-          "article_id": "0d479d0a1c92b8b5",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Bristol Myers Squibb vs. Johnson & Johnson: Which Healthcare Stock Is a Better Buy in 2026?",
-          "url": "https://finance.yahoo.com/healthcare/articles/bristol-myers-squibb-vs-johnson-115001776.html",
-          "published": "2026-07-01T20:50:01+0900",
-          "article_id": "8a8da5322c6e5bbf",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Should You Forget Altcoins and Just Buy Bitcoin Instead?",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/forget-altcoins-just-buy-bitcoin-115000155.html",
-          "published": "2026-07-01T20:50:00+0900",
-          "article_id": "21b9b994c22b72a5",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Schroders nears Benchmark Capital disposal – report",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/schroders-nears-benchmark-capital-disposal-114920642.html",
-          "published": "2026-07-01T20:49:20+0900",
-          "article_id": "6f6d616945f9106d",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Dollar bulls gain ground even as most FX strategists still expect weakness: Reuters poll",
-          "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-bulls-gain-ground-even-114847438.html",
-          "published": "2026-07-01T20:48:47+0900",
-          "article_id": "d747534468f93a39",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Comfort Systems’ Quarterly Earnings Preview: What You Need to Know",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/comfort-systems-quarterly-earnings-preview-114036521.html",
-          "published": "2026-07-01T20:40:36+0900",
-          "article_id": "0fd7c8032b61adbf",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "South Korea to the rescue: The world's biggest chipmakers will drop $590 billion to end RAMageddon, but there's a catch",
-          "url": "https://finance.yahoo.com/technology/articles/south-korea-rescue-worlds-biggest-113500553.html",
-          "published": "2026-07-01T20:35:00+0900",
-          "article_id": "a0c0735981f6d4ad",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Wall Street Is Falling Back in Love With Industrials. Here Are 3 Stocks to Buy.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-falling-back-love-113002417.html",
-          "published": "2026-07-01T20:30:02+0900",
-          "article_id": "7a7c5210ced58345",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "What You Need To Know Ahead of Keurig Dr Pepper’s Earnings Release",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/know-ahead-keurig-dr-pepper-112639865.html",
-          "published": "2026-07-01T20:26:39+0900",
-          "article_id": "507bee4dedf216b0",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Here's What to Expect From T-Mobile’s Next Earnings Report",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-expect-t-mobile-next-111909430.html",
-          "published": "2026-07-01T20:19:09+0900",
-          "article_id": "624803049e1efa69",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Capitalizing on the Squeeze: What Micron Tells Us About Bottlenecks",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/capitalizing-squeeze-micron-tells-us-111553747.html",
-          "published": "2026-07-01T20:15:53+0900",
-          "article_id": "157f77024ebc180b",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "This $1.5M retirement plan fails miserably using real numbers — how big does your nest egg need to be in America?",
-          "url": "https://finance.yahoo.com/markets/articles/1-5m-retirement-plan-fails-111500024.html",
-          "published": "2026-07-01T20:15:00+0900",
-          "article_id": "ddf181ed5e1af257",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Swedish court orders Google to pay $1.5 billion to Klarna in antitrust damages",
-          "url": "https://finance.yahoo.com/technology/articles/swedish-court-says-google-pay-111147389.html",
-          "published": "2026-07-01T20:11:47+0900",
-          "article_id": "69d2478c9e5e9dcc",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Allegion's Quarterly Earnings Preview: What You Need to Know",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/allegions-quarterly-earnings-preview-know-110726297.html",
-          "published": "2026-07-01T20:07:26+0900",
-          "article_id": "973ee310ac64fca4",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Mortgage and refinance rates today, Wednesday, July 1: Rates are up today",
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-rates-today-wednesday-july-1-rates-are-up-today-100000767.html",
-          "published": "2026-07-01T19:00:00+0900",
-          "article_id": "00cc7ab66eb25643",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Best CD rates today, Wednesday, July 1, 2026: Earn up to 4.10% APY",
-          "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-wednesday-july-1-2026-earn-up-to-410-apy-100000521.html",
-          "published": "2026-07-01T19:00:00+0900",
-          "article_id": "b55277401cccd41c",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "HELOC and home equity loan interest rates today, Wednesday, July 1: Why locking in a low rate matters",
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-and-home-equity-loan-interest-rates-today-wednesday-july-1-why-locking-in-a-low-rate-matters-100000351.html",
-          "published": "2026-07-01T19:00:00+0900",
-          "article_id": "179cf27623aaf3d2",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "Palantir stock has crashed this year, but there may be upside ahead",
           "url": "https://finance.yahoo.com/markets/stocks/article/palantir-stock-has-crashed-this-year-but-there-may-be-upside-ahead-134226521.html",
           "published": "2026-06-30T22:42:26+0900",
@@ -12713,7 +12134,7 @@
         {
           "title": "President Donald Trump to sit down for exclusive interview with CNBC: Live updates",
           "url": "https://www.cnbc.com/2026/07/02/donald-trump-interview-live-updates.html",
-          "published": "2026-07-03T05:17:26+0900",
+          "published": "2026-07-03T05:57:05+0900",
           "article_id": "87b7a9a4f94d771b",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
@@ -12731,8 +12152,26 @@
         {
           "title": "Dow jumps nearly 600 points to record close; Nasdaq slides as chip stocks suffer: Live updates",
           "url": "https://www.cnbc.com/2026/07/01/stock-market-today-live-updates.html",
-          "published": "2026-07-03T05:16:30+0900",
+          "published": "2026-07-03T05:25:25+0900",
           "article_id": "93d04dbea38311ed",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Tesla stock sinks 7% despite strong deliveries report, posting worst day in nearly a year",
+          "url": "https://www.cnbc.com/2026/07/02/tesla-tsla-q2-2026-vehicle-delivery-production.html",
+          "published": "2026-07-03T05:18:02+0900",
+          "article_id": "b2b2e82e23792125",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -12805,24 +12244,6 @@
           "url": "https://www.cnbc.com/2026/07/02/raymond-james-adds-two-dividend-payers-to-list-of-top-healthcare-picks.html",
           "published": "2026-07-03T04:14:18+0900",
           "article_id": "ec1f5eec9c84898b",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Tesla stock sinks 8% despite strong deliveries report",
-          "url": "https://www.cnbc.com/2026/07/02/tesla-tsla-q2-2026-vehicle-delivery-production.html",
-          "published": "2026-07-03T04:12:25+0900",
-          "article_id": "b2b2e82e23792125",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13260,10 +12681,136 @@
       "home": "https://feeds.content.dowjones.io",
       "items": [
         {
-          "title": "SpaceX panic sends Verizon and AT&T shares toward their worst week in years",
+          "title": "SpaceX panic sends AT&T stock to its worst week in years",
           "url": "https://www.marketwatch.com/story/spacex-panic-sends-verizon-and-at-t-shares-toward-their-worst-week-in-years-ba5879a8?mod=mw_rss_topstories",
-          "published": "2026-07-03T05:05:00+0900",
+          "published": "2026-07-03T05:55:00+0900",
           "article_id": "d4315fb81860bea8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘Minions’ movies have been runaway hits — but is ‘franchise fatigue’ finally setting in?",
+          "url": "https://www.marketwatch.com/story/minions-movies-have-been-runaway-hits-but-is-franchise-fatigue-finally-setting-in-ba4f41da?mod=mw_rss_topstories",
+          "published": "2026-07-03T05:51:00+0900",
+          "article_id": "1b91a841b776cb08",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Retiring abroad sounds like a dream — what could go wrong? Actually, a lot.",
+          "url": "https://www.marketwatch.com/story/retiring-abroad-sounds-amazing-what-could-possibly-go-wrong-2e3c8af5?mod=mw_rss_topstories",
+          "published": "2026-07-03T05:46:00+0900",
+          "article_id": "998ac96ee3d5915e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Why maxing out your 401(k) is a major financial mistake if you have credit-card and other punishing debt",
+          "url": "https://www.marketwatch.com/story/why-maxing-out-your-401-k-is-a-major-financial-mistake-if-you-have-credit-card-and-other-punishing-debt-4c25beab?mod=mw_rss_topstories",
+          "published": "2026-07-03T05:34:00+0900",
+          "article_id": "26898914228f6aee",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘We are more likely to be living in poverty’: Social Security is a lifeline for women, so why are we ignored?",
+          "url": "https://www.marketwatch.com/story/we-are-more-likely-to-be-living-in-poverty-social-security-is-a-lifeline-for-women-so-why-are-we-ignored-5d4d4eb7?mod=mw_rss_topstories",
+          "published": "2026-07-03T05:30:00+0900",
+          "article_id": "b88382d4e57563fa",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Opening a ‘Trump account’ for your children? Here is the risk you need to reckon with first.",
+          "url": "https://www.marketwatch.com/story/opening-a-trump-account-for-your-children-here-is-the-risk-you-need-to-recognize-first-fe206bc0?mod=mw_rss_topstories",
+          "published": "2026-07-03T05:21:00+0900",
+          "article_id": "06bc8a54587d0ccc",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Nvidia is betting on a trillion-dollar robotics boom. Here is the hidden way to trade it.",
+          "url": "https://www.marketwatch.com/story/nvidia-is-betting-on-a-trillion-dollar-robotics-boom-here-is-the-hidden-way-to-trade-it-c5b10c4e?mod=mw_rss_topstories",
+          "published": "2026-07-03T05:20:00+0900",
+          "article_id": "1bae331ec545484e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Want to live longer in retirement? This one money move could add years to your life.",
+          "url": "https://www.marketwatch.com/story/want-to-live-longer-in-retirement-this-one-money-move-could-add-years-to-your-life-e8f2b4ba?mod=mw_rss_topstories",
+          "published": "2026-07-03T05:19:00+0900",
+          "article_id": "3fe2a8cbe375c25e",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13312,132 +12859,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "This Adobe analyst is going against the grain by telling investors to buy the stock",
-          "url": "https://www.marketwatch.com/story/this-adobe-analyst-is-going-against-the-grain-by-telling-investors-to-buy-the-stock-8dadc0a5?mod=mw_rss_topstories",
-          "published": "2026-07-03T04:07:00+0900",
-          "article_id": "83a3257e1ade61ae",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Why June’s jobs and inflation data are bullish for bonds",
-          "url": "https://www.marketwatch.com/story/why-the-jobs-and-inflation-data-are-bullish-for-bonds-fcedffd2?mod=mw_rss_topstories",
-          "published": "2026-07-03T04:01:00+0900",
-          "article_id": "64fb15ae65c53e42",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "My doctor friend objected to his hospital’s fundraising tactics. Did management go too far?",
-          "url": "https://www.marketwatch.com/story/there-was-a-catch-my-doctor-friend-was-outraged-by-his-hospitals-fundraising-tactics-where-do-we-draw-the-line-797b9fff?mod=mw_rss_topstories",
-          "published": "2026-07-03T04:00:00+0900",
-          "article_id": "0289e85b9a4194cb",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "The dollar’s strength is quietly risking another yen ‘carry trade’ blowup",
-          "url": "https://www.marketwatch.com/story/the-dollars-strength-is-quietly-risking-another-yen-carry-trade-blowup-9d42e159?mod=mw_rss_topstories",
-          "published": "2026-07-03T03:37:00+0900",
-          "article_id": "24c0e2c89cecb32a",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Concerts are increasingly for superfans and the rich, analysts say",
-          "url": "https://www.marketwatch.com/story/concerts-are-increasingly-for-superfans-and-the-rich-analysts-say-867b0284?mod=mw_rss_topstories",
-          "published": "2026-07-03T03:18:00+0900",
-          "article_id": "c6724d79e640ad1b",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Oil prices are now back to prewar levels, but the market is not. Here’s what could happen next.",
-          "url": "https://www.marketwatch.com/story/oil-prices-are-now-back-to-prewar-levels-but-the-market-is-not-heres-what-could-happen-next-c2883aa7?mod=mw_rss_topstories",
-          "published": "2026-07-03T03:17:00+0900",
-          "article_id": "d527f61d3ffc51fc",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Why Tesla’s stock is sinking toward its worst day in a year despite blowout delivery numbers",
-          "url": "https://www.marketwatch.com/story/tesla-crushes-delivery-estimates-giving-its-stock-a-boost-16c198da?mod=mw_rss_topstories",
-          "published": "2026-07-03T02:44:00+0900",
-          "article_id": "c39652493191f8fe",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -13445,554 +12866,49 @@
       "name": "Mining.com",
       "method": "rss",
       "home": "https://www.mining.com",
-      "items": [
-        {
-          "title": "BHP seeks to restart Cerro Colorado mine with $1.5B investment",
-          "url": "https://www.mining.com/bhp-seeks-to-restart-cerro-colorado-mine-with-1-5b-investment/",
-          "published": "2026-07-03T02:43:35+0900",
-          "article_id": "904e8a09898e51c2",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Newcore Gold hits above-reserve grade at Nyam deposit",
-          "url": "https://www.mining.com/newcore-gold-hits-above-reserve-grade-at-nyam-deposit/",
-          "published": "2026-07-03T01:53:14+0900",
-          "article_id": "2b7eced6d8b44106",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Almonty kicks off processing at Sangdong tungsten mine",
-          "url": "https://www.mining.com/almonty-kicks-off-processing-operations-at-sangdong-tungsten-mine-in-south-korea/",
-          "published": "2026-07-03T00:59:40+0900",
-          "article_id": "7a3ca53613f55a21",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Hudbay gains Peru approval to further increase Constancia mill throughput",
-          "url": "https://www.mining.com/hudbay-gains-peru-approval-to-further-increase-constancia-mill-throughput/",
-          "published": "2026-07-03T00:16:38+0900",
-          "article_id": "22a142bb2b1a733f",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "US Department of Energy awards $75M to recover critical minerals from coal feedstocks",
-          "url": "https://www.mining.com/us-department-of-energy-awards-75m-to-recover-critical-minerals-from-coal-feedstocks/",
-          "published": "2026-07-02T23:45:31+0900",
-          "article_id": "9678e7a9e4b744e9",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "British Columbia mining hampered by DRIPA ‘confusion’",
-          "url": "https://www.mining.com/british-columbia-mining-hampered-by-dripa-confusion/",
-          "published": "2026-07-02T21:20:25+0900",
-          "article_id": "c57d49fcab5b2202",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "GreenMet plans $150M rare earth processing hub in West Virginia",
-          "url": "https://www.mining.com/greenmet-plans-150m-rare-earth-processing-hub-in-west-virginia/",
-          "published": "2026-07-02T01:36:44+0900",
-          "article_id": "dd0a9cad2ea4bec6",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Cameco shuts Cigar Lake mine on Orano mill disruption",
-          "url": "https://www.mining.com/cameco-shuts-cigar-lake-mine-on-orano-mill-disruption/",
-          "published": "2026-07-02T00:46:43+0900",
-          "article_id": "05c6cef25274b0a8",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Energy Transition Minerals receives regional approvals for Penouta mine restart in Spain",
-          "url": "https://www.mining.com/energy-transition-minerals-receives-regional-approvals-for-penouta-mine-restart-in-spain/",
-          "published": "2026-07-01T21:51:45+0900",
-          "article_id": "ad613e906fd2a952",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Seeing the whole picture: Closing notes from Kazakhstan",
-          "url": "https://www.mining.com/seeing-the-whole-picture-closing-notes-from-kazakhstan/",
-          "published": "2026-07-01T08:26:02+0900",
-          "article_id": "d90be127e4f2f007",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "South32 sells nearly all its aluminum business to Alcoa for $5.6B",
-          "url": "https://www.mining.com/south32-sells-nearly-all-its-aluminum-business-to-alcoa-for-5-6b/",
-          "published": "2026-07-01T07:45:18+0900",
-          "article_id": "4dc960a0f6ac32cf",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Guardian may skip feasibility on $660M Nevada tungsten mine",
-          "url": "https://www.mining.com/guardian-may-skip-feasibility-on-660m-nevada-tungsten-mine/",
-          "published": "2026-07-01T05:16:43+0900",
-          "article_id": "4bfc99a56a014fe2",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Gold price set for worst quarter in 13 years",
-          "url": "https://www.mining.com/gold-price-set-for-worst-quarter-in-13-years/",
-          "published": "2026-07-01T02:31:34+0900",
-          "article_id": "027b0c6e87693f25",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Koryx Copper wins analyst support after Namibia assays",
-          "url": "https://www.mining.com/koryx-copper-wins-analyst-support-after-namibia-assays/",
-          "published": "2026-07-01T01:31:59+0900",
-          "article_id": "3d91c7ca50315c17",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "PH7 secures C$5M federal funding for copper extraction technology",
-          "url": "https://www.mining.com/ph7-secures-c5m-from-natural-resources-canada-for-copper-extraction-technology/",
-          "published": "2026-07-01T01:09:58+0900",
-          "article_id": "19150fbeafa99e7e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Atlantic Strategic confirms viability, 12-month pathway for monazite processing plant",
-          "url": "https://www.mining.com/atlantic-strategic-confirms-viability-12-month-pathway-for-monazite-processing-plant/",
-          "published": "2026-07-01T00:37:04+0900",
-          "article_id": "be2169febf3c312c",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Fortuna lifts West Africa growth with $1B Senegal gold project",
-          "url": "https://www.mining.com/fortuna-lifts-west-africa-growth-with-1b-senegal-gold-project/",
-          "published": "2026-06-30T23:57:33+0900",
-          "article_id": "fd9abeaca89e9d4a",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "BHP Invent, MIT spinout trial copper and gold recovery technology from waste streams",
-          "url": "https://www.mining.com/bhp-invent-mit-spinout-trial-copper-and-gold-recovery-technology-from-waste-streams/",
-          "published": "2026-06-30T21:55:41+0900",
-          "article_id": "64c6a89b84ea1dc2",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Rosh Pinah commissions new SAG mill as mine expansion nears completion",
-          "url": "https://www.mining.com/rosh-pinah-commissions-new-sag-mill-as-mine-expansion-nears-completion/",
-          "published": "2026-06-30T07:41:47+0900",
-          "article_id": "43833722b3df38ce",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Gold price falls nearly 2% as rebound proves short-lived",
-          "url": "https://www.mining.com/gold-price-falls-back-to-4000-on-renewed-mideast-tensions/",
-          "published": "2026-06-30T02:15:26+0900",
-          "article_id": "cce735c1609a60c7",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Greenland Resources gets $5M Canadian funding for Malmbjerg molybdenum mine",
-          "url": "https://www.mining.com/greenland-resources-gets-5m-funding-from-canada-for-malmbjerg-molybdenum-mine/",
-          "published": "2026-06-30T00:30:09+0900",
-          "article_id": "d83ec7c633ab7a6f",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Sweden grants 25-year concession to heavy rare earth deposit",
-          "url": "https://www.mining.com/sweden-grants-25-year-concession-to-heavy-rare-earth-deposit/",
-          "published": "2026-06-30T00:26:49+0900",
-          "article_id": "5c75ecbe484797c8",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Bunker Hill rebuild ships first Idaho ore, eyes silver",
-          "url": "https://www.mining.com/bunker-hill-rebuild-ships-first-idaho-ore-eyes-silver/",
-          "published": "2026-06-30T00:17:04+0900",
-          "article_id": "b09e32e35a3ce530",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Tactical Resources eyes Nasdaq debut as Texas rare earths project advances",
-          "url": "https://www.mining.com/tactical-resources-eyes-nasdaq-debut-as-texas-rare-earths-project-advances/",
-          "published": "2026-06-29T23:58:53+0900",
-          "article_id": "1a4f6ccb19d8cbeb",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Freeman Gold triples Lemhi project value, builds 1Moz reserve",
-          "url": "https://www.mining.com/freeman-gold-triples-lemhi-project-value-builds-1moz-reserve/",
-          "published": "2026-06-29T23:53:32+0900",
-          "article_id": "28201c78293a9835",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Op-Ed: The decoy effect — how Beijing steers western mining capital",
-          "url": "https://www.mining.com/op-ed-the-decoy-effect-how-beijing-steers-western-mining-capital/",
-          "published": "2026-06-29T20:25:57+0900",
-          "article_id": "5497d0cf52194042",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Nigeria identifies major new critical minerals district, large lithium discovery",
-          "url": "https://www.mining.com/nigeria-identifies-major-new-critical-minerals-district-large-lithium-discovery/",
-          "published": "2026-06-29T01:46:46+0900",
-          "article_id": "e7e18a32331d79cf",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Trump administration issues emergency order to keep Colorado coal plant operating",
-          "url": "https://www.mining.com/trump-administration-issues-emergency-order-to-keep-colorado-coal-plant-operating/",
-          "published": "2026-06-27T07:39:09+0900",
-          "article_id": "da54f44486d91a3e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Integra grows reserve by 74% at Florida Canyon gold mine",
-          "url": "https://www.mining.com/integra-grows-reserve-74-at-florida-canyon-gold-mine/",
-          "published": "2026-06-27T07:08:00+0900",
-          "article_id": "f4e9d92dfae389df",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Op-Ed: DRC is setting the terms of global competition for critical minerals",
-          "url": "https://www.mining.com/op-ed-drc-is-setting-the-terms-of-global-competition-for-critical-minerals/",
-          "published": "2026-06-27T05:56:19+0900",
-          "article_id": "c4eb8ef01a082c55",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        }
-      ]
+      "items": []
     },
     {
       "name": "WSJ Markets",
       "method": "rss",
       "home": "https://feeds.content.dowjones.io",
       "items": [
+        {
+          "title": "U.S. Stocks Mixed as June Jobs Data Cools Rate-Hike Concerns",
+          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-june-jobs-data-cools-rate-hike-concerns-5074457e?mod=rss_markets_main",
+          "published": "2026-07-03T05:39:00+0900",
+          "article_id": "1a4bd328b728a810",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Chip Stocks Tumble Again",
+          "url": "https://www.wsj.com/finance/investing/chip-stocks-tumble-again-fb8cb62e?mod=rss_markets_main",
+          "published": "2026-07-03T05:34:00+0900",
+          "article_id": "15124e54bcb34d18",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "Treasury Yields Rise in Holiday Shortened Week",
           "url": "https://www.wsj.com/articles/jgbs-edge-lower-tracking-declines-in-u-s-treasurys-c94e4528?mod=rss_markets_main",
@@ -14264,46 +13180,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "U.S. Stocks Edge Lower as Warsh Dodges Questions on Rates",
-          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-edge-lower-as-warsh-dodges-questions-on-rates-026f6f58?mod=rss_markets_main",
-          "published": "2026-07-02T06:00:00+0900",
-          "article_id": "876d686fe64d739f",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "Basic Materials Roundup: Market Talk",
           "url": "https://www.wsj.com/business/basic-materials-roundup-market-talk-ba9154ab?mod=rss_markets_main",
           "published": "2026-07-02T05:55:00+0900",
           "article_id": "1ab9f9090323e720",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Financial Services Roundup: Market Talk",
-          "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-88a73629?mod=rss_markets_main",
-          "published": "2026-07-02T05:55:00+0900",
-          "article_id": "a2accf41bb936e94",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
