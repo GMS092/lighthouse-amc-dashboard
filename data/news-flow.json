@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T02:27:02+0000",
+  "generated_at": "2026-07-02T03:48:37+0000",
   "connected": true,
   "source_count": 7,
   "article_count": 210,
@@ -10,6 +10,106 @@
       "method": "rss",
       "home": "https://dart.fss.or.kr",
       "items": [
+        {
+          "title": "(코스닥)에이비엘바이오 - 기업설명회(IR)개최",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900299",
+          "published": "2026-07-02T12:28:00+0900"
+        },
+        {
+          "title": "(코스닥)에이비엘바이오 - 기업설명회(IR)개최",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900298",
+          "published": "2026-07-02T12:27:00+0900"
+        },
+        {
+          "title": "(코스닥)에이비엘바이오 - 기업설명회(IR)개최",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900297",
+          "published": "2026-07-02T12:26:00+0900"
+        },
+        {
+          "title": "(기타)지앤에스종합건설 - [기재정정]감사보고서 (2025.12)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000186",
+          "published": "2026-07-02T12:12:00+0900"
+        },
+        {
+          "title": "(코스닥)오성첨단소재 - 주요사항보고서(자기주식취득신탁계약체결결정)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000181",
+          "published": "2026-07-02T12:07:00+0900"
+        },
+        {
+          "title": "(기타)삼양화성 - 동일인등출자계열회사와의상품ㆍ용역거래",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000179",
+          "published": "2026-07-02T11:53:00+0900"
+        },
+        {
+          "title": "(유가)에이프로젠 - 타법인주식및출자증권취득결정 (자회사의 주요경영사항)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800285",
+          "published": "2026-07-02T11:49:00+0900"
+        },
+        {
+          "title": "(유가)삼성SDI - 장래사업ㆍ경영계획(공정공시)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800279",
+          "published": "2026-07-02T11:47:00+0900"
+        },
+        {
+          "title": "(코스닥)남화산업 - 조회공시요구(현저한시황변동)에대한답변(중요정보없음)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900271",
+          "published": "2026-07-02T11:46:00+0900"
+        },
+        {
+          "title": "(유가)카카오뱅크 - 기업설명회(IR)개최(안내공시)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800276",
+          "published": "2026-07-02T11:44:00+0900"
+        },
+        {
+          "title": "(코스닥)앱튼 - 타법인주식및출자증권취득결정",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900281",
+          "published": "2026-07-02T11:44:00+0900"
+        },
+        {
+          "title": "(유가)카카오뱅크 - 결산실적공시예고(안내공시)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800275",
+          "published": "2026-07-02T11:43:00+0900"
+        },
+        {
+          "title": "(코스닥)레드캡투어 - 현금ㆍ현물배당결정 (분기배당)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900283",
+          "published": "2026-07-02T11:43:00+0900"
+        },
+        {
+          "title": "(기타)신한투자증권 - 일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000172",
+          "published": "2026-07-02T11:38:00+0900"
+        },
+        {
+          "title": "(기타)이데미츠어드밴스트머티리얼즈코리아 - 감사보고서 (2026.03)",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000170",
+          "published": "2026-07-02T11:37:00+0900"
+        },
+        {
+          "title": "(코스닥)레드캡투어 - 중간(분기)배당을위한주주명부폐쇄(기준일)결정",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900280",
+          "published": "2026-07-02T11:35:00+0900"
+        },
+        {
+          "title": "(유가)금호건설 - [기재정정]단일판매ㆍ공급계약체결",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800263",
+          "published": "2026-07-02T11:32:00+0900"
+        },
+        {
+          "title": "(유가)한익스프레스 - 주식소각결정",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800253",
+          "published": "2026-07-02T11:28:00+0900"
+        },
+        {
+          "title": "(코스닥)티엘비 - 유상증자최종발행가액확정",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900273",
+          "published": "2026-07-02T11:27:00+0900"
+        },
+        {
+          "title": "(코스닥)KCC건설 - 단일판매ㆍ공급계약체결",
+          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900264",
+          "published": "2026-07-02T11:27:00+0900"
+        },
         {
           "title": "(코스닥)케이쓰리아이 - [기재정정]단일판매ㆍ공급계약체결(자율공시)",
           "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900262",
@@ -59,106 +159,6 @@
           "title": "(기타)동해만개발 - 감사보고서 (2025.12)",
           "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000137",
           "published": "2026-07-02T11:07:00+0900"
-        },
-        {
-          "title": "(기타)엔티티코리아 - 감사보고서 (2026.03)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000132",
-          "published": "2026-07-02T11:04:00+0900"
-        },
-        {
-          "title": "(기타)신한투자증권 - 투자설명서(일괄신고)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000130",
-          "published": "2026-07-02T11:03:00+0900"
-        },
-        {
-          "title": "(코스닥)동양파일 - 조회공시요구(현저한시황변동)에대한답변(중요정보없음)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900224",
-          "published": "2026-07-02T10:58:00+0900"
-        },
-        {
-          "title": "(유가)HD현대일렉트릭 - 투자판단관련주요경영사항",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800227",
-          "published": "2026-07-02T10:52:00+0900"
-        },
-        {
-          "title": "(코스닥)에이에프더블류 - 조회공시요구(현저한시황변동)에대한답변(중요정보없음)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900162",
-          "published": "2026-07-02T10:51:00+0900"
-        },
-        {
-          "title": "(기타)덴소코리아 - 감사보고서 (2026.03)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000117",
-          "published": "2026-07-02T10:49:00+0900"
-        },
-        {
-          "title": "(기타)한국오션플랫폼 - 주요주주의주식보유변동",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000115",
-          "published": "2026-07-02T10:47:00+0900"
-        },
-        {
-          "title": "(유가)만호제강 - 주식소각결정",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800197",
-          "published": "2026-07-02T10:46:00+0900"
-        },
-        {
-          "title": "(유가)만호제강 - 매매거래정지및정지해제(중요내용공시)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800214",
-          "published": "2026-07-02T10:46:00+0900"
-        },
-        {
-          "title": "(기타)한국오션플랫폼 - 최대주주등의주식보유변동",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000112",
-          "published": "2026-07-02T10:46:00+0900"
-        },
-        {
-          "title": "(기타)신한투자증권 - 일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000107",
-          "published": "2026-07-02T10:41:00+0900"
-        },
-        {
-          "title": "(기타)윈비트 - 감사보고서 (2026.03)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000106",
-          "published": "2026-07-02T10:41:00+0900"
-        },
-        {
-          "title": "(코스닥)셀트리온제약 - 장래사업ㆍ경영계획(공정공시)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900216",
-          "published": "2026-07-02T10:40:00+0900"
-        },
-        {
-          "title": "(기타)아이비케이투자증권 - 일괄신고추가서류(기타파생결합사채)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000105",
-          "published": "2026-07-02T10:40:00+0900"
-        },
-        {
-          "title": "(코스닥)바이오비쥬 - 주식소각결정",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900169",
-          "published": "2026-07-02T10:37:00+0900"
-        },
-        {
-          "title": "(코스닥)온코닉테라퓨틱스 - 투자판단관련주요경영사항(임상시험계획변경승인) (자큐보정(JP1366)의 미란성 위식도역류질환 치료 후 유지요법에 대한 제3상 임상시험계획승인(변경승인))",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702900190",
-          "published": "2026-07-02T10:31:00+0900"
-        },
-        {
-          "title": "(유가)삼성전기 - 장래사업ㆍ경영계획(공정공시)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702800206",
-          "published": "2026-07-02T10:31:00+0900"
-        },
-        {
-          "title": "(유가)NH투자증권 - 증권발행실적보고서",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000103",
-          "published": "2026-07-02T10:31:00+0900"
-        },
-        {
-          "title": "(기타)시노코탱커 - 특수관계인으로부터자금차입",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000101",
-          "published": "2026-07-02T10:28:00+0900"
-        },
-        {
-          "title": "(유가)키움증권 - 일괄신고추가서류(파생결합증권-주가연계증권)",
-          "url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260702000100",
-          "published": "2026-07-02T10:28:00+0900"
         }
       ]
     },
@@ -168,6 +168,16 @@
       "home": "https://news.google.com",
       "items": [
         {
+          "title": "코스피·코스닥 왜 이러나…툭하면 '사이드카' - 글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRk0xLVlqbUg0eW44M05vRHhxSk0tejBBYXVXb3A0dEdVVTJCRUFKMmN5eFhPU0hCXzVlaGV1NlFZNXIxQkdTakNpbFhuMXBzODJtaGlXS25aOVcwY3Z3aDlrcWdMeXdkUlNqTlhiSmQ3X1dJYVVRTldWdElzV213VW5iaWJqVzJx?oc=5",
+          "published": "2026-07-02T12:33:04+0900"
+        },
+        {
+          "title": "\"90층에서 강풍맞은 코스피, 고소공포증 느끼나\" - YTN",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1YQzJCWGZwZFVldE1DQ3pBaXhpa2dBRklCei1Od1dKLUlBcnM2UmRVczlRQVJYZWpjN2Y3MUZjNVhqckhpZlkxNHlOMm5LM0xkVjJFbFFYN3BwdWRFOWc?oc=5",
+          "published": "2026-07-02T11:41:00+0900"
+        },
+        {
           "title": "외국인 10일째 '팔자'…코스피 8000선 붕괴에 증시 변동성 확대 - 인더스트리뉴스",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RSU9kLUNwWkVTZ3d1NTdpMC1UbHVCNkFNQk9KZ1d1Q0hiQ0duckxUd0ZVTHk1ZW9VQUVXYzk3YnJRMkRTX2ktN1dtYS1PSjkwakJna1ZaZkFFQ0JlY0ZNdXR0REJRTzlHRG5CUWJjQ2dNUQ?oc=5",
           "published": "2026-07-02T11:13:59+0900"
@@ -176,11 +186,6 @@
           "title": "코스피, 메타발 '메모리 쇼크' 극복하나 … 저가 매수세 유입, 8000 탈환 - 뉴데일리",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CdGpoV2E4VklrRnRhSGhGMG9nZ0ZoVXdEa3ktYkFuQTI4YUVSaWU3QVhLbUlWM1J3bnFKTzdDaXgtQzdoazg0bEpReXJRRUsyajhIY25GOTk1SDI4N09YRjQyV0I3WXlKbzZ6RkpCajJ5VHVjeEYyQmNaY9IBgAFBVV95cUxNaFZGMGdnZWotTFBQMGVlbWFITWR1eE5KbWdjdW14NEpFeEl0NVljczdrX0hyMmtGaU1Nc01PRUVyV2J3WHZPUVFRbVBKYVlpVklsZkpvOEk1a2xUSGdZRmdnWnkzSjNROTN1LWE0TzNyVjRabVZUbmRxRERxNzBZSA?oc=5",
           "published": "2026-07-02T11:10:24+0900"
-        },
-        {
-          "title": "“금리도 증시도 도왔다”...금융지주, 상반기 ‘최대 실적’ 예약 - 에너지경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9WcWtadW9jTEozZ1lHc1ZPOHJWOXVlN181V3lZTEUwX0NEYnRXazNCUmllM09nemd1eEVkSWcyY1pnRDdfWXZIdExldlNqay1oUEV1cngwUWZSZmljRzA5cEg3VQ?oc=5",
-          "published": "2026-07-02T10:51:00+0900"
         },
         {
           "title": "증시 변동성 키우는 주범 ‘숏감마’가 뭐길래 - 매일경제 마켓",
@@ -198,14 +203,14 @@
           "published": "2026-07-02T10:14:09+0900"
         },
         {
+          "title": "코스피, 메타發 반도체 쇼크에 '8000선 붕괴'…올해 15번째 매도 사이드카 발동 - 프라임경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1fdE9sY3J6MkVqVXVuU3ozdnZzaXJvc3I0RmxjSHZ2SFg5SEY3MmVYWDZjNmdqR2J3QU9td3ZXM0hjOERidURSY2xBc0tDWEFpc3M1TFVXRE8yZHZKR2FOTA?oc=5",
+          "published": "2026-07-02T10:04:57+0900"
+        },
+        {
           "title": "교보證 \"3Q 환율 상단 1,600원 열어둬야…장기 하방 재료는 여전\" - KB Think",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5mdDZXQjgxRUVEelN1ZnhnbzdSaEt3MmZ2c05tdXBEU0RyYjlxRXNiNkthdHlPN3lfcVZBUWxMcEplLVl6dXY0QWpPUDZhemdWS0FfYVNHTW5raGhHZkQ3U3F4VnlodTJ5RFQxX1NqOGhGZw?oc=5",
           "published": "2026-07-02T10:01:39+0900"
-        },
-        {
-          "title": "美기술주 약세에 코스피 8,000선 '붕괴'...삼전·하이닉스 7~8%대 급락 - KBC광주방송",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15cVQ4anRLaFhyd3dnXzV6YXlZQnoxUGpsaVZBbXFVdE5qdVRJQ0pZMlV6WmlSVVprano4MDVMSUpMa1JRVHFSRHRmWndaMUhjWXlMdk0xb0VwQ3d6VzQ2Ug?oc=5",
-          "published": "2026-07-02T09:49:02+0900"
         },
         {
           "title": "[개장시황] 코스피 장 초반 5% 급락…반도체 쇼크에 매도 사이드카 발동 - 뉴스핌",
@@ -218,24 +223,34 @@
           "published": "2026-07-02T09:39:17+0900"
         },
         {
+          "title": "코스피, 美기술주 삭풍에 5%대 급락 8,000선 내줘(종합) - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YVFpNd3dlY3MyMXprcXJZX0lQTFNXZzNfbEs1V3U4Y1VGV3M5N1NKU3Y5cTQyc0poNjJlVlAtQ3ZsZlEyUjFFNVBNd3YteW1aQ1hLVHBvU3VOcGpDZEVIVtIBYEFVX3lxTE5YVFpNd3dlY3MyMXprcXJZX0lQTFNXZzNfbEs1V3U4Y1VGV3M5N1NKU3Y5cTQyc0poNjJlVlAtQ3ZsZlEyUjFFNVBNd3YteW1aQ1hLVHBvU3VOcGpDZEVIVg?oc=5",
+          "published": "2026-07-02T09:33:50+0900"
+        },
+        {
+          "title": "코스피 5% 급락에 매도 사이드카 발동…올해 벌써 30번째 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAycU1Bc0ZMVUp0OC1NNXBHc2VFcWVGT1Q0RWp5bEh5TE51WE1lY1RLek9ubmRQRVBEYzNvQjRxdmhLUFF5cFcwMFVSYmRPTjg?oc=5",
+          "published": "2026-07-02T09:32:15+0900"
+        },
+        {
           "title": "코스피, 개장 직후 매도 사이드카…8000선 붕괴 - 뉴스토마토",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9MZUpoVjdEQlhndFVVTURESHJOWTlTYTJPSXNjdkU3b1VNYl9ZTmE1djZkaXc4TlZBdVBCQWptTjBVQmtCaFZVcXBUdi02Um04REZhbWdFTUVWZ3cyTVphMA?oc=5",
           "published": "2026-07-02T09:32:10+0900"
         },
         {
-          "title": "코스피 5% 급락에 매도 사이드카 발동…올해 벌써 30번째 - 아주경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqaEV4Q0Q3eXhwRjAxWFV6V0JFeDEzZGJYMzlJM1RKU3B5YnJjNlNTM0hpMmpjY09MeTVUOEJ4akhrYm9VUjhFamRFRFJ5UkJyMGlvaVJ5ZnBOZ9IBWEFVX3lxTFBwaTRDa0tZd2U2dzlWR19INVNkR0lSeUZBOVc2REM0SmZvTExnOWxNbjdSaWhGdlE5UHpjUVJnZkJSSTZMY1RrcXY0U2JTR0l5S2FBdU5Sbzc?oc=5",
-          "published": "2026-07-02T09:32:09+0900"
-        },
-        {
-          "title": "美 반도체 쇼크에 코스피 6% 급락…장 초반 매도 사이드카 발동 - 시사저널",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBUVUtuSUp1NHBrbWJHMDBQVThLdEZsOFVDNWJsZTllV1VwVG01V3JyWTgwemY4Q3BwVlRDRmdWUGVTVXExSFJYUUl3WG5PRUFQYlhmTzJIRkRsZlF4SXkyUTlHRnZ5ZklscEEzd0plb9IBc0FVX3lxTFBQTUx5SzlrSWdNRkQ2MWo0VGo3el9venhMdkRQaXdjdjM0RU1aVERIRC1PZUNtTHBNZlZQM1pNOHNlTnlEMjFxN3d3c0ZIVURSbXJXOXY2bnRiNHpDcFUtMUFTa2JKUUFINk5TZ0swLVUzLVE?oc=5",
-          "published": "2026-07-02T09:31:50+0900"
+          "title": "한국거래소, 코스닥 시장 30주년 기념식 행사 개최 - 서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zRjFMRUozRzRIWWItNHQtN1FMUkRrNkhja0FZYmZKdnpQZXZBWEpfaE5IWFhSNzJabklvRjRuMWxpWGluSks4a1dqRXhqTDFZM29KZG9rbEpTNFlQLU9GLTBJUHU?oc=5",
+          "published": "2026-07-02T09:27:00+0900"
         },
         {
           "title": "코스피, 장 초반 8000선 붕괴…美 반도체 쇼크에 급락 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE05V3JKRzJfeW9TTGt4dTdBZGRpeGVTOENBeFNCYTBvM2VaV2dBdjZZX3ZDVVMwTWQycDRTQ29meGw3NXpUZWVGM0lmcnp6QQ?oc=5",
           "published": "2026-07-02T09:26:02+0900"
+        },
+        {
+          "title": "코스피, 8000피 붕괴… 4.46% 내린 7933.10 출발 - 글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRlNvbFg3UXNCTjhTUXQyd0N3dnE1OUhQam1NYmRmbXQ0M0xvLXU2SHZkWG0wU3M5T1hQaHhsVGpaZzBncWpWOElEQ3BnY2xVWGFodHF5TUhyNC1hZUlucTk4UWRWcW1RTFlEbEdJR3Y1NFpyeXd6b25MbFBzRXcyNjJQV3JPOWJR?oc=5",
+          "published": "2026-07-02T09:20:56+0900"
         },
         {
           "title": "外人 매도세에 코스피 8000선 붕괴…매도 사이드카 발동 - 대한경제",
@@ -253,19 +268,9 @@
           "published": "2026-07-02T09:18:03+0900"
         },
         {
-          "title": "[속보] 코스피 장중 6% 넘게 폭락...매도 사이드카 발동 - 조선일보",
+          "title": "미국발 반도체 한파에 코스피 장중 6% 넘게 폭락... 매도 사이드카 발동 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUkhLWjhpc0NVcDVVTlBkbll4MUhaVGJ0ZU1xSFVmMmlJeklCYXZTUDd5VVNGMGZpNEM2N1Bzb0VmZ1N6NGZPVkhLYXZJcEtTcVFOYTR4bGYzVUE2TlRKa2ZaR2ZYX0VPWlFhUWRVRnkzWUMyYjBpSmdBT3ZRcGlvTw?oc=5",
           "published": "2026-07-02T09:03:00+0900"
-        },
-        {
-          "title": "[속보] 코스피 장중 5% 급락에 7800선까지 밀려...매도 사이드카 발동 - 조선비즈 - Chosunbiz",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNekJGUkhyRnhmcUdzQWcyeERMdDJQbkFvS1JycUFrd0JmdEtYQ1BRaFptMmdDa0M2bHppaHRYbEJRUk5leTZiZ2tjcVJHRGtyZF9QMzZwX19IbkI3ZzFEcHJsc2Iyd2FyMDN6cDBYX0lxZ2dEcVhCX2ZYRERjRTJ0MlEyUnRzYmVU0gGcAUFVX3lxTFBmUXdlUy1taG9PTkdZMG1jU2RiWUxDYUNEYU9wdWQ0V3FqU01PZlRmQXRXNEtQVHdvNF9kb1J4dHlJZXl5eDg3WGFtVy1qU3BqM1lDczR6c0VXdXhiQTlLbmJrZVV4ZXZLWm9OX2xadnc0XzN1Rl9Qc053UklCVk9vejZXQ250aVVFWDFpbzFIdUNaYXd5b0lJdGNzRg?oc=5",
-          "published": "2026-07-02T09:03:00+0900"
-        },
-        {
-          "title": "\"증시 흔들려도 반도체는 믿는다\"...파킹형 ETF에서 돈 빼고, 반도체 ETF 산다 - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUHo5elN3Y1FkTVhIYUNlWGhjNWpBZzd5TlBWZmd2TFhFWGlRRjJidUNYZWV2elBtbnlnZVJ5V3ZWal9UU1R5OUhvdzlXNURjaDJwQVJWMUl5TmhTMWJYQU9nMHFjVnBzVzhZaThRTGhxVXdpUjNQb2pFMnFHaGcxQg?oc=5",
-          "published": "2026-07-02T08:55:00+0900"
         },
         {
           "title": "외국인 상반기 코스피서 149조 팔고 개인 99조 샀다…삼전·닉스 보유율도 ‘뚝’ - 매일경제 마켓",
@@ -276,6 +281,11 @@
           "title": "[마켓뷰] 美반도체주 약세…코스피, 하락 이어가나 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9tVkphRU82VmQyVHNWRVVDYkpKa2hCeXNjZmVkWUZqRXRQTkhkRTZ3Qm5uNlJzUmp1ejFPdXBhbVRZeHdyREN5cHdpdHpURnM?oc=5",
           "published": "2026-07-02T08:01:02+0900"
+        },
+        {
+          "title": "정은보 거래소 이사장 \"전세계 거래소 일부만 살아남아…글로벌 무한경쟁\" [코스피 1만시대] - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBVMWtlZDVOMjJOYjRLYkRNU0dTX0IxelhDNVlQbHEwR1ZkLWptS2xDTmNRUGRreWJtWjA1TlpJcUY1eGg2NENmLWZOZ3pJLVE?oc=5",
+          "published": "2026-07-02T07:21:00+0900"
         },
         {
           "title": "[증시전략] 메모리 가격 하락?…삼전닉스 팔까 말까, 전망은? - v.daum.net",
@@ -293,19 +303,9 @@
           "published": "2026-07-02T06:08:00+0900"
         },
         {
-          "title": "코스닥 부실기업 솎아내기 돌입…국민연금은 “74조원 매도설 터무니없어” 일축 [한강로 경제브리핑] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9mSUtrZzhieGxGdEpmdW02b3FQdVlRQnZxMlVROUpsNWM5cjJpdVcxSG91TDU0bHhzZEU5Q09YdEp2aDZBOW1yb1pyM29wZDg?oc=5",
-          "published": "2026-07-02T06:04:29+0900"
-        },
-        {
           "title": "“코스닥 바이오 반등, 하반기 데이터에 달렸다” - 의학신문",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vbEEyS3RJSUpjbzVXbEZyTTZpTVRLRTEtQ2RuN01pMGxaMGluOWFZd0dXZHFKeDM1QWtVQWlpaEczRkJ0MnFEQnRDS1ByLWZQUFNDUi1oRmRySTJIbU9KQlItbUd0TnpCaHc?oc=5",
           "published": "2026-07-02T06:00:00+0900"
-        },
-        {
-          "title": "수퍼개미 남석관 \"코스피 1만 가능... 삼성전자 말고 이것 사라\" - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZlpKRWJVRThueEV3VlRONEVGekstcWVrREt3Rk5yV0c0MUhNbWRzZk5tRncweVJYbUx4UVNCLVZTaThzVmZQb3VTd1A4bkRlS1BOakNHN2FmcWM4TmtuR25kX0VqUmM3RWtOSXcwMGd0alhZTTB6QWZOcU5IRG5yQg?oc=5",
-          "published": "2026-07-02T05:38:24+0900"
         },
         {
           "title": "코스피 수십배 베팅…코인 거래소 ‘초고위험 상품’ 주의보 - v.daum.net",
@@ -325,14 +325,19 @@
       "home": "https://news.google.com",
       "items": [
         {
+          "title": "[메가프로젝트] SK하이닉스, 'AI반도체 거점' 청주에 100조 투자 - 블로터",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ENUxDc0ZRVGlaN1h1VFAtLWRVeGN1c2RGZFV6X2dYM1pXdHJoVTFreDB5UXB2T19USGhvQXgzRWN4dUVZYzNaRW1JU0NXY21uWWtQNm83aTg2VkZhbmp6UnBBSUczV2VI0gFsQVVfeXFMT0FmQkRjNkxhQ2U1ZVAtTktOZWtOOUowMmlhak1XRWlJVDRaOVFlMmo2aWtWSzZlY1d1REUtQjhTdjg4UnZIT2dNV0Y2SEhEUUU3aDdjWjVBNDJ4djFaYlNYUVp1eXAwMm56SGYx?oc=5",
+          "published": "2026-07-02T11:36:58+0900"
+        },
+        {
           "title": "메타발 AI 공급과잉 우려에 삼성전자·SK하이닉스 급락 - 중앙일보",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE02S3Z6SjVJSnFGdVhENjU4RllpQ05uZFFnMF9oQ1NseTU5bDdQNllIS1JLVHFIS0VZWGVZazZnZm5NR0FZZHFRaFZhN0xiRm93Q1lpdG9n?oc=5",
           "published": "2026-07-02T11:17:19+0900"
         },
         {
-          "title": "곽노정 SK하이닉스 \"청주에 100조원 투자...낸드 공장 증설\" - 지디넷코리아",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Xa0tmd0ZULW9Db1UyVVRGVEM2bVlKaERaTkN1UTB2VW9qUnkwYUM1VVAxMjJsUHJZOWdzQU5HUC15UklFQlJVWEkxSTV1U3kyZEtKSjln?oc=5",
-          "published": "2026-07-02T11:06:36+0900"
+          "title": "반도체 수요 위축 우려에 코스피 하락…환율 1,550원대 - KBS 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84TVo2WVF0TTNNV1RFMy01RkloaTEwRUNnbFdzcjRHczFXZHB2d2ZMZTZiU1dIczVvTWk4MmFjOEEyRnJXOWZ4WUZzSEx0Mm9hcHYtS2ZhVVZIejg?oc=5",
+          "published": "2026-07-02T11:15:00+0900"
         },
         {
           "title": "삼성·SK하이닉스 등 충청권에 392조 투자…이 대통령 \"AI 혁신 중심으로\" - v.daum.net",
@@ -345,9 +350,9 @@
           "published": "2026-07-02T10:51:23+0900"
         },
         {
-          "title": "삼성·SK하이닉스·셀트리온 \"충청에 392조 투자\" - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5iTk9PdV9ia1A0NVloMkgxUm1QcWYtRFVyazAtc0tUWjlRUnJBN19WNW83M0dWZGo1eHJtdXM0TXozN0x4cklpcTZQWDJ1Wm8?oc=5",
-          "published": "2026-07-02T10:30:15+0900"
+          "title": "SK하이닉스 곽노정 \"청주에 총 100조원 투자\" - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aTm9admRaeDhaeEs2OFlDa1JrdnZwY0NjVG9iUVMySlZnOFNCNUZXU0JnbVctQzdPbE01WUxqZ0tHTV9jaFM4Zk03cDJoMllNTmJzbTlRTDVQM1liTE1KYtIBYEFVX3lxTE5aTm9admRaeDhaeEs2OFlDa1JrdnZwY0NjVG9iUVMySlZnOFNCNUZXU0JnbVctQzdPbE01WUxqZ0tHTV9jaFM4Zk03cDJoMllNTmJzbTlRTDVQM1liTE1KYg?oc=5",
+          "published": "2026-07-02T10:43:20+0900"
         },
         {
           "title": "SK하이닉스 \"청주 M17 팹 내년 착공…2029년 상반기 가동 목표\" - 연합인포맥스",
@@ -365,12 +370,17 @@
           "published": "2026-07-02T09:51:00+0900"
         },
         {
-          "title": "[특징주] 삼전·닉스 7%대 급락…삼성전자 30만원선 내줘 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BUmZpdy1QQ2thaGVuRXpxN25GOC13alNlNDhTRnVabnFQUnFEb3A1Z1NNdmFiQVpCVmpLOUhRSmVTSERUQkJKeWVldEQ3VzA?oc=5",
-          "published": "2026-07-02T09:40:06+0900"
+          "title": "반도체 투매에도…증권가 \"SK하이닉스 400만원 간다\" - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE15NnA3ZnJWdm1nS3JEbjVPX3p0QnIxNTNzR3NFQ1B1TXRMVXRDaXlSanNJVVFxY3Nnc0hlWTR1a0JqdjJpYkdpU1hkZS0wVWs?oc=5",
+          "published": "2026-07-02T09:21:00+0900"
         },
         {
-          "title": "에이피알 아모레퍼시픽 상승 출발...반도체에 가려진 K화장품 시대 오나 - 조선일보",
+          "title": "[속보]‘8000피 깨졌다’…매도 사이드카 발동, 삼성전자·SK하이닉스 급락 출발 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9tYS1oZTVrS2FOaG9VRU5sOTRCSVV4bHBqMWNZanZadV9Zc2ZCWkZKaDhfOHg3TUNicHE2WHpFSkIzQnN1eUlJNTZXNVNhTnpz?oc=5",
+          "published": "2026-07-02T09:20:16+0900"
+        },
+        {
+          "title": "한국콜마 10%대 급등...반도체에 가려진 K화장품 시대 오나 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZjVWZUxqa0ZfYy11RTBOeFFvRGU1SkZBbGNYaE1PME9kU1Npdnd1RXVkQWJtQm9ENjM5dFdraWNFSlhjbEdLODFQQU5QVUhVVUlMQkpTUTFjZF9GWTEtbXY0MXl0YnNzMl9tdkZsRUNGd194SVlUSDFkLWV6bEdmWA?oc=5",
           "published": "2026-07-02T09:20:00+0900"
         },
@@ -385,24 +395,9 @@
           "published": "2026-07-02T09:07:00+0900"
         },
         {
-          "title": "메타는 오른 메타발(發) 폭락...삼전 하닉도 폭락 출발 - 조선일보",
+          "title": "메타가 어떻게 했길래... 삼전·하이닉스 폭락 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOM09wdGRST2VPLXN3d2JsMGlVeXVmSTRTRDh3dU5KbEQ1MkpLdEY0VlFZd2NIOWowcHVuN3ZKSzAxV01PRVFqMFBUMnhvN2tCXzNNbS05Q0E1OUxzV0FrcXF4X2QyQTNOWTRzY2FvZTN0NGdkWlBlbTIzZ0FMbjZWZQ?oc=5",
           "published": "2026-07-02T09:07:00+0900"
-        },
-        {
-          "title": "\"증시 흔들려도 반도체는 믿는다\"...파킹형 ETF에서 돈 빼고, 반도체 ETF 산다 - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUHo5elN3Y1FkTVhIYUNlWGhjNWpBZzd5TlBWZmd2TFhFWGlRRjJidUNYZWV2elBtbnlnZVJ5V3ZWal9UU1R5OUhvdzlXNURjaDJwQVJWMUl5TmhTMWJYQU9nMHFjVnBzVzhZaThRTGhxVXdpUjNQb2pFMnFHaGcxQg?oc=5",
-          "published": "2026-07-02T08:55:00+0900"
-        },
-        {
-          "title": "마이클 버리 \"한국 대규모 반도체 투자, 종말의 시작\"… 美·韓 반도체주 동반 하락 - Chosunbiz",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNmNMVE1XQk5DWFJjcElDYUFXU2N3RTZGSUdreFEwQ2xVVmZldDJZc3Jld1hLUkhFTHdSSEt0OG81UnRkSlpfSnItYkRWRmpCSUVaRkltb0tENWtRWGR3WEhFYU03X1lqTUc5N19MM042QmZOQklnblotajEydkY5ZmhydEp0U2w1?oc=5",
-          "published": "2026-07-02T08:34:00+0900"
-        },
-        {
-          "title": "삼성전자 '감사 페스티벌' 5일 종료…삼성스토어 방문객 75% 급증 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5VT1VOdG1JRGNjdG1nSVp4UlN5Y19NTHZlaVNuNklWLUtHekFmWnpUOWZwUHN3LUZseUlPc2MxNHhXTlZ5YmlfR3BKd3ltdw?oc=5",
-          "published": "2026-07-02T08:32:30+0900"
         },
         {
           "title": "美 반도체 주식 무더기 폭락…\"메타발 악재 직격탄\" - 지디넷코리아",
@@ -415,6 +410,11 @@
           "published": "2026-07-02T05:07:01+0900"
         },
         {
+          "title": "[단독] 삼전닉스, 서울대와 손잡고 지방 국립대에 반도체 계약학과 신설 추진 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdlYzRl9UMUsyNjJWOWZmd3p1MGhfeGh6bU56SDRqRFgwWm5lYVJBRGp5ZDlrV0VaZVpleUpCVnl4WmtLSjJ3bkVZY2RXNy1DbUI1b0xIb01ZdnBGRzlqT1JnVlhieHJyb1RpNEdCdDZSLURSTEh6d09TNzdFT2FjS1dOOTNyUDh4TmJOMkNucw?oc=5",
+          "published": "2026-07-02T05:03:23+0900"
+        },
+        {
           "title": "반도체 거품?… 해외서 쏟아지는 경계령 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVlVWc2tLN3VfclVoRXladFdPSEZWUDlTeTFQNUdoUU53a3NrME4zQmwyR0pOYmF3S196QlB4dENhbEpWek4tc0RSSFZOLXFmcU0zcXgya2F4bkRGOC1Ic2ZxTGNXaUppR0RWNy1yaGN4UmxCMERNcWh6cG12blA3MQ?oc=5",
           "published": "2026-07-02T00:31:00+0900"
@@ -423,6 +423,11 @@
           "title": "호남 반도체 프로젝트 뜨자... 삼성 노조 ‘우리와 협의하라’ - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdlNia2hIdndDNFJDdk9YaG1RSkpPUV9ZTGJ4VTBiM2xmakVtNHE1REg4UERWSXlpWkFJRTVtZUpkd1lrRE5MUjNCcWlwd2Jfb0hzN09Na2lxQ2dhM0w4eGRHYXlEcWRwRjBVRG1ZSmF4dXR4UkItUldaQk4xRkwwdnZ3?oc=5",
           "published": "2026-07-01T23:55:00+0900"
+        },
+        {
+          "title": "삼성전자·SK하이닉스, 2분기 실적 150조 ‘정조준’…“최대실적 또 경신하나” - 글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMGJocklIS2FHWlctVjYwSW12YlQ1OG1CNXNBOHQ1TW9xeHdBaHNrUEo2bklaNGVEQk1EUDdsd1dPWlY1UnoxMnVOV3JlbWpaSjVzNTFIb0Y0YjNVWjhaUVA2OFR6WjduaHBCUEhueVdUQzJsT1NPMEpna2pBbFhVeGxQMk4yUQ?oc=5",
+          "published": "2026-07-01T19:52:50+0900"
         },
         {
           "title": "[특징주] 삼전, 반도체 가격우려에 5%대 급락 마감…하닉도 3%↓(종합) - v.daum.net",
@@ -465,11 +470,6 @@
           "published": "2026-06-29T15:20:00+0900"
         },
         {
-          "title": "[호남 반도체 투자] 삼성전자·SK하이닉스, 서남권에 반도체 800조 투자…팹4기 구축 - 딜사이트",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1SRU1PUTZPTDQ0YmNuWlJTUjRNUDlHS2R0RGE1NHBndWFKME9hY0lkSGlKOVFHQVd0TlBwTzdOWEx4NHVuVnhqbEhVVWVHTDg?oc=5",
-          "published": "2026-06-29T15:00:29+0900"
-        },
-        {
           "title": "삼성·SK 800조 투자, 호남 반도체 허브의 꿈 '현실로' - 뉴시스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE93ZEd3UmZpN0poUWxnSlJkWkpxY3g4TXpObjZMRGY4VURCUG83LVU4eHkyTjJCdUpmNXBCenpidTgxZGlmak1mc0QzcC1nM2JBUFNJNmpmSEx3cm9FQ1BraNIBeEFVX3lxTE1zZXJmNHBVU1lNSUdxZlRxVnZJeEw1MndJb3YxSUx2M3lxQ2NubC1GYUZPWFhpU0U0N1VlaWcwRHB2SDVLZ3h4c2FDZ00xcmhUQ1BsSDU4UkF1c0lqeFRnTnF2SXRTQ2IwWWY4X05obzBPQnZoS3BDRQ?oc=5",
           "published": "2026-06-29T14:26:19+0900"
@@ -481,6 +481,11 @@
       "method": "rss",
       "home": "https://news.google.com",
       "items": [
+        {
+          "title": "미래에셋자산운용, ‘TIGER 미국S&P500 ETF’ 순자산 20조원 기록 - 백세시대",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Cb1VNTjVkSlZqZWp4emtTZmpOa2FYbVQ3OWJGMHlXWjZsTnM0bV93blpHMGJmUXVERE5mN2U3SV9jTi05V0xBWmRtLVVuT0tvcVJIVjVCOG5kM2JfdV92RUwtTEdCaExNM2U4?oc=5",
+          "published": "2026-07-02T11:18:54+0900"
+        },
         {
           "title": "미래에셋운용, 美S&P500 ETF 순자산 20조 돌파 - 뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBreU8zUUlFbHlJbk1hZnpDMUZWZEpvQUhPeXRQc1ZHS1VMOFFQcEFTc1FwRnROUGNBd0thOXdXV1Rxb0ZneGJ6XzlzdVROakFFRkNscjRkRlN4UV9Y?oc=5",
@@ -502,6 +507,11 @@
           "published": "2026-07-02T10:54:28+0900"
         },
         {
+          "title": "한화운용, 美 마시펜과 문화산업 투자 법인 설립 - 뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPRVNZaVEzRE1hUHZsQ2F0WmJmVWRnNVdyUHoyeGFoM3pSNjlBOWk2eG1ucnNQOHlLdWRUSENrRzNtV1Q5c215TnhNZFNab3REalBsQjViVk1nd2Rh?oc=5",
+          "published": "2026-07-02T10:53:00+0900"
+        },
+        {
           "title": "한화운용, 美 마시펜과 합작법인 설립…K-콘텐츠 투자 플랫폼 구축 - 매일경제 마켓",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xUHpmREY3U3VXVUxlUXg3V2t0WUlWdmZjUXJtc0lCc1poaGljaE92UlA4cG1YdXU1dm1pcDk3bWdqd1VSYllqS2RrUG5BRHBSZUE?oc=5",
           "published": "2026-07-02T10:51:03+0900"
@@ -512,24 +522,19 @@
           "published": "2026-07-02T10:46:57+0900"
         },
         {
-          "title": "신용공여 늘자…증권사, 회사채 조달 본격화 : 네이버 블로그 - Naver Blog",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeXZpYk1uc2Y5WE5YRmhITzRQWUFrdTBYQk1ycGZiZUN5SzVmVUFwQWpNQURyYnEtYjBYNmVkVGoyUGtkSU9qanBrN041Z2EwSFhwRzF5QUUzd01QRlhCdS1LV3Rrd0UzbU5TNWZvcVhhbnBHQUstTFh3d2FJS0psakhlSi1pSkFBbWFjVkhyUQ?oc=5",
-          "published": "2026-07-02T10:45:48+0900"
-        },
-        {
           "title": "삼성자산운용, AI반도체TOP2플러스 ETF 순자산 5조 돌파…개인 순매수 1조삼성자산운용, AI반도체TOP2플러스 ETF 순자산 5조 돌파…개인 순매수 1조 - 우먼타임스",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBacWgtQWVkTW9OZldCTGpUTEZicmtMeHVYOU1SVTdlYjc5SGhpRTZrYk5VLWd0V1ZhOU5jRTg3NC1TbFBwVzNpcG9sMVp2NE10X3VkdEV1bmFWQldSQUphdW5UUjZNcDVNZFFaMGMtZW_SAXRBVV95cUxNT1pxTWxta1VMVVRyU3JWYmlYMHNNV2tFWW9sR1cwREk1QkdidG9uc0R0aVVQSUh2alNMekEwYWJnZnYzQjdBSFpoRzFJV1d1bElsVG9hYTBHRDdQcVJSN2ZHX1h2UmR4VjZLd3BQLWxSV2M3Mg?oc=5",
           "published": "2026-07-02T10:40:17+0900"
         },
         {
+          "title": "한화자산운용, 美 마시펜과 문화산업 투자 합작법인 출범 - 알파경제",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NdFNZZ3JtWDdtZDZEMDhhaTFXTldLeWUxQnk0ZUNJSVR1b0JIS1UzclRkb0hoeXRFM3I4T3laalI2MGNuRlowRFBWdlZZUFVzM2lKSWZIcERvM3RHRkNyUkk5X21QV1AxQThmUHRR?oc=5",
+          "published": "2026-07-02T10:39:54+0900"
+        },
+        {
           "title": "[여의도단신]우리투자증권·미래에셋자산운용·NH아문디자산운용 - 매일신문",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42eVotY083T2NmMm5MNGd5eW10TWlXRjAwVC0zaHk4czc1OThCQUxEUjJ1RlBRM3R3dmpBdDB0dzcySDY4SnQ3bUlXZjVBdUZvTW1RbFp6Y2c5T3lyVjl4bGFn?oc=5",
           "published": "2026-07-02T10:37:20+0900"
-        },
-        {
-          "title": "한화운용, 美 마시펜과 합작법인 설립…K-콘텐츠 투자 확대 - 팍스경제TV",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02VHZtcExTNlNfZ2hrZ215TXNmNl9BSkRsNnFxWEhtNndwZVRNY0Z6aFFMR2ZrMzhicEUzRXZWdWFZTXdrZUVycmlySmxYaFVWc2lpXzZtWEZFRkp2YnZZZUlhRWdZYWM?oc=5",
-          "published": "2026-07-02T10:30:55+0900"
         },
         {
           "title": "미래운용, '미국 S&P500' ETF 순자산 20조원 돌파…\"최단기간\" - 연합뉴스",
@@ -602,9 +607,9 @@
           "published": "2026-07-02T06:13:39+0900"
         },
         {
-          "title": "[마켓인] STO 다음 격전지는 채권·MMF…증권사 선점전 본격화 - 이데일리",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSVZ4WlJGeExBcVV5ZHotUE82NmpXcVd6SGtjMFJGeGYydnNhbXhlaG1sNE1QNkpUbzVtSDFyTVRkZGc2QWd5TlhnSS1VTmhXWlIwOUY3U19XcWlLejc1YzRxOXlYVHVUeVVHZ3lvWUZvdzBMMVpvRE9SYnFJZUYzWA?oc=5",
-          "published": "2026-07-02T06:10:05+0900"
+          "title": "STO 다음 격전지는 채권·MMF…증권사 선점전 본격화 - 마켓인",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE40V3E3bzJPaVJPN3lUdGpaOUlWVlJxRXhablB3R28yZXZMcGN1OXBDaTV0aHBUbzR3dllkbXZ5aXdkZFZYNjZNa2swYzRtQ01KbGpMcUR3akxMMFJMcEZob0h2bmV6aWU5T1k3ekZTOElZdw?oc=5",
+          "published": "2026-07-01T21:30:06+0900"
         },
         {
           "title": "[단독] 검찰 ‘패가망신 1호’ 수사 확대…증권사 공모 정황 포착 - v.daum.net",
@@ -622,11 +627,6 @@
           "published": "2026-07-01T06:26:31+0900"
         },
         {
-          "title": "SK하이닉스 집행 멈추자 여전사 '비상'…증권사, 하이닉스 찾아가기도 - 연합인포맥스",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45aFNRRG9HSXVEeDg0TUE5bmZpTDhOcS1FMF9aLU1laGU1NkFRc0UtUENtQW5GTlFuTURfbzFaMFAzaDJlb0trOGhIYjV5M09IZjl6QVFpWDhhZWNXZ2lGVGdwV0I5dUd3QUNXOTZpMi0?oc=5",
-          "published": "2026-06-30T11:16:00+0900"
-        },
-        {
           "title": "[단독] 키움證, 빗썸 지분 인수 추진... 증권사·거래소 합종연횡 가속 - 조선비즈 - Chosunbiz",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVHZJd21XczBNQnN0VUxhSDJoUDFiQWo3LVdrSi1uYXhqenJZdzFjS2hoUjZLdVB3eU5zRUR5VUFZa1kyeGJqUUVEbVlxTHctc3J6Qk1vYnpVcjhyNk0zRUd2NEE4U044Wi1DbDV2S0N1VUpLVVU2M29VQkpOVWVxa9IBlAFBVV95cUxOX2RYbWU4S1N1R1BRN3FReml2N0psZXBEMHUwOERQZzNJUzhiTjZSa245OE9QM0syYjhfVFZzaU5pOFkyd1VtSXNWcUU4QXZBR0MzLUpWUFRENmhndkptbEtUTVRHb0dtbjU4cVRzTWN0ajZPVlN3WjFaNkVjNHNYZkhCSjBmRVdUeFlCNWgtWDgyZzhZ?oc=5",
           "published": "2026-06-29T10:22:00+0900"
@@ -639,13 +639,18 @@
       "home": "https://news.google.com",
       "items": [
         {
+          "title": "다가오는 LG전자 실적 발표…펀더멘탈 기대감으로 주가 반전 이뤄낼까 - 이코노미트리뷴",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9XT0hzN1VWWWVMWk5pblhpMTU3d1Q4ZlZtNTlnS1Vydy1vdFNQNEwyUk9fU2RYSC1DR1hnaEMtcVA0blNKLVBGNUNYRlpDRExpcWwyS0d3c0JMS25wVnA5LUkybXhSazc2aXdUNXJKVndpSUt2eThZ?oc=5",
+          "published": "2026-07-02T11:17:22+0900"
+        },
+        {
           "title": "[기업 공시] KB국민카드, 4000억원 공모 회사채 발행 추진 - 이슈밸리",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wQWlwYTc5VjFhRmc4TlNxcEM1OFVSeF8zT1NQdkVUTWtsU2NFUFVwNzFpOHFQM29IeWFCQjZNYjJaWEl5UXluam1mNFBCUnkyNDFReGdEVFlVSDdUS0xUekdrMkZQSXFLMmFZS1Nn?oc=5",
           "published": "2026-07-02T10:54:59+0900"
         },
         {
           "title": "26년 상반기 및 6월 미국 실적 발표 - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jZ3NtNWJoMk45UHlNRkR2QmFpOU5CYjVva19tYUI4YW94cTRoVm1qRDByS3QzV2dzb0VPSkJBdVNwT1pIekJjUl9IYXk0QW5ZYVB2QUNxQTNoZ9IBVEFVX3lxTE90N2EtX3RmOU56OUM3Smt2dF9lNHg2Mmo2LS1NYnBWaEEzaFBsa2Z6NngwRDRPWDlsNW9ORWNiLTNyWW52YjdoLU95cFJfeHBKSjdYNg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE90N2EtX3RmOU56OUM3Smt2dF9lNHg2Mmo2LS1NYnBWaEEzaFBsa2Z6NngwRDRPWDlsNW9ORWNiLTNyWW52YjdoLU95cFJfeHBKSjdYNtIBVEFVX3lxTE90N2EtX3RmOU56OUM3Smt2dF9lNHg2Mmo2LS1NYnBWaEEzaFBsa2Z6NngwRDRPWDlsNW9ORWNiLTNyWW52YjdoLU95cFJfeHBKSjdYNg?oc=5",
           "published": "2026-07-02T10:09:39+0900"
         },
         {
@@ -774,11 +779,6 @@
           "published": "2026-06-29T19:59:35+0900"
         },
         {
-          "title": "TSMC: UBS, 2분기 실적 발표 앞두고 목표주가 상향 및 매수 의견 유지 - Investing.com 한국어",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XUHhuQW83d3RVa1FvZFlWbk1Pc3dneDlSOU80RmFPblZ2ZlpYeFZ2VEVSRFlBV3pJLXppQWtQUjBDRmJRSVFEUXYzaDR2emt0QTA4enFpS2s5TlBPb3BEdHpjb3lvdG1md1ppU3JodDM?oc=5",
-          "published": "2026-06-29T11:02:00+0900"
-        },
-        {
           "title": "\"실적이 변동성을 이긴다\"…7월 삼전닉스 실적발표 '만스피' 재도전 - 뉴스1",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE94TU9oamVjcWdQOE50WDc0bG1NYmxOeFdJWll6cEplenpoemFaTVM0OHlxc2JUVURwdG8tVUttTW9yRUdNTUtNSy04eGRLVXlhM2lOcVdoNm9lZW1SeWZv?oc=5",
           "published": "2026-06-28T06:00:00+0900"
@@ -796,9 +796,19 @@
       "home": "https://news.google.com",
       "items": [
         {
-          "title": "韓·美 VC 사로잡은 피지컬 AI…카본식스, 600억 투자 유치 - 유니콘팩토리",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kdXFyZ1hyd1BHQUUxcmhGOG5OUFZYNzBIWGNvdVFEMXZodlgzdkwxb3YyNThyMU9rY3JWa3VXakhTVDBoQzBZUnhWWXc2ang5NGZFMVlXOVE1RVoyU0FDd09HLXpCbThrRnJ1cw?oc=5",
-          "published": "2026-07-02T11:05:26+0900"
+          "title": "트웰브랩스, AWS 참여 1500억 투자 유치…”에이전틱 영상AI 가속” - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBieXpQbUNER19wQzFJMkd6eEtjenFnSVpzakIxbjJPWnFtTmdBeGhfbHFYTHRYY2VjNjhJVURlYndTMERQdl9mRTFUWFUzcHpJQVJBd1czUUJBTUZJTExPemRjR19XY3o3enc?oc=5",
+          "published": "2026-07-02T12:38:09+0900"
+        },
+        {
+          "title": "추경호號 첫 조직개편 `경제·투자 올인`…경제국 강화·투자유치 확대 무게 - 매일신문",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBSbU40aTVJby1fTlZldnU5ZHNtYzRrY05nMUw5MzQtMndZejlZVDgyNlpvWUp3SW5BeFpYTHJ0MHZNbEFUTGc3YlJLNjRwYU9kZzhWS3R4QWVhYjhOaUtCbWhn?oc=5",
+          "published": "2026-07-02T11:43:46+0900"
+        },
+        {
+          "title": "韓·美 VC 사로잡은 피지컬 AI…카본식스, 600억 투자 유치 - 머니투데이 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16SWlyRFZmWXB4MnY1eE5OMmJEU2FPZFpWcktfVG9OUTQ1Rmozek5Wc2tTYjVJOVpMT3RVQU5SaDAwaUl1dWNaMF82S21RRkRnS01XR0JWbzNmdWlDYk4ycTVIUERyUmNFM0HSAW9BVV95cUxPT2JFanhPVlNpNm44MEktVmxCaFVIUExITGFRcUUxNUlXVU1sc3lscUV5UzYzLTNCel81VERSZjRFYXRnOF9hMUpJM2pvNVNKNGRET2RMMEJtY3dFeU5aVVpMUXRYSVB5YWZiZnJBRDQ?oc=5",
+          "published": "2026-07-02T11:30:00+0900"
         },
         {
           "title": "피지컬AI 스타트업 '카본식스', 600억 투자 유치…LB인베·IMM·한국산업은행 참여 - 더구루",
@@ -841,6 +851,11 @@
           "published": "2026-07-02T09:14:27+0900"
         },
         {
+          "title": "트웰브랩스, 1500억원 추가 투자 유치…네이버·아마존 참여 - 뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzOG44ZUVCcGxTLS1CcE5fbmFibndpTFNSNHkxMTdlbzd1YWtCa3IxRHd5OW01anM0SDRpamhkMHlabkdpSTd0UzZVUHUyYzl1TFpUMENsX1gzYl9ZWHVHTNIBeEFVX3lxTFBJck1RQmcyZUxodjBZNTZPY21VSmZ3UlA0WU9EVERWczlDaEdSSU13Z1dwNFpKLXJuQ2Zxd1ZCczAtXzUtVHRVMHlIMWJFcHlYdGNOTTdXaVFTWTBQemNGZEtTTy05eHJVOWdXME95U1BRa09heGU3MQ?oc=5",
+          "published": "2026-07-02T09:03:01+0900"
+        },
+        {
           "title": "캅스바이오, 시리즈 B 292억원 투자 유치…누적 투자금 368억원 - MEDI:GATE NEWS",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LTnRqZU9xRWE5Wkhqekkwakl5aHdyaDRoWEN5czZQN2ZVbnBfQU15MnoxX2dqM01jWHBjcGo0VW12dldqTDVkdktfVTVocFoteW1hUlVR?oc=5",
           "published": "2026-07-02T09:03:00+0900"
@@ -881,11 +896,6 @@
           "published": "2026-07-02T08:00:00+0900"
         },
         {
-          "title": "C3.ai CFO 히테시 라스, 회사 주식 426,388달러 매각 - Investing.com 한국어",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9QSGg4MlBES2FZRGs5UmF2ZmNTa3FNSHNDclcyMjV0NThPZEdkaUY3UGw1amJLd3FWRXY0Vms5RmdLQjhlVk92dURJSGRoZ2E5US1zWlU2bkFKWjVyTzU5QnZMVDJwZmtKNXZwdHFVSGJfaG9qQUtCRVlOOA?oc=5",
-          "published": "2026-07-02T07:59:00+0900"
-        },
-        {
           "title": "트웰브랩스, 1,500억원 시리즈B 투자 유치…누적 투자금 3,000억원 - 와우테일",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1ZM1J3YW1XNkNIN1pPM01WQlhQQ3NGZFhSRW9ZUk1YZHdCRElBV3ZKUFRXTEx3Y0l1eWZUcUtKRUNEX1ZWbV9FbnFJQVFvdHM?oc=5",
           "published": "2026-07-02T07:53:35+0900"
@@ -921,16 +931,6 @@
           "published": "2026-07-01T22:11:56+0900"
         },
         {
-          "title": "본사 창원 이전 만호제강 “1000억 규모 비영업자산 매각 추진” - 경남도민일보",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uTkNwTjMxY3oybDRqZDBKd3dOQWVRNG4zdUR4dEs0M1hYWGoyZk45OFFPQ0JiMkU2UmhiR3J4MDY1V092bC1aUlZ4MjdkaWRYTjAtZnZSTkg1clpyYy1JbFFXOXpzakRtNXc?oc=5",
-          "published": "2026-07-01T16:47:10+0900"
-        },
-        {
-          "title": "에이비일팔공, 마케팅 에이전트로 214억 시리즈C 투자 유치 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBnQlcxSHYtUUc1VXFaU2trYmFYbXhWRkFPc1pEUDNpQW1CWEFCWHZZVmM3MVZoZHdRRnpvelVFek45U3dJVUJQSE5kUXUtbzR3Z2FFTzFSX2Y4VWlGMFY4MFpqMFJxOUpfaHc?oc=5",
-          "published": "2026-07-01T15:15:50+0900"
-        },
-        {
           "title": "1조원 자구안도 못 막은 중앙그룹 회생…CJ도 고사한 SLL 매각 성사될까 - 인베스트조선",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbmwycl83TENMa0NsX25tWFhMNmM2UUFES1dCNmdQc2ZsVU1ubW85R040MUFTNWFPZ2ZMQjlid251Z0x6ZVRsdG5JblJ2ZUFuQUV6YkotVGhUU25RbW9BRWFPcnBVUG5zRHNOZjRDNFE5OGhLTFMtaFZCNEhvcWZfemN2dw?oc=5",
           "published": "2026-06-30T14:51:00+0900"
@@ -952,6 +952,31 @@
       "method": "rss",
       "home": "https://news.google.com",
       "items": [
+        {
+          "title": "[단독] ‘증시 변동 뇌관’ ETF… 금감원 ‘신규 출시 금지’ 칼 빼드나 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KajM0THhWcDI4SExrdGJJOFBaR1V5eGdiY0RwWVFyZENQQ0UzZzg2SkEyU0xoaXRRaW5sYnhvOF9EWHJzZF9Jam91Y09CTlZB?oc=5",
+          "published": "2026-07-02T11:50:03+0900"
+        },
+        {
+          "title": "삼천당제약 “금감원 조사 착수 사실 아니다” - 데일리메디",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85NU5NLUJQaHVtYWJjaXVpNDhxaXV5RGx0c1BuVWY0RnVXUW51TURLM1NrMUFtNk93ZlBicmFORTZ6dVRqWWdBY3YtNHRydzJOdUJpa0FsbzJIZ0h3QU1PVFVOVXM0SlZ6?oc=5",
+          "published": "2026-07-02T11:30:00+0900"
+        },
+        {
+          "title": "금융회사 프런티어 AI 보안위협에 적극 대응 가이드라인 마련 - intn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE16SF9SME5Za2ZaUlk1bGxaLUhqcVREelY2QWg0R0gya0N5ZW41bXhSY2hhb1hWSVg2c0ExWVRXRDBLZE5VR1NXdWNEcVlNNFJXWFQ4U1NzYXZCT1BELXU2NmtYYU50aDY0Tnc?oc=5",
+          "published": "2026-07-02T11:26:17+0900"
+        },
+        {
+          "title": "힘 실리는 물가피크론에 환율 복병…통화정책 영향은 - 연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RZDF3NkFZdzROV1VuN3BXNnJYRk9HUjZhb2xRV0RUSERGOW5ONnhUNjJTUUlBZ0dCazBRRGlNZWZoN3NiSUNnUW5PZnZXRzRMYWR2NzhZMjFpZVdkVXZ1RlYtbkNBa1BPQ21OWlY4d3o?oc=5",
+          "published": "2026-07-02T11:24:32+0900"
+        },
+        {
+          "title": "금융위, AI 보안 위협에 ‘테스트·패치’ 면책…금융사 적극 보안 대응 유도 - 테크월드",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBrUzltVEhSclhYVnUtblpSSlJmLXR2T3haT2NTRy1XT0NGTm1obUtjTGFkNUhBMDRCUUpKMi1zTWdJek9TZVctNUNndUZQbWFCNXFMaHpIVnpjei1qb2VjUWhQTEJNZkhS?oc=5",
+          "published": "2026-07-02T11:17:54+0900"
+        },
         {
           "title": "거래소 \"시총기준 강화로 코스닥서 올해 50개 내외 상폐 예상\" - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6RGd3TnBDRnNqYTRZUDh4RnNtSkE5OW9zSEM1bVJsUDdlS2hUcEJLWTk0NDV5QlBDNHlMcFNDQXFnSm05bXhfNkhNdXdtTDdqUjlyQXROY0ZmVzTSAWBBVV95cUxPOTc1RFNIMFA2VHZBdE9IaXFRMHpmNzZKakdmeDZyLVp1OVFOQ19lXzFnQ2JaM1hPdG05ZnU0SlQxemhNYTFhdlJLYUFNUTQwc3d1S1lWZHZWeDdydHQ2VUI?oc=5",
@@ -985,7 +1010,12 @@
         {
           "title": "한국거래소, 코스닥 시장 30주년 기념식 행사 개최 - 서울경제TV",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zRjFMRUozRzRIWWItNHQtN1FMUkRrNkhja0FZYmZKdnpQZXZBWEpfaE5IWFhSNzJabklvRjRuMWxpWGluSks4a1dqRXhqTDFZM29KZG9rbEpTNFlQLU9GLTBJUHU?oc=5",
-          "published": "2026-07-02T09:27:38+0900"
+          "published": "2026-07-02T09:27:00+0900"
+        },
+        {
+          "title": "삼천당제약, 금감원 조사 착수에 대해 “사실 아니다”…공식 해명문 발표 - 아시아투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5WMThXY0ZNSEVSUk5aU3FtRDNvNGoxN2Z3WkFpUUxjaEJQX015NXF4cmFobFByb1h1RVlzVWN5M1V0Z2JmcHBHek9PVEt6Zk4tcjBVZGhxYkxZSHItNFdaNHAxSkJvSWxBQmEwLUpR?oc=5",
+          "published": "2026-07-02T08:53:16+0900"
         },
         {
           "title": "금융위 \"AI 보안사고 대응 속도 높인다\"...경미한 전산장애 면책 - BBS불교방송",
@@ -1028,11 +1058,6 @@
           "published": "2026-07-02T01:03:05+0900"
         },
         {
-          "title": "워시, 통화정책 묻자 회피…\"7월 FOMC서 건설적 논쟁할 것\"(상보) - 연합인포맥스",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBpVkJza0tnVXJ6WTQyTXR4X2NzTXNMeU9FaGdzOGh5N1E3cUlvdkxVSGVuMFpOZkFSTkdiM05xSjdhX1hFSURrSnRFbGFyT24xTFBhRzBWUW9XejFQRlFGWm5kOER4NGFMcVZ0SENoQko?oc=5",
-          "published": "2026-07-02T00:22:43+0900"
-        },
-        {
           "title": "금융위, 개인채무자보호법 감독규정 개정안 의결 - intn.co.kr",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43cGQzM0dtdm0yTXlVZXBhYTUxTFUyRXQ5OFhxNE1wTXVNTXRtSmhTUWN0VGNjR1dsTWo3VkMxQUxTSFlMSjBwTHRSN1ptS0J1UHdIb25EVWNzYWlDS01VUm43WXp4dW5POFE?oc=5",
           "published": "2026-07-01T21:11:04+0900"
@@ -1041,11 +1066,6 @@
           "title": "금융위, 방카슈랑스 ‘25%룰’ 완화… 소비자 상품 선택권 확대 - 한국보험신문",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GMkg0TS1VRXQzeU9ySFpMcUtpWlhZVzlZUVNjUW1ralBFN0x4b0FnVFk0czBNNzNuRDRiYXFpaVZiTmM2SVNFRnE0bkhpZ2xWLTB1WUFORDFCYzMya2E0aGx1VDZDVURrdTJF0gFvQVVfeXFMUHZXTWFCUTkwNTVGb3I4M05Gd0ZMYnRoZWNxa2pTcVU5Z20xVTFsSDlsQnJuNnpqWmEwaWRZcHZzbE5ldnp3QjRUbEFKVm9NcktVdFBEMUQ4bjlJU1NJOWJrTmE0by1DYjNKSkhkdHFn?oc=5",
           "published": "2026-07-01T18:23:53+0900"
-        },
-        {
-          "title": "금융위, 혁신금융서비스 31건 신규 지정…총 1106건 - 뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE01YUFlRHhQOHpMQzlzT2ZlcVd3NXp2Zkc2Nml5WkJBVnVDOFpJczRSYW1INnVJUTl1OW5XRVdIb0dMRUp6b2FVSjFTX0w2aTRLc2tPb3gwQmU2d05s?oc=5",
-          "published": "2026-07-01T18:10:00+0900"
         },
         {
           "title": "금융위, 수백억으로 시세 조종한 '코인 고래' 적발 - 연합인포맥스",
@@ -1063,19 +1083,9 @@
           "published": "2026-07-01T17:19:15+0900"
         },
         {
-          "title": "금융위, 인터넷은행 대면업무 예외 허용…7일 전 사전보고 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Kb2piWENOb3psdS1Db19tQnZfdkNVUHlhOGN5ZEJqTWxvZEJYWDd2T1lqM09nbEhYYkt0bnpGWGE5QnUwRXlmZTlac0ZUS0k4Nk5YS3hmUnI2QVnSAWBBVV95cUxOMkgxVlVyOTBSaEo2TTRYU2RQN3BQTW83dGEzNm43TGRPaDVid3U1NlZOUHQ0TVhOTGloa3RINzFTQ01QMDZTT2oyMXc3UHp0VTlZbjd3Q0hZTkxZalJqVFQ?oc=5",
-          "published": "2026-07-01T15:52:56+0900"
-        },
-        {
           "title": "\"소 내쫓고 외양간 고치나\"...금융위의 뒤늦은 샌드박스 개선에 핀테크 업계 분통 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQanZ3Xy10VXNLWHVjRWRjbU9QaEtNUTFnR2NteHRySEdmcUhEcE5tLWZpa2FNVE9EYlFVenhxajdWTWxLaHJ5Y3hRS0s4cjJ2Wk1teVRqS1RWUm1NQUpyb0hCZzJiTTQ0M3c4ODJjQUZhY2NOeW5LZVlSQjR5aGpTNkVUWQ?oc=5",
           "published": "2026-07-01T15:35:36+0900"
-        },
-        {
-          "title": "이억원 금융위원장, \"시장 신뢰 제고위해 투자자 두텁게 보호\" - intn.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBERkg0M1hYRkZ3b2g1UUlUbkV2TzZONHQwVkw4dWVELU1RUFFrYmRUOE9uOEFqRVVmTGlwQmhhS3FmZnBVcTY4UmdsN0pZVTlUZDdWZnJkSHlBLXRlUlh6UjhPQTgwN1pRNkE?oc=5",
-          "published": "2026-07-01T15:06:22+0900"
         },
         {
           "title": "금감원 \"은행권 AML 체계 미흡사항 개선…의심거래 보고 철저히\" - 연합인포맥스",
@@ -1088,19 +1098,9 @@
           "published": "2026-07-01T15:00:00+0900"
         },
         {
-          "title": "금감원, 미래證 스페이스X 검사 2일 종료…연장 여부·논란 해소 분수령 - 인베스트조선",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZVFSWFRoRXlXZnI0VHRVMlQ1UmkwbmxWczVvRFJ2M2R5Q2drbTA3cU1CMnJmUW5iZDBTUDRKMF9NbGNMdVRkQUhkTlZOVHk5VVBBelBLakJ3QnZ5NG5kMXp6Q29mZGRDR195VEcxSFNrTDJmckFfejBteFZEUWtqUm1iaw?oc=5",
-          "published": "2026-07-01T14:49:00+0900"
-        },
-        {
-          "title": "\"보험점검센터는 공공기관 아닌 GA 영업\"…금감원, 소비자경보 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Fc2xwMkwyTGFVZGtkU2Fld05lWnQ0T3l5WXUzRmFBT082OTNZVGhsOHVsS3BNdjk2UFdVdTlWSEZhdFBSM00wMDdhOXlhZmJnQ0xsQkdnUEx6bDDSAWBBVV95cUxQMWdfNWxxMHZUZmpXS2d1a25qb09ta2hvMlF5N2x5VU44aF9rdVdidDYwNVExOFV0Y3Z4MHRjN21SZDdmR0ZuM0tZVlZ5Y2QtZF9BSmVqUFpRZGNSUS14SVE?oc=5",
-          "published": "2026-07-01T12:00:10+0900"
-        },
-        {
-          "title": "보도자료 - 금융위원회",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTnBRNHpOeUU2N1VHNVlra0ZsZmRHY0dLQ3AzVUprNkE2VHByOFZSeTlRUjZBV0h1VUhwZERJYTZJYW9lWGZuNHNCZFNvekw5MlVPZGJ1VzdUMFpEanVxTmdNakJCOWg2YVdKaGdvRnFnclpsakg0cnJSNU1xdzUxR2l0bEk2VlpKTmZBTU1VS2VMWVRyMUpzeFJNX0NIUFdJ?oc=5",
-          "published": "2026-06-30T09:25:25+0900"
+          "title": "금감원 출신 재취업 재개…전원 탈락 충격 두 달 만에 '숨통' - 연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBmdC1xTGZoYWFBS09YYU5oeFNXNzA4SDBvZGZxTEJvUGhrb05tcWU1UGs1OXpxVldBRXE2ZXBKa0RpVm4ybm5XNXJkUkd5VnZ2bkFLaTVfRVdFWUEtWk1WVFo1dFdrTjk2UHF2cHI3NjA?oc=5",
+          "published": "2026-07-01T08:33:12+0900"
         }
       ]
     }
