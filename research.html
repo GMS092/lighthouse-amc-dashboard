@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lighthouse AMC · 리서치 플로우</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7f9;
+        --surface: #ffffff;
+        --surface-soft: #eef2f5;
+        --text: #15191d;
+        --muted: #707981;
+        --line: #dbe1e7;
+        --button-bg: #15191d;
+        --button-text: #ffffff;
+        --shadow: 0 20px 50px rgba(28, 39, 49, 0.08);
+        --link: #1565c0;
+        --rss: #e65100;
+        --rss-bg: #fff3e0;
+        --high: #b42318;
+        --high-bg: #fff0ed;
+        --medium: #8a6100;
+        --medium-bg: #fff7d6;
+        --low: #286140;
+        --low-bg: #e8f6ee;
+        --exclude: #59636e;
+        --exclude-bg: #edf1f4;
+      }
+      body.theme-dark {
+        color-scheme: dark;
+        --bg: #111417;
+        --surface: #181d21;
+        --surface-soft: #22282d;
+        --text: #f4f6f8;
+        --muted: #9aa4ad;
+        --line: #2d353c;
+        --button-bg: #f4f6f8;
+        --button-text: #111417;
+        --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+        --link: #90caf9;
+        --rss: #ffb74d;
+        --rss-bg: #3d2807;
+        --high: #ffb4a8;
+        --high-bg: #4a1712;
+        --medium: #f4d36a;
+        --medium-bg: #3d3108;
+        --low: #99d6ad;
+        --low-bg: #173522;
+        --exclude: #b9c1c9;
+        --exclude-bg: #2a3036;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; transition: background 180ms ease, color 180ms ease; }
+      .dashboard { display: grid; min-height: 100vh; grid-template-columns: 248px minmax(0, 1fr); }
+      .sidebar { display: flex; flex-direction: column; gap: 28px; border-right: 1px solid var(--line); background: var(--surface); padding: 28px 22px 88px; transition: background 180ms ease, border-color 180ms ease; }
+      .brand { display: flex; align-items: center; gap: 12px; min-height: 40px; }
+      .brand-logo { flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%; object-fit: cover; object-position: 50% 47%; box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(0, 0, 0, 0.16); }
+      .brand-name { font-size: 16px; font-weight: 750; }
+      .nav { display: grid; gap: 8px; }
+      .nav-item { display: flex; align-items: center; gap: 10px; min-height: 42px; border-radius: 8px; padding: 0 12px; color: var(--muted); font-size: 14px; text-decoration: none; }
+      .nav-item:hover { background: var(--surface-soft); color: var(--text); }
+      .nav-item.active { background: var(--surface-soft); color: var(--text); font-weight: 700; }
+      .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+      .theme-toggle { position: fixed; left: 22px; bottom: 22px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 104px; height: 42px; border: 0; border-radius: 8px; background: var(--button-bg); color: var(--button-text); box-shadow: var(--shadow); font: inherit; font-size: 14px; font-weight: 750; cursor: pointer; transition: background 180ms ease, color 180ms ease, transform 160ms ease; }
+      .theme-toggle:hover { transform: translateY(-1px); }
+      .theme-toggle:focus-visible { outline: 3px solid #4c9ffe; outline-offset: 3px; }
+      .main { display: flex; min-width: 0; flex-direction: column; }
+      .topbar { display: flex; align-items: center; justify-content: space-between; min-height: 76px; border-bottom: 1px solid var(--line); background: var(--surface); padding: 0 34px; transition: background 180ms ease, border-color 180ms ease; }
+      .page-title { margin: 0; font-size: 20px; font-weight: 800; }
+      .status { color: var(--muted); font-size: 13px; }
+      .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
+      .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 20px; }
+      .notice strong { color: var(--text); }
+      .source-filter { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+      .source-pill { height: 28px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); padding: 0 10px; font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; }
+      .source-pill:hover { background: var(--surface-soft); color: var(--text); }
+      .source-pill.active { background: var(--button-bg); color: var(--button-text); border-color: var(--button-bg); }
+      .news-table-shell { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+      .news-table-scroll { max-height: calc(100vh - 230px); min-height: 360px; overflow: auto; }
+      .news-table { width: 100%; min-width: 940px; border-collapse: collapse; }
+      .news-table th { position: sticky; top: 0; z-index: 1; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 800; text-align: left; white-space: nowrap; }
+      .news-table th, .news-table td { padding: 0 12px; }
+      .news-table td { height: 48px; border-bottom: 1px solid var(--line); color: var(--text); font-size: 13px; vertical-align: middle; }
+      .news-table tbody tr:last-child td { border-bottom: 0; }
+      .news-table tbody tr:hover td { background: var(--surface-soft); }
+      .col-time { width: 110px; }
+      .col-importance { width: 112px; }
+      .col-source { width: 190px; }
+      .col-title { min-width: 440px; }
+      .news-time { color: var(--muted); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .source-name { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 210px; }
+      .news-title { display: block; color: var(--text); font-size: 13.5px; font-weight: 700; line-height: 1.35; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .news-title:hover { color: var(--link); text-decoration: underline; }
+      .importance-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 22px; font-size: 11px; font-weight: 800; padding: 0 8px; border-radius: 999px; white-space: nowrap; }
+      .importance-badge.high { color: var(--high); background: var(--high-bg); }
+      .importance-badge.medium { color: var(--medium); background: var(--medium-bg); }
+      .importance-badge.low { color: var(--low); background: var(--low-bg); }
+      .importance-badge.exclude { color: var(--exclude); background: var(--exclude-bg); }
+      .importance-wrap { display: inline-flex; align-items: center; gap: 6px; }
+      .manual-mark { color: var(--muted); font-size: 11px; font-weight: 800; }
+      .loading, .empty-msg { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
+      @media (max-width: 760px) { .dashboard { grid-template-columns: 1fr; } .sidebar { display: none; } .topbar { min-height: 68px; padding: 0 20px; } .workspace { padding: 20px; } .status { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .theme-toggle { left: 18px; bottom: 18px; } .news-table-scroll { max-height: calc(100vh - 210px); } }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" aria-label="사이드바">
+        <div class="brand">
+          <img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" />
+          <div class="brand-name">Lighthouse AMC</div>
+        </div>
+        <nav class="nav" aria-label="대시보드 메뉴">
+          <a class="nav-item" href="dashboard.html"><span class="nav-dot" aria-hidden="true"></span><span>홈</span></a>
+          <a class="nav-item" href="phase.html"><span class="nav-dot" aria-hidden="true"></span><span>투자의 정석 (동부)</span></a>
+          <a class="nav-item" href="weight.html"><span class="nav-dot" aria-hidden="true"></span><span>전자, 닉스 비중 체크</span></a>
+          <a class="nav-item" href="news.html"><span class="nav-dot" aria-hidden="true"></span><span>뉴스플로우</span></a>
+          <a class="nav-item active" href="research.html"><span class="nav-dot" aria-hidden="true"></span><span>리서치 플로우</span></a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1 class="page-title">리서치 플로우</h1>
+          <span class="status" id="update-label">불러오는 중…</span>
+        </header>
+
+        <section class="workspace" aria-label="리서치 플로우 본문">
+          <div class="notice">
+            <span aria-hidden="true">🛈</span>
+            <span><strong>리서치·정책·큐레이션</strong> 성격의 출처만 따로 모아 봅니다.</span>
+          </div>
+          <div class="source-filter" id="source-filter"></div>
+          <div class="news-table-shell">
+            <div class="loading" id="loading">리서치 항목을 불러오는 중입니다…</div>
+            <div class="empty-msg" id="empty-msg" style="display:none">표시할 항목이 없습니다.</div>
+            <div class="news-table-scroll" id="news-table-scroll" style="display:none">
+              <table class="news-table">
+                <thead>
+                  <tr>
+                    <th class="col-time">시간</th>
+                    <th class="col-importance">중요도</th>
+                    <th class="col-source">출처</th>
+                    <th class="col-title">제목</th>
+                  </tr>
+                </thead>
+                <tbody id="news-table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환">
+      <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">흑</span>
+    </button>
+
+    <script>
+      (function () {
+        var body = document.body;
+        var toggle = document.querySelector(".theme-toggle");
+        var label = document.querySelector(".theme-label");
+        if (localStorage.getItem("dashboard-theme") === "dark") {
+          body.classList.add("theme-dark");
+          label.textContent = "백";
+        }
+        toggle.addEventListener("click", function () {
+          var isDark = body.classList.toggle("theme-dark");
+          label.textContent = isDark ? "백" : "흑";
+          localStorage.setItem("dashboard-theme", isDark ? "dark" : "light");
+        });
+      })();
+
+      var RESEARCH_SOURCES = [
+        "SemiAnalysis", "FRB Speeches", "DARPA", "BOK 이슈노트", "KDI 경제정책자료",
+        "DRAMeXchange", "Dataroma", "FRB Working Papers", "메르의 블로그", "Statista",
+        "Visual Capitalist", "KDI 국내연구자료", "IT FIND"
+      ];
+      var activeSource = "all";
+      var allRows = [];
+
+      function escapeHtml(s) {
+        return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+        });
+      }
+      function isLocalServer() { return location.hostname === "127.0.0.1" || location.hostname === "localhost"; }
+      function dataUrl(apiPath, staticPath) { return isLocalServer() ? apiPath : staticPath; }
+      function fmtTime(iso) {
+        if (!iso) return "";
+        var m = String(iso).match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+        return m ? m[2] + "-" + m[3] + " " + m[4] + ":" + m[5] : "";
+      }
+      function fmtUpdate(iso) {
+        var t = fmtTime(iso);
+        return t ? "업데이트 " + iso.slice(0, 4) + "-" + t : "";
+      }
+      function importanceText(label) {
+        return { high: "높음", medium: "보통", low: "낮음", exclude: "제외" }[label] || "낮음";
+      }
+      function importanceLabel(row) {
+        var label = row.importance_label || "low";
+        var title = (row.importance_reasons || []).join(", ");
+        var manual = row.importance_source === "manual" ? '<span class="manual-mark">수동</span>' : "";
+        return '<span class="importance-wrap" title="' + escapeHtml(title) + '"><span class="importance-badge ' + escapeHtml(label) + '">' + escapeHtml(importanceText(label)) + "</span>" + manual + "</span>";
+      }
+      function renderFilters() {
+        var names = ["all"].concat(RESEARCH_SOURCES.filter(function (name) {
+          return allRows.some(function (row) { return row.source === name; });
+        }));
+        document.getElementById("source-filter").innerHTML = names.map(function (name) {
+          var label = name === "all" ? "전체" : name;
+          return '<button type="button" class="source-pill' + (activeSource === name ? " active" : "") + '" data-source="' + escapeHtml(name) + '">' + escapeHtml(label) + '</button>';
+        }).join("");
+      }
+      function renderRows() {
+        var rows = activeSource === "all" ? allRows : allRows.filter(function (row) { return row.source === activeSource; });
+        var body = document.getElementById("news-table-body");
+        document.getElementById("update-label").textContent = rows.length.toLocaleString() + "건 · " + document.getElementById("update-label").dataset.update;
+        if (!rows.length) {
+          document.getElementById("empty-msg").style.display = "block";
+          document.getElementById("news-table-scroll").style.display = "none";
+          body.innerHTML = "";
+          return;
+        }
+        document.getElementById("empty-msg").style.display = "none";
+        document.getElementById("news-table-scroll").style.display = "block";
+        body.innerHTML = rows.map(function (row) {
+          return "<tr>" +
+            '<td><span class="news-time">' + escapeHtml(fmtTime(row.published) || "-") + "</span></td>" +
+            "<td>" + importanceLabel(row) + "</td>" +
+            '<td><div class="source-name" title="' + escapeHtml(row.source) + '">' + escapeHtml(row.source) + "</div></td>" +
+            '<td><a class="news-title" href="' + escapeHtml(row.url) + '" target="_blank" rel="noopener noreferrer" title="' + escapeHtml(row.title) + '">' + escapeHtml(row.title) + "</a></td>" +
+            "</tr>";
+        }).join("");
+      }
+      function flattenResearch(sources) {
+        var wanted = new Set(RESEARCH_SOURCES);
+        var rows = [];
+        (sources || []).forEach(function (src) {
+          if (!wanted.has(src.name)) return;
+          (src.items || []).forEach(function (item) {
+            rows.push({
+              source: src.name,
+              title: item.title || "(제목 없음)",
+              url: item.url || "#",
+              published: item.published || "",
+              importance_score: item.importance_score || 0,
+              importance_label: item.importance_label || "low",
+              importance_source: item.importance_source || "auto",
+              importance_reasons: item.importance_reasons || []
+            });
+          });
+        });
+        rows.sort(function (a, b) {
+          return String(b.published || "").localeCompare(String(a.published || ""));
+        });
+        return rows;
+      }
+      function loadResearch() {
+        return fetch(dataUrl("/api/news", "data/news-flow.json"))
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            document.getElementById("loading").style.display = "none";
+            allRows = flattenResearch(data.sources || []);
+            document.getElementById("update-label").dataset.update = fmtUpdate(data.generated_at) || "";
+            renderFilters();
+            renderRows();
+          });
+      }
+      document.getElementById("source-filter").addEventListener("click", function (event) {
+        var btn = event.target.closest(".source-pill");
+        if (!btn) return;
+        activeSource = btn.dataset.source;
+        renderFilters();
+        renderRows();
+      });
+      loadResearch().catch(function (e) {
+        document.getElementById("loading").textContent = "데이터 로드 실패: " + e.message;
+      });
+    </script>
+  </body>
+</html>
