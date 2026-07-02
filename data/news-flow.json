@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-02T21:32:42+0900",
+  "generated_at": "2026-07-02T21:36:17+0900",
   "connected": true,
   "source_count": 53,
-  "article_count": 1040,
+  "article_count": 1089,
   "feed_source": "dashboard-default",
   "labels_count": 0,
   "sources": [
@@ -2545,6 +2545,42 @@
       "home": "https://www.sedaily.com",
       "items": [
         {
+          "title": "국정원 “美하원 ‘쿠팡 보고서’ 사실 왜곡…사고조사 지시한 적 없어”",
+          "url": "https://www.sedaily.com/article/20063268",
+          "published": "2026-07-02T21:33:26+0900",
+          "article_id": "361d1e709c786c77",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "배재고, ‘스타벅스 구호’ 학생 2명 징계 착수",
+          "url": "https://www.sedaily.com/article/20063266",
+          "published": "2026-07-02T21:31:33+0900",
+          "article_id": "97c357327f4cb516",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "‘손흥민 벤치 논란’에 입 연 홍명보…“결과론일 뿐, 전술 성공여부 처음부터 단정 못 해”",
           "url": "https://www.sedaily.com/article/20063265",
           "published": "2026-07-02T21:20:10+0900",
@@ -3045,44 +3081,6 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "“양자컴 상용화 열쇠는 오류 정정시스템”",
-          "url": "https://www.sedaily.com/article/20063226",
-          "published": "2026-07-02T18:17:28+0900",
-          "article_id": "2267a8fcf14005e4",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "“AI 세무 플랫폼 광고 규제, 업계 포함 상시 협의체서 기준 마련해야”",
-          "url": "https://www.sedaily.com/article/20063224",
-          "published": "2026-07-02T18:16:51+0900",
-          "article_id": "c9d0b12581c8c09d",
-          "auto_importance_score": 62,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "정책",
-            "핵심 산업"
-          ],
-          "importance_score": 62,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "정책",
-            "핵심 산업"
           ],
           "importance_source": "auto"
         }
@@ -4188,6 +4186,24 @@
       "home": "http://www.khan.co.kr",
       "items": [
         {
+          "title": "국조특위, 투표함 등 부실관리 정황 확인…윤상현 “공개 재검표”",
+          "url": "https://www.khan.co.kr/article/202607022130005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-02T21:30:00+0900",
+          "article_id": "b673c24397891fc6",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "“AI로 자살·산재 맞춤 대책 마련, 이 대통령이 내준 최우선 과제”",
           "url": "https://www.khan.co.kr/article/202607022127005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
           "published": "2026-07-02T21:27:00+0900",
@@ -4696,24 +4712,6 @@
           "url": "https://www.khan.co.kr/article/202607022048015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
           "published": "2026-07-02T20:48:01+0900",
           "article_id": "f31f026e8282e1f8",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[새책]매스커레이드 라이프 外",
-          "url": "https://www.khan.co.kr/article/202607022048005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-02T20:48:00+0900",
-          "article_id": "57fa1e4a668e535b",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -5282,6 +5280,42 @@
       "home": "https://rss.etnews.com",
       "items": [
         {
+          "title": "“韓 반도체 대규모 투자, 종말의 시작”…'빅쇼트' 마이클 버리, 삼전닉스 800조 투자에 찬물",
+          "url": "https://www.etnews.com/20260702000486",
+          "published": "2026-07-02T21:32:11+0900",
+          "article_id": "302821a0fb648236",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "中경제 비관하면 죄?…“경제 안좋다” 전 칭화대 교수 강연 중 발언에 경찰 출동",
+          "url": "https://www.etnews.com/20260702000482",
+          "published": "2026-07-02T21:06:20+0900",
+          "article_id": "bce8a6095bf81635",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "180m 세계 최대 높이 유리전망대…우산으로 '콕' 찍었더니 '쩍' 갈려져",
           "url": "https://www.etnews.com/20260702000440",
           "published": "2026-07-02T17:46:06+0900",
@@ -5784,42 +5818,6 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "'미모'만큼 '경력'도 화려했던 대만 '여경'…男동료들이 수사실적 몰아줬다 들통",
-          "url": "https://www.etnews.com/20260702000266",
-          "published": "2026-07-02T13:49:01+0900",
-          "article_id": "9b8843a602c0e6f5",
-          "auto_importance_score": 43,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "실적"
-          ],
-          "importance_score": 43,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "실적"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "롯데손보 매각 급물살…신한 '비은행 강화', 한투 '운용자산' 노린다",
-          "url": "https://www.etnews.com/20260702000257",
-          "published": "2026-07-02T13:36:39+0900",
-          "article_id": "3a52aab01c7a0a8b",
-          "auto_importance_score": 46,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "M&A"
-          ],
-          "importance_score": 46,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "M&A"
           ],
           "importance_source": "auto"
         }
@@ -13064,6 +13062,24 @@
       "home": "https://finance.yahoo.com",
       "items": [
         {
+          "title": "Carlsberg moves forward with India IPO process",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/carlsberg-moves-forward-india-ipo-122123721.html",
+          "published": "2026-07-02T21:21:23+0900",
+          "article_id": "aa35e7386ad6205b",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "Silver prices today, Thursday, July 2: Prices hit $60 ahead of June employment report",
           "url": "https://finance.yahoo.com/personal-finance/investing/article/silver-prices-today-thursday-july-2-prices-hit-60-ahead-of-june-employment-report-121527595.html",
           "published": "2026-07-02T21:15:27+0900",
@@ -13096,6 +13112,24 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Does Iren's Golden State Warriors Partnership Make Any Sense?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/does-irens-golden-state-warriors-121200973.html",
+          "published": "2026-07-02T21:12:00+0900",
+          "article_id": "133b1e502fd90de4",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
           ],
           "importance_source": "auto"
         },
@@ -13158,42 +13192,6 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/thursday-best-wall-street-analyst-120707868.html",
           "published": "2026-07-02T21:07:07+0900",
           "article_id": "e927c622bc8aa642",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Morning Minute: Robinhood Debuts 'Robinhood Chain'",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/morning-minute-robinhood-debuts-robinhood-120626191.html",
-          "published": "2026-07-02T21:06:26+0900",
-          "article_id": "4a3726bcda3b8b81",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "On, Crocs and Birkenstock Are On a Roll in Europe, UBS Says",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/crocs-birkenstock-roll-europe-ubs-120608843.html",
-          "published": "2026-07-02T21:06:08+0900",
-          "article_id": "82f70b9fbffef51a",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13352,10 +13350,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Analyst Report: Alcon AG",
-          "url": "https://finance.yahoo.com/research/reports/ARGUS_5849_AnalystReport_1782990266000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+          "title": "Analyst Report: Atmos Energy Corp",
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_2743_AnalystReport_1782990266000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
           "published": "2026-07-02T20:04:26+0900",
-          "article_id": "28be786d0f7546df",
+          "article_id": "a6288c12e7617df3",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13370,10 +13368,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Analyst Report: Atmos Energy Corp",
-          "url": "https://finance.yahoo.com/research/reports/ARGUS_2743_AnalystReport_1782990266000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+          "title": "Analyst Report: Alcon AG",
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_5849_AnalystReport_1782990266000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
           "published": "2026-07-02T20:04:26+0900",
-          "article_id": "a6288c12e7617df3",
+          "article_id": "28be786d0f7546df",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13442,10 +13440,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Realty Income (O) – Among the 12 Best NYSE Stocks to Buy for Dividends",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/realty-income-o-among-12-042312416.html",
-          "published": "2026-07-01T13:23:12+0900",
-          "article_id": "303cacb60b343a22",
+          "title": "Flex Ltd. (FLEX) Introduces Three New Power Solutions at COMPUTEX 2026",
+          "url": "https://finance.yahoo.com/technology/ai/articles/flex-ltd-flex-introduces-three-044154695.html",
+          "published": "2026-07-01T13:41:54+0900",
+          "article_id": "a31d58657aa27b4c",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13460,10 +13458,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Morgan Stanley Bumps Up Price Target on Dominion Energy (D). Here is Why",
-          "url": "https://finance.yahoo.com/energy/articles/morgan-stanley-bumps-price-target-042229818.html",
-          "published": "2026-07-01T13:22:29+0900",
-          "article_id": "2a13765f870a3ff9",
+          "title": "What Is CRH plc (CRH) Planning Following Leadership Changes?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/crh-plc-crh-planning-following-044152311.html",
+          "published": "2026-07-01T13:41:52+0900",
+          "article_id": "5493ea8090067fb2",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13478,10 +13476,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Truist Boosts Price Target on Public Storage (PSA)",
-          "url": "https://finance.yahoo.com/real-estate/articles/truist-boosts-price-target-public-042211744.html",
-          "published": "2026-07-01T13:22:11+0900",
-          "article_id": "918d416124f4f993",
+          "title": "Is Ciena Corporation the Best Stock To Buy That Was Added to the S&P 500 Recently?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ciena-corporation-best-stock-buy-044149127.html",
+          "published": "2026-07-01T13:41:49+0900",
+          "article_id": "43d8870bae3268c7",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13496,10 +13494,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "BP Acquires 10% Stake in Bab Gas Cap Project in UAE",
-          "url": "https://finance.yahoo.com/energy/articles/bp-acquires-10-stake-bab-042132878.html",
-          "published": "2026-07-01T13:21:32+0900",
-          "article_id": "32a84ab11ac1368e",
+          "title": "Coherent (COHR): Top 10 Stock To Buy That Was Added to the S&P 500 Recently?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/coherent-cohr-top-10-stock-044147114.html",
+          "published": "2026-07-01T13:41:47+0900",
+          "article_id": "ce42fa89568ee6ff",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13514,10 +13512,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "TD Cowen Lifts Price Target on Ares Management (ARES) Following Meetings with Management",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/td-cowen-lifts-price-target-041953487.html",
-          "published": "2026-07-01T13:19:53+0900",
-          "article_id": "7e22956235a36e90",
+          "title": "Here Is What to Expect From Vertiv Holdings (VRT) Following Two Major Acquisitions?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/expect-vertiv-holdings-vrt-following-044146307.html",
+          "published": "2026-07-01T13:41:46+0900",
+          "article_id": "b3586783b71d2533",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13532,10 +13530,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "American Tower (AMT) Upgraded to Outperform at RBC Capital",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/american-tower-amt-upgraded-outperform-041938371.html",
-          "published": "2026-07-01T13:19:38+0900",
-          "article_id": "04ff7ec5aa10c73c",
+          "title": "Here is Why Lumentum Holdings (LITE) Is Among the Best Stocks To Invest In",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-lumentum-holdings-lite-among-044144998.html",
+          "published": "2026-07-01T13:41:44+0900",
+          "article_id": "064386179ee8a4ad",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -13610,6 +13608,42 @@
       "method": "rss",
       "home": "https://search.cnbc.com",
       "items": [
+        {
+          "title": "U.S. economy added 57,000 jobs in June, less than expected; unemployment rate at 4.2%",
+          "url": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
+          "published": "2026-07-02T21:33:21+0900",
+          "article_id": "cfbfed97330559a8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Rivian raises 2026 delivery outlook after strong demand in the second quarter",
+          "url": "https://www.cnbc.com/2026/07/02/rivian-lucid-q2-deliveries-demand.html",
+          "published": "2026-07-02T21:30:01+0900",
+          "article_id": "d69b798c2eea9b1c",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "Meta’s push into cloud computing means Wall Street has to prepare for lower margins",
           "url": "https://www.cnbc.com/2026/07/02/metas-push-into-cloud-excites-wall-street-despite-lower-margins.html",
@@ -13863,24 +13897,6 @@
           "importance_source": "auto"
         },
         {
-          "title": "World Cup could boost the June jobs report by 40,000, Goldman estimates",
-          "url": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html",
-          "published": "2026-07-02T19:18:05+0900",
-          "article_id": "31d620d955ea6e96",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "Nvidia offers start-up customers chance to swap compute power for revenue share",
           "url": "https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html",
           "published": "2026-07-02T18:57:30+0900",
@@ -13913,24 +13929,6 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "M&A is ‘on fire’ as large-cap firms simplify, Citi UK CEO says",
-          "url": "https://www.cnbc.com/2026/07/02/uk-ma-citi-tiina-lee.html",
-          "published": "2026-07-02T16:51:01+0900",
-          "article_id": "29b12ff2c1dbcff2",
-          "auto_importance_score": 46,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "M&A"
-          ],
-          "importance_score": 46,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "M&A"
           ],
           "importance_source": "auto"
         },
@@ -19039,7 +19037,882 @@
       "name": "Semiconductor Engineering",
       "method": "crawl",
       "home": "https://semiengineering.com",
-      "items": []
+      "items": [
+        {
+          "title": "Systems & Design",
+          "url": "https://semiengineering.com/category-main-page-sld",
+          "published": null,
+          "article_id": "f1ada7aade649c1d",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Low Power - High Performance",
+          "url": "https://semiengineering.com/category-main-page-lphp",
+          "published": null,
+          "article_id": "78bca21aa4e9706c",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Manufacturing, Packaging & Materials",
+          "url": "https://semiengineering.com/category-main-page-manufacturing",
+          "published": null,
+          "article_id": "588fdeb7c0dc2d6e",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Test, Measurement & Analytics",
+          "url": "https://semiengineering.com/category-main-page-packaging-test-electronic-systems",
+          "published": null,
+          "article_id": "dbd13c424a2f1f15",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Auto, Security & Edge AI",
+          "url": "https://semiengineering.com/category-main-page-iot-security",
+          "published": null,
+          "article_id": "59ffa20ced10edc9",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Special Reports",
+          "url": "https://semiengineering.com/special-reports",
+          "published": null,
+          "article_id": "023846435503fc51",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Business & Startups",
+          "url": "https://semiengineering.com/business-news-startups",
+          "published": null,
+          "article_id": "22145bf0d40acb16",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Knowledge Center",
+          "url": "https://semiengineering.com/knowledge-center",
+          "published": null,
+          "article_id": "01088157006b180d",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Technical Papers",
+          "url": "https://semiengineering.com/technical",
+          "published": null,
+          "article_id": "f69747eaeb63dcb6",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Architectures",
+          "url": "https://semiengineering.com/category-see-more",
+          "published": null,
+          "article_id": "9e4cb22c7bd36217",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Industry Research",
+          "url": "https://semiengineering.com/semiconductor-research",
+          "published": null,
+          "article_id": "a9af828a80f86a9b",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Startup Corner",
+          "url": "https://semiengineering.com/startup-corner",
+          "published": null,
+          "article_id": "59c1f50a71f2204b",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Rethinking Chip Verification",
+          "url": "https://semiengineering.com/rethinking-chip-verification",
+          "published": null,
+          "article_id": "32efde34d11eea37",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Creating A Moore’s Law For AI Scaling",
+          "url": "https://semiengineering.com/creating-a-moores-law-for-ai-scaling",
+          "published": null,
+          "article_id": "7c91703592516ef6",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Making On-Chip Photonics Manufacturable",
+          "url": "https://semiengineering.com/making-on-chip-photonics-manufacturable",
+          "published": null,
+          "article_id": "8a3ed04291b50f3a",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "AI Data Centers And Auto Industry Converge On Same Issues",
+          "url": "https://semiengineering.com/ai-data-centers-and-auto-industry-converge-on-same-issues",
+          "published": null,
+          "article_id": "5d720ec7129b22b2",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Defending Against AI-Enabled Data Fusion",
+          "url": "https://semiengineering.com/defending-against-ai-enabled-data-fusion",
+          "published": null,
+          "article_id": "fb21fc3e239780c2",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Fine-Tuning Humanoid Vision And Movement",
+          "url": "https://semiengineering.com/fine-tuning-humanoid-vision-and-movement",
+          "published": null,
+          "article_id": "d8a63d3646fa013c",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Observability Is A Missing Layer In AI-Era Chiplet Design",
+          "url": "https://semiengineering.com/observability-is-a-missing-layer-in-ai-era-chiplet-design",
+          "published": null,
+          "article_id": "e612297b5eea0903",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "I/O Design Challenges Grow In AI Data Centers And HPC Clusters",
+          "url": "https://semiengineering.com/i-o-design-challenges-grow-in-ai-data-centers-and-hpc-clusters",
+          "published": null,
+          "article_id": "913586cab5aac7b9",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Verification Methodologies Struggle To Keep Up With AI",
+          "url": "https://semiengineering.com/verification-methodologies-struggle-to-keep-up-with-ai",
+          "published": null,
+          "article_id": "4ae4633b8cc47de2",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Executive Outlook: Agentic AI’s Impact On Chip Design",
+          "url": "https://semiengineering.com/executive-outlook-agentic-ais-impact-on-chip-design",
+          "published": null,
+          "article_id": "7c71e934b15cc741",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Mask Economics Shape High-NA EUV Adoption",
+          "url": "https://semiengineering.com/mask-economics-shape-high-na-euv-adoption",
+          "published": null,
+          "article_id": "de2b0e0ce2bf361e",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "How To Build Billions of Bumps",
+          "url": "https://semiengineering.com/how-to-build-billions-of-bumps",
+          "published": null,
+          "article_id": "46eb94390127f73f",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "GaN Power Devices Go Vertical",
+          "url": "https://semiengineering.com/gan-power-devices-go-vertical",
+          "published": null,
+          "article_id": "319b7cfc706c4fcb",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Designing Chips That Can Explain Themselves",
+          "url": "https://semiengineering.com/designing-chips-that-can-explain-themselves",
+          "published": null,
+          "article_id": "06add43f5e1cf3fd",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Wi-Fi Flies Higher As Edge AI Build-Out Takes Root",
+          "url": "https://semiengineering.com/wi-fi-flies-higher-as-edge-ai-build-out-takes-root",
+          "published": null,
+          "article_id": "589b891f06b2e8a3",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Agentic AI Is Changing Data Center Architectures",
+          "url": "https://semiengineering.com/agentic-ai-is-changing-data-center-architectures",
+          "published": null,
+          "article_id": "27ad58ec0ee50e35",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Can AI Create Missing Models?",
+          "url": "https://semiengineering.com/can-ai-create-missing-models",
+          "published": null,
+          "article_id": "cefc26916f052a1f",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "PCIe Benefits From AI, Despite Scaling Protocols",
+          "url": "https://semiengineering.com/pcie-benefits-from-ai-despite-scaling-protocols",
+          "published": null,
+          "article_id": "8ee887e6e19f9afa",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "AI Models Transform Defect Inspection And Review, But Can Fail To Scale",
+          "url": "https://semiengineering.com/ai-models-transform-defect-inspection-and-review-but-can-fail-to-scale",
+          "published": null,
+          "article_id": "71473c553c974e74",
+          "auto_importance_score": 42,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_score": 42,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "크롤링 소스",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Why Analog And Mixed-Signal Chips Resist Adaptive Test",
+          "url": "https://semiengineering.com/why-analog-and-mixed-signal-chips-resist-adaptive-test",
+          "published": null,
+          "article_id": "568a9c8a1a99a9b2",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Co-Packaged Optics Testing Faces Steep Data Center Ramp",
+          "url": "https://semiengineering.com/co-packaged-optics-testing-faces-steep-data-center-ramp",
+          "published": null,
+          "article_id": "ecb78e3b2a43ca56",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Orbital Data Centers Are Souped-Up Satellites – For Now",
+          "url": "https://semiengineering.com/orbital-data-centers-are-souped-up-satellites-for-now",
+          "published": null,
+          "article_id": "ee44b3242a40443c",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Keeping Security Algorithms Current Is Getting Harder",
+          "url": "https://semiengineering.com/keeping-security-algorithms-current-is-getting-harder",
+          "published": null,
+          "article_id": "ed7a4d3fe59c6e03",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Blog Review: July 1",
+          "url": "https://semiengineering.com/blog-review-july-1-2",
+          "published": null,
+          "article_id": "d93276b0fc6d5a21",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Chip Industry Week In Review",
+          "url": "https://semiengineering.com/chip-industry-week-in-review-144",
+          "published": null,
+          "article_id": "1002a4b1db466909",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Blog Review: June 24",
+          "url": "https://semiengineering.com/blog-review-june-24-3",
+          "published": null,
+          "article_id": "bb921e62e596c4dc",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "CPO Will Dominate Scale-Up: Link Budgets For dB And $ Are Key",
+          "url": "https://semiengineering.com/cpo-will-dominate-scale-up-link-budgets-for-db-and-are-key",
+          "published": null,
+          "article_id": "0ea1370101fc7d75",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Disturbance In Verification",
+          "url": "https://semiengineering.com/disturbance-in-verification",
+          "published": null,
+          "article_id": "b0d4dde1019dcb11",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "more opinions »",
+          "url": "https://semiengineering.com/opinion",
+          "published": null,
+          "article_id": "89954acdeccfba67",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Chip Industry Technical Paper Roundup: June 30",
+          "url": "https://semiengineering.com/chip-industry-technical-paper-roundup-june-30",
+          "published": null,
+          "article_id": "9c9b9ca0979b6ef4",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Research Bits: June 30",
+          "url": "https://semiengineering.com/research-bits-june-30",
+          "published": null,
+          "article_id": "3279f45fd09ca780",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Research Bits: June 23",
+          "url": "https://semiengineering.com/research-bits-june-23",
+          "published": null,
+          "article_id": "7a49cae1a83e2014",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Startup Funding: Q1 2026",
+          "url": "https://semiengineering.com/startup-funding-q1-2026",
+          "published": null,
+          "article_id": "50adc8ada04906e2",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Startup Funding: Q4 2025",
+          "url": "https://semiengineering.com/startup-funding-q4-2025",
+          "published": null,
+          "article_id": "3cb89b861ea316f1",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Advertising on SemiEng",
+          "url": "https://semiengineering.com/advertise",
+          "published": null,
+          "article_id": "70baa176a8e3ee42",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        }
+      ]
     },
     {
       "name": "TrendForce",
@@ -19294,24 +20167,6 @@
       "home": "https://wccftech.com",
       "items": [
         {
-          "title": "All Hardware",
-          "url": "https://wccftech.com/topic/hardware",
-          "published": null,
-          "article_id": "eace12331fe02e5f",
-          "auto_importance_score": 16,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "크롤링 소스"
-          ],
-          "importance_score": 16,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "크롤링 소스"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "Gothic 1 Remake PC Performance Analysis & Tuning Guide – How To Get The Best Experience On PC",
           "url": "https://wccftech.com/how-to/gothic-1-remake-pc-performance-analysis-tuning-guide-how-to-get-the-best-experience-on-pc",
           "published": null,
@@ -19335,7 +20190,62 @@
       "name": "a16Z News",
       "method": "crawl",
       "home": "https://a16z.com",
-      "items": []
+      "items": [
+        {
+          "title": "Investing in Netris",
+          "url": "https://a16z.com/announcement/investing-in-netris",
+          "published": null,
+          "article_id": "f4cb9d8ff3f397f9",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Investing in Mirendil",
+          "url": "https://a16z.com/announcement/investing-in-mirendil",
+          "published": null,
+          "article_id": "003bc5e599a70c0c",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Investing in Probook",
+          "url": "https://a16z.com/announcement/investing-in-probook",
+          "published": null,
+          "article_id": "f69c14cf13e6e561",
+          "auto_importance_score": 16,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_score": 16,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "크롤링 소스"
+          ],
+          "importance_source": "auto"
+        }
+      ]
     }
   ]
 }
