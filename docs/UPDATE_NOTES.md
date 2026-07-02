@@ -4,15 +4,27 @@
 
 ## 2026-07-02
 
+### 리서치 플로우 탭
+- `research.html` 리서치 플로우 탭을 추가했습니다.
+- 뉴스플로우와 같은 `data/news-flow.json` 스냅샷을 사용하되, SemiAnalysis, FRB Speeches, DARPA, BOK 이슈노트, KDI 경제정책자료, DRAMeXchange, Dataroma, FRB Working Papers, 메르의 블로그, Statista, Visual Capitalist, KDI 국내연구자료, IT FIND만 별도로 필터링해 표시합니다.
+- 출처별 필터 버튼과 중요도 배지를 함께 표시해 일반 뉴스와 리서치·정책·큐레이션 소스를 분리해서 볼 수 있게 했습니다.
+- GitHub Pages 배포 워크플로와 뉴스 수집 후 Pages 배포 워크플로에 `research.html`을 포함했습니다.
+
+### 뉴스플로우 중요도 라벨 저장
+- 뉴스 수집 시 각 기사에 `article_id`, 자동 중요도 점수, 중요도 라벨, 중요도 판별 사유를 추가했습니다.
+- `data/news-labels.json` 수동 라벨 저장 파일을 추가하고, 로컬 서버에서 `GET/POST /api/news/labels`로 중요도 라벨을 저장할 수 있게 했습니다.
+- 뉴스플로우 테이블에 중요도 컬럼과 높음/보통/낮음/제외/초기화 라벨 버튼을 추가했습니다.
+- 다음 수집 때 수동 라벨이 있으면 자동 중요도보다 우선 적용되도록 했습니다.
+
 ### 뉴스플로우 기본 RSS 정리
 - 기본 RSS fallback 목록에서 Google 뉴스 검색 피드들을 제거했습니다.
-- `NEWS_BOT_REPO_TOKEN`이 설정되어 `GMS092/telegram-news-bot` 저장소를 체크아웃할 수 있으면 기존처럼 뉴스봇의 `dynamic_feeds.json` RSS 목록과 `scraper.py` 크롤링 소스를 그대로 사용합니다.
-- 현재 GitHub 연결 권한으로는 `GMS092/telegram-news-bot/dynamic_feeds.json`을 직접 읽을 수 없어, 기본 fallback에는 접근 가능한 DART 공시 RSS만 남겼습니다.
+- 로컬 뉴스봇(`C:\Users\CHECK\Claude Code\telegram-news-bot`)의 `dynamic_feeds.json` RSS 49개를 `modules/news-flow/feeds.json`에 반영했습니다.
+- GitHub에 외부 뉴스봇 저장소가 없거나 접근할 수 없어도, 대시보드 저장소의 기본 RSS 목록만으로 자동 수집이 동작합니다.
 
 ### 뉴스플로우 통합 테이블
 - 뉴스플로우 탭을 뉴스원별 카드 레이아웃에서 시간순 단일 테이블 레이아웃으로 변경했습니다.
 - 통합 테이블은 시간, 수집 방식(RSS/크롤), 출처, 제목을 한 화면에서 비교할 수 있게 표시하며, 제목을 누르면 원문으로 이동합니다.
-- 기존 뉴스 봇 연동 구조는 유지했습니다. `NEWS_BOT_REPO_TOKEN`이 설정되면 `GMS092/telegram-news-bot`의 `dynamic_feeds.json`과 `scraper.py`를 사용해 기존 RSS·크롤링 소스를 재사용하고, 토큰이 없으면 대시보드 기본 RSS 목록으로 자동 수집합니다.
+- 기존 뉴스 봇 연동 구조는 유지했습니다. `NEWS_BOT_REPOSITORY`가 설정되면 해당 외부 뉴스봇 저장소의 `dynamic_feeds.json`과 `scraper.py`를 사용해 RSS·크롤링 소스를 재사용하고, 설정이 없으면 대시보드 기본 RSS 목록으로 자동 수집합니다.
 
 ### 뉴스플로우 배포 반영
 - GitHub Actions가 `GITHUB_TOKEN`으로 만든 뉴스 스냅샷 커밋은 별도 Pages 배포 워크플로를 자동으로 다시 트리거하지 않아, 저장소의 `data/news-flow.json`은 갱신되지만 온라인 뉴스플로우 탭에는 오래된 스냅샷이 남는 문제가 있었습니다.
