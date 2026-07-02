@@ -10,12 +10,6 @@ r"""
   - 크롤: 외부 뉴스봇 scraper.py 의 fetch_scraped_sources() 를 재사용
           (봇 저장소가 있을 때만 실행, 없으면 RSS만 수집)
   - 중요도: 제목/출처 기반 자동 점수 + data/news-labels.json 수동 라벨 병합
-
-사용:
-    python modules/news-flow/collect.py
-    python modules/news-flow/collect.py --no-crawl   # RSS만
-    NEWS_FEEDS=modules/news-flow/feeds.json python modules/news-flow/collect.py
-    TELEGRAM_BOT_DIR=D:\path\to\external-news-bot python modules/news-flow/collect.py
 """
 import argparse
 import hashlib
@@ -23,7 +17,6 @@ import json
 import os
 import re
 import sys
-import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -45,19 +38,15 @@ FEEDS_PATH = Path(os.environ["NEWS_FEEDS"]) if os.environ.get("NEWS_FEEDS") else
     BOT_FEEDS_PATH if BOT_FEEDS_PATH.exists() else LOCAL_FEEDS_PATH
 )
 
-PER_SOURCE = 30            # 뉴스원별 최대 보관 기사 수
+PER_SOURCE = 30
 KST = ZoneInfo("Asia/Seoul")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; RSS reader)"}
 
 SOURCE_WEIGHTS = [
-    ("DART", 35, "공시 출처"),
-    ("KRX KIND", 35, "공시 출처"),
-    ("연합인포맥스", 15, "시장 전문 출처"),
-    ("BOK", 15, "정책·매크로 출처"),
-    ("FRB", 15, "정책·매크로 출처"),
-    ("KDI", 12, "정책·매크로 출처"),
+    ("DART", 35, "공시 출처"), ("KRX KIND", 35, "공시 출처"),
+    ("연합인포맥스", 15, "시장 전문 출처"), ("BOK", 15, "정책·매크로 출처"),
+    ("FRB", 15, "정책·매크로 출처"), ("KDI", 12, "정책·매크로 출처"),
 ]
-
 KEYWORD_RULES = [
     (45, "공시·거래 리스크", ["상장폐지", "거래정지", "관리종목", "감사의견", "횡령", "배임", "불성실공시"]),
     (40, "자본 변동", ["유상증자", "무상증자", "감자", "전환사채", "CB", "BW", "신주인수권", "자사주"]),
@@ -69,13 +58,11 @@ KEYWORD_RULES = [
     (26, "핵심 산업", ["반도체", "HBM", "DRAM", "NAND", "AI", "데이터센터", "전력", "원전", "배터리"]),
     (22, "시장 가격", ["급등", "급락", "강세", "약세", "사상 최고", "신고가", "하락", "상승"]),
 ]
-
 LABEL_SCORES = {"high": 90, "medium": 55, "low": 20, "exclude": 0}
 LABEL_TEXT = {"high": "높음", "medium": "보통", "low": "낮음", "exclude": "제외"}
 
 
 def _decode_feed(raw: bytes, http_ct: str) -> str:
-    """RSS/XML 바이트를 올바른 인코딩으로 디코딩."""
     m = re.search(rb'encoding=["\']([^"\']+)["\']', raw[:500])
     if m:
         return raw.decode(m.group(1).decode("ascii", errors="ignore"), errors="replace")
@@ -87,7 +74,7 @@ def _decode_feed(raw: bytes, http_ct: str) -> str:
 
 def _to_kst_iso(dt: datetime) -> str:
     if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
+        dt = dt.replace(tzinfo=KST)
     return dt.astimezone(KST).strftime("%Y-%m-%dT%H:%M:%S%z")
 
 
@@ -116,30 +103,21 @@ def classify_importance(source: str, method: str, title: str) -> dict:
     text = f"{source} {title}".upper()
     score = 8
     reasons = []
-
     for needle, weight, reason in SOURCE_WEIGHTS:
         if needle.upper() in text:
             score += weight
             reasons.append(reason)
             break
-
     if method == "crawl":
         score += 8
         reasons.append("크롤링 소스")
-
     for weight, reason, keywords in KEYWORD_RULES:
         if any(keyword.upper() in text for keyword in keywords):
             score += weight
             reasons.append(reason)
-
     score = min(score, 100)
     label = _label_from_score(score)
-    return {
-        "score": score,
-        "label": label,
-        "label_text": LABEL_TEXT[label],
-        "reasons": reasons[:4] or ["기본 분류"],
-    }
+    return {"score": score, "label": label, "label_text": LABEL_TEXT[label], "reasons": reasons[:4] or ["기본 분류"]}
 
 
 def load_labels() -> dict:
@@ -184,7 +162,6 @@ def apply_importance(sources: list[dict], labels: dict) -> None:
 
 
 def fetch_rss_source(feed: dict) -> dict:
-    """RSS 피드 하나 -> {name, method, home, items:[...]}"""
     name = feed["name"]
     feed_base = _home_of(feed["url"])
     items = []
@@ -194,11 +171,9 @@ def fetch_rss_source(feed: dict) -> dict:
             text = _decode_feed(resp.content, resp.headers.get("Content-Type", ""))
             parsed = feedparser.parse(text)
         except Exception:
-            parsed = feedparser.parse(feed["url"])  # 폴백
-
+            parsed = feedparser.parse(feed["url"])
         fp = urlparse(feed["url"])
         feed_base = f"{fp.scheme}://{fp.netloc}" if fp.netloc else feed_base
-
         for entry in parsed.entries[:PER_SOURCE]:
             title = (entry.get("title") or "").strip()
             url = (entry.get("link") or "").strip()
@@ -211,7 +186,6 @@ def fetch_rss_source(feed: dict) -> dict:
             items.append({"title": title, "url": url, "published": published})
     except Exception as e:
         print(f"  [rss:err] {name}: {e}")
-
     items.sort(key=lambda it: it["published"] or "", reverse=True)
     return {"name": name, "method": "rss", "home": feed_base, "items": items[:PER_SOURCE]}
 
@@ -229,23 +203,20 @@ def collect_rss(feeds: list[dict]) -> list[dict]:
 
 
 def collect_crawl() -> list[dict]:
-    """외부 뉴스봇의 scraper.fetch_scraped_sources() 재사용 -> 소스별 그룹화."""
     if not BOT_DIR.exists():
         print(f"  [crawl:skip] 봇 경로 없음: {BOT_DIR}")
         return []
     sys.path.insert(0, str(BOT_DIR))
     try:
-        import scraper  # external-news-bot/scraper.py
+        import scraper
     except Exception as e:
         print(f"  [crawl:skip] scraper import 실패: {e}")
         return []
-
     try:
         raw = scraper.fetch_scraped_sources()
     except Exception as e:
         print(f"  [crawl:err] {e}")
         return []
-
     grouped: dict[str, dict] = {}
     for it in raw:
         name = it.get("source") or "크롤"
@@ -257,7 +228,6 @@ def collect_crawl() -> list[dict]:
         published = _to_kst_iso(pub) if isinstance(pub, datetime) else None
         g = grouped.setdefault(name, {"name": name, "method": "crawl", "home": _home_of(url), "items": []})
         g["items"].append({"title": title, "url": url, "published": published})
-
     for g in grouped.values():
         g["items"].sort(key=lambda x: x["published"] or "", reverse=True)
         g["items"] = g["items"][:PER_SOURCE]
@@ -269,27 +239,21 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="뉴스플로우 수집기 (RSS + 크롤)")
     ap.add_argument("--no-crawl", action="store_true", help="RSS만 수집(크롤 생략)")
     args = ap.parse_args()
-
     if not FEEDS_PATH.exists():
         print(f"[!] 피드 목록을 찾을 수 없습니다: {FEEDS_PATH}")
-        print("    NEWS_FEEDS 환경변수로 경로를 지정하거나 modules/news-flow/feeds.json 을 확인하세요.")
         return 1
-
     with open(FEEDS_PATH, encoding="utf-8") as f:
         feeds = json.load(f)
-
     using_bot_feeds = FEEDS_PATH == BOT_FEEDS_PATH
     print(f"[*] 뉴스 수집 시작 - RSS 피드 {len(feeds)}개 ({FEEDS_PATH})" + ("" if args.no_crawl else " + 크롤"))
     sources = collect_rss(feeds)
     if not args.no_crawl:
         sources += collect_crawl()
-
     labels = load_labels()
     apply_importance(sources, labels)
-
     total = sum(len(s["items"]) for s in sources)
     payload = {
-        "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "generated_at": datetime.now(KST).strftime("%Y-%m-%dT%H:%M:%S%z"),
         "connected": True,
         "source_count": len(sources),
         "article_count": total,
@@ -300,7 +264,6 @@ def main() -> int:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
-
     size_kb = OUTPUT_PATH.stat().st_size / 1024
     print(f"[OK] {len(sources)}개 소스 / {total}건 -> {OUTPUT_PATH} ({size_kb:.0f} KB)")
     return 0
