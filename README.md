@@ -40,11 +40,11 @@ GitHub 저장소 설정에서 `Settings > Pages > Build and deployment > Source`
 
 ## 뉴스플로우 자동 수집
 
-`.github/workflows/news-flow.yml`은 15분마다 `modules/news-flow/collect.py`를 실행해 `data/news-flow.json`을 갱신합니다. 변경된 뉴스 스냅샷이 커밋되면 GitHub Pages 배포 워크플로가 이어서 실행되어 온라인 대시보드에 반영됩니다.
+`.github/workflows/news-flow.yml`은 15분마다 `modules/news-flow/collect.py`를 실행해 `data/news-flow.json`을 갱신합니다. 변경된 뉴스 스냅샷은 같은 워크플로 안에서 GitHub Pages까지 배포됩니다.
 
-기본 수집은 이 저장소의 `modules/news-flow/feeds.json`에 있는 RSS 목록으로 동작합니다. `GMS092/telegram-news-bot` 저장소를 함께 사용할 수 있으면 해당 저장소의 `dynamic_feeds.json`과 `scraper.py`를 재사용해 더 많은 RSS와 크롤링 소스를 추가합니다.
+기본 수집은 이 저장소의 `modules/news-flow/feeds.json`에 있는 RSS 목록으로 동작합니다. 외부 뉴스봇 저장소를 함께 쓰려면 이 저장소의 `Settings > Secrets and variables > Actions > Variables`에 `NEWS_BOT_REPOSITORY` 값을 `owner/repo` 형식으로 추가합니다. 해당 저장소에 `dynamic_feeds.json`과 `scraper.py`가 있으면 RSS 목록과 크롤링 소스를 재사용합니다.
 
-`GMS092/telegram-news-bot` 저장소가 비공개라면, 이 저장소의 `Settings > Secrets and variables > Actions`에 `NEWS_BOT_REPO_TOKEN` 시크릿을 추가하면 됩니다. 이 토큰은 `GMS092/telegram-news-bot` 읽기 권한이 있으면 충분합니다. 시크릿이 없어도 기본 RSS 수집은 계속 실행됩니다.
+외부 뉴스봇 저장소가 비공개라면 `Settings > Secrets and variables > Actions`에 `NEWS_BOT_REPO_TOKEN` 시크릿도 추가합니다. 이 토큰은 해당 저장소 읽기 권한만 있으면 충분합니다. 외부 저장소가 없거나 접근할 수 없어도 기본 RSS 수집은 계속 실행됩니다.
 
 수동으로 즉시 수집하려면 GitHub의 `Actions > Update News Flow Snapshot > Run workflow`를 실행합니다.
 
