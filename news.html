@@ -30,7 +30,6 @@
         --exclude: #59636e;
         --exclude-bg: #edf1f4;
       }
-
       body.theme-dark {
         color-scheme: dark;
         --bg: #111417;
@@ -56,7 +55,6 @@
         --exclude: #b9c1c9;
         --exclude-bg: #2a3036;
       }
-
       * { box-sizing: border-box; }
       body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; transition: background 180ms ease, color 180ms ease; }
       .dashboard { display: grid; min-height: 100vh; grid-template-columns: 248px minmax(0, 1fr); }
@@ -88,16 +86,25 @@
       .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
       .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 18px; }
       .notice strong { color: var(--text); }
-      .flow-layout { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 16px; align-items: stretch; }
+      .flow-layout { display: grid; grid-template-columns: 302px minmax(0, 1fr); gap: 16px; align-items: stretch; }
       .source-list-shell { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
       .source-list-head { display: flex; align-items: center; justify-content: space-between; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); padding: 0 12px; color: var(--muted); font-size: 12px; font-weight: 850; }
       .source-list { max-height: calc(100vh - 220px); min-height: 420px; overflow: auto; padding: 6px; }
+      .source-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px; align-items: center; border-radius: 7px; }
+      .source-row + .source-row { margin-top: 2px; }
+      .source-row:hover { background: var(--surface-soft); }
       .source-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px; width: 100%; min-height: 38px; border: 0; border-radius: 7px; background: transparent; color: var(--muted); padding: 0 9px; font: inherit; cursor: pointer; text-align: left; }
-      .source-item:hover { background: var(--surface-soft); color: var(--text); }
+      .source-item:hover { color: var(--text); }
       .source-item.active { background: var(--button-bg); color: var(--button-text); }
       .source-item-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12.5px; font-weight: 800; }
       .source-count { display: inline-flex; align-items: center; justify-content: center; min-width: 25px; height: 21px; border-radius: 999px; background: var(--surface-soft); color: var(--muted); padding: 0 7px; font-size: 11px; font-weight: 850; }
       .source-item.active .source-count { background: rgba(255,255,255,0.18); color: currentColor; }
+      .source-moves { display: inline-flex; gap: 2px; padding-right: 4px; opacity: 0.42; transition: opacity 160ms ease; }
+      .source-row:hover .source-moves, .source-move:focus-visible { opacity: 1; }
+      .source-move { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 24px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--muted); font: inherit; font-size: 12px; font-weight: 900; cursor: pointer; }
+      .source-move:hover { background: var(--button-bg); color: var(--button-text); }
+      .source-move:disabled { opacity: 0.28; cursor: default; }
+      .source-move:disabled:hover { background: var(--surface); color: var(--muted); }
       .content-panel { min-width: 0; display: flex; flex-direction: column; }
       .source-panel-meta { display: flex; align-items: center; justify-content: space-between; min-height: 42px; border: 1px solid var(--line); border-radius: 8px 8px 0 0; background: var(--surface); padding: 0 14px; color: var(--muted); font-size: 12px; }
       .source-panel-title { color: var(--text); font-weight: 850; }
@@ -126,20 +133,20 @@
       .importance-badge.low { color: var(--low); background: var(--low-bg); }
       .importance-badge.exclude { color: var(--exclude); background: var(--exclude-bg); }
       .importance-cell { position: relative; }
-      .importance-trigger { border: 0; background: transparent; padding: 0; font: inherit; cursor: pointer; }
-      .importance-trigger:disabled { cursor: default; }
-      .importance-trigger:focus-visible { outline: 2px solid #4c9ffe; outline-offset: 3px; border-radius: 999px; }
-      .importance-trigger.manual .importance-badge { box-shadow: inset 0 0 0 1px currentColor; }
+      .importance-trigger { display: inline-flex; align-items: center; justify-content: center; min-width: 54px; height: 28px; border: 0; border-radius: 8px; background: transparent; padding: 0; font: inherit; cursor: pointer; }
+      .importance-trigger:hover { background: var(--surface-soft); }
+      .importance-trigger.empty:hover::after { content: "표시"; color: var(--muted); font-size: 11px; font-weight: 800; }
+      .importance-trigger:focus-visible { outline: 2px solid #4c9ffe; outline-offset: 2px; }
+      .importance-trigger.manual .importance-badge, .importance-trigger.browser .importance-badge { box-shadow: inset 0 0 0 1px currentColor; }
       .importance-menu { position: absolute; left: 10px; top: 38px; z-index: 10; display: grid; gap: 4px; width: 112px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); padding: 6px; }
       .importance-option { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 30px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); padding: 0 8px; font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; }
       .importance-option:hover { background: var(--surface-soft); color: var(--text); }
       .importance-option.active { color: var(--text); background: var(--surface-soft); }
-      .importance-option:disabled { cursor: default; opacity: 0.5; }
       .importance-option.clear { border-top: 1px solid var(--line); border-radius: 0 0 6px 6px; margin-top: 2px; }
       .loading, .empty-msg { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
       @media (max-width: 1020px) {
         .flow-layout { grid-template-columns: 1fr; }
-        .source-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); max-height: 240px; min-height: 0; }
+        .source-list { max-height: 300px; min-height: 0; }
         .source-list-shell { box-shadow: none; }
         .news-table-scroll { max-height: calc(100vh - 340px); }
       }
@@ -158,10 +165,7 @@
   <body>
     <div class="dashboard">
       <aside class="sidebar" aria-label="사이드바">
-        <div class="brand">
-          <img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" />
-          <div class="brand-name">Lighthouse AMC</div>
-        </div>
+        <div class="brand"><img class="brand-logo" src="assets/lighthouse-amc.jpg" alt="" /><div class="brand-name">Lighthouse AMC</div></div>
         <nav class="nav" aria-label="대시보드 메뉴">
           <a class="nav-item" href="dashboard.html"><span class="nav-dot" aria-hidden="true"></span><span>홈</span></a>
           <a class="nav-item" href="phase.html"><span class="nav-dot" aria-hidden="true"></span><span>투자의 정석 (동부)</span></a>
@@ -169,18 +173,14 @@
           <a class="nav-item active" href="news.html"><span class="nav-dot" aria-hidden="true"></span><span>뉴스플로우</span></a>
         </nav>
       </aside>
-
       <main class="main">
         <header class="topbar">
           <div class="title-brand"><h1 class="page-title">뉴스플로우</h1></div>
           <div class="topbar-actions">
             <span class="status" id="update-label">불러오는 중…</span>
-            <button class="refresh-btn" id="refresh-btn" type="button" title="RSS·크롤링으로 뉴스를 다시 수집합니다 (수십 초 소요)">
-              <span class="refresh-icon" aria-hidden="true">⟳</span><span class="refresh-text">새로고침</span>
-            </button>
+            <button class="refresh-btn" id="refresh-btn" type="button" title="RSS·크롤링으로 뉴스를 다시 수집합니다 (수십 초 소요)"><span class="refresh-icon" aria-hidden="true">⟳</span><span class="refresh-text">새로고침</span></button>
           </div>
         </header>
-
         <section class="workspace" aria-label="뉴스플로우 본문">
           <div class="notice" id="notice" style="display:none"><span aria-hidden="true">🛈</span><span id="notice-text"></span></div>
           <div class="flow-layout">
@@ -189,24 +189,13 @@
               <div class="source-list" id="source-list"></div>
             </aside>
             <section class="content-panel" aria-label="선택한 뉴스 목록">
-              <div class="source-panel-meta" id="source-panel-meta" role="status">
-                <span class="source-panel-title" id="source-panel-title">전체</span>
-                <span id="source-panel-count">0건</span>
-              </div>
+              <div class="source-panel-meta" id="source-panel-meta" role="status"><span class="source-panel-title" id="source-panel-title">전체</span><span id="source-panel-count">0건</span></div>
               <div class="news-table-shell">
                 <div class="loading" id="loading">뉴스를 불러오는 중입니다…</div>
                 <div class="empty-msg" id="empty-msg" style="display:none">표시할 뉴스가 없습니다.</div>
                 <div class="news-table-scroll" id="news-table-scroll" style="display:none">
                   <table class="news-table">
-                    <thead>
-                      <tr>
-                        <th class="col-time">시간</th>
-                        <th class="col-importance">중요도</th>
-                        <th class="col-method">방식</th>
-                        <th class="col-source">출처</th>
-                        <th class="col-title">제목</th>
-                      </tr>
-                    </thead>
+                    <thead><tr><th class="col-time">시간</th><th class="col-importance">중요도</th><th class="col-method">방식</th><th class="col-source">출처</th><th class="col-title">제목</th></tr></thead>
                     <tbody id="news-table-body"></tbody>
                   </table>
                 </div>
@@ -216,20 +205,13 @@
         </section>
       </main>
     </div>
-
-    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환">
-      <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">흑</span>
-    </button>
-
+    <button class="theme-toggle" type="button" aria-label="흑백 테마 전환"><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">흑</span></button>
     <script>
       (function () {
         var body = document.body;
         var toggle = document.querySelector(".theme-toggle");
         var label = document.querySelector(".theme-label");
-        if (localStorage.getItem("dashboard-theme") === "dark") {
-          body.classList.add("theme-dark");
-          label.textContent = "백";
-        }
+        if (localStorage.getItem("dashboard-theme") === "dark") { body.classList.add("theme-dark"); label.textContent = "백"; }
         toggle.addEventListener("click", function () {
           var isDark = body.classList.toggle("theme-dark");
           label.textContent = isDark ? "백" : "흑";
@@ -238,24 +220,25 @@
       })();
 
       var ALL_SOURCES = "__all__";
+      var SOURCE_ORDER_KEY = "news-flow-source-order-v1";
+      var BROWSER_LABEL_KEY = "news-flow-importance-labels-v1";
       var activeSource = ALL_SOURCES;
       var currentRows = [];
       var sourceGroups = [];
       var sourceRows = {};
       var lastUpdateText = "";
       var openImportanceId = "";
+      var browserLabels = loadJson(BROWSER_LABEL_KEY, {});
 
-      function escapeHtml(s) {
-        return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
-          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
-        });
-      }
+      function escapeHtml(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+      function loadJson(key, fallback) { try { return JSON.parse(localStorage.getItem(key) || "") || fallback; } catch (e) { return fallback; } }
+      function saveJson(key, value) { localStorage.setItem(key, JSON.stringify(value)); }
       function isLocalServer() { return location.hostname === "127.0.0.1" || location.hostname === "localhost"; }
       function dataUrl(apiPath, staticPath) { return isLocalServer() ? apiPath : staticPath; }
       function setupRefreshAvailability(button) {
         if (!button || isLocalServer()) return;
         button.disabled = true;
-        button.title = "GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신과 라벨 저장은 로컬 서버에서 실행합니다.";
+        button.title = "GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신은 로컬 서버에서 실행합니다.";
         var txt = button.querySelector(".refresh-text");
         if (txt) txt.textContent = "자동 수집";
       }
@@ -264,21 +247,27 @@
         var m = String(iso).match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
         return m ? m[2] + "-" + m[3] + " " + m[4] + ":" + m[5] : "";
       }
-      function fmtUpdate(iso) {
-        var t = fmtTime(iso);
-        return t ? "업데이트 " + iso.slice(0, 4) + "-" + t : "";
+      function fmtUpdate(iso) { var t = fmtTime(iso); return t ? "업데이트 " + iso.slice(0, 4) + "-" + t : ""; }
+      function methodLabel(method) { return method === "crawl" ? '<span class="method-badge crawl">크롤</span>' : '<span class="method-badge rss">RSS</span>'; }
+      function importanceText(label) { return { high: "높음", medium: "보통", low: "낮음", exclude: "제외" }[label] || ""; }
+      function compareRowsByTime(a, b) { return String(b.published || "").localeCompare(String(a.published || "")); }
+      function getSourceOrder() { return loadJson(SOURCE_ORDER_KEY, []); }
+      function saveSourceOrder() { saveJson(SOURCE_ORDER_KEY, sourceGroups.map(function (s) { return s.name; })); }
+      function orderedGroups(groups) {
+        var saved = getSourceOrder();
+        var byName = {};
+        groups.forEach(function (g) { byName[g.name] = g; });
+        var ordered = [];
+        saved.forEach(function (name) { if (byName[name]) { ordered.push(byName[name]); delete byName[name]; } });
+        return ordered.concat(Object.keys(byName).map(function (name) { return byName[name]; }).sort(function (a, b) { if (b.count !== a.count) return b.count - a.count; return a.name.localeCompare(b.name, "ko"); }));
       }
-      function methodLabel(method) {
-        if (method === "crawl") return '<span class="method-badge crawl">크롤</span>';
-        return '<span class="method-badge rss">RSS</span>';
-      }
-      function importanceText(label) {
-        return { high: "높음", medium: "보통", low: "낮음", exclude: "제외" }[label] || "낮음";
-      }
-      function compareRowsByTime(a, b) {
-        var byPublished = String(b.published || "").localeCompare(String(a.published || ""));
-        if (byPublished) return byPublished;
-        return (b.importance_score || 0) - (a.importance_score || 0);
+      function applyBrowserLabel(row) {
+        var saved = browserLabels[row.article_id];
+        if (!saved) return row;
+        if (saved === "clear") { row.importance_source = "auto"; row.importance_label = ""; return row; }
+        row.importance_source = "browser";
+        row.importance_label = saved;
+        return row;
       }
       function flattenSources(sources) {
         var rows = [];
@@ -288,7 +277,7 @@
           var name = src.name || "-";
           var groupRows = [];
           (src.items || []).forEach(function (item) {
-            var row = {
+            var row = applyBrowserLabel({
               article_id: item.article_id || "",
               source: name,
               method: src.method || "rss",
@@ -296,10 +285,10 @@
               url: item.url || "#",
               published: item.published || "",
               importance_score: item.importance_score || 0,
-              importance_label: item.importance_label || "low",
+              importance_label: item.importance_label || "",
               importance_source: item.importance_source || "auto",
               importance_reasons: item.importance_reasons || []
-            };
+            });
             rows.push(row);
             groupRows.push(row);
           });
@@ -308,45 +297,47 @@
           sourceGroups.push({ name: name, method: src.method || "rss", count: groupRows.length });
         });
         rows.sort(compareRowsByTime);
-        sourceGroups.sort(function (a, b) {
-          if (b.count !== a.count) return b.count - a.count;
-          return a.name.localeCompare(b.name, "ko");
-        });
+        sourceGroups = orderedGroups(sourceGroups);
         return rows;
       }
-      function rowsForActiveSource() {
-        if (activeSource === ALL_SOURCES) return currentRows;
-        return sourceRows[activeSource] || [];
+      function rowsForActiveSource() { return activeSource === ALL_SOURCES ? currentRows : (sourceRows[activeSource] || []); }
+      function moveSource(name, direction) {
+        var index = sourceGroups.findIndex(function (s) { return s.name === name; });
+        var next = index + direction;
+        if (index < 0 || next < 0 || next >= sourceGroups.length) return;
+        var moved = sourceGroups.splice(index, 1)[0];
+        sourceGroups.splice(next, 0, moved);
+        saveSourceOrder();
+        renderSourceList();
       }
       function renderSourceList() {
         var total = currentRows.length;
         document.getElementById("source-total-count").textContent = total.toLocaleString() + "건";
-        var allButton = '<button type="button" class="source-item' + (activeSource === ALL_SOURCES ? " active" : "") + '" data-source="' + ALL_SOURCES + '">' +
-          '<span class="source-item-name">전체</span><span class="source-count">' + total.toLocaleString() + '</span></button>';
-        var sourceButtons = sourceGroups.map(function (source) {
+        var allRow = '<div class="source-row"><button type="button" class="source-item' + (activeSource === ALL_SOURCES ? " active" : "") + '" data-source="' + ALL_SOURCES + '"><span class="source-item-name">전체</span><span class="source-count">' + total.toLocaleString() + '</span></button><span></span></div>';
+        var rows = sourceGroups.map(function (source, index) {
           var active = activeSource === source.name;
-          return '<button type="button" class="source-item' + (active ? " active" : "") + '" data-source="' + escapeHtml(source.name) + '">' +
-            '<span class="source-item-name" title="' + escapeHtml(source.name) + '">' + escapeHtml(source.name) + '</span><span class="source-count">' + source.count.toLocaleString() + '</span></button>';
+          return '<div class="source-row"><button type="button" class="source-item' + (active ? " active" : "") + '" data-source="' + escapeHtml(source.name) + '"><span class="source-item-name" title="' + escapeHtml(source.name) + '">' + escapeHtml(source.name) + '</span><span class="source-count">' + source.count.toLocaleString() + '</span></button><span class="source-moves"><button class="source-move" type="button" data-source="' + escapeHtml(source.name) + '" data-move="-1" title="위로"' + (index === 0 ? " disabled" : "") + '>↑</button><button class="source-move" type="button" data-source="' + escapeHtml(source.name) + '" data-move="1" title="아래로"' + (index === sourceGroups.length - 1 ? " disabled" : "") + '>↓</button></span></div>';
         }).join("");
-        document.getElementById("source-list").innerHTML = allButton + sourceButtons;
+        document.getElementById("source-list").innerHTML = allRow + rows;
       }
+      function isMarked(row) { return row.importance_source === "manual" || row.importance_source === "browser"; }
       function importanceControl(row) {
-        var label = row.importance_label || "low";
         var id = row.article_id || "";
-        var title = (row.importance_reasons || []).join(", ") || "중요도 변경";
-        var triggerTitle = isLocalServer() ? title : title + " · 로컬 서버에서 변경 가능";
-        var manualClass = row.importance_source === "manual" ? " manual" : "";
+        var marked = isMarked(row);
+        var label = marked ? row.importance_label : "";
+        var classes = "importance-trigger" + (marked ? " " + row.importance_source : " empty");
+        var badge = marked ? '<span class="importance-badge ' + escapeHtml(label) + '">' + escapeHtml(importanceText(label)) + '</span>' : '';
+        var title = marked ? "중요도 변경" : "중요도 표시";
         var menu = "";
         if (openImportanceId === id) {
-          var options = [["high", "높음"], ["medium", "보통"], ["low", "낮음"], ["exclude", "제외"], ["clear", "초기화"]];
+          var options = [["high", "높음"], ["medium", "보통"], ["low", "낮음"], ["exclude", "제외"], ["clear", "없음"]];
           menu = '<div class="importance-menu" role="menu">' + options.map(function (pair) {
-            var active = row.importance_source === "manual" && row.importance_label === pair[0] ? " active" : "";
+            var active = (marked && row.importance_label === pair[0]) || (!marked && pair[0] === "clear") ? " active" : "";
             var cls = pair[0] === "clear" ? " clear" : "";
-            var disabled = isLocalServer() ? "" : " disabled";
-            return '<button class="importance-option' + cls + active + '" type="button" role="menuitem" data-id="' + escapeHtml(id) + '" data-label="' + pair[0] + '"' + disabled + '>' + pair[1] + '</button>';
+            return '<button class="importance-option' + cls + active + '" type="button" role="menuitem" data-id="' + escapeHtml(id) + '" data-label="' + pair[0] + '">' + pair[1] + '</button>';
           }).join("") + '</div>';
         }
-        return '<div class="importance-cell-inner"><button class="importance-trigger' + manualClass + '" type="button" data-id="' + escapeHtml(id) + '" title="' + escapeHtml(triggerTitle) + '"><span class="importance-badge ' + escapeHtml(label) + '">' + escapeHtml(importanceText(label)) + '</span></button>' + menu + '</div>';
+        return '<div class="importance-cell-inner"><button class="' + classes + '" type="button" data-id="' + escapeHtml(id) + '" title="' + escapeHtml(title) + '">' + badge + '</button>' + menu + '</div>';
       }
       function renderRow(row) {
         return "<tr>" +
@@ -386,7 +377,7 @@
             lastUpdateText = fmtUpdate(data.generated_at) || "";
             var n = document.getElementById("notice");
             if (!isLocalServer()) {
-              document.getElementById("notice-text").innerHTML = "<strong>보기 전용</strong> · 중요도 변경과 저장은 로컬 서버에서 사용할 수 있습니다.";
+              document.getElementById("notice-text").innerHTML = "<strong>보기 전용</strong> · 중요도 표시는 이 브라우저에 저장되고, 학습용 저장은 로컬 서버에서 사용합니다.";
               n.style.display = "flex";
             } else if (data.connected === false && data.note) {
               document.getElementById("notice-text").innerHTML = "<strong>수집 미연결</strong> · " + escapeHtml(data.note);
@@ -397,9 +388,30 @@
             renderFlow();
           });
       }
+      function applyLabelToRows(articleId, label, source) {
+        currentRows.forEach(function (row) {
+          if (row.article_id !== articleId) return;
+          if (label === "clear") { row.importance_source = "auto"; row.importance_label = ""; }
+          else { row.importance_source = source; row.importance_label = label; }
+        });
+        Object.keys(sourceRows).forEach(function (name) { sourceRows[name].forEach(function (row) {
+          if (row.article_id !== articleId) return;
+          if (label === "clear") { row.importance_source = "auto"; row.importance_label = ""; }
+          else { row.importance_source = source; row.importance_label = label; }
+        }); });
+      }
       function saveLabel(articleId, label) {
         var row = currentRows.find(function (r) { return r.article_id === articleId; });
-        if (!row || !isLocalServer()) return;
+        if (!row) return Promise.resolve();
+        if (!isLocalServer()) {
+          if (label === "clear") browserLabels[articleId] = "clear";
+          else browserLabels[articleId] = label;
+          saveJson(BROWSER_LABEL_KEY, browserLabels);
+          applyLabelToRows(articleId, label, "browser");
+          openImportanceId = "";
+          renderRows();
+          return Promise.resolve();
+        }
         return fetch("/api/news/labels", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -407,10 +419,7 @@
         }).then(function (res) {
           if (!res.ok) return res.text().then(function (t) { throw new Error(t || ("HTTP " + res.status)); });
           return res.json();
-        }).then(function () {
-          openImportanceId = "";
-          return loadNews();
-        });
+        }).then(function () { openImportanceId = ""; return loadNews(); });
       }
 
       var refreshBtn = document.getElementById("refresh-btn");
@@ -423,19 +432,14 @@
         refreshBtn.classList.add("loading");
         txt.textContent = "수집 중…";
         fetch("/api/news/refresh", { method: "POST" })
-          .then(function (res) {
-            if (!res.ok) return res.text().then(function (t) { throw new Error(t || ("HTTP " + res.status)); });
-            return res.json();
-          })
+          .then(function (res) { if (!res.ok) return res.text().then(function (t) { throw new Error(t || ("HTTP " + res.status)); }); return res.json(); })
           .then(function () { return loadNews(); })
           .catch(function (e) { alert("새로고침 실패: " + e.message); })
-          .finally(function () {
-            refreshBtn.disabled = false;
-            refreshBtn.classList.remove("loading");
-            txt.textContent = orig;
-          });
+          .finally(function () { refreshBtn.disabled = false; refreshBtn.classList.remove("loading"); txt.textContent = orig; });
       });
       document.getElementById("source-list").addEventListener("click", function (event) {
+        var move = event.target.closest(".source-move");
+        if (move) { moveSource(move.dataset.source, Number(move.dataset.move)); return; }
         var btn = event.target.closest(".source-item");
         if (!btn) return;
         activeSource = btn.dataset.source;
@@ -445,33 +449,16 @@
       document.getElementById("news-table-body").addEventListener("click", function (event) {
         var option = event.target.closest(".importance-option");
         if (option) {
-          if (option.disabled) return;
           option.disabled = true;
-          saveLabel(option.dataset.id, option.dataset.label).catch(function (e) {
-            alert("라벨 저장 실패: " + e.message);
-            option.disabled = false;
-          });
+          saveLabel(option.dataset.id, option.dataset.label).catch(function (e) { alert("라벨 저장 실패: " + e.message); option.disabled = false; });
           return;
         }
         var trigger = event.target.closest(".importance-trigger");
-        if (trigger) {
-          openImportanceId = openImportanceId === trigger.dataset.id ? "" : trigger.dataset.id;
-          renderRows();
-        }
+        if (trigger) { openImportanceId = openImportanceId === trigger.dataset.id ? "" : trigger.dataset.id; renderRows(); }
       });
-      document.addEventListener("click", function (event) {
-        if (!openImportanceId || event.target.closest(".importance-cell")) return;
-        openImportanceId = "";
-        renderRows();
-      });
-      document.addEventListener("keydown", function (event) {
-        if (event.key !== "Escape" || !openImportanceId) return;
-        openImportanceId = "";
-        renderRows();
-      });
-      loadNews().catch(function (e) {
-        document.getElementById("loading").textContent = "데이터 로드 실패: " + e.message;
-      });
+      document.addEventListener("click", function (event) { if (!openImportanceId || event.target.closest(".importance-cell")) return; openImportanceId = ""; renderRows(); });
+      document.addEventListener("keydown", function (event) { if (event.key !== "Escape" || !openImportanceId) return; openImportanceId = ""; renderRows(); });
+      loadNews().catch(function (e) { document.getElementById("loading").textContent = "데이터 로드 실패: " + e.message; });
     </script>
   </body>
 </html>
