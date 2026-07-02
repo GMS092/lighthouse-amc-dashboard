@@ -4,6 +4,11 @@
 
 ## 2026-07-02
 
+### 뉴스플로우 기본 RSS 정리
+- 기본 RSS fallback 목록에서 Google 뉴스 검색 피드들을 제거했습니다.
+- `NEWS_BOT_REPO_TOKEN`이 설정되어 `GMS092/telegram-news-bot` 저장소를 체크아웃할 수 있으면 기존처럼 뉴스봇의 `dynamic_feeds.json` RSS 목록과 `scraper.py` 크롤링 소스를 그대로 사용합니다.
+- 현재 GitHub 연결 권한으로는 `GMS092/telegram-news-bot/dynamic_feeds.json`을 직접 읽을 수 없어, 기본 fallback에는 접근 가능한 DART 공시 RSS만 남겼습니다.
+
 ### 뉴스플로우 통합 테이블
 - 뉴스플로우 탭을 뉴스원별 카드 레이아웃에서 시간순 단일 테이블 레이아웃으로 변경했습니다.
 - 통합 테이블은 시간, 수집 방식(RSS/크롤), 출처, 제목을 한 화면에서 비교할 수 있게 표시하며, 제목을 누르면 원문으로 이동합니다.
