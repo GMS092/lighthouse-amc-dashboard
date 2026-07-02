@@ -192,7 +192,6 @@
         padding: 28px 34px 34px;
       }
 
-
       @media (max-width: 760px) {
         .dashboard { grid-template-columns: 1fr; }
         .sidebar { display: none; }
@@ -312,14 +311,21 @@
       }
 
       /* Market widgets grid final layout */
+      .widget-section,
+      .heatmap-section,
+      .economic-calendar-section {
+        margin-bottom: 22px;
+      }
+
       .market-widgets-grid {
         display: grid;
-        grid-template-columns: minmax(360px, 420px) minmax(420px, 1fr);
+        grid-template-columns: repeat(2, minmax(360px, 420px));
         gap: 18px;
         align-items: stretch;
       }
 
       .economic-calendar-shell,
+      .timeline-shell,
       .heatmap-shell {
         overflow: hidden;
         border: 1px solid var(--line);
@@ -328,8 +334,17 @@
         box-shadow: var(--shadow);
       }
 
-      .economic-calendar-shell {
+      .economic-calendar-shell,
+      .timeline-shell {
         min-height: 550px;
+        width: 100%;
+        max-width: 420px;
+      }
+
+      .economic-calendar-shell .tradingview-widget-container,
+      .timeline-shell .tradingview-widget-container {
+        width: 100%;
+        height: 550px;
       }
 
       .heatmap-shell {
@@ -356,6 +371,11 @@
       @media (max-width: 980px) {
         .market-widgets-grid {
           grid-template-columns: 1fr;
+        }
+
+        .economic-calendar-shell,
+        .timeline-shell {
+          max-width: none;
         }
 
         .heatmap-shell {
@@ -434,7 +454,35 @@
             </div>
           </section>
 
-          <section class="economic-calendar-section" aria-label="시장 위젯">
+          <section class="heatmap-section" aria-label="주식 히트맵">
+            <div class="heatmap-shell">
+              <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/heatmap/stock/" rel="noopener nofollow" target="_blank"><span class="blue-text">Stock Heatmap</span></a><span class="trademark"> by TradingView</span></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                {
+                  "dataSource": "SPX500",
+                  "blockSize": "market_cap_basic",
+                  "blockColor": "change",
+                  "grouping": "sector",
+                  "locale": "en",
+                  "symbolUrl": "",
+                  "colorTheme": "dark",
+                  "exchanges": [],
+                  "hasTopBar": false,
+                  "isDataSetEnabled": false,
+                  "isZoomEnabled": true,
+                  "hasSymbolTooltip": true,
+                  "isMonoSize": false,
+                  "width": "100%",
+                  "height": "100%"
+                }
+                </script>
+              </div>
+            </div>
+          </section>
+
+          <section class="economic-calendar-section" aria-label="시장 일정과 뉴스">
             <div class="market-widgets-grid">
               <div class="economic-calendar-shell" aria-label="경제 캘린더">
                 <div class="tradingview-widget-container">
@@ -454,27 +502,19 @@
                 </div>
               </div>
 
-              <div class="heatmap-shell" aria-label="주식 히트맵">
+              <div class="timeline-shell" aria-label="TradingView 시장 뉴스">
                 <div class="tradingview-widget-container">
                   <div class="tradingview-widget-container__widget"></div>
-                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/heatmap/stock/" rel="noopener nofollow" target="_blank"><span class="blue-text">Stock Heatmap</span></a><span class="trademark"> by TradingView</span></div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                  <div class="tradingview-widget-copyright"><a href="https://kr.tradingview.com/news/top-providers/tradingview/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
                   {
-                    "dataSource": "SPX500",
-                    "blockSize": "market_cap_basic",
-                    "blockColor": "change",
-                    "grouping": "sector",
-                    "locale": "en",
-                    "symbolUrl": "",
+                    "displayMode": "regular",
+                    "feedMode": "all_symbols",
                     "colorTheme": "dark",
-                    "exchanges": [],
-                    "hasTopBar": false,
-                    "isDataSetEnabled": false,
-                    "isZoomEnabled": true,
-                    "hasSymbolTooltip": true,
-                    "isMonoSize": false,
-                    "width": "100%",
-                    "height": "100%"
+                    "isTransparent": false,
+                    "locale": "kr",
+                    "width": 400,
+                    "height": 550
                   }
                   </script>
                 </div>
