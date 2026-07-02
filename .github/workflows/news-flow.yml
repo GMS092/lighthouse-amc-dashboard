@@ -101,7 +101,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/assets _site/data _site/docs
-          cp dashboard.html phase.html news.html research.html weight.html semianalysis.html dramexchange.html semiconductor-engineering.html trendforce.html wccfetch.html a16z-news.html _site/
+          cp dashboard.html phase.html news.html research.html weight.html relative.html semianalysis.html dramexchange.html semiconductor-engineering.html trendforce.html wccfetch.html a16z-news.html _site/
           cp -R assets/. _site/assets/
           cp -R data/. _site/data/
           cp docs/UPDATE_NOTES.md _site/docs/UPDATE_NOTES.md
@@ -121,12 +121,14 @@ jobs:
           node <<'NODE'
           const fs = require('fs');
           const disableRefresh = '<script>(function(){var b=document.getElementById("refresh-btn");if(!b)return;b.disabled=true;b.title="GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신은 자동 수집 작업에서 실행합니다.";var t=b.querySelector(".refresh-text");if(t)t.textContent="자동 수집";})();</script>';
-          const siteFiles = ['dashboard.html','phase.html','weight.html','news.html','research.html','semianalysis.html','dramexchange.html','semiconductor-engineering.html','trendforce.html','wccfetch.html','a16z-news.html'];
+          const siteFiles = ['dashboard.html','phase.html','weight.html','relative.html','news.html','research.html','semianalysis.html','dramexchange.html','semiconductor-engineering.html','trendforce.html','wccfetch.html','a16z-news.html'];
           const navItems = [
             ['dashboard.html', '홈'],
             ['phase.html', '투자의 정석 (동부)'],
             ['weight.html', '전자, 닉스 비중 체크'],
+            ['relative.html', '상대수익률 추이'],
             ['news.html', '뉴스플로우'],
+            ['research.html', '리서치 플로우'],
             ['semianalysis.html', 'SemiAnalysis'],
             ['dramexchange.html', 'DRAMeXchange'],
             ['semiconductor-engineering.html', 'Semiconductor Engineering'],
@@ -160,6 +162,7 @@ jobs:
           patch('_site/news.html', '/api/news', 'data/news-flow.json', true);
           patch('_site/research.html', '/api/news', 'data/news-flow.json', false);
           patch('_site/weight.html', '/api/weight', 'data/weight-check.json', false);
+          patch('_site/relative.html', '/api/relative-return', 'data/relative-return.json', true);
           patch('_site/semianalysis.html', '/api/news', 'data/news-flow.json', false);
           patch('_site/dramexchange.html', '/api/news', 'data/news-flow.json', false);
           patch('_site/semiconductor-engineering.html', '/api/news', 'data/news-flow.json', false);
