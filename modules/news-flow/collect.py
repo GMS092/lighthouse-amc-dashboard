@@ -9,7 +9,7 @@ r"""
   - RSS 확장: TELEGRAM_BOT_DIR 또는 NEWS_FEEDS 로 지정한 dynamic_feeds.json 사용
   - 크롤: 외부 뉴스봇 scraper.py 의 fetch_scraped_sources() 를 재사용
           (봇 저장소가 있을 때만 실행, 없으면 RSS만 수집)
-  ※ Playwright 기반 JS 렌더링 소스(fetch_js_sources)는 이번 단계에서 제외.
+  - 중요도: 제목/출처 기반 자동 점수 + data/news-labels.json 수동 라벨 병합
 
 사용:
     python modules/news-flow/collect.py
@@ -18,6 +18,7 @@ r"""
     TELEGRAM_BOT_DIR=D:\path\to\external-news-bot python modules/news-flow/collect.py
 """
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -35,6 +36,7 @@ import requests
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 MODULE_DIR = Path(__file__).resolve().parent
 OUTPUT_PATH = REPO_ROOT / "data" / "news-flow.json"
+LABELS_PATH = REPO_ROOT / "data" / "news-labels.json"
 
 BOT_DIR = Path(os.environ.get("TELEGRAM_BOT_DIR", str(REPO_ROOT.parent / "external-news-bot")))
 LOCAL_FEEDS_PATH = MODULE_DIR / "feeds.json"
@@ -46,6 +48,30 @@ FEEDS_PATH = Path(os.environ["NEWS_FEEDS"]) if os.environ.get("NEWS_FEEDS") else
 PER_SOURCE = 30            # 뉴스원별 최대 보관 기사 수
 KST = ZoneInfo("Asia/Seoul")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; RSS reader)"}
+
+SOURCE_WEIGHTS = [
+    ("DART", 35, "공시 출처"),
+    ("KRX KIND", 35, "공시 출처"),
+    ("연합인포맥스", 15, "시장 전문 출처"),
+    ("BOK", 15, "정책·매크로 출처"),
+    ("FRB", 15, "정책·매크로 출처"),
+    ("KDI", 12, "정책·매크로 출처"),
+]
+
+KEYWORD_RULES = [
+    (45, "공시·거래 리스크", ["상장폐지", "거래정지", "관리종목", "감사의견", "횡령", "배임", "불성실공시"]),
+    (40, "자본 변동", ["유상증자", "무상증자", "감자", "전환사채", "CB", "BW", "신주인수권", "자사주"]),
+    (38, "M&A", ["인수", "합병", "매각", "M&A", "공개매수", "경영권", "최대주주"]),
+    (35, "실적", ["실적", "영업이익", "매출", "순이익", "어닝", "컨센서스", "잠정"]),
+    (32, "계약·수주", ["수주", "공급계약", "계약 체결", "LOI", "MOU", "공동개발"]),
+    (30, "매크로", ["금리", "환율", "FOMC", "연준", "물가", "CPI", "PCE", "고용", "GDP"]),
+    (28, "정책", ["정책", "규제", "세제", "정부", "금융위", "금감원", "한국은행", "국회"]),
+    (26, "핵심 산업", ["반도체", "HBM", "DRAM", "NAND", "AI", "데이터센터", "전력", "원전", "배터리"]),
+    (22, "시장 가격", ["급등", "급락", "강세", "약세", "사상 최고", "신고가", "하락", "상승"]),
+]
+
+LABEL_SCORES = {"high": 90, "medium": 55, "low": 20, "exclude": 0}
+LABEL_TEXT = {"high": "높음", "medium": "보통", "low": "낮음", "exclude": "제외"}
 
 
 def _decode_feed(raw: bytes, http_ct: str) -> str:
@@ -71,6 +97,90 @@ def _home_of(url: str) -> str:
         return f"{p.scheme}://{p.netloc}" if p.netloc else ""
     except Exception:
         return ""
+
+
+def _article_id(source: str, title: str, url: str) -> str:
+    key = (url or "").strip().lower() or f"{source}|{title}".strip().lower()
+    return hashlib.sha1(key.encode("utf-8", errors="ignore")).hexdigest()[:16]
+
+
+def _label_from_score(score: int) -> str:
+    if score >= 70:
+        return "high"
+    if score >= 35:
+        return "medium"
+    return "low"
+
+
+def classify_importance(source: str, method: str, title: str) -> dict:
+    text = f"{source} {title}".upper()
+    score = 8
+    reasons = []
+
+    for needle, weight, reason in SOURCE_WEIGHTS:
+        if needle.upper() in text:
+            score += weight
+            reasons.append(reason)
+            break
+
+    if method == "crawl":
+        score += 8
+        reasons.append("크롤링 소스")
+
+    for weight, reason, keywords in KEYWORD_RULES:
+        if any(keyword.upper() in text for keyword in keywords):
+            score += weight
+            reasons.append(reason)
+
+    score = min(score, 100)
+    label = _label_from_score(score)
+    return {
+        "score": score,
+        "label": label,
+        "label_text": LABEL_TEXT[label],
+        "reasons": reasons[:4] or ["기본 분류"],
+    }
+
+
+def load_labels() -> dict:
+    if not LABELS_PATH.exists():
+        return {}
+    try:
+        with open(LABELS_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        print(f"  [labels:skip] {e}")
+        return {}
+
+
+def apply_importance(sources: list[dict], labels: dict) -> None:
+    for source in sources:
+        source_name = source.get("name") or ""
+        method = source.get("method") or "rss"
+        for item in source.get("items", []):
+            title = item.get("title") or ""
+            url = item.get("url") or ""
+            aid = _article_id(source_name, title, url)
+            auto = classify_importance(source_name, method, title)
+            manual = labels.get(aid) if isinstance(labels.get(aid), dict) else None
+            item["article_id"] = aid
+            item["auto_importance_score"] = auto["score"]
+            item["auto_importance_label"] = auto["label"]
+            item["auto_importance_reasons"] = auto["reasons"]
+            item["importance_score"] = auto["score"]
+            item["importance_label"] = auto["label"]
+            item["importance_label_text"] = auto["label_text"]
+            item["importance_reasons"] = auto["reasons"]
+            item["importance_source"] = "auto"
+            if manual and manual.get("label") in LABEL_SCORES:
+                label = manual["label"]
+                item["importance_score"] = LABEL_SCORES[label]
+                item["importance_label"] = label
+                item["importance_label_text"] = LABEL_TEXT[label]
+                item["importance_reasons"] = [manual.get("reason") or "사용자 라벨"]
+                item["importance_source"] = "manual"
+                item["manual_label_updated_at"] = manual.get("updated_at")
 
 
 def fetch_rss_source(feed: dict) -> dict:
@@ -174,6 +284,9 @@ def main() -> int:
     if not args.no_crawl:
         sources += collect_crawl()
 
+    labels = load_labels()
+    apply_importance(sources, labels)
+
     total = sum(len(s["items"]) for s in sources)
     payload = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
@@ -181,6 +294,7 @@ def main() -> int:
         "source_count": len(sources),
         "article_count": total,
         "feed_source": "external-news-bot" if using_bot_feeds else "dashboard-default",
+        "labels_count": len(labels),
         "sources": sources,
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
