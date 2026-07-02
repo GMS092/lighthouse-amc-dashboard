@@ -17,8 +17,6 @@
         --button-text: #ffffff;
         --shadow: 0 20px 50px rgba(28, 39, 49, 0.08);
         --link: #1565c0;
-        --rss: #e65100;
-        --rss-bg: #fff3e0;
         --high: #b42318;
         --high-bg: #fff0ed;
         --medium: #8a6100;
@@ -40,8 +38,6 @@
         --button-text: #111417;
         --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
         --link: #90caf9;
-        --rss: #ffb74d;
-        --rss-bg: #3d2807;
         --high: #ffb4a8;
         --high-bg: #4a1712;
         --medium: #f4d36a;
@@ -71,15 +67,20 @@
       .page-title { margin: 0; font-size: 20px; font-weight: 800; }
       .status { color: var(--muted); font-size: 13px; }
       .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
-      .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 20px; }
+      .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 18px; }
       .notice strong { color: var(--text); }
-      .source-filter { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
-      .source-pill { height: 28px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); padding: 0 10px; font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; }
-      .source-pill:hover { background: var(--surface-soft); color: var(--text); }
-      .source-pill.active { background: var(--button-bg); color: var(--button-text); border-color: var(--button-bg); }
-      .news-table-shell { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
-      .news-table-scroll { max-height: calc(100vh - 230px); min-height: 360px; overflow: auto; }
-      .news-table { width: 100%; min-width: 940px; border-collapse: collapse; }
+      .source-tabs-wrap { border: 1px solid var(--line); border-radius: 8px 8px 0 0; background: var(--surface); overflow-x: auto; }
+      .source-tabs { display: flex; align-items: stretch; min-width: max-content; }
+      .source-tab { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; border: 0; border-right: 1px solid var(--line); background: transparent; color: var(--muted); padding: 0 13px; font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; white-space: nowrap; }
+      .source-tab:hover { background: var(--surface-soft); color: var(--text); }
+      .source-tab.active { background: var(--button-bg); color: var(--button-text); }
+      .source-tab-count { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 20px; border-radius: 999px; background: var(--surface-soft); color: var(--muted); padding: 0 7px; font-size: 11px; font-weight: 850; }
+      .source-tab.active .source-tab-count { background: rgba(255,255,255,0.18); color: currentColor; }
+      .source-panel-meta { display: flex; align-items: center; justify-content: space-between; min-height: 42px; border: 1px solid var(--line); border-top: 0; background: var(--surface); padding: 0 14px; color: var(--muted); font-size: 12px; }
+      .source-panel-title { color: var(--text); font-weight: 850; }
+      .news-table-shell { border: 1px solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+      .news-table-scroll { max-height: calc(100vh - 270px); min-height: 360px; overflow: auto; }
+      .news-table { width: 100%; min-width: 760px; border-collapse: collapse; }
       .news-table th { position: sticky; top: 0; z-index: 1; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 800; text-align: left; white-space: nowrap; }
       .news-table th, .news-table td { padding: 0 12px; }
       .news-table td { height: 48px; border-bottom: 1px solid var(--line); color: var(--text); font-size: 13px; vertical-align: middle; }
@@ -87,10 +88,8 @@
       .news-table tbody tr:hover td { background: var(--surface-soft); }
       .col-time { width: 110px; }
       .col-importance { width: 112px; }
-      .col-source { width: 190px; }
-      .col-title { min-width: 440px; }
+      .col-title { min-width: 480px; }
       .news-time { color: var(--muted); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-      .source-name { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 210px; }
       .news-title { display: block; color: var(--text); font-size: 13.5px; font-weight: 700; line-height: 1.35; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
       .news-title:hover { color: var(--link); text-decoration: underline; }
       .importance-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 22px; font-size: 11px; font-weight: 800; padding: 0 8px; border-radius: 999px; white-space: nowrap; }
@@ -101,7 +100,7 @@
       .importance-wrap { display: inline-flex; align-items: center; gap: 6px; }
       .manual-mark { color: var(--muted); font-size: 11px; font-weight: 800; }
       .loading, .empty-msg { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
-      @media (max-width: 760px) { .dashboard { grid-template-columns: 1fr; } .sidebar { display: none; } .topbar { min-height: 68px; padding: 0 20px; } .workspace { padding: 20px; } .status { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .theme-toggle { left: 18px; bottom: 18px; } .news-table-scroll { max-height: calc(100vh - 210px); } }
+      @media (max-width: 760px) { .dashboard { grid-template-columns: 1fr; } .sidebar { display: none; } .topbar { min-height: 68px; padding: 0 20px; } .workspace { padding: 20px; } .status { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .theme-toggle { left: 18px; bottom: 18px; } .source-panel-meta { align-items: flex-start; flex-direction: column; gap: 3px; padding: 9px 14px; } .news-table-scroll { max-height: calc(100vh - 250px); } }
     </style>
   </head>
   <body>
@@ -129,19 +128,24 @@
         <section class="workspace" aria-label="리서치 플로우 본문">
           <div class="notice">
             <span aria-hidden="true">🛈</span>
-            <span><strong>리서치·정책·큐레이션</strong> 성격의 출처만 따로 모아 봅니다.</span>
+            <span><strong>출처원별 탭</strong>으로 리서치·정책·큐레이션 항목을 나눠 봅니다.</span>
           </div>
-          <div class="source-filter" id="source-filter"></div>
+          <div class="source-tabs-wrap">
+            <div class="source-tabs" id="source-tabs" role="tablist" aria-label="리서치 출처"></div>
+          </div>
+          <div class="source-panel-meta" id="source-panel-meta" role="status">
+            <span class="source-panel-title" id="source-panel-title">출처 선택</span>
+            <span id="source-panel-count">0건</span>
+          </div>
           <div class="news-table-shell">
             <div class="loading" id="loading">리서치 항목을 불러오는 중입니다…</div>
-            <div class="empty-msg" id="empty-msg" style="display:none">표시할 항목이 없습니다.</div>
+            <div class="empty-msg" id="empty-msg" style="display:none">이 출처에는 표시할 항목이 없습니다.</div>
             <div class="news-table-scroll" id="news-table-scroll" style="display:none">
               <table class="news-table">
                 <thead>
                   <tr>
                     <th class="col-time">시간</th>
                     <th class="col-importance">중요도</th>
-                    <th class="col-source">출처</th>
                     <th class="col-title">제목</th>
                   </tr>
                 </thead>
@@ -178,8 +182,8 @@
         "DRAMeXchange", "Dataroma", "FRB Working Papers", "메르의 블로그", "Statista",
         "Visual Capitalist", "KDI 국내연구자료", "IT FIND"
       ];
-      var activeSource = "all";
-      var allRows = [];
+      var activeSource = RESEARCH_SOURCES[0];
+      var rowsBySource = {};
 
       function escapeHtml(s) {
         return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
@@ -206,18 +210,22 @@
         var manual = row.importance_source === "manual" ? '<span class="manual-mark">수동</span>' : "";
         return '<span class="importance-wrap" title="' + escapeHtml(title) + '"><span class="importance-badge ' + escapeHtml(label) + '">' + escapeHtml(importanceText(label)) + "</span>" + manual + "</span>";
       }
-      function renderFilters() {
-        var names = ["all"].concat(RESEARCH_SOURCES.filter(function (name) {
-          return allRows.some(function (row) { return row.source === name; });
-        }));
-        document.getElementById("source-filter").innerHTML = names.map(function (name) {
-          var label = name === "all" ? "전체" : name;
-          return '<button type="button" class="source-pill' + (activeSource === name ? " active" : "") + '" data-source="' + escapeHtml(name) + '">' + escapeHtml(label) + '</button>';
+      function tabId(name) {
+        return "tab-" + name.replace(/[^a-zA-Z0-9가-힣]+/g, "-");
+      }
+      function renderTabs() {
+        document.getElementById("source-tabs").innerHTML = RESEARCH_SOURCES.map(function (name) {
+          var rows = rowsBySource[name] || [];
+          var active = activeSource === name;
+          return '<button type="button" role="tab" id="' + escapeHtml(tabId(name)) + '" class="source-tab' + (active ? " active" : "") + '" aria-selected="' + (active ? "true" : "false") + '" data-source="' + escapeHtml(name) + '">' +
+            '<span>' + escapeHtml(name) + '</span><span class="source-tab-count">' + rows.length + '</span></button>';
         }).join("");
       }
       function renderRows() {
-        var rows = activeSource === "all" ? allRows : allRows.filter(function (row) { return row.source === activeSource; });
+        var rows = rowsBySource[activeSource] || [];
         var body = document.getElementById("news-table-body");
+        document.getElementById("source-panel-title").textContent = activeSource;
+        document.getElementById("source-panel-count").textContent = rows.length.toLocaleString() + "건";
         document.getElementById("update-label").textContent = rows.length.toLocaleString() + "건 · " + document.getElementById("update-label").dataset.update;
         if (!rows.length) {
           document.getElementById("empty-msg").style.display = "block";
@@ -231,18 +239,18 @@
           return "<tr>" +
             '<td><span class="news-time">' + escapeHtml(fmtTime(row.published) || "-") + "</span></td>" +
             "<td>" + importanceLabel(row) + "</td>" +
-            '<td><div class="source-name" title="' + escapeHtml(row.source) + '">' + escapeHtml(row.source) + "</div></td>" +
             '<td><a class="news-title" href="' + escapeHtml(row.url) + '" target="_blank" rel="noopener noreferrer" title="' + escapeHtml(row.title) + '">' + escapeHtml(row.title) + "</a></td>" +
             "</tr>";
         }).join("");
       }
       function flattenResearch(sources) {
+        rowsBySource = {};
+        RESEARCH_SOURCES.forEach(function (name) { rowsBySource[name] = []; });
         var wanted = new Set(RESEARCH_SOURCES);
-        var rows = [];
         (sources || []).forEach(function (src) {
           if (!wanted.has(src.name)) return;
           (src.items || []).forEach(function (item) {
-            rows.push({
+            rowsBySource[src.name].push({
               source: src.name,
               title: item.title || "(제목 없음)",
               url: item.url || "#",
@@ -254,28 +262,45 @@
             });
           });
         });
-        rows.sort(function (a, b) {
-          return String(b.published || "").localeCompare(String(a.published || ""));
+        Object.keys(rowsBySource).forEach(function (name) {
+          rowsBySource[name].sort(function (a, b) {
+            return String(b.published || "").localeCompare(String(a.published || ""));
+          });
         });
-        return rows;
       }
       function loadResearch() {
         return fetch(dataUrl("/api/news", "data/news-flow.json"))
           .then(function (r) { return r.json(); })
           .then(function (data) {
             document.getElementById("loading").style.display = "none";
-            allRows = flattenResearch(data.sources || []);
+            flattenResearch(data.sources || []);
             document.getElementById("update-label").dataset.update = fmtUpdate(data.generated_at) || "";
-            renderFilters();
+            var firstWithRows = RESEARCH_SOURCES.find(function (name) { return (rowsBySource[name] || []).length > 0; });
+            activeSource = firstWithRows || RESEARCH_SOURCES[0];
+            renderTabs();
             renderRows();
           });
       }
-      document.getElementById("source-filter").addEventListener("click", function (event) {
-        var btn = event.target.closest(".source-pill");
+      document.getElementById("source-tabs").addEventListener("click", function (event) {
+        var btn = event.target.closest(".source-tab");
         if (!btn) return;
         activeSource = btn.dataset.source;
-        renderFilters();
+        renderTabs();
         renderRows();
+      });
+      document.getElementById("source-tabs").addEventListener("keydown", function (event) {
+        if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+        var current = RESEARCH_SOURCES.indexOf(activeSource);
+        if (current === -1) return;
+        event.preventDefault();
+        var next = event.key === "ArrowRight" ? current + 1 : current - 1;
+        if (next < 0) next = RESEARCH_SOURCES.length - 1;
+        if (next >= RESEARCH_SOURCES.length) next = 0;
+        activeSource = RESEARCH_SOURCES[next];
+        renderTabs();
+        renderRows();
+        var el = document.getElementById(tabId(activeSource));
+        if (el) el.focus();
       });
       loadResearch().catch(function (e) {
         document.getElementById("loading").textContent = "데이터 로드 실패: " + e.message;
