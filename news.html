@@ -21,6 +21,14 @@
         --rss-bg: #fff3e0;
         --crawl: #2e7d32;
         --crawl-bg: #e8f5e9;
+        --high: #b42318;
+        --high-bg: #fff0ed;
+        --medium: #8a6100;
+        --medium-bg: #fff7d6;
+        --low: #286140;
+        --low-bg: #e8f6ee;
+        --exclude: #59636e;
+        --exclude-bg: #edf1f4;
       }
 
       body.theme-dark {
@@ -39,6 +47,14 @@
         --rss-bg: #3d2807;
         --crawl: #a5d6a7;
         --crawl-bg: #173a1f;
+        --high: #ffb4a8;
+        --high-bg: #4a1712;
+        --medium: #f4d36a;
+        --medium-bg: #3d3108;
+        --low: #99d6ad;
+        --low-bg: #173522;
+        --exclude: #b9c1c9;
+        --exclude-bg: #2a3036;
       }
 
       * { box-sizing: border-box; }
@@ -53,59 +69,27 @@
       }
 
       .dashboard { display: grid; min-height: 100vh; grid-template-columns: 248px minmax(0, 1fr); }
-
-      .sidebar {
-        display: flex; flex-direction: column; gap: 28px;
-        border-right: 1px solid var(--line); background: var(--surface);
-        padding: 28px 22px 88px; transition: background 180ms ease, border-color 180ms ease;
-      }
+      .sidebar { display: flex; flex-direction: column; gap: 28px; border-right: 1px solid var(--line); background: var(--surface); padding: 28px 22px 88px; transition: background 180ms ease, border-color 180ms ease; }
       .brand { display: flex; align-items: center; gap: 12px; min-height: 40px; }
-      .brand-logo {
-        flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%;
-        object-fit: cover; object-position: 50% 47%;
-        box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(0, 0, 0, 0.16);
-      }
+      .brand-logo { flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%; object-fit: cover; object-position: 50% 47%; box-shadow: 0 0 0 1px var(--line), 0 8px 22px rgba(0, 0, 0, 0.16); }
       .brand-name { font-size: 16px; font-weight: 750; }
       .nav { display: grid; gap: 8px; }
-      .nav-item {
-        display: flex; align-items: center; gap: 10px; min-height: 42px;
-        border-radius: 8px; padding: 0 12px; color: var(--muted);
-        font-size: 14px; text-decoration: none;
-      }
+      .nav-item { display: flex; align-items: center; gap: 10px; min-height: 42px; border-radius: 8px; padding: 0 12px; color: var(--muted); font-size: 14px; text-decoration: none; }
       .nav-item:hover { background: var(--surface-soft); color: var(--text); }
       .nav-item.active { background: var(--surface-soft); color: var(--text); font-weight: 700; }
       .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
 
-      .theme-toggle {
-        position: fixed; left: 22px; bottom: 22px;
-        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-        min-width: 104px; height: 42px; border: 0; border-radius: 8px;
-        background: var(--button-bg); color: var(--button-text); box-shadow: var(--shadow);
-        font: inherit; font-size: 14px; font-weight: 750; cursor: pointer;
-        transition: background 180ms ease, color 180ms ease, transform 160ms ease;
-      }
+      .theme-toggle { position: fixed; left: 22px; bottom: 22px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 104px; height: 42px; border: 0; border-radius: 8px; background: var(--button-bg); color: var(--button-text); box-shadow: var(--shadow); font: inherit; font-size: 14px; font-weight: 750; cursor: pointer; transition: background 180ms ease, color 180ms ease, transform 160ms ease; }
       .theme-toggle:hover { transform: translateY(-1px); }
       .theme-toggle:focus-visible { outline: 3px solid #4c9ffe; outline-offset: 3px; }
 
       .main { display: flex; min-width: 0; flex-direction: column; }
-      .topbar {
-        display: flex; align-items: center; justify-content: space-between;
-        min-height: 76px; border-bottom: 1px solid var(--line); background: var(--surface);
-        padding: 0 34px; transition: background 180ms ease, border-color 180ms ease;
-      }
+      .topbar { display: flex; align-items: center; justify-content: space-between; min-height: 76px; border-bottom: 1px solid var(--line); background: var(--surface); padding: 0 34px; transition: background 180ms ease, border-color 180ms ease; }
       .title-brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
       .page-title { margin: 0; font-size: 20px; font-weight: 800; }
       .status { color: var(--muted); font-size: 13px; }
-
       .topbar-actions { display: flex; align-items: center; gap: 14px; }
-      .refresh-btn {
-        display: inline-flex; align-items: center; gap: 6px;
-        height: 38px; padding: 0 14px;
-        border: 1px solid var(--line); border-radius: 8px;
-        background: var(--surface); color: var(--text);
-        font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
-        transition: background 160ms ease, opacity 160ms ease;
-      }
+      .refresh-btn { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; transition: background 160ms ease, opacity 160ms ease; }
       .refresh-btn:hover { background: var(--surface-soft); }
       .refresh-btn:disabled { opacity: 0.6; cursor: default; }
       .refresh-btn:focus-visible { outline: 2px solid #4c9ffe; outline-offset: 2px; }
@@ -114,98 +98,49 @@
       @keyframes refresh-spin { to { transform: rotate(360deg); } }
 
       .workspace { display: block; flex: 1; padding: 28px 34px 34px; }
-
-      .notice {
-        display: flex; align-items: center; gap: 10px;
-        border: 1px dashed var(--line); border-radius: 10px;
-        background: var(--surface-soft); color: var(--muted);
-        padding: 12px 16px; font-size: 13px; margin-bottom: 20px;
-      }
+      .notice { display: flex; align-items: center; gap: 10px; border: 1px dashed var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--muted); padding: 12px 16px; font-size: 13px; margin-bottom: 20px; }
       .notice strong { color: var(--text); }
 
-      .news-table-shell {
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: var(--surface);
-        box-shadow: var(--shadow);
-        overflow: hidden;
-      }
-
-      .news-table-scroll {
-        max-height: calc(100vh - 180px);
-        min-height: 360px;
-        overflow: auto;
-      }
-
-      .news-table {
-        width: 100%;
-        min-width: 920px;
-        border-collapse: collapse;
-      }
-
-      .news-table th {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        height: 42px;
-        border-bottom: 1px solid var(--line);
-        background: var(--surface-soft);
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 800;
-        text-align: left;
-        white-space: nowrap;
-      }
-
-      .news-table th,
-      .news-table td {
-        padding: 0 14px;
-      }
-
-      .news-table td {
-        height: 46px;
-        border-bottom: 1px solid var(--line);
-        color: var(--text);
-        font-size: 13px;
-        vertical-align: middle;
-      }
-
+      .news-table-shell { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+      .news-table-scroll { max-height: calc(100vh - 180px); min-height: 360px; overflow: auto; }
+      .news-table { width: 100%; min-width: 1180px; border-collapse: collapse; }
+      .news-table th { position: sticky; top: 0; z-index: 1; height: 42px; border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 800; text-align: left; white-space: nowrap; }
+      .news-table th, .news-table td { padding: 0 12px; }
+      .news-table td { height: 48px; border-bottom: 1px solid var(--line); color: var(--text); font-size: 13px; vertical-align: middle; }
       .news-table tbody tr:last-child td { border-bottom: 0; }
       .news-table tbody tr:hover td { background: var(--surface-soft); }
 
-      .col-time { width: 118px; }
+      .col-time { width: 110px; }
+      .col-importance { width: 112px; }
       .col-method { width: 76px; }
-      .col-source { width: 190px; }
-      .col-title { min-width: 420px; }
+      .col-source { width: 180px; }
+      .col-title { min-width: 360px; }
+      .col-label { width: 236px; }
 
       .news-time { color: var(--muted); font-size: 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-      .source-name { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 210px; }
-      .news-title {
-        display: block;
-        color: var(--text);
-        font-size: 13.5px;
-        font-weight: 700;
-        line-height: 1.35;
-        text-decoration: none;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
+      .source-name { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px; }
+      .news-title { display: block; color: var(--text); font-size: 13.5px; font-weight: 700; line-height: 1.35; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
       .news-title:hover { color: var(--link); text-decoration: underline; }
 
-      .method-badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 44px;
-        height: 22px;
-        font-size: 11px;
-        font-weight: 800;
-        padding: 0 8px;
-        border-radius: 999px;
-      }
+      .method-badge, .importance-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 22px; font-size: 11px; font-weight: 800; padding: 0 8px; border-radius: 999px; white-space: nowrap; }
       .method-badge.rss { color: var(--rss); background: var(--rss-bg); }
       .method-badge.crawl { color: var(--crawl); background: var(--crawl-bg); }
+      .importance-badge.high { color: var(--high); background: var(--high-bg); }
+      .importance-badge.medium { color: var(--medium); background: var(--medium-bg); }
+      .importance-badge.low { color: var(--low); background: var(--low-bg); }
+      .importance-badge.exclude { color: var(--exclude); background: var(--exclude-bg); }
+      .importance-wrap { display: inline-flex; align-items: center; gap: 6px; }
+      .manual-mark { color: var(--muted); font-size: 11px; font-weight: 800; }
+
+      .label-actions { display: inline-flex; align-items: center; gap: 4px; }
+      .label-btn { height: 24px; min-width: 32px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--muted); font: inherit; font-size: 11px; font-weight: 800; cursor: pointer; }
+      .label-btn:hover { background: var(--surface-soft); color: var(--text); }
+      .label-btn.active { color: var(--text); border-color: currentColor; }
+      .label-btn:disabled { opacity: 0.45; cursor: default; }
+      .label-btn.high { color: var(--high); }
+      .label-btn.medium { color: var(--medium); }
+      .label-btn.low { color: var(--low); }
+      .label-btn.exclude { color: var(--exclude); }
 
       .loading, .empty-msg { padding: 48px; text-align: center; color: var(--muted); font-size: 14px; }
 
@@ -238,24 +173,17 @@
 
       <main class="main">
         <header class="topbar">
-          <div class="title-brand">
-            <h1 class="page-title">뉴스플로우</h1>
-          </div>
+          <div class="title-brand"><h1 class="page-title">뉴스플로우</h1></div>
           <div class="topbar-actions">
             <span class="status" id="update-label">불러오는 중…</span>
-            <button class="refresh-btn" id="refresh-btn" type="button"
-                    title="RSS·크롤링으로 뉴스를 다시 수집합니다 (수십 초 소요)">
+            <button class="refresh-btn" id="refresh-btn" type="button" title="RSS·크롤링으로 뉴스를 다시 수집합니다 (수십 초 소요)">
               <span class="refresh-icon" aria-hidden="true">⟳</span><span class="refresh-text">새로고침</span>
             </button>
           </div>
         </header>
 
         <section class="workspace" aria-label="뉴스플로우 본문">
-          <div class="notice" id="notice" style="display:none">
-            <span aria-hidden="true">🛈</span>
-            <span id="notice-text"></span>
-          </div>
-
+          <div class="notice" id="notice" style="display:none"><span aria-hidden="true">🛈</span><span id="notice-text"></span></div>
           <div class="news-table-shell">
             <div class="loading" id="loading">뉴스를 불러오는 중입니다…</div>
             <div class="empty-msg" id="empty-msg" style="display:none">표시할 뉴스가 없습니다.</div>
@@ -264,9 +192,11 @@
                 <thead>
                   <tr>
                     <th class="col-time">시간</th>
+                    <th class="col-importance">중요도</th>
                     <th class="col-method">방식</th>
                     <th class="col-source">출처</th>
                     <th class="col-title">제목</th>
+                    <th class="col-label">라벨</th>
                   </tr>
                 </thead>
                 <tbody id="news-table-body"></tbody>
@@ -278,8 +208,7 @@
     </div>
 
     <button class="theme-toggle" type="button" aria-label="흑백 테마 전환">
-      <span class="theme-icon" aria-hidden="true">◐</span>
-      <span class="theme-label">흑</span>
+      <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">흑</span>
     </button>
 
     <script>
@@ -298,105 +227,142 @@
         });
       })();
 
+      var currentRows = [];
+
       function escapeHtml(s) {
         return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
           return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
         });
       }
-
-      function isLocalServer() {
-        return location.hostname === "127.0.0.1" || location.hostname === "localhost";
-      }
-
-      function dataUrl(apiPath, staticPath) {
-        return isLocalServer() ? apiPath : staticPath;
-      }
-
+      function isLocalServer() { return location.hostname === "127.0.0.1" || location.hostname === "localhost"; }
+      function dataUrl(apiPath, staticPath) { return isLocalServer() ? apiPath : staticPath; }
       function setupRefreshAvailability(button) {
         if (!button || isLocalServer()) return;
         button.disabled = true;
-        button.title = "GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신은 자동 수집 작업에서 실행합니다.";
+        button.title = "GitHub Pages에서는 데이터 스냅샷을 표시합니다. 데이터 갱신과 라벨 저장은 로컬 서버에서 실행합니다.";
         var txt = button.querySelector(".refresh-text");
         if (txt) txt.textContent = "자동 수집";
       }
-
       function fmtTime(iso) {
         if (!iso) return "";
         var m = String(iso).match(/(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
         return m ? m[2] + "-" + m[3] + " " + m[4] + ":" + m[5] : "";
       }
-
       function fmtUpdate(iso) {
         var t = fmtTime(iso);
         return t ? "업데이트 " + iso.slice(0, 4) + "-" + t : "";
       }
-
       function methodLabel(method) {
         if (method === "crawl") return '<span class="method-badge crawl">크롤</span>';
         return '<span class="method-badge rss">RSS</span>';
       }
-
+      function importanceText(label) {
+        return { high: "높음", medium: "보통", low: "낮음", exclude: "제외" }[label] || "낮음";
+      }
+      function importanceLabel(row) {
+        var label = row.importance_label || "low";
+        var title = (row.importance_reasons || []).join(", ");
+        var manual = row.importance_source === "manual" ? '<span class="manual-mark">수동</span>' : "";
+        return '<span class="importance-wrap" title="' + escapeHtml(title) + '"><span class="importance-badge ' + escapeHtml(label) + '">' + escapeHtml(importanceText(label)) + "</span>" + manual + "</span>";
+      }
+      function labelButtons(row) {
+        var disabled = isLocalServer() ? "" : " disabled";
+        var labels = [
+          ["high", "높음"], ["medium", "보통"], ["low", "낮음"], ["exclude", "제외"], ["clear", "초기화"]
+        ];
+        return '<div class="label-actions">' + labels.map(function (pair) {
+          var active = row.importance_source === "manual" && row.importance_label === pair[0] ? " active" : "";
+          var cls = pair[0] === "clear" ? "" : " " + pair[0];
+          return '<button class="label-btn' + cls + active + '" type="button" data-id="' + escapeHtml(row.article_id || "") + '" data-label="' + pair[0] + '"' + disabled + '>' + pair[1] + '</button>';
+        }).join("") + "</div>";
+      }
       function flattenSources(sources) {
         var rows = [];
         (sources || []).forEach(function (src) {
           (src.items || []).forEach(function (item) {
             rows.push({
+              article_id: item.article_id || "",
               source: src.name || "-",
               method: src.method || "rss",
               title: item.title || "(제목 없음)",
               url: item.url || "#",
-              published: item.published || ""
+              published: item.published || "",
+              importance_score: item.importance_score || 0,
+              importance_label: item.importance_label || "low",
+              importance_source: item.importance_source || "auto",
+              importance_reasons: item.importance_reasons || []
             });
           });
         });
         rows.sort(function (a, b) {
+          var byImportance = (b.importance_score || 0) - (a.importance_score || 0);
+          if (byImportance) return byImportance;
           return String(b.published || "").localeCompare(String(a.published || ""));
         });
         return rows;
       }
-
       function renderRow(row) {
-        return (
-          "<tr>" +
+        return "<tr>" +
           '<td><span class="news-time">' + escapeHtml(fmtTime(row.published) || "-") + "</span></td>" +
+          "<td>" + importanceLabel(row) + "</td>" +
           "<td>" + methodLabel(row.method) + "</td>" +
           '<td><div class="source-name" title="' + escapeHtml(row.source) + '">' + escapeHtml(row.source) + "</div></td>" +
           '<td><a class="news-title" href="' + escapeHtml(row.url) + '" target="_blank" rel="noopener noreferrer" title="' + escapeHtml(row.title) + '">' + escapeHtml(row.title) + "</a></td>" +
-          "</tr>"
-        );
+          "<td>" + labelButtons(row) + "</td>" +
+          "</tr>";
       }
-
+      function renderRows(rows) {
+        document.getElementById("news-table-body").innerHTML = rows.map(renderRow).join("");
+      }
       function loadNews() {
         return fetch(dataUrl("/api/news", "data/news-flow.json"))
           .then(function (r) { return r.json(); })
           .then(function (data) {
             document.getElementById("loading").style.display = "none";
-            var rows = flattenSources(data.sources || []);
-            var meta = data.article_count != null
-              ? data.source_count + "개 소스 · " + rows.length.toLocaleString() + "건 · "
-              : "";
+            currentRows = flattenSources(data.sources || []);
+            var meta = data.article_count != null ? data.source_count + "개 소스 · " + currentRows.length.toLocaleString() + "건 · " : "";
             document.getElementById("update-label").textContent = meta + (fmtUpdate(data.generated_at) || "");
-
             var n = document.getElementById("notice");
-            if (data.connected === false && data.note) {
-              document.getElementById("notice-text").innerHTML =
-                "<strong>수집 미연결</strong> · " + escapeHtml(data.note);
+            if (!isLocalServer()) {
+              document.getElementById("notice-text").innerHTML = "<strong>보기 전용</strong> · 중요도 라벨 저장은 로컬 서버에서 사용할 수 있습니다.";
+              n.style.display = "flex";
+            } else if (data.connected === false && data.note) {
+              document.getElementById("notice-text").innerHTML = "<strong>수집 미연결</strong> · " + escapeHtml(data.note);
               n.style.display = "flex";
             } else {
               n.style.display = "none";
             }
-
-            if (!rows.length) {
+            if (!currentRows.length) {
               document.getElementById("empty-msg").style.display = "block";
               document.getElementById("news-table-scroll").style.display = "none";
               document.getElementById("news-table-body").innerHTML = "";
               return;
             }
-
             document.getElementById("empty-msg").style.display = "none";
             document.getElementById("news-table-scroll").style.display = "block";
-            document.getElementById("news-table-body").innerHTML = rows.map(renderRow).join("");
+            renderRows(currentRows);
           });
+      }
+      function saveLabel(articleId, label) {
+        var row = currentRows.find(function (r) { return r.article_id === articleId; });
+        if (!row || !isLocalServer()) return;
+        return fetch("/api/news/labels", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            article_id: articleId,
+            label: label,
+            title: row.title,
+            url: row.url,
+            source: row.source,
+            reason: label === "clear" ? "" : "사용자 라벨"
+          })
+        }).then(function (res) {
+          if (!res.ok) return res.text().then(function (t) { throw new Error(t || ("HTTP " + res.status)); });
+          return res.json();
+        }).then(function () {
+          return loadNews();
+        });
       }
 
       var refreshBtn = document.getElementById("refresh-btn");
@@ -421,9 +387,17 @@
             txt.textContent = orig;
           });
       });
-
+      document.getElementById("news-table-body").addEventListener("click", function (event) {
+        var btn = event.target.closest(".label-btn");
+        if (!btn || btn.disabled) return;
+        btn.disabled = true;
+        saveLabel(btn.dataset.id, btn.dataset.label).catch(function (e) {
+          alert("라벨 저장 실패: " + e.message);
+          btn.disabled = false;
+        });
+      });
       loadNews().catch(function (e) {
-        document.getElementById("loading").textContent = "⚠️ 데이터 로드 실패: " + e.message;
+        document.getElementById("loading").textContent = "데이터 로드 실패: " + e.message;
       });
     </script>
   </body>
