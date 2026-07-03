@@ -137,7 +137,7 @@
             <span>가로: <b>KOSPI 대비 1개월</b> · 세로: <b>3개월</b> 상대수익률(%)</span>
             <span>우상단=<b>동반 강세</b> · 좌하단=<b>동반 약세</b></span>
             <span>선: 과거→최근 · <b>화살표=최근</b></span>
-            <span>라벨은 좌/우 리더선으로 분리(겹침 방지)</span>
+            <span>라벨: 화살표 옆 표시 · 겹치는 것만 리더선(꼬리표)</span>
           </div>
           <div class="chart-wrap">
             <div class="loading" id="loading">데이터를 불러오는 중입니다…</div>
@@ -295,13 +295,56 @@
           ends.push({ name: s.name, x: end[0], y: end[1], color: color, strong: strong });
         });
 
-        // 라벨: 좌/우 여백에 세로 정렬 + 리더선 (겹침 방지)
+        // 라벨: 겹치지 않는 업종은 화살표 옆에 바로, 겹치는 것만 리더선으로 여백에 뺌
+        var LH = 15;
+        function labelW(e) { return e.name.length * (e.strong ? 12.5 : 11) + 6; }
+        // 국소 밀집도(가까운 이웃 수)가 낮은(고립된) 것부터 인라인 배치 우선권
+        ends.forEach(function (e) {
+          e.nn = 0;
+          ends.forEach(function (o) { if (o !== e && Math.hypot(o.x - e.x, o.y - e.y) < 55) e.nn++; });
+        });
+        var placedBoxes = [];
+        function hitsBox(r) {
+          for (var i = 0; i < placedBoxes.length; i++) {
+            var p = placedBoxes[i];
+            if (r.x0 < p.x1 && r.x1 > p.x0 && r.y0 < p.y1 && r.y1 > p.y0) return true;
+          }
+          return false;
+        }
+        function coversPoint(r, self) {
+          for (var i = 0; i < ends.length; i++) {
+            var o = ends[i]; if (o === self) continue;
+            if (o.x > r.x0 - 2 && o.x < r.x1 + 2 && o.y > r.y0 - 2 && o.y < r.y1 + 2) return true;
+          }
+          return false;
+        }
+        var gutter = [];
+        ends.slice().sort(function (a, b) { return a.nn - b.nn; }).forEach(function (e) {
+          var w = labelW(e), done = false;
+          [["start", e.x + 8, e.x + 8 + w], ["end", e.x - 8 - w, e.x - 8]].forEach(function (opt) {
+            if (done) return;
+            var r = { anchor: opt[0], x0: opt[1], x1: opt[2], y0: e.y - LH / 2, y1: e.y + LH / 2 };
+            if (r.x0 > pL + 1 && r.x1 < pR - 1 && !hitsBox(r) && !coversPoint(r, e)) {
+              e.box = r; placedBoxes.push(r); done = true;
+            }
+          });
+          if (!done) gutter.push(e);
+        });
+        // 인라인 라벨(화살표 옆)
+        ends.forEach(function (e) {
+          if (!e.box) return;
+          svg.appendChild(el("text", {
+            x: (e.box.anchor === "start" ? e.x + 8 : e.x - 8).toFixed(1), y: (e.y + 3.6).toFixed(1),
+            "text-anchor": e.box.anchor, "font-size": e.strong ? 12.5 : 11,
+            "font-weight": e.strong ? 800 : 600, fill: e.color,
+          }, e.name));
+        });
+
+        // 겹치는 업종만 좌/우 여백에 세로 정렬 + 리더선
         var GAP = 16, top = pT + 4, bot = pB - 4;
-        var exs = ends.map(function (e) { return e.x; }).sort(function (a, b) { return a - b; });
-        var medX = exs.length ? exs[Math.floor(exs.length / 2)] : midX;
         function layout(side) {
           var lx = side === "R" ? pR + 16 : pL - 52;
-          var arr = ends.filter(function (e) { return side === "R" ? e.x >= medX : e.x < medX; });
+          var arr = gutter.filter(function (e) { return side === "R" ? e.x >= midX : e.x < midX; });
           arr.sort(function (a, b) { return a.y - b.y; });
           arr.forEach(function (e) { e.ly = Math.max(top, Math.min(bot, e.y)); });
           for (var i = 1; i < arr.length; i++)
