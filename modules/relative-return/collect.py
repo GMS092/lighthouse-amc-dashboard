@@ -108,11 +108,21 @@ def main() -> int:
     for r in range(DATA_START, ws.max_row + 1):
         d = _to_date(ws.cell(row=r, column=1).value)
         dates.append(d)
-    valid_idx = [i for i, d in enumerate(dates) if d is not None]
-    if not valid_idx:
-        print("[!] 날짜 데이터를 찾지 못했습니다.")
+    def _cell(row, col):
+        v = ws.cell(row=row, column=col).value
+        return float(v) if isinstance(v, (int, float)) else None
+
+    # 기준일 = KOSPI 수익률 값이 실제로 채워진 마지막 행.
+    # (장중/장전에 오늘 행이 빈 값으로 들어오는 경우 그 행을 건너뛰기 위함)
+    base_i = None
+    for i in range(len(dates) - 1, -1, -1):
+        if dates[i] is not None and _cell(DATA_START + i, k1m) is not None and _cell(DATA_START + i, k3m) is not None:
+            base_i = i
+            break
+    if base_i is None:
+        print("[!] 데이터가 있는 날짜 행을 찾지 못했습니다.")
         return 1
-    base_date = dates[valid_idx[-1]]
+    base_date = dates[base_i]
 
     # 5개 시점의 행 인덱스(=DATA_START 기준 오프셋)
     picked = []
