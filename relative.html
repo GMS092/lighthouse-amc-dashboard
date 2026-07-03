@@ -267,7 +267,7 @@
           transform: "rotate(-90 22 " + ((pT + pB) / 2).toFixed(1) + ")" }, "KOSPI 대비 3개월 수익률 (%)"));
 
         // 업종별 궤적 + 화살표
-        var pi = 0, ends = [];
+        var pi = 0, ends = [], allSegs = [];
         data.sectors.forEach(function (s) {
           var pts = s.traj.map(function (p) { return p ? [sx(p[0]), sy(p[1])] : null; }).filter(Boolean);
           if (!pts.length) return;
@@ -289,6 +289,7 @@
                 (b[0] - L * Math.cos(ang) - wd * Math.sin(ang)).toFixed(1) + "," + (b[1] - L * Math.sin(ang) + wd * Math.cos(ang)).toFixed(1),
               fill: color, opacity: strong ? 0.95 : 0.8,
             }));
+            allSegs.push([a[0], a[1], b[0], b[1], s.name]);
           }
           var end = pts[pts.length - 1];
           svg.appendChild(el("circle", { cx: end[0].toFixed(1), cy: end[1].toFixed(1), r: strong ? 3.6 : 2.6, fill: color }));
@@ -318,23 +319,53 @@
           }
           return false;
         }
+        function segHitsBox(sg, r) {
+          var x1 = sg[0], y1 = sg[1], x2 = sg[2], y2 = sg[3];
+          if (Math.max(x1, x2) < r.x0 || Math.min(x1, x2) > r.x1 || Math.max(y1, y2) < r.y0 || Math.min(y1, y2) > r.y1) return false;
+          function inside(x, y) { return x >= r.x0 && x <= r.x1 && y >= r.y0 && y <= r.y1; }
+          if (inside(x1, y1) || inside(x2, y2)) return true;
+          function cross(ax, ay, bx, by, cx, cy, dx, dy) {
+            function ccw(px, py, qx, qy, rx, ry) { return (ry - py) * (qx - px) - (qy - py) * (rx - px); }
+            return (ccw(cx, cy, dx, dy, ax, ay) > 0) !== (ccw(cx, cy, dx, dy, bx, by) > 0) &&
+                   (ccw(ax, ay, bx, by, cx, cy) > 0) !== (ccw(ax, ay, bx, by, dx, dy) > 0);
+          }
+          return cross(x1, y1, x2, y2, r.x0, r.y0, r.x1, r.y0) || cross(x1, y1, x2, y2, r.x0, r.y1, r.x1, r.y1) ||
+                 cross(x1, y1, x2, y2, r.x0, r.y0, r.x0, r.y1) || cross(x1, y1, x2, y2, r.x1, r.y0, r.x1, r.y1);
+        }
+        function hitsAnySeg(r, self) {
+          for (var i = 0; i < allSegs.length; i++) { if (allSegs[i][4] === self.name) continue; if (segHitsBox(allSegs[i], r)) return true; }
+          return false;
+        }
+        // 후보 위치: 오른쪽/대각선/위/아래/왼쪽 — 빈 방향으로 자유 배치
+        var CANDS = [
+          [9, 0, "start"], [8, -13, "start"], [8, 13, "start"],
+          [0, -15, "middle"], [0, 15, "middle"],
+          [-9, 0, "end"], [-8, -13, "end"], [-8, 13, "end"]
+        ];
+        function boxFor(e, c) {
+          var w = labelW(e), ax = e.x + c[0], ay = e.y + c[1], anc = c[2], x0, x1;
+          if (anc === "start") { x0 = ax; x1 = ax + w; }
+          else if (anc === "end") { x1 = ax; x0 = ax - w; }
+          else { x0 = ax - w / 2; x1 = ax + w / 2; }
+          return { anchor: anc, ax: ax, ay: ay, x0: x0, y0: ay - LH / 2, x1: x1, y1: ay + LH / 2 };
+        }
         var gutter = [];
         ends.slice().sort(function (a, b) { return a.nn - b.nn; }).forEach(function (e) {
-          var w = labelW(e), done = false;
-          [["start", e.x + 8, e.x + 8 + w], ["end", e.x - 8 - w, e.x - 8]].forEach(function (opt) {
-            if (done) return;
-            var r = { anchor: opt[0], x0: opt[1], x1: opt[2], y0: e.y - LH / 2, y1: e.y + LH / 2 };
-            if (r.x0 > pL + 1 && r.x1 < pR - 1 && !hitsBox(r) && !coversPoint(r, e)) {
+          var done = false;
+          for (var ci = 0; ci < CANDS.length && !done; ci++) {
+            var r = boxFor(e, CANDS[ci]);
+            if (r.x0 > pL + 1 && r.x1 < pR - 1 && r.y0 > pT + 1 && r.y1 < pB - 1 &&
+                !hitsBox(r) && !coversPoint(r, e) && !hitsAnySeg(r, e)) {
               e.box = r; placedBoxes.push(r); done = true;
             }
-          });
+          }
           if (!done) gutter.push(e);
         });
-        // 인라인 라벨(화살표 옆)
+        // 인라인 라벨(화살표 근처, 자유 방향)
         ends.forEach(function (e) {
           if (!e.box) return;
           svg.appendChild(el("text", {
-            x: (e.box.anchor === "start" ? e.x + 8 : e.x - 8).toFixed(1), y: (e.y + 3.6).toFixed(1),
+            x: e.box.ax.toFixed(1), y: (e.box.ay + 4).toFixed(1),
             "text-anchor": e.box.anchor, "font-size": e.strong ? 12.5 : 11,
             "font-weight": e.strong ? 800 : 600, fill: e.color,
           }, e.name));
