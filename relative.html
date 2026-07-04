@@ -134,10 +134,10 @@
             <p>각 업종의 KOSPI 대비 상대수익률(업종 − 코스피)을 <b>1주 전 → 최근</b>으로 이어 최근 1주간의 이동을 화살표로 표시합니다.</p>
           </div>
           <div class="legend">
-            <span>가로: <b>KOSPI 대비 1개월</b> · 세로: <b>3개월</b> 상대수익률(%)</span>
-            <span>우상단=<b>동반 강세</b> · 좌하단=<b>동반 약세</b></span>
+            <span>중심=<b>KOSPI</b> · 가로 1개월 · 세로 3개월 상대수익률(%)</span>
+            <span>바깥일수록 상대강도 큼 · 우상=강세 · 좌하=약세</span>
             <span>선: 과거→최근 · <b>화살표=최근</b></span>
-            <span>라벨: 화살표 옆 표시 · 겹치는 것만 리더선(꼬리표)</span>
+            <span>라벨은 원 밖에 배치(내부 선과 겹치지 않게)</span>
           </div>
           <div class="chart-wrap">
             <div class="loading" id="loading">데이터를 불러오는 중입니다…</div>
@@ -200,76 +200,68 @@
           axisLabel: cs.getPropertyValue("--axis-label").trim(),
         };
 
-        var W = 1120, H = 760;
+        var W = 1120, H = 780;
         svg.setAttribute("viewBox", "0 0 " + W + " " + H);
-        var pL = 210, pR = W - 180, pT = 56, pB = H - 58;   // 플롯 박스
-        var pw = pR - pL, ph = pB - pT, midX = (pL + pR) / 2;
+        var cx = 560, cy = 404, R = 276;   // 원 중심 / 반지름
 
-        // 데이터 범위 → 눈금(스케일)
+        // 각 축 절반 범위(정규화) — 원형에 채우기 위해 축별로 정규화
         var xs = [], ys = [];
         data.sectors.forEach(function (s) {
           s.traj.forEach(function (p) { if (p) { xs.push(p[0]); ys.push(p[1]); } });
         });
         if (!xs.length) return;
-        function bounds(arr) {
-          var mn = Math.min.apply(null, arr), mx = Math.max.apply(null, arr);
-          var pad = (mx - mn) * 0.08 || 5;
-          mn = Math.min(mn - pad, 0); mx = Math.max(mx + pad, 0);
-          var step = niceStep(mx - mn, 8);
-          return { min: Math.floor(mn / step) * step, max: Math.ceil(mx / step) * step, step: step };
-        }
-        var bx = bounds(xs), by = bounds(ys);
-        var sx = function (v) { return pL + (v - bx.min) / (bx.max - bx.min) * pw; };
-        var sy = function (v) { return pT + (by.max - v) / (by.max - by.min) * ph; };
-        var zx = sx(0), zy = sy(0);
+        var axhalf = Math.max(1, Math.max.apply(null, xs.map(Math.abs)));
+        var ayhalf = Math.max(1, Math.max.apply(null, ys.map(Math.abs)));
+        var maxDist = 0.0001;
+        data.sectors.forEach(function (s) {
+          s.traj.forEach(function (p) { if (!p) return; var d = Math.sqrt(Math.pow(p[0] / axhalf, 2) + Math.pow(p[1] / ayhalf, 2)); if (d > maxDist) maxDist = d; });
+        });
+        var scaleF = (R * 0.66) / maxDist;   // 최대 반경이 원 안(0.66R)에 오도록
+        function proj(p) { return [cx + (p[0] / axhalf) * scaleF, cy - (p[1] / ayhalf) * scaleF]; }
+        function projX(v) { return cx + (v / axhalf) * scaleF; }
+        function projY(v) { return cy - (v / ayhalf) * scaleF; }
 
         // 제목
-        svg.appendChild(el("text", { x: W / 2, y: 32, "text-anchor": "middle",
+        svg.appendChild(el("text", { x: W / 2, y: 30, "text-anchor": "middle",
           "font-size": 20, "font-weight": 700, fill: C.muted }, "상대수익률 추이"));
 
-        // 사분면 음영 (우상단=동반 강세, 좌하단=동반 약세)
-        svg.appendChild(el("rect", { x: zx.toFixed(1), y: pT, width: (pR - zx).toFixed(1), height: (zy - pT).toFixed(1), fill: "#2f9e44", opacity: 0.06 }));
-        svg.appendChild(el("rect", { x: pL, y: zy.toFixed(1), width: (zx - pL).toFixed(1), height: (pB - zy).toFixed(1), fill: "#e03131", opacity: 0.06 }));
+        // 동심원 + 바깥 원
+        [0.33, 0.66, 1].forEach(function (f) {
+          svg.appendChild(el("circle", { cx: cx, cy: cy, r: (R * f).toFixed(1), fill: "none",
+            stroke: C.grid, "stroke-width": f === 1 ? 1.3 : 1, "stroke-dasharray": f === 1 ? "" : "3 5" }));
+        });
+        // 십자축
+        svg.appendChild(el("line", { x1: cx - R, y1: cy, x2: cx + R, y2: cy, stroke: C.axis, "stroke-width": 1.3 }));
+        svg.appendChild(el("line", { x1: cx, y1: cy - R, x2: cx, y2: cy + R, stroke: C.axis, "stroke-width": 1.3 }));
 
-        // 그리드 + 눈금(스케일)
-        var v, X, Y;
-        for (v = bx.min; v <= bx.max + 1e-9; v += bx.step) {
-          X = sx(v);
-          svg.appendChild(el("line", { x1: X.toFixed(1), y1: pT, x2: X.toFixed(1), y2: pB, stroke: C.grid, "stroke-width": 1 }));
-          svg.appendChild(el("text", { x: X.toFixed(1), y: pB + 20, "text-anchor": "middle", "font-size": 11.5, fill: C.axisLabel }, Math.round(v)));
+        // 축 눈금(스케일) — 십자축 위에 값 표기
+        function nb(arr) { var mn = Math.min.apply(null, arr), mx = Math.max.apply(null, arr); var pad = (mx - mn) * 0.05 || 5; mn = Math.min(mn - pad, 0); mx = Math.max(mx + pad, 0); var st = niceStep(mx - mn, 6); return { min: Math.floor(mn / st) * st, max: Math.ceil(mx / st) * st, step: st }; }
+        var bxx = nb(xs), byy = nb(ys), v, X, Y;
+        for (v = bxx.min; v <= bxx.max + 1e-9; v += bxx.step) {
+          if (Math.abs(v) < 1e-9) continue; X = projX(v); if (X < cx - R - 1 || X > cx + R + 1) continue;
+          svg.appendChild(el("line", { x1: X.toFixed(1), y1: cy - 4, x2: X.toFixed(1), y2: cy + 4, stroke: C.axis, "stroke-width": 1 }));
+          svg.appendChild(el("text", { x: X.toFixed(1), y: cy + 16, "text-anchor": "middle", "font-size": 10.5, fill: C.axisLabel }, Math.round(v)));
         }
-        for (v = by.min; v <= by.max + 1e-9; v += by.step) {
-          Y = sy(v);
-          svg.appendChild(el("line", { x1: pL, y1: Y.toFixed(1), x2: pR, y2: Y.toFixed(1), stroke: C.grid, "stroke-width": 1 }));
-          svg.appendChild(el("text", { x: pL - 8, y: (Y + 4).toFixed(1), "text-anchor": "end", "font-size": 11.5, fill: C.axisLabel }, Math.round(v)));
+        for (v = byy.min; v <= byy.max + 1e-9; v += byy.step) {
+          if (Math.abs(v) < 1e-9) continue; Y = projY(v); if (Y < cy - R - 1 || Y > cy + R + 1) continue;
+          svg.appendChild(el("line", { x1: cx - 4, y1: Y.toFixed(1), x2: cx + 4, y2: Y.toFixed(1), stroke: C.axis, "stroke-width": 1 }));
+          svg.appendChild(el("text", { x: cx - 7, y: (Y + 3.5).toFixed(1), "text-anchor": "end", "font-size": 10.5, fill: C.axisLabel }, Math.round(v)));
         }
-        svg.appendChild(el("rect", { x: pL, y: pT, width: pw, height: ph, fill: "none", stroke: C.grid, "stroke-width": 1 }));
-        // 0축 십자 강조
-        svg.appendChild(el("line", { x1: zx.toFixed(1), y1: pT, x2: zx.toFixed(1), y2: pB, stroke: C.axis, "stroke-width": 1.6 }));
-        svg.appendChild(el("line", { x1: pL, y1: zy.toFixed(1), x2: pR, y2: zy.toFixed(1), stroke: C.axis, "stroke-width": 1.6 }));
-        svg.appendChild(el("circle", { cx: zx.toFixed(1), cy: zy.toFixed(1), r: 3, fill: C.axis }));
-        svg.appendChild(el("text", { x: (zx + 6).toFixed(1), y: (zy - 6).toFixed(1), "font-size": 10.5, "font-weight": 700, fill: C.muted }, "KOSPI"));
+        // 중심 = KOSPI
+        svg.appendChild(el("circle", { cx: cx, cy: cy, r: 3, fill: C.axis }));
+        svg.appendChild(el("text", { x: cx + 7, y: cy - 7, "font-size": 10.5, "font-weight": 700, fill: C.muted }, "KOSPI"));
 
-        // 사분면 코너 힌트
-        function corner(x, y, t, anchor) {
-          svg.appendChild(el("text", { x: x, y: y, "text-anchor": anchor, "font-size": 11, "font-weight": 700, fill: C.muted, opacity: 0.8 }, t));
-        }
-        corner(pR - 8, pT + 16, "동반 강세 ↗", "end");
-        corner(pL + 8, pB - 10, "동반 약세 ↙", "start");
-        corner(pL + 8, pT + 16, "3개월↑ · 1개월↓", "start");
-        corner(pR - 8, pB - 10, "1개월↑ · 3개월↓", "end");
-
-        // 축 제목
-        svg.appendChild(el("text", { x: (pL + pR) / 2, y: H - 12, "text-anchor": "middle",
-          "font-size": 12.5, "font-weight": 700, fill: C.text }, "KOSPI 대비 1개월 수익률 (%)"));
-        svg.appendChild(el("text", { x: 22, y: (pT + pB) / 2, "text-anchor": "middle",
-          "font-size": 12.5, "font-weight": 700, fill: C.text,
-          transform: "rotate(-90 22 " + ((pT + pB) / 2).toFixed(1) + ")" }, "KOSPI 대비 3개월 수익률 (%)"));
+        // 축 방향 라벨
+        function dirText(x, y, t, anchor) { svg.appendChild(el("text", { x: x, y: y, "text-anchor": anchor, "font-size": 11.5, "font-weight": 700, fill: C.muted, opacity: 0.85 }, t)); }
+        dirText(cx + R, cy - 9, "1개월 →", "end");
+        dirText(cx - R, cy - 9, "← 1개월", "start");
+        dirText(cx + 9, cy - R + 13, "↑ 3개월", "start");
+        dirText(cx + 9, cy + R - 5, "↓ 3개월", "start");
 
         // 업종별 궤적 + 화살표
         var pi = 0, ends = [], allSegs = [];
         data.sectors.forEach(function (s) {
-          var pts = s.traj.map(function (p) { return p ? [sx(p[0]), sy(p[1])] : null; }).filter(Boolean);
+          var pts = s.traj.map(function (p) { return p ? proj(p) : null; }).filter(Boolean);
           if (!pts.length) return;
           var color = FIXED[s.name] || PALETTE[pi++ % PALETTE.length];
           var strong = !!FIXED[s.name];
@@ -296,110 +288,41 @@
           ends.push({ name: s.name, x: end[0], y: end[1], color: color, strong: strong });
         });
 
-        // 라벨: 겹치지 않는 업종은 화살표 옆에 바로, 겹치는 것만 리더선으로 여백에 뺌
-        var LH = 15;
-        function labelW(e) { return e.name.length * (e.strong ? 12.5 : 11) + 6; }
-        // 국소 밀집도(가까운 이웃 수)가 낮은(고립된) 것부터 인라인 배치 우선권
-        ends.forEach(function (e) {
-          e.nn = 0;
-          ends.forEach(function (o) { if (o !== e && Math.hypot(o.x - e.x, o.y - e.y) < 55) e.nn++; });
+        // 라벨: 모든 업종을 원 밖(각 지점 각도 방향)에 두고 힘-기반으로 겹침 분산 → 내부 선과 안 겹침
+        function labelW(e) { return e.name.length * (e.strong ? 12.5 : 11) + 4; }
+        var RL = R + 30, LHH = 15;
+        var labs = ends.map(function (e) {
+          var dx = e.x - cx, dy = e.y - cy, d = Math.hypot(dx, dy) || 1;
+          return { e: e, w: labelW(e), h: LHH, lx: cx + dx / d * RL, ly: cy + dy / d * RL };
         });
-        var placedBoxes = [];
-        function hitsBox(r) {
-          for (var i = 0; i < placedBoxes.length; i++) {
-            var p = placedBoxes[i];
-            if (r.x0 < p.x1 && r.x1 > p.x0 && r.y0 < p.y1 && r.y1 > p.y0) return true;
-          }
-          return false;
-        }
-        function coversPoint(r, self) {
-          for (var i = 0; i < ends.length; i++) {
-            var o = ends[i]; if (o === self) continue;
-            if (o.x > r.x0 - 2 && o.x < r.x1 + 2 && o.y > r.y0 - 2 && o.y < r.y1 + 2) return true;
-          }
-          return false;
-        }
-        function segHitsBox(sg, r) {
-          var x1 = sg[0], y1 = sg[1], x2 = sg[2], y2 = sg[3];
-          if (Math.max(x1, x2) < r.x0 || Math.min(x1, x2) > r.x1 || Math.max(y1, y2) < r.y0 || Math.min(y1, y2) > r.y1) return false;
-          function inside(x, y) { return x >= r.x0 && x <= r.x1 && y >= r.y0 && y <= r.y1; }
-          if (inside(x1, y1) || inside(x2, y2)) return true;
-          function cross(ax, ay, bx, by, cx, cy, dx, dy) {
-            function ccw(px, py, qx, qy, rx, ry) { return (ry - py) * (qx - px) - (qy - py) * (rx - px); }
-            return (ccw(cx, cy, dx, dy, ax, ay) > 0) !== (ccw(cx, cy, dx, dy, bx, by) > 0) &&
-                   (ccw(ax, ay, bx, by, cx, cy) > 0) !== (ccw(ax, ay, bx, by, dx, dy) > 0);
-          }
-          return cross(x1, y1, x2, y2, r.x0, r.y0, r.x1, r.y0) || cross(x1, y1, x2, y2, r.x0, r.y1, r.x1, r.y1) ||
-                 cross(x1, y1, x2, y2, r.x0, r.y0, r.x0, r.y1) || cross(x1, y1, x2, y2, r.x1, r.y0, r.x1, r.y1);
-        }
-        function hitsAnySeg(r, self) {
-          for (var i = 0; i < allSegs.length; i++) { if (allSegs[i][4] === self.name) continue; if (segHitsBox(allSegs[i], r)) return true; }
-          return false;
-        }
-        // 후보 위치: 오른쪽/대각선/위/아래/왼쪽 — 빈 방향으로 자유 배치
-        var CANDS = [
-          [9, 0, "start"], [8, -13, "start"], [8, 13, "start"],
-          [0, -15, "middle"], [0, 15, "middle"],
-          [-9, 0, "end"], [-8, -13, "end"], [-8, 13, "end"]
-        ];
-        function boxFor(e, c) {
-          var w = labelW(e), ax = e.x + c[0], ay = e.y + c[1], anc = c[2], x0, x1;
-          if (anc === "start") { x0 = ax; x1 = ax + w; }
-          else if (anc === "end") { x1 = ax; x0 = ax - w; }
-          else { x0 = ax - w / 2; x1 = ax + w / 2; }
-          return { anchor: anc, ax: ax, ay: ay, x0: x0, y0: ay - LH / 2, x1: x1, y1: ay + LH / 2 };
-        }
-        var gutter = [];
-        ends.slice().sort(function (a, b) { return a.nn - b.nn; }).forEach(function (e) {
-          var done = false;
-          for (var ci = 0; ci < CANDS.length && !done; ci++) {
-            var r = boxFor(e, CANDS[ci]);
-            if (r.x0 > pL + 1 && r.x1 < pR - 1 && r.y0 > pT + 1 && r.y1 < pB - 1 &&
-                !hitsBox(r) && !coversPoint(r, e) && !hitsAnySeg(r, e)) {
-              e.box = r; placedBoxes.push(r); done = true;
+        for (var it = 0; it < 260; it++) {
+          for (var i = 0; i < labs.length; i++) {
+            for (var j = i + 1; j < labs.length; j++) {
+              var A = labs[i], B = labs[j], aw = A.w / 2 + 3, bw = B.w / 2 + 3, ah = A.h / 2 + 2, bh = B.h / 2 + 2;
+              var ox = Math.min(A.lx + aw, B.lx + bw) - Math.max(A.lx - aw, B.lx - bw);
+              var oy = Math.min(A.ly + ah, B.ly + bh) - Math.max(A.ly - ah, B.ly - bh);
+              if (ox > 0 && oy > 0) {
+                if (ox <= oy) { var s = ox / 2 + 0.4; if (A.lx <= B.lx) { A.lx -= s; B.lx += s; } else { A.lx += s; B.lx -= s; } }
+                else { var s2 = oy / 2 + 0.4; if (A.ly <= B.ly) { A.ly -= s2; B.ly += s2; } else { A.ly += s2; B.ly -= s2; } }
+              }
             }
           }
-          if (!done) gutter.push(e);
-        });
-        // 인라인 라벨(화살표 근처, 자유 방향)
-        ends.forEach(function (e) {
-          if (!e.box) return;
-          svg.appendChild(el("text", {
-            x: e.box.ax.toFixed(1), y: (e.box.ay + 4).toFixed(1),
-            "text-anchor": e.box.anchor, "font-size": e.strong ? 12.5 : 11,
-            "font-weight": e.strong ? 800 : 600, fill: e.color,
-          }, e.name));
-        });
-
-        // 겹치는 업종만 좌/우 여백에 세로 정렬 + 리더선
-        var GAP = 16, top = pT + 4, bot = pB - 4;
-        function layout(side) {
-          var lx = side === "R" ? pR + 16 : pL - 52;
-          var arr = gutter.filter(function (e) { return side === "R" ? e.x >= midX : e.x < midX; });
-          arr.sort(function (a, b) { return a.y - b.y; });
-          arr.forEach(function (e) { e.ly = Math.max(top, Math.min(bot, e.y)); });
-          for (var i = 1; i < arr.length; i++)
-            if (arr[i].ly < arr[i - 1].ly + GAP) arr[i].ly = arr[i - 1].ly + GAP;
-          for (var j = arr.length - 2; j >= 0; j--)
-            if (arr[j].ly > arr[j + 1].ly - GAP) arr[j].ly = arr[j + 1].ly - GAP;
-          arr.forEach(function (e) {
-            var elbowX = side === "R" ? lx - 14 : lx + 14;
-            svg.appendChild(el("polyline", {
-              points: e.x.toFixed(1) + "," + e.y.toFixed(1) + " " +
-                      elbowX.toFixed(1) + "," + e.ly.toFixed(1) + " " +
-                      lx.toFixed(1) + "," + e.ly.toFixed(1),
-              fill: "none", stroke: e.color, "stroke-width": 1, opacity: 0.55,
-            }));
-            svg.appendChild(el("circle", { cx: lx.toFixed(1), cy: e.ly.toFixed(1), r: 1.7, fill: e.color }));
-            svg.appendChild(el("text", {
-              x: (side === "R" ? lx + 5 : lx - 5).toFixed(1), y: (e.ly + 3.5).toFixed(1),
-              "text-anchor": side === "R" ? "start" : "end",
-              "font-size": e.strong ? 12.5 : 11, "font-weight": e.strong ? 800 : 600, fill: e.color,
-            }, e.name));
-          });
+          for (var k = 0; k < labs.length; k++) {
+            var L = labs[k], dx2 = L.lx - cx, dy2 = L.ly - cy, dd = Math.hypot(dx2, dy2) || 1;
+            if (dd < R + 14) { L.lx = cx + dx2 / dd * (R + 14); L.ly = cy + dy2 / dd * (R + 14); }
+          }
         }
-        layout("R");
-        layout("L");
+        labs.forEach(function (L) {
+          var e = L.e;
+          L.lx = Math.max(L.w / 2 + 4, Math.min(W - L.w / 2 - 4, L.lx));
+          L.ly = Math.max(46, Math.min(H - 12, L.ly));
+          var ex = e.x - L.lx, ey = e.y - L.ly, en = Math.hypot(ex, ey) || 1;
+          var lex = L.lx + ex / en * (L.w * 0.34 + 3), ley = L.ly + ey / en * (L.h * 0.5 + 3);
+          svg.appendChild(el("polyline", { points: e.x.toFixed(1) + "," + e.y.toFixed(1) + " " + lex.toFixed(1) + "," + ley.toFixed(1),
+            fill: "none", stroke: e.color, "stroke-width": 1, opacity: 0.5 }));
+          svg.appendChild(el("text", { x: L.lx.toFixed(1), y: (L.ly + 4).toFixed(1), "text-anchor": "middle",
+            "font-size": e.strong ? 12.5 : 11, "font-weight": e.strong ? 800 : 600, fill: e.color }, e.name));
+        });
 
         document.getElementById("loading").style.display = "none";
         svg.style.display = "block";
