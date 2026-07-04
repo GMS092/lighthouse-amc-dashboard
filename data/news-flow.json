@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-05T01:57:37+0900",
+  "generated_at": "2026-07-05T02:59:10+0900",
   "connected": true,
   "source_count": 53,
-  "article_count": 1027,
+  "article_count": 1025,
   "feed_source": "dashboard-default",
   "labels_count": 0,
   "sources": [
@@ -597,6 +597,60 @@
       "home": "https://www.yna.co.kr",
       "items": [
         {
+          "title": "美독립 250주년 기념일…트럼프 연설·기네스급 불꽃놀이 예정",
+          "url": "https://www.yna.co.kr/view/AKR20260705000900071",
+          "published": "2026-07-05T02:42:28+0900",
+          "article_id": "4d4a37cefe354525",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "전북 정읍·고창에 호우주의보",
+          "url": "https://www.yna.co.kr/view/AKR20260705000800527",
+          "published": "2026-07-05T02:22:15+0900",
+          "article_id": "1b2d6424fe0c0d32",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "뉴욕항에 대형 범선 집결…美독립 250주년 축하 퍼레이드",
+          "url": "https://www.yna.co.kr/view/AKR20260705000600072",
+          "published": "2026-07-05T01:56:00+0900",
+          "article_id": "3a8f2a50fa7f7197",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "찰스 3세, 트럼프에 축전…\"다음 250년도 공동가치 지키자\"(종합)",
           "url": "https://www.yna.co.kr/view/AKR20260704042351082",
           "published": "2026-07-05T00:49:59+0900",
@@ -1069,60 +1123,6 @@
           "url": "https://www.yna.co.kr/view/AKR20260704039700007",
           "published": "2026-07-04T21:22:19+0900",
           "article_id": "5702a2617c1d89f2",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[프로야구 잠실전적] LG 5-3 한화",
-          "url": "https://www.yna.co.kr/view/AKR20260703159051007",
-          "published": "2026-07-04T21:21:32+0900",
-          "article_id": "6e570616d57737c8",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[프로야구 광주전적] NC 5-4 KIA",
-          "url": "https://www.yna.co.kr/view/AKR20260704039500007",
-          "published": "2026-07-04T21:17:40+0900",
-          "article_id": "7731bc9b87605e3a",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "비슬리 1실점 호투+대타 노진혁 쐐기타…롯데, kt 제압",
-          "url": "https://www.yna.co.kr/view/AKR20260704039100007",
-          "published": "2026-07-04T21:04:34+0900",
-          "article_id": "723ec6df96b31959",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2238,6 +2238,78 @@
       "home": "https://www.chosun.com",
       "items": [
         {
+          "title": "7안타 4타점 3득점 1도루 맹활약, 위닝시리즈 이끈 김지찬 “과감하게 치지 못해 후회, 생각 바꾸니 좋은 결과”",
+          "url": "https://www.chosun.com/sports/baseball/2026/07/05/MUZWMZJWMFRDGNRQMQ2TEYJTMY/",
+          "published": "2026-07-05T02:20:00+0900",
+          "article_id": "1dc655e914e0a4c2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "\"무거운 사명감을 느낀다\" 신임 총재가 밝힌 4가지 핵심 비전 과제는?",
+          "url": "https://www.chosun.com/sports/volleyball/2026/07/05/MFSTMNRWMJTDKMDFGU2TOMDDGI/",
+          "published": "2026-07-05T02:10:48+0900",
+          "article_id": "b69b5abc007b04aa",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "[월드컵] 16강 결정됐다. 英 BBC의 선택. 16강 랭킹. 1위는 프랑스, 2위 스페인, 3위 아르헨티나. 잉글랜드 평가가 충격적이다.",
+          "url": "https://www.chosun.com/sports/football/2026/07/05/GFQWKODDMFQWKYZVGU3DIMDEHA/",
+          "published": "2026-07-05T01:58:29+0900",
+          "article_id": "43f3346c354bf138",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "이해해보려 해도, 이해가 안 되는 최악의 본헤드...박재현은 도대체 왜 뛰었나",
+          "url": "https://www.chosun.com/sports/baseball/2026/07/05/MUZGIZRRGAZWMNRYMM3DCNDDMM/",
+          "published": "2026-07-05T01:51:59+0900",
+          "article_id": "9e1b68992a2def5c",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "한 이닝 3실책 자멸→2이닝 11실점 대참사, 굿이라도 해야하나…8연패 탈출 기회가 허무하게 사라졌다",
           "url": "https://www.chosun.com/sports/baseball/2026/07/05/GY3TKYRZMFQWIYZVMZRDAMZUMY/",
           "published": "2026-07-05T01:40:00+0900",
@@ -2278,24 +2350,6 @@
           "url": "https://www.chosun.com/sports/baseball/2026/07/05/HFSTQZRTMUZTKM3BMQYGKNBTG4/",
           "published": "2026-07-05T01:27:52+0900",
           "article_id": "97f79564f9f81681",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "이해해보려 해도, 이해가 안 되는 최악의 본헤드...박재현은 도대체 왜 뛰었나",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/05/MUZGIZRRGAZWMNRYMM3DCNDDMM/",
-          "published": "2026-07-05T01:26:23+0900",
-          "article_id": "9e1b68992a2def5c",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2638,60 +2692,6 @@
           "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/MRSDEMZVGEZDKMBZMZSDSYTEHE/",
           "published": "2026-07-04T23:41:00+0900",
           "article_id": "99b2f9ae54ec5c25",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "\"독설만 하면 다야?\" 김영희, 허경환 조언에 달라졌다 ('살림남2') [순간포착]",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/MU3DSNZWGU2WGNRRMNTGMN3CGA/",
-          "published": "2026-07-04T23:33:00+0900",
-          "article_id": "c8829c5d4159133c",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "'오상진♥' 김소영, 아나운서 선배+출판 선배 박혜진 만나('띵그리TV')",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/GA3DSZDGMM4TSOBRHE2TEMZVMQ/",
-          "published": "2026-07-04T23:28:00+0900",
-          "article_id": "6df8a1c23d544be6",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "\"강민호가 살렸다\" 1,2회 6실점에도 승리, 최원태 구한 베테랑의 품격… 대역전극의 출발점이었다",
-          "url": "https://www.chosun.com/sports/baseball/2026/07/04/G44GCMLBHE3TOMDGHA2DGMJRG4/",
-          "published": "2026-07-04T23:27:22+0900",
-          "article_id": "f78d19ea42d3730d",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -4426,6 +4426,24 @@
       "home": "https://rss.etnews.com",
       "items": [
         {
+          "title": "[단독] '미토스 쇼크'에 금융권 AI 보안 재정비…KB국민은행, 내부통제 고도화",
+          "url": "https://www.etnews.com/20260703000108",
+          "published": "2026-07-05T02:00:00+0900",
+          "article_id": "3abf3893a3b63a6f",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "타자기 수백만 번 두드려 예술 작품 만드는 英 작가",
           "url": "https://www.etnews.com/20260703000319",
           "published": "2026-07-04T23:30:00+0900",
@@ -5310,60 +5328,6 @@
           "url": "https://www.etoday.co.kr/news/view/2600259",
           "published": "2026-07-04T20:59:00+0900",
           "article_id": "af5b5a55e300a5df",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[내일 날씨] 낮부터 전국 대부분 비…제주 산지 150㎜ 폭우",
-          "url": "https://www.etoday.co.kr/news/view/2600258",
-          "published": "2026-07-04T20:23:00+0900",
-          "article_id": "96dc48b095a3c006",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "'나혼산' 자취 감춘 이주승, 감독 서바이벌 우승...1억 전액 기부",
-          "url": "https://www.etoday.co.kr/news/view/2600257",
-          "published": "2026-07-04T20:09:00+0900",
-          "article_id": "a31f53465e8f65dc",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "가세연 김세의 “N번방과 비교가 안돼”…공소장에 김수현 협박 정황",
-          "url": "https://www.etoday.co.kr/news/view/2600256",
-          "published": "2026-07-04T19:55:00+0900",
-          "article_id": "b0b4187f8f7c57e1",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11844,28 +11808,10 @@
       "home": "https://finance.yahoo.com",
       "items": [
         {
-          "title": "AI is Driving Utilities to Spend a Record $240 Billion in 2026. Buy These Stocks to Capitalize on the Power Surge.",
-          "url": "https://finance.yahoo.com/technology/ai/articles/ai-driving-utilities-spend-record-163500310.html",
-          "published": "2026-07-05T01:35:00+0900",
-          "article_id": "d283cb00a3ced85c",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Why Arm Is a Strong Buy Despite the 35% Pullback From Peak Levels",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-arm-strong-buy-despite-163056546.html",
-          "published": "2026-07-05T01:30:56+0900",
-          "article_id": "026fd0c4928e6846",
+          "title": "Oil Price Crash: 1 Top Oil Stock to Buy Now",
+          "url": "https://finance.yahoo.com/energy/articles/oil-price-crash-1-top-173700318.html",
+          "published": "2026-07-05T02:37:00+0900",
+          "article_id": "ec22d83e24cac711",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11880,10 +11826,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Nvidia vs. Strategy: Which Stock Has a Better Chance of Surging 10x by 2036?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-vs-strategy-stock-better-162700393.html",
-          "published": "2026-07-05T01:27:00+0900",
-          "article_id": "55a3a5a76100e521",
+          "title": "Retirement portfolios need fixed income playbook reset",
+          "url": "https://finance.yahoo.com/markets/options/articles/retirement-portfolios-fixed-income-playbook-173300592.html",
+          "published": "2026-07-05T02:33:00+0900",
+          "article_id": "c017f7953e1b9594",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11898,10 +11844,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Why Is Everyone Talking About SentinelOne Stock Right Now?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-everyone-talking-sentinelone-stock-162000886.html",
-          "published": "2026-07-05T01:20:00+0900",
-          "article_id": "ea02e6652d668703",
+          "title": "Procter & Gamble vs Colgate-Palmolive: Two Consumer Giants, Two Strategies, One Invests, Other Optimizes",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-vs-colgate-palmolive-173042715.html",
+          "published": "2026-07-05T02:30:42+0900",
+          "article_id": "ccb1794035a7385a",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11916,10 +11862,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "International gold and silver dealer files Chapter 11 bankruptcy",
-          "url": "https://finance.yahoo.com/markets/commodities/articles/international-gold-silver-dealer-files-161700430.html",
-          "published": "2026-07-05T01:17:00+0900",
-          "article_id": "098146b37c02d487",
+          "title": "Bitcoin Won’t Enter a New Bull Market Until These Three Things Change, Says HTX Research",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-won-t-enter-bull-172715217.html",
+          "published": "2026-07-05T02:27:15+0900",
+          "article_id": "d297b10e38757ad9",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11934,10 +11880,28 @@
           "importance_source": "auto"
         },
         {
-          "title": "Chubb vs. Travelers Companies: What Their Revenue Trends Tell Investors",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/chubb-vs-travelers-companies-revenue-160901617.html",
-          "published": "2026-07-05T01:09:01+0900",
-          "article_id": "2b10c06ff6ee127e",
+          "title": "I Want to Become Financially Independent in 5 Years: Here's My 3-Part Plan to Reach That Bold Goal.",
+          "url": "https://finance.yahoo.com/markets/options/articles/want-become-financially-independent-5-172500773.html",
+          "published": "2026-07-05T02:25:00+0900",
+          "article_id": "8698e43e0a35ed6a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Why Newmont Stock Collapsed in June, And What to Expect Next",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-newmont-stock-collapsed-june-172357227.html",
+          "published": "2026-07-05T02:23:57+0900",
+          "article_id": "703f6992fcca0a75",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -12391,9 +12355,9 @@
       "home": "https://search.cnbc.com",
       "items": [
         {
-          "title": "I’ve worked with over 5,000 kids: My 'simple' parenting rule has prevented countless power struggles",
+          "title": "I’ve worked with over 5,000 kids: I swear by this No. 1 parenting rule—it’s ‘surprisingly simple’",
           "url": "https://www.cnbc.com/2026/07/04/ive-studied-over-5000-kidsi-keep-giving-parents-the-same-surprisingly-simple-advice.html",
-          "published": "2026-07-05T01:35:53+0900",
+          "published": "2026-07-05T02:03:15+0900",
           "article_id": "b9153374d7d542e9",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
@@ -12938,6 +12902,80 @@
       "home": "https://feeds.content.dowjones.io",
       "items": [
         {
+          "title": "Want to live longer in retirement? This one money move could add years to your life.",
+          "url": "https://www.marketwatch.com/story/want-to-live-longer-in-retirement-this-one-money-move-could-add-years-to-your-life-e8f2b4ba?mod=mw_rss_topstories",
+          "published": "2026-07-05T02:38:00+0900",
+          "article_id": "3fe2a8cbe375c25e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "I have no kids. Will I cause family drama by leaving different amounts to my nieces and nephews?",
+          "url": "https://www.marketwatch.com/story/i-have-no-kids-will-i-cause-family-drama-by-leaving-different-amounts-to-my-nieces-and-nephews-14c0fdda?mod=mw_rss_topstories",
+          "published": "2026-07-05T02:30:00+0900",
+          "article_id": "d731936c172543b1",
+          "auto_importance_score": 66,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "계약·수주",
+            "핵심 산업"
+          ],
+          "importance_score": 66,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "계약·수주",
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Your aging parent has a new romance. Here’s how to protect your inheritance — without looking greedy.",
+          "url": "https://www.marketwatch.com/story/your-aging-parent-has-a-new-romance-heres-how-to-protect-your-inheritance-without-looking-greedy-cbc219ab?mod=mw_rss_topstories",
+          "published": "2026-07-05T02:22:00+0900",
+          "article_id": "00e61f770ead88b5",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
+          "url": "https://www.marketwatch.com/story/i-claimed-social-security-at-62-at-76-im-working-at-walmart-why-do-i-still-owe-payroll-taxes-8e22a97c?mod=mw_rss_topstories",
+          "published": "2026-07-05T02:08:00+0900",
+          "article_id": "573717c2f40d0530",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "What’s a ‘soft’ off day? How to take one without getting in trouble at work.",
           "url": "https://www.marketwatch.com/story/whats-a-soft-off-day-how-to-take-one-without-getting-in-trouble-at-work-10706631?mod=mw_rss_topstories",
           "published": "2026-07-05T01:27:00+0900",
@@ -13010,24 +13048,6 @@
           "importance_source": "auto"
         },
         {
-          "title": "Your aging parent has a new romance. Here’s how to protect your inheritance — without looking greedy.",
-          "url": "https://www.marketwatch.com/story/your-aging-parent-has-a-new-romance-heres-how-to-protect-your-inheritance-without-looking-greedy-cbc219ab?mod=mw_rss_topstories",
-          "published": "2026-07-04T04:32:00+0900",
-          "article_id": "00e61f770ead88b5",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "Opening a ‘Trump account’ for your children? Here is the risk you need to reckon with first.",
           "url": "https://www.marketwatch.com/story/opening-a-trump-account-for-your-children-here-is-the-risk-you-need-to-recognize-first-fe206bc0?mod=mw_rss_topstories",
           "published": "2026-07-04T04:10:00+0900",
@@ -13050,60 +13070,6 @@
           "url": "https://www.marketwatch.com/story/i-dont-think-ill-make-it-to-80-im-70-and-single-do-i-take-out-a-reverse-mortgage-or-a-home-equity-agreement-3b623ee8?mod=mw_rss_topstories",
           "published": "2026-07-04T04:00:00+0900",
           "article_id": "59398886d1b66f50",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Nvidia is betting on a trillion-dollar robotics boom. Here is the hidden way to trade it.",
-          "url": "https://www.marketwatch.com/story/nvidia-is-betting-on-a-trillion-dollar-robotics-boom-here-is-the-hidden-way-to-trade-it-c5b10c4e?mod=mw_rss_topstories",
-          "published": "2026-07-04T03:52:00+0900",
-          "article_id": "1bae331ec545484e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Want to live longer in retirement? This one money move could add years to your life.",
-          "url": "https://www.marketwatch.com/story/want-to-live-longer-in-retirement-this-one-money-move-could-add-years-to-your-life-e8f2b4ba?mod=mw_rss_topstories",
-          "published": "2026-07-04T03:42:00+0900",
-          "article_id": "3fe2a8cbe375c25e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Before you max out your 401(k) this year, consider a much better use for your next paycheck",
-          "url": "https://www.marketwatch.com/story/why-maxing-out-your-401-k-is-a-major-financial-mistake-if-you-have-credit-card-and-other-punishing-debt-4c25beab?mod=mw_rss_topstories",
-          "published": "2026-07-04T03:32:00+0900",
-          "article_id": "26898914228f6aee",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -15235,6 +15201,24 @@
       "home": "https://oilprice.com",
       "items": [
         {
+          "title": "Asia Bets on Biofuels to Dodge Middle East Oil Shortages",
+          "url": "https://oilprice.com/Alternative-Energy/Biofuels/Asia-Bets-on-Biofuels-to-Dodge-Middle-East-Oil-Shortages.html",
+          "published": "2026-07-05T02:00:00+0900",
+          "article_id": "6177b0741213b5cd",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "Courts and Congress Are Undoing Trump's War on Wind Power",
           "url": "https://oilprice.com/Alternative-Energy/Wind-Power/Courts-and-Congress-Are-Undoing-Trumps-War-on-Wind-Power.html",
           "published": "2026-07-05T00:00:00+0900",
@@ -15473,24 +15457,6 @@
           "url": "https://oilprice.com/Latest-Energy-News/World-News/Citi-Oil-Could-Sink-to-60-as-Hormuz-Traffic-Normalizes.html",
           "published": "2026-07-03T21:00:00+0900",
           "article_id": "9d4c0f6cb764f534",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "India Denies Directly Exporting Fuel to Russia, But Admits Traders May Be",
-          "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Denies-Directly-Exporting-Fuel-to-Russia-But-Admits-Traders-May-Be.html",
-          "published": "2026-07-03T20:00:00+0900",
-          "article_id": "01078e9bebffa54f",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
