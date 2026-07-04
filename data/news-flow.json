@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-04T19:25:57+0900",
+  "generated_at": "2026-07-04T20:52:07+0900",
   "connected": true,
   "source_count": 53,
-  "article_count": 1002,
+  "article_count": 1036,
   "feed_source": "dashboard-default",
   "labels_count": 0,
   "sources": [
@@ -597,6 +597,168 @@
       "home": "https://www.yna.co.kr",
       "items": [
         {
+          "title": "1231회 로또 1등 '4, 13, 14, 18, 31, 38'",
+          "url": "https://www.yna.co.kr/view/AKR20260704038600002",
+          "published": "2026-07-04T20:42:10+0900",
+          "article_id": "afa93396a9dcaf58",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "숏드라마 만든 이준익 감독 \"세로 화면으로 보니 엿보는 느낌\"",
+          "url": "https://www.yna.co.kr/view/AKR20260704038000005",
+          "published": "2026-07-04T20:32:51+0900",
+          "article_id": "0b9fe5d43e7aa59e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "송형근, 익산 전국육상경기대회 남자 400ｍ 대회 신기록 우승",
+          "url": "https://www.yna.co.kr/view/AKR20260704038200007",
+          "published": "2026-07-04T20:30:46+0900",
+          "article_id": "291972799eaebfb7",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "외교부, 태풍 '바비' 괌·사이판 접근에 재외국민 보호대책 점검",
+          "url": "https://www.yna.co.kr/view/AKR20260704037600504",
+          "published": "2026-07-04T20:05:35+0900",
+          "article_id": "5384aff01eeff0b2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "[날씨] 전국 대부분 비…제주 산지 150㎜ 이상 장맛비",
+          "url": "https://www.yna.co.kr/view/AKR20260704033200004",
+          "published": "2026-07-04T20:00:00+0900",
+          "article_id": "6697980d1128d848",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "진주서 고속도로 진입 트럭 들이받은 SUV 전복…인명피해 없어",
+          "url": "https://www.yna.co.kr/view/AKR20260704037400057",
+          "published": "2026-07-04T19:58:05+0900",
+          "article_id": "83db86a47a1fa582",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "잠실개표소 국조특위 진입 당시 경찰 폭행한 60대 구속",
+          "url": "https://www.yna.co.kr/view/AKR20260704037300004",
+          "published": "2026-07-04T19:44:14+0900",
+          "article_id": "9d9c380bf2953f56",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "美 '슈퍼 주말'…독립기념일 연휴에 월드컵·스위프트 결혼까지",
+          "url": "https://www.yna.co.kr/view/AKR20260704036700009",
+          "published": "2026-07-04T19:37:25+0900",
+          "article_id": "0ba3487ba829cfbb",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'홈구장 감독실' 처음 경험한 안양 유병훈 감독 \"편하긴 하네요\"",
+          "url": "https://www.yna.co.kr/view/AKR20260704036900007",
+          "published": "2026-07-04T19:23:50+0900",
+          "article_id": "eff71ce81bfa07d8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "김수현 협박한 김세의 \"N번방과 비교가 안돼\"…하체사진 공개도",
           "url": "https://www.yna.co.kr/view/AKR20260704036300004",
           "published": "2026-07-04T18:55:17+0900",
@@ -973,168 +1135,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "LG, 홈 43경기 만에 100만 관중…KBO 역대 최소경기 신기록",
-          "url": "https://www.yna.co.kr/view/AKR20260704032800007",
-          "published": "2026-07-04T17:00:57+0900",
-          "article_id": "a95d214a99db394b",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "신민준, 박정환 꺾고 GS칼텍스배 우승…통산 11번째 타이틀",
-          "url": "https://www.yna.co.kr/view/AKR20260704032600007",
-          "published": "2026-07-04T16:59:33+0900",
-          "article_id": "999cdc619398ae1f",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[월드컵] 즐라탄, 승부차기 실축 호주 10대 선수에 \"넌 최고\" 응원 메시지",
-          "url": "https://www.yna.co.kr/view/AKR20260704032700007",
-          "published": "2026-07-04T16:59:02+0900",
-          "article_id": "90ea5c84ca6bfdef",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "지대공 미사일에 자폭형 드론도…인도, 8조원대 군사장비 도입",
-          "url": "https://www.yna.co.kr/view/AKR20260704032100104",
-          "published": "2026-07-04T16:38:57+0900",
-          "article_id": "4107c669ffe430fa",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "오세훈 \"결별 대상은 尹잘못된 판단…지지세력과 관계 유지해야\"(종합)",
-          "url": "https://www.yna.co.kr/view/AKR20260704020151004",
-          "published": "2026-07-04T16:18:17+0900",
-          "article_id": "b6ec8c66654f4fae",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "염경엽 LG 감독 \"리오스 없으면 불펜 데이 승률은 꽝\"",
-          "url": "https://www.yna.co.kr/view/AKR20260704031500007",
-          "published": "2026-07-04T16:17:24+0900",
-          "article_id": "232d52cd6e9577b3",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "블룸버그 \"SK하이닉스 美 ADR 상장 수수료율 0.5% 검토\"",
-          "url": "https://www.yna.co.kr/view/AKR20260704031000009",
-          "published": "2026-07-04T16:04:05+0900",
-          "article_id": "02731b63f494ffd4",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "이란, 美공습에 군사·핵시설 수십곳 잿더미…위성사진 포착",
-          "url": "https://www.yna.co.kr/view/AKR20260704029700009",
-          "published": "2026-07-04T16:02:36+0900",
-          "article_id": "b29398213c3fbfc6",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "경제인협회, 'K-바캉스 캠페인'…회원사에 국내여행 독려",
-          "url": "https://www.yna.co.kr/view/AKR20260703142500003",
-          "published": "2026-07-04T16:00:00+0900",
-          "article_id": "88a2524d2d434577",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -1143,6 +1143,42 @@
       "method": "rss",
       "home": "https://www.mk.co.kr",
       "items": [
+        {
+          "title": "EU 철강 쿼터 절반 줄였는데…한국만 ‘예외 인정’ 선방한 이유",
+          "url": "https://www.mk.co.kr/news/economy/12090359",
+          "published": "2026-07-04T20:20:30+0900",
+          "article_id": "f908cc5244d26ea5",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“성적수치심? 이제는 ‘○○○○○’”…정치권서 ‘피해자 중심’ 입법 확산",
+          "url": "https://www.mk.co.kr/news/politics/12090358",
+          "published": "2026-07-04T20:19:19+0900",
+          "article_id": "8cfed65149e18fe6",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "“올여름 가도 괜찮을까”…강릉 앞바다에 ‘상어 출몰’ 신고 잇따라",
           "url": "https://www.mk.co.kr/news/society/12090347",
@@ -1646,12 +1682,19 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
+        }
+      ]
+    },
+    {
+      "name": "서울경제",
+      "method": "rss",
+      "home": "https://www.sedaily.com",
+      "items": [
         {
-          "title": "“상반기엔 하이닉스로 통했다면, 하반기는 이것”…ETF ‘창과 방패’ 이렇게 짜라",
-          "url": "https://www.mk.co.kr/news/stock/12090284",
-          "published": "2026-07-04T13:07:02+0900",
-          "article_id": "6a442947e78062fd",
+          "title": "“MZ들 줄 서서 먹는데 어쩌나” 23억 배상할 처지…루이뷔통, 중국 브랜드 상표권 침해 승소",
+          "url": "https://www.sedaily.com/article/20063785",
+          "published": "2026-07-04T20:21:58+0900",
+          "article_id": "0df4130525a73ea6",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1666,10 +1709,514 @@
           "importance_source": "auto"
         },
         {
-          "title": "한국 떨어졌지만 ‘메시’ 보는 재미에…역시 ‘축구의 신’, 월드컵 최초 20골 대기록",
-          "url": "https://www.mk.co.kr/news/world/12090275",
-          "published": "2026-07-04T11:40:30+0900",
-          "article_id": "f5a383547867a4cb",
+          "title": "국조특위 현장조사 방해 혐의 60대 구속…잠실 봉쇄 시위 두 번째 신병 확보",
+          "url": "https://www.sedaily.com/article/20063784",
+          "published": "2026-07-04T20:04:56+0900",
+          "article_id": "64f90a9ef20bde1c",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“아버지 안 볼 때 사진 보낼게요” 장애인 명의로 강남 아파트 불법 분양…브로커 등 40명 송치",
+          "url": "https://www.sedaily.com/article/20063782",
+          "published": "2026-07-04T19:46:31+0900",
+          "article_id": "5d2e443bb60ad430",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“우리 애 우유 먹여야겠네”…어릴 때 꾸준히 마시면 생기는 일 [헬시타임]",
+          "url": "https://www.sedaily.com/article/20063781",
+          "published": "2026-07-04T19:40:38+0900",
+          "article_id": "a51c975193000506",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "[지금, 명의] “스텐트로 안 되는 관상동맥질환…‘새 길’ 내는 우회로술, 두려워 마세요”",
+          "url": "https://www.sedaily.com/article/20063780",
+          "published": "2026-07-04T19:17:26+0900",
+          "article_id": "7a4e3b17d14566b9",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“다이아 321개를 그냥 선물로?”…트럼프가 받은 초호화 금반지, 가격이 무려",
+          "url": "https://www.sedaily.com/article/20063779",
+          "published": "2026-07-04T19:09:01+0900",
+          "article_id": "e2a57db718464c37",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "강릉 앞바다 ‘상어 출몰’에 긴장…무더위에 10만 명 몰린 동해 해수욕장",
+          "url": "https://www.sedaily.com/article/20063778",
+          "published": "2026-07-04T18:58:57+0900",
+          "article_id": "1a13a5853e1486e2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“삼전닉스가 번 돈을 왜 국민에게?”…외신 “한국의 새로운 과제” 이익 배분 논쟁 커진다",
+          "url": "https://www.sedaily.com/article/20063777",
+          "published": "2026-07-04T18:47:34+0900",
+          "article_id": "0a3b658eb34ab78f",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“그러다 진짜 죽어요” 걱정에도 절벽에 선다…5600만원 들여 하늘을 나는 한국인 첫 여성 윙슈터 [덕후 계산기]",
+          "url": "https://www.sedaily.com/article/20063776",
+          "published": "2026-07-04T18:11:50+0900",
+          "article_id": "320f6a1aaefcbecd",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "박예지 KLPGA 3라운드 단독 선두…‘세계 3위’ 김효주는 5위",
+          "url": "https://www.sedaily.com/article/20063775",
+          "published": "2026-07-04T17:53:38+0900",
+          "article_id": "bff3b6f17cb63345",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "LG 트윈스, 홈 43경기만에 100만 관중돌파…KBO 신기록",
+          "url": "https://www.sedaily.com/article/20063774",
+          "published": "2026-07-04T17:22:53+0900",
+          "article_id": "8730829712299836",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“N번방급” 김수현 협박한 김세의…협박 혐의로 재판행",
+          "url": "https://www.sedaily.com/article/20063773",
+          "published": "2026-07-04T17:02:51+0900",
+          "article_id": "d801a9dc39ad3970",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "법원, 홈플러스에 최후통첩...14일 내 자금 못구하면 파산 수순[서초동 야단법석]",
+          "url": "https://www.sedaily.com/article/20063751",
+          "published": "2026-07-04T17:00:05+0900",
+          "article_id": "b634ccd6022e2950",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "러브버그 안 보이더니 사람 무는 ‘이것’ 떼로 등장…“곱등이 아닙니다” 수도권 습격한 해충은",
+          "url": "https://www.sedaily.com/article/20063772",
+          "published": "2026-07-04T16:58:19+0900",
+          "article_id": "1b3cf245d453f4e4",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "中매체 “삼성전자, 3분기 D램 가격 20% 인상 추진”",
+          "url": "https://www.sedaily.com/article/20063771",
+          "published": "2026-07-04T16:20:46+0900",
+          "article_id": "7c2220a581c6f718",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "SK하이닉스 ADR 상장 임박…주관사 수수료 2000억 육박 전망",
+          "url": "https://www.sedaily.com/article/20063770",
+          "published": "2026-07-04T16:12:24+0900",
+          "article_id": "0d0bc2250f6019af",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“예상 낙찰가가 무려...” 젠슨 황의 ‘AI 전투복’ 가죽 재킷 경매 나온다",
+          "url": "https://www.sedaily.com/article/20063769",
+          "published": "2026-07-04T16:10:21+0900",
+          "article_id": "99d04ac219504b47",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "김민석, 6일 광주전남서 당대표 출마 선언…‘호남 민심’ 공략",
+          "url": "https://www.sedaily.com/article/20063768",
+          "published": "2026-07-04T15:44:59+0900",
+          "article_id": "14037702e7b014f2",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "이란 하메네이 장례식 공식 일정 시작…후계자 모즈타바는 불참 전망",
+          "url": "https://www.sedaily.com/article/20063766",
+          "published": "2026-07-04T15:25:44+0900",
+          "article_id": "aa18fc8ab0a76040",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "與 “美 의회 ‘쿠팡 차별’ 보고서 왜곡…강한 유감”",
+          "url": "https://www.sedaily.com/article/20063765",
+          "published": "2026-07-04T15:14:42+0900",
+          "article_id": "523df18388fec4c5",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“맥주 한 캔도 부담되네” 이런 사람들 많아지자…美 맥주업계가 내놓은 ‘승부수’",
+          "url": "https://www.sedaily.com/article/20063764",
+          "published": "2026-07-04T14:44:59+0900",
+          "article_id": "5c93714f6f3dda8a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "우크라 드론 공습에 러시아 연료난…“주유소 앞 5㎞ 대기줄”",
+          "url": "https://www.sedaily.com/article/20063763",
+          "published": "2026-07-04T14:42:16+0900",
+          "article_id": "63c981e935a2f31f",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "탁구 혼복 세계 1위 임종훈·신유빈, WTT 미국 스매시 정상",
+          "url": "https://www.sedaily.com/article/20063762",
+          "published": "2026-07-04T14:38:14+0900",
+          "article_id": "0ccf24992a7bb808",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "80세 트럼프 “42도 폭염? 문제없어”…독립기념일 ‘아주 긴 연설’ 예고",
+          "url": "https://www.sedaily.com/article/20063761",
+          "published": "2026-07-04T14:34:52+0900",
+          "article_id": "5c4f4fcfc5827f43",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "대우건설, 20년만에 미국 부동산 재진출…뉴저지 주거사업 투자",
+          "url": "https://www.sedaily.com/article/20063683",
+          "published": "2026-07-04T14:16:05+0900",
+          "article_id": "d5e9ab765696de51",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘해든이’ 항소심 앞두고 시민단체 추모 집회 예고…공동 탄원서도 제출 예정",
+          "url": "https://www.sedaily.com/article/20063760",
+          "published": "2026-07-04T14:14:40+0900",
+          "article_id": "be7baf918d46ec88",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“광주일고에 폭탄 설치” 협박 글…경찰·소방 수색 나서",
+          "url": "https://www.sedaily.com/article/20063759",
+          "published": "2026-07-04T14:04:48+0900",
+          "article_id": "7e1f29620e588038",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "테슬라 가장 싼 도쿄...한국보다 지원금 1000만원 더 준다 [김기혁의테슬라월드]",
+          "url": "https://www.sedaily.com/article/20063508",
+          "published": "2026-07-04T14:00:05+0900",
+          "article_id": "d31a42be1b296bb5",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "치매 위험 30%나 ‘껑충’…의사들 경고한 조기 사망 신호, 뭐길래? [헬시타임]",
+          "url": "https://www.sedaily.com/article/20063758",
+          "published": "2026-07-04T13:44:40+0900",
+          "article_id": "9e88dc5ffae55d4e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "日, 이란산 원유 수입 재개 검토…“기업 3곳과 초기 협의”",
+          "url": "https://www.sedaily.com/article/20063757",
+          "published": "2026-07-04T13:30:17+0900",
+          "article_id": "9adb723c7653051f",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1686,21 +2233,15 @@
       ]
     },
     {
-      "name": "서울경제",
-      "method": "rss",
-      "home": "https://www.sedaily.com",
-      "items": []
-    },
-    {
       "name": "조선일보",
       "method": "rss",
       "home": "https://www.chosun.com",
       "items": [
         {
-          "title": "[사진]문보경 '장현식 나만 믿어'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MI4DAM3BHFQTMMLEGVSDEY3BMM/",
-          "published": "2026-07-04T19:16:00+0900",
-          "article_id": "bcb013677991fa87",
+          "title": "[사진]오스틴 '밀어내기 볼넷'",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GQYTGNLEGNSTMNBXMFSDSMLCGQ/",
+          "published": "2026-07-04T20:35:00+0900",
+          "article_id": "92c40fdd695e1de5",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1715,10 +2256,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]장현식 '있는 힘껏 역투'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GNSGGNBVHA4DANJVMEYTQYZXMI/",
-          "published": "2026-07-04T19:16:00+0900",
-          "article_id": "7846330e74b458b7",
+          "title": "\"오타니, 사이영상은 꿈이었다\" 충격 주장…다저스 전문 매체, \"투수 포기하지 않으면 다저스 망한다\" 강력 경고",
+          "url": "https://www.chosun.com/sports/world-baseball/2026/07/04/MQ4DAYJZGUZWGNBSG5QWIZBTGI/",
+          "published": "2026-07-04T20:35:00+0900",
+          "article_id": "8dd5fd55bf8cc4a8",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1733,10 +2274,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]수비 복귀한 문보경",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GM4DIZRYMYYGMZDBGRQWCY3EMI/",
-          "published": "2026-07-04T19:16:00+0900",
-          "article_id": "735fbd61f981f825",
+          "title": "[사진]역투하는 김진수",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MU3WCYZYGY3WGZTFME4WCYTCMQ/",
+          "published": "2026-07-04T20:30:00+0900",
+          "article_id": "f61c82567eccc2ff",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1751,10 +2292,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]박준영 '스윙 아니에요?'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GM4DIM3CGJRTEMJYMU3WCMRUGU/",
-          "published": "2026-07-04T19:12:00+0900",
-          "article_id": "e801a01b2987e3b2",
+          "title": "[사진]역투하는 우강훈",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MY3GGY3CHBTDGNJYHFSTMYRXHA/",
+          "published": "2026-07-04T20:30:00+0900",
+          "article_id": "12c581afb98b91b6",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1769,10 +2310,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]박준영 '아 볼넷'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GRQWGYJXMNSTENJUMZSTKZLDMI/",
-          "published": "2026-07-04T19:12:00+0900",
-          "article_id": "5474184ea51e2dc7",
+          "title": "[사진]6회 역투하는 우강훈",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GQ3DQMZXGFRGMMBVMMZDCMTBHA/",
+          "published": "2026-07-04T20:30:00+0900",
+          "article_id": "30f43787755b08cf",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1787,10 +2328,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]역투하는 한화 선발 에르난데스",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MMZDQMLEMU4TMNBVGEYDAZDBGY/",
-          "published": "2026-07-04T19:11:00+0900",
-          "article_id": "78b4de4ea7d1218c",
+          "title": "[사진]김진성, KBO 역대 7번째 800경기 출장",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MU4TCMTFGU2DAYRTGY3TAZTCGE/",
+          "published": "2026-07-04T20:30:00+0900",
+          "article_id": "6d399ae4f04ee171",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1805,10 +2346,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]역투하는 LG 장현식",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GM4TGNZWGNSDOYLGGE4GENBRGY/",
-          "published": "2026-07-04T19:11:00+0900",
-          "article_id": "f61a0d86422bf4f2",
+          "title": "I.O.I 최유정 \"연습생 시절, 회사에 비밀로 하고 다이어트 약 복용→부작용만 5가지\" ('안녕하세미') [순간포착]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/MQYWGNTDHBSDKOLDMIYTOOBYMM/",
+          "published": "2026-07-04T20:26:00+0900",
+          "article_id": "eb6c39598ae4688c",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1823,10 +2364,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]역투하는 한화 에르난데스",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GNRDQNLDGZSGENBUME3GMZTBGA/",
-          "published": "2026-07-04T19:11:00+0900",
-          "article_id": "ab8ef3fd1d493c25",
+          "title": "[사진]한화-LG '만원관중'",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GVRTOMBTMU4DIM3DGQZTMNZZMY/",
+          "published": "2026-07-04T20:25:00+0900",
+          "article_id": "1ce869de11ad9840",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1841,10 +2382,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]역투하는 LG 선발 장현식",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MY4TONBQGQ2DAZJVGE4DSZJUG4/",
-          "published": "2026-07-04T19:11:00+0900",
-          "article_id": "844d6b3a846b2540",
+          "title": "[사진]문보경 '아쉽다'",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MI3DSMRTMM2DONJXGMZTCMBQHA/",
+          "published": "2026-07-04T20:25:00+0900",
+          "article_id": "a473c7876a8da51b",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1859,10 +2400,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]역투하는 장현식",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GVSDINLGGMZDANZQGEZDAODFHE/",
-          "published": "2026-07-04T19:11:00+0900",
-          "article_id": "8563c49424de57b5",
+          "title": "[사진]박상원 '오스틴에게 밀어내기 볼넷'",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MEYGCY3BMJTDCOJZMY3DSMBYHA/",
+          "published": "2026-07-04T20:25:00+0900",
+          "article_id": "1ba8f822d6864cff",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1877,10 +2418,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]역투하는 에르난데스",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MM4WGMJXGMYDGOJTHBSDKNRUMU/",
-          "published": "2026-07-04T19:11:00+0900",
-          "article_id": "1ef6f80cd94b20cc",
+          "title": "[사진]힘차게 볼 뿌리는 조영건",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MQ2WCNBVHE4GKY3CMFQTKMBUMU/",
+          "published": "2026-07-04T20:23:00+0900",
+          "article_id": "9713fab879dc164a",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1895,10 +2436,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "곽범 \"2천만원 들여 치아 16개 시술\"..유재석 '부정교합' 조롱 \"치아 돌아가\"(놀뭐)[순간포착]",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/HE4GIMBQGE3DGZRXMM2WIODFMI/",
-          "published": "2026-07-04T19:09:00+0900",
-          "article_id": "6abda7e93ac74610",
+          "title": "[사진]조영건, 힘차게",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/G5RDGZBQGBSDSMLDGNSTSNTDGY/",
+          "published": "2026-07-04T20:22:00+0900",
+          "article_id": "76705953be4a0d28",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1913,10 +2454,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "44세 이시영, 애 둘 맘인데 늘씬 수영복 자태..명품백 포인트까지 “여름방학”",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/MRTDQODBME4GEYTFGRRWEY3FGI/",
-          "published": "2026-07-04T19:08:00+0900",
-          "article_id": "f6dd4d21eb3d6cc4",
+          "title": "[사진]김동헌, 2타점 적시타 환호",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GNSWKNDFHBSDONJZHA3TAYLEMQ/",
+          "published": "2026-07-04T20:20:00+0900",
+          "article_id": "491489d941c60a34",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1931,10 +2472,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "손담비, C넬백 메고 ♥이규혁과 딸 해이와 해변 나들이",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/HBQWGNLDMEZDOOLEGNSGGNLDGM/",
-          "published": "2026-07-04T19:07:00+0900",
-          "article_id": "87637cdaddd0d1d2",
+          "title": "[사진]김동헌, 분위기 끌어올려",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GBQTMYJXGVRWMMZUMRRGMNDFMQ/",
+          "published": "2026-07-04T20:20:00+0900",
+          "article_id": "1577047f6ec8e1c4",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1949,10 +2490,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]에르난데스, '믿기지 않아'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MFTGINBVGFRDEYZRMQ3GCNRWMI/",
-          "published": "2026-07-04T19:06:00+0900",
-          "article_id": "8f73f0b92d64669b",
+          "title": "[사진]역투하는 이용찬",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MQ2DCYZXGEZDQYZUGVSGCZRUMQ/",
+          "published": "2026-07-04T20:20:00+0900",
+          "article_id": "d4a4549eaa34c3c6",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1967,10 +2508,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]에르난데스, 계속되는 실점에 망연자실",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GI2WEMDFGU3TMZJXGEYWGM3CGM/",
-          "published": "2026-07-04T19:06:00+0900",
-          "article_id": "de46bfbcb42a32fe",
+          "title": "[사진]박치국, 아쉬운 교체",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MY2TQOBTME2WINDGMQ4TEYJRGY/",
+          "published": "2026-07-04T20:20:00+0900",
+          "article_id": "87c4397ce74afd70",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -1985,10 +2526,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]문정빈 '나도 적시타'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MY4WKZRQGU4GIOBYGM3TMYTEMI/",
-          "published": "2026-07-04T19:01:00+0900",
-          "article_id": "25575168684c033a",
+          "title": "[사진]김동헌, 2타점 적시타",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/ME4GGNBTMJRDMNBTG5TGKNDBGE/",
+          "published": "2026-07-04T20:20:00+0900",
+          "article_id": "a802c63afd726cb4",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2003,10 +2544,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]고개 숙인 에르난데스",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GU4WEYLCMZSTQNLEHFSGGZRSMU/",
-          "published": "2026-07-04T19:01:00+0900",
-          "article_id": "a623dcefe79a64e6",
+          "title": "[사진]1타점 적시타 날리는 박찬혁",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GE4DSM3BG4YTMZLBHBRDOYZXMM/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "658853a779daadea",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2021,10 +2562,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]적시타 문정빈, '기회 안 놓쳐'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MFTGKMRTGMYWINBSGQ4DMYJRMI/",
-          "published": "2026-07-04T19:01:00+0900",
-          "article_id": "d7130dc2f0f80cd5",
+          "title": "[사진]박치국, 위기를 막아라",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/G42TKYLBGQ2DGZTFHAYWGN3GHA/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "4173a98238fbe56a",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2039,10 +2580,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]에르난데스 이어 마운드 오른 박준영",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MRRTAYRTGQYDCMBSGZTGCOJTGU/",
-          "published": "2026-07-04T19:01:00+0900",
-          "article_id": "07748ee31ad40d00",
+          "title": "[사진]김동헌, 추격의 적시타",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GU2TCYZYGNTGGOJUGY4TQN3BMI/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "1b8d459986820dec",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2057,10 +2598,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]송찬의 '계속해서 달아난다'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GU3TCNBXGVRTSZJXMJSGMZLDHE/",
-          "published": "2026-07-04T19:01:00+0900",
-          "article_id": "a88dbbac036b8068",
+          "title": "[사진]최승용, 여기까지",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MRSDAYTBGZTDGOLGGY3DCOBQME/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "1237c440d2a8f751",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2075,10 +2616,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]득점 올리는 문보경",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GA2DCZBQGAYTQMJYGI2TQMRYGI/",
-          "published": "2026-07-04T19:01:00+0900",
-          "article_id": "708c6c41b229fa6f",
+          "title": "[사진]1타점 적시타 날리는 안치홍",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/G5SDCMRXMQ2DOYZUGUYWCYRQMQ/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "177282139fd6cff8",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2093,10 +2634,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]송찬의 '적시타'",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MJSDAY3BGFRDIODFGQYDEN3CG4/",
-          "published": "2026-07-04T19:01:00+0900",
-          "article_id": "37b47ab1af5f4044",
+          "title": "[사진]박찬혁, 계속 추격",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/G4ZTIM3GGM3DGZJUGI4TOMRZGA/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "0747f1d1f97700c0",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2111,10 +2652,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]최승용 와인드업",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MVSTQZTGHEZDENRVG42DSZBYGY/",
-          "published": "2026-07-04T18:56:00+0900",
-          "article_id": "edfc6e92a3a92577",
+          "title": "[사진]안치홍, 추격의 시작",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GEYDAMBVMM3DAN3EME2DSMDGHA/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "01e33c36cf81a4cd",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2129,10 +2670,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[사진]최승용, 승리를 위해",
-          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MVRGIYRSGBQWKN3CGQ2DQN3CG4/",
-          "published": "2026-07-04T18:56:00+0900",
-          "article_id": "8631362e6314106c",
+          "title": "[사진]안치홍, 추격의 적시타",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/MRRTSY3BG5RDIOBTGI4GEYRVME/",
+          "published": "2026-07-04T20:19:00+0900",
+          "article_id": "b75c37f6d9c4bbf4",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2147,10 +2688,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "황정민, '풍향고3' 출연 선 그었다..유재석에 \"다시는 안가\" 손절(핑계고)[순간포착]",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/07/04/MEYGGN3GGZRWMZRZHA4WMZTEME/",
-          "published": "2026-07-04T18:55:00+0900",
-          "article_id": "840a87a942a1795d",
+          "title": "[사진]허인서-박상원 '반드시 막아야 해'",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GM2WCMTFGMYDAMBZMNTDQODDMI/",
+          "published": "2026-07-04T20:17:00+0900",
+          "article_id": "0edf965cfb281fba",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2165,10 +2706,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "태안 꽃지해수욕장서 70대 男 물에 빠져 심정지",
-          "url": "https://www.chosun.com/national/regional/2026/07/04/5YKYINQIEFFKTJQ4C7GMUDCFQI/",
-          "published": "2026-07-04T18:42:27+0900",
-          "article_id": "b25eceeebc51709c",
+          "title": "그 가을, 삼성을 떨게한 몰아치기 달인의 귀환, 데뷔 첫 3연타석 홈런+전의산과 백투백",
+          "url": "https://www.chosun.com/sports/baseball/2026/07/04/HBSDONZYMMYTKMBSHE4DIMTDGU/",
+          "published": "2026-07-04T20:15:16+0900",
+          "article_id": "074ac95b2ccd6f48",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2183,10 +2724,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "9만명 찾은 강릉 경포해수욕장, 앞바다에 “상어가 나타났다” 잇단 신고",
-          "url": "https://www.chosun.com/national/regional/2026/07/04/MGS56PE44NEVRGSDHBVUCJUAKA/",
-          "published": "2026-07-04T18:37:04+0900",
-          "article_id": "a2ab3faed4744305",
+          "title": "[사진]볼넷으로 만루 만드는 홍창기",
+          "url": "https://www.chosun.com/sports/sports_photo/2026/07/04/GJTDEZBYGQZWIYLEGM3DQNZXHE/",
+          "published": "2026-07-04T20:15:00+0900",
+          "article_id": "2d094dd065fd9238",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2201,28 +2742,28 @@
           "importance_source": "auto"
         },
         {
-          "title": "마이크론, 14조 들여 日히로시마에 공장… 삼전닉스 HBM 추격 나서",
-          "url": "https://www.chosun.com/economy/int_economy/2026/07/04/A5WSMV5O7BAH5E4ACE7HKHORZM/",
-          "published": "2026-07-04T18:25:56+0900",
-          "article_id": "59b056794a04a7c3",
-          "auto_importance_score": 34,
+          "title": "“승객이 기사 목 잡았다”... 파키스탄 버스 추락해 48명 사상",
+          "url": "https://www.chosun.com/international/international_general/2026/07/04/ZJ7YZF545ZEOHG4BAQD4QPRUU4/",
+          "published": "2026-07-04T10:52:50+0900",
+          "article_id": "2a59c0751dca15fa",
+          "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
-            "핵심 산업"
+            "기본 분류"
           ],
-          "importance_score": 34,
+          "importance_score": 8,
           "importance_label": "low",
           "importance_label_text": "낮음",
           "importance_reasons": [
-            "핵심 산업"
+            "기본 분류"
           ],
           "importance_source": "auto"
         },
         {
-          "title": "스타벅스, 대국민사과에도… 결제액 208억·앱 사용자 110만명 ‘뚝’",
-          "url": "https://www.chosun.com/economy/industry-company/2026/07/04/YMVYKZPSFNCQTO6KOZKQACD4EU/",
-          "published": "2026-07-04T16:11:12+0900",
-          "article_id": "28ae675b373ef1ae",
+          "title": "장동혁·한동훈·이준석, 장례식장서 뜻밖의 첫 대면",
+          "url": "https://www.chosun.com/politics/assembly/2026/07/04/LA2DDJMGRBBRXABZT2C4GNXLBM/",
+          "published": "2026-07-04T00:50:00+0900",
+          "article_id": "a6ad7bf596b5c2ba",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -2244,7 +2785,61 @@
       "home": "http://rss.donga.com",
       "items": [
         {
-          "title": "이란, 하메네이 장례식 시작…“미국에 죽음을” 외친 조문객들",
+          "title": "日매체 “손흥민, 월드컵 기대 이하 5인”…“활용법 틀렸다” 전술 직격탄",
+          "url": "https://www.donga.com/news/Sports/article/all/20260704/134236016/1",
+          "published": "2026-07-04T20:19:56+0900",
+          "article_id": "6fcebb9de9320a64",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘국조특위 현장조사 방해’ 60대 구속…法 “도주 염려”",
+          "url": "https://www.donga.com/news/Society/article/all/20260704/134236006/1",
+          "published": "2026-07-04T20:13:47+0900",
+          "article_id": "e5d0ac9d3af0cc8a",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "만취해 경찰 때리고 유치장 이불을 화장실에…난동-기행 50대女 징역 2년",
+          "url": "https://www.donga.com/news/Society/article/all/20260704/134235991/2",
+          "published": "2026-07-04T19:50:00+0900",
+          "article_id": "8c1b01b25c16697c",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "美 독립기념일에 최고지도자 장례 치른 이란… “피의 보복” 다짐",
           "url": "https://www.donga.com/news/Inter/article/all/20260704/134235956/2",
           "published": "2026-07-04T19:05:00+0900",
           "article_id": "a0c733cf4b60adfc",
@@ -2728,60 +3323,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "어두운 새벽 왜 도로에 누워있었나…50대男, 차에 치여 숨져",
-          "url": "https://www.donga.com/news/Society/article/all/20260704/134235777/2",
-          "published": "2026-07-04T14:14:00+0900",
-          "article_id": "52187ef44fe3bdf1",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "주진우, 7일 정보통신망법 시행에 “국민 입틀막…헌법소송 제기”",
-          "url": "https://www.donga.com/news/Politics/article/all/20260704/134235772/1",
-          "published": "2026-07-04T13:56:02+0900",
-          "article_id": "d84a4bf1530ed071",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "송성문, 오타니 상대로 1안타 1도루…샌디에이고, 7연패 수렁",
-          "url": "https://www.donga.com/news/Sports/article/all/20260704/134235769/1",
-          "published": "2026-07-04T13:55:45+0900",
-          "article_id": "edd20a478b8ed864",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -2790,6 +3331,42 @@
       "method": "rss",
       "home": "http://www.khan.co.kr",
       "items": [
+        {
+          "title": "‘국조특위 조사 방해하고 경찰 폭행’ 60대 남성 구속",
+          "url": "https://www.khan.co.kr/article/202607042002001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-04T20:02:00+0900",
+          "article_id": "9697b006d752083e",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "“김수현, N번방과 비교가 안 돼” 발언한 김세의…협박 혐의로 재판행",
+          "url": "https://www.khan.co.kr/article/202607041948001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+          "published": "2026-07-04T19:48:00+0900",
+          "article_id": "0f90633247c9e4cd",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "여름 휴가철인데 “상어가 나타났다”···강릉 해변 출몰 신고에 긴급 재난문자",
           "url": "https://www.khan.co.kr/article/202607041844001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
@@ -3293,42 +3870,6 @@
             "자본 변동"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "복숭아 ‘진한 분홍색’만 골랐다면 손해…표면에 ‘이 점’ 많을수록 달다",
-          "url": "https://www.khan.co.kr/article/202607040900001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-04T09:00:00+0900",
-          "article_id": "20eeb75c3d90be61",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "식초부터 핫소스까지…상온 보관 가능한 양념 7가지",
-          "url": "https://www.khan.co.kr/article/202607040800011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-          "published": "2026-07-04T08:00:01+0900",
-          "article_id": "cf1618a7fc133058",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -3337,6 +3878,60 @@
       "method": "rss",
       "home": "https://www.hani.co.kr",
       "items": [
+        {
+          "title": "일요일 전국에 장맛비…전남 남해안·제주 산지 폭우 주의",
+          "url": "https://www.hani.co.kr/arti/society/society_general/1266713.html",
+          "published": null,
+          "article_id": "7740442a2628a6c7",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "‘올공’ 개표소 2번째 구속…국조특위 진입 막고 경찰 폭행한 60대 남성",
+          "url": "https://www.hani.co.kr/arti/society/society_general/1266712.html",
+          "published": null,
+          "article_id": "a1a41cdaaa4e68b8",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "정청래는 DJ 생가, 김민석은 익산 자택…주말 호남서 당심 잡기",
+          "url": "https://www.hani.co.kr/arti/politics/assembly/1266711.html",
+          "published": null,
+          "article_id": "78161182711646c1",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "“강릉 앞바다에 상어 출몰”…피서객 위해 재난 문자 발송",
           "url": "https://www.hani.co.kr/arti/area/gangwon/1266710.html",
@@ -3822,60 +4417,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "‘읽는 여성’의 존재감, 부정한다고 사라지나요 [.txt]",
-          "url": "https://www.hani.co.kr/arti/culture/book/1266683.html",
-          "published": null,
-          "article_id": "8ddc21940f896f4a",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "잉글랜드 대표팀, 출전수당 모두 기부 20년째…축구 종주국의 ‘프라이드’ [아하 월드컵]",
-          "url": "https://www.hani.co.kr/arti/sports/sportstemp/worldcup/1266682.html",
-          "published": null,
-          "article_id": "7cc9192111161d1d",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "AI 시대, 더 중요해진 ‘문자’…문해력보다 판별력·사고력 더 필요 [.txt]",
-          "url": "https://www.hani.co.kr/arti/culture/book/1266681.html",
-          "published": null,
-          "article_id": "f633dfcb27c6b265",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -4071,6 +4612,96 @@
       "method": "rss",
       "home": "http://rss.edaily.co.kr",
       "items": [
+        {
+          "title": "[속보]로또 1231회 당첨번호 ‘4·13·14·18·31·38’…보너스 15",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02578086645511240",
+          "published": "2026-07-04T20:40:11+0900",
+          "article_id": "689493457b25f4ea",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "\"상어 출몰\" 강릉 앞바다 잇단 신고…해수욕장 개장 날 '비상'",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02574806645511240",
+          "published": "2026-07-04T20:25:24+0900",
+          "article_id": "4f261db2833d5492",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'국조특위 잠실 개표소 현장조사 방해' 60대男, 구속…\"도주 염려\"",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02571526645511240",
+          "published": "2026-07-04T20:07:05+0900",
+          "article_id": "e79bf200ef03069d",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "\"쓰레기 왜 안 치워\"…에어컨 기사 살해한 50대 체포",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02568246645511240",
+          "published": "2026-07-04T19:24:43+0900",
+          "article_id": "f4af8668ae9faddd",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'첫 우승 도전' 박예지, 롯데오픈 3R 선두 탈환…김효주는 3타 차 5위",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02564966645511240",
+          "published": "2026-07-04T19:24:15+0900",
+          "article_id": "34dd85811f5d5f26",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "\"귀국 생각 없다\" 홍명보, 국회 청문회 출석 '안갯속'",
           "url": "https://www.edaily.co.kr/News/Read?newsId=02561686645511240",
@@ -4520,96 +5151,6 @@
             "기본 분류"
           ],
           "importance_source": "auto"
-        },
-        {
-          "title": "[포토]이채은,버디를 노려본다",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=02479686645511240",
-          "published": "2026-07-04T18:03:37+0900",
-          "article_id": "6271d49a4adfc0ae",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[포토]강지선,먼거리 버디 들어가라",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=02476406645511240",
-          "published": "2026-07-04T18:03:37+0900",
-          "article_id": "9c5f8c1b91dbc71e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[포토]강지선,중간 지점을 찾는다",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=02473126645511240",
-          "published": "2026-07-04T18:03:36+0900",
-          "article_id": "72c6fef89338c482",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[포토]강지선,핀 옆에 붙어보자",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=02469846645511240",
-          "published": "2026-07-04T18:03:35+0900",
-          "article_id": "3a121dd7e15e3b3b",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "[포토]강지선,그린 노린 임팩트",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=02466566645511240",
-          "published": "2026-07-04T18:03:35+0900",
-          "article_id": "69bf8e8540423ad4",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
         }
       ]
     },
@@ -4618,6 +5159,132 @@
       "method": "rss",
       "home": "https://rss.etoday.co.kr",
       "items": [
+        {
+          "title": "[내일 날씨] 낮부터 전국 대부분 비…제주 산지 150㎜ 폭우",
+          "url": "https://www.etoday.co.kr/news/view/2600258",
+          "published": "2026-07-04T20:23:00+0900",
+          "article_id": "96dc48b095a3c006",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'나혼산' 자취 감춘 이주승, 감독 서바이벌 우승...1억 전액 기부",
+          "url": "https://www.etoday.co.kr/news/view/2600257",
+          "published": "2026-07-04T20:09:00+0900",
+          "article_id": "a31f53465e8f65dc",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "가세연 김세의 “N번방과 비교가 안돼”…공소장에 김수현 협박 정황",
+          "url": "https://www.etoday.co.kr/news/view/2600256",
+          "published": "2026-07-04T19:55:00+0900",
+          "article_id": "b0b4187f8f7c57e1",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "올해 상반기 극장 매출액 5789억원…지난해 대비 41.9% 증가[K무비 흥행 인덱스①]",
+          "url": "https://www.etoday.co.kr/news/view/2599114",
+          "published": "2026-07-04T19:54:00+0900",
+          "article_id": "ce6670e4cd7d81c1",
+          "auto_importance_score": 43,
+          "auto_importance_label": "medium",
+          "auto_importance_reasons": [
+            "실적"
+          ],
+          "importance_score": 43,
+          "importance_label": "medium",
+          "importance_label_text": "보통",
+          "importance_reasons": [
+            "실적"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "K장르물 극장가 지배⋯외화는 ‘특수관 의존 현상’ 뚜렷[K무비 흥행 인덱스②]",
+          "url": "https://www.etoday.co.kr/news/view/2597657",
+          "published": "2026-07-04T19:54:00+0900",
+          "article_id": "a3159b6e5df64497",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "1000만 영화가 살린 극장가…전문가들 “회복 아닌 착시일 수도”[K무비 흥행 인덱스③]",
+          "url": "https://www.etoday.co.kr/news/view/2598777",
+          "published": "2026-07-04T19:53:00+0900",
+          "article_id": "b66ac5c324edf022",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'놀면 뭐하니' 유재석, 남아공전 패배에 분노⋯\"지금부터 축구 이야기 금지\"",
+          "url": "https://www.etoday.co.kr/news/view/2600255",
+          "published": "2026-07-04T19:31:00+0900",
+          "article_id": "e57c601af471b088",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
         {
           "title": "해수욕장 개장했는데 '상어 출몰' 신고…강릉시 재난문자 발송",
           "url": "https://www.etoday.co.kr/news/view/2600254",
@@ -4727,10 +5394,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "[금상소] “내 소비습관에 딱”⋯카드사, 초맞춤형 상품 잇따라 출시",
-          "url": "https://www.etoday.co.kr/news/view/2600030",
+          "title": "공급 가뭄 지역에 새 아파트 온다…누적 대기수요 관심",
+          "url": "https://www.etoday.co.kr/news/view/2599954",
           "published": "2026-07-04T17:00:00+0900",
-          "article_id": "25c6b8c21f698db1",
+          "article_id": "d38504835993f30e",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -4763,10 +5430,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "공급 가뭄 지역에 새 아파트 온다…누적 대기수요 관심",
-          "url": "https://www.etoday.co.kr/news/view/2599954",
+          "title": "[금상소] “내 소비습관에 딱”⋯카드사, 초맞춤형 상품 잇따라 출시",
+          "url": "https://www.etoday.co.kr/news/view/2600030",
           "published": "2026-07-04T17:00:00+0900",
-          "article_id": "d38504835993f30e",
+          "article_id": "25c6b8c21f698db1",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -4857,60 +5524,6 @@
           "url": "https://www.etoday.co.kr/news/view/2600244",
           "published": "2026-07-04T15:05:00+0900",
           "article_id": "268790405e69e808",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "BTS '아리랑', 英 앨범차트 37위…아르헨티나 라플라타시 '명예 외빈' 선정",
-          "url": "https://www.etoday.co.kr/news/view/2600242",
-          "published": "2026-07-04T14:04:00+0900",
-          "article_id": "6f19dc14577c88ec",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "치솟는 분양가에 '수원 국평 10억' 현실화⋯발길 돌리는 실수요자들",
-          "url": "https://www.etoday.co.kr/news/view/2599948",
-          "published": "2026-07-04T14:00:00+0900",
-          "article_id": "3c4203bb1688991b",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "콜롬비아, 가나 제치고 16강행 막차…16강 대진표 완성 [북중미 월드컵]",
-          "url": "https://www.etoday.co.kr/news/view/2600241",
-          "published": "2026-07-04T13:45:00+0900",
-          "article_id": "693b2b9a7dd72f8e",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11391,6 +12004,150 @@
       "home": "https://finance.yahoo.com",
       "items": [
         {
+          "title": "What You Need To Know Ahead of Avery Dennison’s Earnings Release",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/know-ahead-avery-dennison-earnings-104539763.html",
+          "published": "2026-07-03T19:45:39+0900",
+          "article_id": "71568b13a2dec763",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Here's What to Expect From Texas Instruments' Next Earnings Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-expect-texas-instruments-next-104445217.html",
+          "published": "2026-07-03T19:44:45+0900",
+          "article_id": "2fe16aaf418badd6",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "What to Expect From PACCAR’s Q2 2026 Earnings Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/expect-paccar-q2-2026-earnings-104019033.html",
+          "published": "2026-07-03T19:40:19+0900",
+          "article_id": "9ce039e38de56518",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "What to Expect From Ecolab's Q2 2026 Earnings Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/expect-ecolabs-q2-2026-earnings-103804741.html",
+          "published": "2026-07-03T19:38:04+0900",
+          "article_id": "bb134479c2230c55",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "What to Expect From RTX Corporation's Q2 2026 Earnings Report",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/expect-rtx-corporations-q2-2026-103527808.html",
+          "published": "2026-07-03T19:35:27+0900",
+          "article_id": "0e3c0a9cbd1029f9",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Sherwin-Williams’ Quarterly Earnings Preview: What You Need to Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sherwin-williams-quarterly-earnings-preview-103509101.html",
+          "published": "2026-07-03T19:35:09+0900",
+          "article_id": "75ef8d1ab764c4f1",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "'Poor, hungry, driven': Billionaire Michael Lee-Chin says rich people become wealthy by doing 5 simple things",
+          "url": "https://finance.yahoo.com/small-business/articles/poor-hungry-driven-billionaire-michael-103500881.html",
+          "published": "2026-07-03T19:35:00+0900",
+          "article_id": "81c57bca0b91ad9c",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "CoStar Group's Q2 2026 Earnings: What to Expect",
+          "url": "https://finance.yahoo.com/real-estate/articles/costar-groups-q2-2026-earnings-102829641.html",
+          "published": "2026-07-03T19:28:29+0900",
+          "article_id": "de994d04442bd195",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "What to Expect From EQT Corporation's Next Quarterly Earnings Report",
           "url": "https://finance.yahoo.com/markets/stocks/articles/expect-eqt-corporations-next-quarterly-102158784.html",
           "published": "2026-07-03T19:21:58+0900",
@@ -11427,6 +12184,60 @@
           "importance_source": "auto"
         },
         {
+          "title": "Auto & Transport Roundup: Market Talk",
+          "url": "https://www.wsj.com/business/auto-transport-roundup-market-talk-5e8c7ad0?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-07-03T19:10:00+0900",
+          "article_id": "4987738a620f2c58",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Elon Musk can’t sell a single SpaceX share for a year—and then all the locks crack open at once",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-t-sell-single-100600144.html",
+          "published": "2026-07-03T19:06:00+0900",
+          "article_id": "67cf9b8153d9ae66",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "A Widow Plans to Sell the Home She Shared for 30 Years. A Step-Up in Basis Could Erase Most of the Taxable Gain.",
+          "url": "https://finance.yahoo.com/real-estate/articles/widow-plans-sell-home-she-100309172.html",
+          "published": "2026-07-03T19:03:09+0900",
+          "article_id": "97837e98b2a7ec56",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "Analysis-Argentina's plan for AI-run companies can't avoid humans",
           "url": "https://finance.yahoo.com/technology/ai/articles/analysis-argentinas-plan-ai-run-100150989.html",
           "published": "2026-07-03T19:01:50+0900",
@@ -11445,10 +12256,28 @@
           "importance_source": "auto"
         },
         {
-          "title": "Mortgage and refinance interest rates today, Friday, July 3: Rates mostly higher again today",
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-friday-july-3-rates-mostly-higher-again-today-100000290.html",
-          "published": "2026-07-03T19:00:00+0900",
-          "article_id": "07995fd978a0f8f6",
+          "title": "Fourth Of July Inflation 'Shock'? 2026 BBQ Cost Hits Record",
+          "url": "https://finance.yahoo.com/economy/articles/fourth-july-inflation-shock-2026-100103091.html",
+          "published": "2026-07-03T19:01:03+0900",
+          "article_id": "714dafcc41d86a15",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Burnham tax uncertainty will stifle investment, City warns",
+          "url": "https://finance.yahoo.com/economy/policy/articles/burnham-tax-uncertainty-stifle-investment-100038877.html",
+          "published": "2026-07-03T19:00:38+0900",
+          "article_id": "0632800c06962d72",
           "auto_importance_score": 34,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11481,6 +12310,24 @@
           "importance_source": "auto"
         },
         {
+          "title": "Mortgage and refinance interest rates today, Friday, July 3: Rates mostly higher again today",
+          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-friday-july-3-rates-mostly-higher-again-today-100000290.html",
+          "published": "2026-07-03T19:00:00+0900",
+          "article_id": "07995fd978a0f8f6",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "Best CD rates today, Friday, July 3, 2026: Up to 4.10% APY return",
           "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-friday-july-3-2026-up-to-410-apy-return-100000627.html",
           "published": "2026-07-03T19:00:00+0900",
@@ -11495,6 +12342,24 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Inside Cannes: What Executives Said About Leading in the AI Era",
+          "url": "https://finance.yahoo.com/video/inside-cannes-executives-said-leading-100000839.html",
+          "published": "2026-07-03T19:00:00+0900",
+          "article_id": "849b2602a4d361d2",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
           ],
           "importance_source": "auto"
         },
@@ -11571,64 +12436,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "European Chip Stocks Rebound After Thursday Selloff",
-          "url": "https://www.wsj.com/finance/stocks/nikkei-falls-1-0-dragged-by-electronics-tech-stock-fc233590?siteid=yhoof2&yptr=yahoo",
-          "published": "2026-07-03T17:54:00+0900",
-          "article_id": "73c1d571480fc193",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "Intuitive Surgical’s Quarterly Earnings Preview: What You Need to Know",
           "url": "https://finance.yahoo.com/healthcare/articles/intuitive-surgical-quarterly-earnings-preview-085244557.html",
           "published": "2026-07-03T17:52:44+0900",
           "article_id": "2f1376c0a3c24ee2",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Stocks Rise, Dollar Weakens; U.S. Markets Closed",
-          "url": "https://www.wsj.com/finance/investing/stocks-rise-dollar-weakens-u-s-markets-closed-99abaaf0?siteid=yhoof2&yptr=yahoo",
-          "published": "2026-07-03T17:52:00+0900",
-          "article_id": "841604469b54a35e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "TotalEnergies sells 8.5% stake in Marjoram gas field to Inpex",
-          "url": "https://finance.yahoo.com/energy/articles/totalenergies-sells-8-5-stake-084835140.html",
-          "published": "2026-07-03T17:48:35+0900",
-          "article_id": "5a1abbfbc3462c94",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11661,190 +12472,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Crypto News Today (July 3): BTC Surges Back Above $60K, Securitize Goes Public on the NYSE and Ondo Finance Launches IVV and Micron Tokenized Stocks",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/crypto-news-today-july-3-084729497.html",
-          "published": "2026-07-03T17:47:29+0900",
-          "article_id": "2792a59d621f0078",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "If You'd Invested $10,000 in Tesla Stock 10 Years Ago, Here's How Much You'd Have Today",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/youd-invested-10-000-tesla-084000157.html",
-          "published": "2026-07-03T17:40:00+0900",
-          "article_id": "9b2cb947aa9676fc",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Crowe appoints Adam Rollason as corporate tax partner",
-          "url": "https://finance.yahoo.com/small-business/articles/crowe-appoints-adam-rollason-corporate-083946490.html",
-          "published": "2026-07-03T17:39:46+0900",
-          "article_id": "50a7961c00c7d54e",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Jim Cramer on Paychex: “The Stock’s Found Its Footing of Late”",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-paychex-stock-found-081746481.html",
-          "published": "2026-07-03T17:17:46+0900",
-          "article_id": "02c55482677a53cb",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Jim Cramer Calls Ultra Clean Holdings “One of the Hottest Stocks in the World”",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-calls-ultra-clean-081659490.html",
-          "published": "2026-07-03T17:16:59+0900",
-          "article_id": "57c721c536c3474f",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Dollar heads for biggest weekly drop since April as jobs data dims Fed hike bets",
-          "url": "https://finance.yahoo.com/news/dollar-heads-weekly-drop-jobs-015041368.html",
-          "published": "2026-07-03T17:10:12+0900",
-          "article_id": "cc2c30d5f55b2da7",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Japan's LNG Imports Fall 7% as Utilities Chase Cheaper Coal",
-          "url": "https://finance.yahoo.com/energy/articles/japans-lng-imports-fall-7-080000079.html",
-          "published": "2026-07-03T17:00:00+0900",
-          "article_id": "b2f91e612b1751bd",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Asian markets find footing as US jobs data, PMIs lift stocks",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-markets-choppy-us-jobs-010944781.html",
-          "published": "2026-07-03T14:49:24+0900",
-          "article_id": "aa75c8aa9d3f347c",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Chinese robot maker Unitree wins approval for $619 million Shanghai IPO",
-          "url": "https://finance.yahoo.com/technology/articles/chinese-robot-maker-unitree-wins-052743978.html",
-          "published": "2026-07-03T14:27:43+0900",
-          "article_id": "55b2a7d97847f489",
-          "auto_importance_score": 34,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_score": 34,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "핵심 산업"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Earnings Preview: What to Expect From Principal Financial’s Report",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-preview-expect-principal-financial-052345765.html",
-          "published": "2026-07-03T14:23:45+0900",
-          "article_id": "8581e488f1790fd2",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "India's June services growth slips to 17-month low as demand, hiring cool, PMI shows",
-          "url": "https://finance.yahoo.com/economy/articles/indias-june-services-growth-slips-050345042.html",
-          "published": "2026-07-03T14:03:45+0900",
-          "article_id": "fa7ecd8176ee3dab",
+          "title": "HELOC and home equity loan rates, Friday, July 3: With rates rising, understand how HELOC/HEL rates work",
+          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-and-home-equity-loan-rates-friday-july-3-with-rates-rising-understand-how-helochel-rates-work-100000756.html",
+          "published": "2026-07-02T19:00:00+0900",
+          "article_id": "1ea71e96b7a15c6b",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11863,24 +12494,6 @@
           "url": "https://finance.yahoo.com/real-estate/article/fewer-renters-are-falling-behind-on-payments-but-their-financial-stress-might-be-growing-in-other-ways-100000072.html",
           "published": "2026-07-02T19:00:00+0900",
           "article_id": "33fa6a08a0f8013a",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "HELOC and home equity loan rates, Friday, July 3: With rates rising, understand how HELOC/HEL rates work",
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-and-home-equity-loan-rates-friday-july-3-with-rates-rising-understand-how-helochel-rates-work-100000756.html",
-          "published": "2026-07-02T19:00:00+0900",
-          "article_id": "1ea71e96b7a15c6b",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -11938,9 +12551,63 @@
       "home": "https://search.cnbc.com",
       "items": [
         {
-          "title": "Trump hails U.S. exceptionalism before veering into darkly political speech to usher in America 250",
+          "title": "Trump to mark U.S. 250th anniversary with campaign-style rally on National Mall",
+          "url": "https://www.cnbc.com/2026/07/04/trump-to-mark-us-250th-anniversary-with-campaign-style-rally.html",
+          "published": "2026-07-04T20:40:40+0900",
+          "article_id": "cedcb1cec051aed5",
+          "auto_importance_score": 34,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_score": 34,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "핵심 산업"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Pope Leo urges U.S. to welcome immigrants in July 4 appeal",
+          "url": "https://www.cnbc.com/2026/07/04/pope-leo-urges-us-to-welcome-immigrants-in-july-4-appeal.html",
+          "published": "2026-07-04T20:40:27+0900",
+          "article_id": "8c13908d1c180563",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Keiko Fujimori declared winner of Peru presidential race",
+          "url": "https://www.cnbc.com/2026/07/04/keiko-fujimori-declared-winner-of-peru-presidential-race.html",
+          "published": "2026-07-04T19:44:40+0900",
+          "article_id": "a46684070251097d",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "Trump hails U.S. exceptionalism before veering into darkly political speech to usher in America's 250th anniversary",
           "url": "https://www.cnbc.com/2026/07/04/trump-makes-darkly-political-speech-to-usher-in-uss-250-anniversary.html",
-          "published": "2026-07-04T19:18:36+0900",
+          "published": "2026-07-04T19:23:29+0900",
           "article_id": "b43d4872e725bee5",
           "auto_importance_score": 34,
           "auto_importance_label": "low",
@@ -12280,10 +12947,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "As ACA enrollment falls by millions, Trump administration and policy gurus disagree on why",
-          "url": "https://www.cnbc.com/2026/07/03/aca-enrollment-enhanced-subsidies-lapse-fraud.html",
+          "title": "Lemonade's $10.5M data breach settlement: See if you qualify and learn how to protect your identity",
+          "url": "https://www.cnbc.com/select/do-you-qualify-for-lemonade-10-5-million-data-breach-settlement/",
           "published": "2026-07-03T21:00:01+0900",
-          "article_id": "8d0cec5e2b7157ce",
+          "article_id": "767e8ad4d27fee29",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -12298,10 +12965,10 @@
           "importance_source": "auto"
         },
         {
-          "title": "Lemonade's $10.5M data breach settlement: See if you qualify and learn how to protect your identity",
-          "url": "https://www.cnbc.com/select/do-you-qualify-for-lemonade-10-5-million-data-breach-settlement/",
+          "title": "As ACA enrollment falls by millions, Trump administration and policy gurus disagree on why",
+          "url": "https://www.cnbc.com/2026/07/03/aca-enrollment-enhanced-subsidies-lapse-fraud.html",
           "published": "2026-07-03T21:00:01+0900",
-          "article_id": "767e8ad4d27fee29",
+          "article_id": "8d0cec5e2b7157ce",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -12330,24 +12997,6 @@
           "importance_label_text": "낮음",
           "importance_reasons": [
             "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Christine Lagarde leaves door open to early ECB exit, as she mulls French politics",
-          "url": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html",
-          "published": "2026-07-03T19:34:32+0900",
-          "article_id": "af1fa4f76487ba82",
-          "auto_importance_score": 48,
-          "auto_importance_label": "medium",
-          "auto_importance_reasons": [
-            "자본 변동"
-          ],
-          "importance_score": 48,
-          "importance_label": "medium",
-          "importance_label_text": "보통",
-          "importance_reasons": [
-            "자본 변동"
           ],
           "importance_source": "auto"
         },
@@ -12388,24 +13037,6 @@
           "importance_source": "auto"
         },
         {
-          "title": "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
-          "url": "https://www.cnbc.com/2026/06/30/rafael-nadal-zel-hotels-business.html",
-          "published": "2026-07-03T13:12:43+0900",
-          "article_id": "9e102a796320c4aa",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
           "title": "Venezuela quake toll climbs to 2,595 as damage estimates mount after strongest tremor in a century",
           "url": "https://www.cnbc.com/2026/07/03/venezuela-earthquakes-death-toll-rises-rescue-efforts-continue.html",
           "published": "2026-07-03T12:46:27+0900",
@@ -12424,46 +13055,28 @@
           "importance_source": "auto"
         },
         {
+          "title": "President Donald Trump defends business dealings, his children in exclusive interview with CNBC",
+          "url": "https://www.cnbc.com/2026/07/02/donald-trump-interview-live-updates.html",
+          "published": "2026-07-03T11:55:27+0900",
+          "article_id": "87b7a9a4f94d771b",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "5 takeaways from President Donald Trump's interview with CNBC",
           "url": "https://www.cnbc.com/2026/07/02/5-takeaways-from-president-donald-trumps-interview-with-cnbc.html",
           "published": "2026-07-03T08:20:58+0900",
           "article_id": "9227e68386430f54",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Trump bought Apple, Nvidia and other tech giants before tariff reversal fueled rebound",
-          "url": "https://www.cnbc.com/2026/07/02/trump-aapl-nvda-tariffs-disclosures.html",
-          "published": "2026-07-03T06:03:39+0900",
-          "article_id": "e1107ca6dc76ff1f",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "Amazon has deployed enough satellites to launch Leo service later this year",
-          "url": "https://www.cnbc.com/2026/07/02/amazon-has-deployed-enough-satellites-to-launch-leo-service-this-year.html",
-          "published": "2026-07-03T03:28:35+0900",
-          "article_id": "96f8702829d8cdf9",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
@@ -16815,6 +17428,60 @@
       "home": "https://www.hankyung.com",
       "items": [
         {
+          "title": "전국 휘발윳값 평균 1900원대로…가장 저렴한 지역은?",
+          "url": "https://www.hankyung.com/article/2026070455887",
+          "published": "2026-07-04T19:40:23+0900",
+          "article_id": "95b1382f2c051778",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "북중미 월드컵 16강 대진 확정…콜롬비아가 막차 탔다",
+          "url": "https://www.hankyung.com/article/2026070455837",
+          "published": "2026-07-04T19:10:44+0900",
+          "article_id": "c57082563e32f614",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
+          "title": "폭염에 선풍기 자주 틀었는데…\"건강에 독\" 섬뜩한 경고",
+          "url": "https://www.hankyung.com/article/2026070455857",
+          "published": "2026-07-04T18:59:31+0900",
+          "article_id": "0d0b5c2b68159874",
+          "auto_importance_score": 8,
+          "auto_importance_label": "low",
+          "auto_importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_score": 8,
+          "importance_label": "low",
+          "importance_label_text": "낮음",
+          "importance_reasons": [
+            "기본 분류"
+          ],
+          "importance_source": "auto"
+        },
+        {
           "title": "피서객 어쩌나…강릉 앞바다 '상어' 출몰 재난 문자에 '발칵'",
           "url": "https://www.hankyung.com/article/2026070455777",
           "published": "2026-07-04T18:11:42+0900",
@@ -17287,60 +17954,6 @@
           "url": "https://www.hankyung.com/article/2026070346646",
           "published": "2026-07-04T12:00:10+0900",
           "article_id": "6de5ecc739f71f41",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "\"일본으로 와라\"…홍명보, J리그서 '러브콜' 쏟아지는 이유",
-          "url": "https://www.hankyung.com/article/2026070454127",
-          "published": "2026-07-04T11:49:53+0900",
-          "article_id": "efde18433bc1d045",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "\"먹으려고 산 거 아니에요\" 30분 만에 완판…난리 난 디저트 [김기자의 알고리즘]",
-          "url": "https://www.hankyung.com/article/202607034222H",
-          "published": "2026-07-04T11:33:58+0900",
-          "article_id": "d178c99010b69241",
-          "auto_importance_score": 8,
-          "auto_importance_label": "low",
-          "auto_importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_score": 8,
-          "importance_label": "low",
-          "importance_label_text": "낮음",
-          "importance_reasons": [
-            "기본 분류"
-          ],
-          "importance_source": "auto"
-        },
-        {
-          "title": "\"주유소 앞 5km 줄 섰다\"…러시아 덮친 연료 대란",
-          "url": "https://www.hankyung.com/article/2026070454227",
-          "published": "2026-07-04T11:25:19+0900",
-          "article_id": "3149735ce6b24d75",
           "auto_importance_score": 8,
           "auto_importance_label": "low",
           "auto_importance_reasons": [
