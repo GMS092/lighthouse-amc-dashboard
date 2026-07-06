@@ -1,8 +1,10 @@
 name: Deploy GitHub Pages
 
 on:
-  push:
-    branches: [main]
+  # 자동 배포 중단 — 수동 실행(workflow_dispatch)만 유지.
+  # 다시 켜려면 아래 push 트리거의 주석을 해제하세요.
+  # push:
+  #   branches: [main]
   workflow_dispatch:
 
 permissions:

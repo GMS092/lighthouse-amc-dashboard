@@ -1,14 +1,11 @@
 name: Update News Flow Snapshot
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"
+  # 자동 수집·배포 중단 — 15분 cron과 push 트리거를 껐습니다.
+  # 다시 켜려면 아래 schedule 주석을 해제하세요.
+  # schedule:
+  #   - cron: "*/15 * * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/news-flow.yml"
-      - "modules/news-flow/**"
 
 permissions:
   contents: write
